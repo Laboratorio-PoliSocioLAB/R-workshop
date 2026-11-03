@@ -1,0 +1,68 @@
+:root {
+  --curso-azul: #107895;
+  --curso-tinta: #172b33;
+  --curso-secundario: #53666e;
+  --curso-linea: #dbe4e7;
+}
+body { color: var(--curso-tinta); }
+a { color: #0b6178; text-underline-offset: 4px; }
+a:hover { color: #083e4e; }
+a:focus-visible { outline: 3px solid var(--curso-azul); outline-offset: 5px; }
+.navbar { border-bottom: 1px solid var(--curso-linea); background: #fff !important; padding-block: 19px; }
+.navbar-container { max-width: 1168px; margin-inline: auto; }
+.navbar-brand { font-size: 19px; font-weight: 700; color: var(--curso-tinta); }
+.navbar-logo { max-height: 30px; margin-right: 10px; }
+.navbar .nav-link { font-size: 15px; color: var(--curso-secundario); }
+.navbar .nav-link.active { color: #0b6178; font-weight: 700; }
+.navbar-nav { gap: 14px; }
+main.content { padding-top: 48px; padding-bottom: 60px; }
+#quarto-content { min-height: calc(100vh - 170px); }
+#title-block-header { margin-bottom: 38px; }
+body:has(.portada-curso) #title-block-header { display: none; }
+#title-block-header h1 { font-size: clamp(32px, 4vw, 46px); font-weight: 700; letter-spacing: -.035em; }
+#title-block-header .subtitle { color: var(--curso-secundario); font-size: 19px; margin-top: 12px; }
+h2 { border: 0; font-size: 25px; font-weight: 700; margin-block: 36px 20px; letter-spacing: -.02em; }
+.portada-curso { display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: center; padding-block: 36px 64px; }
+.antetitulo { color: #0b6178; font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.portada-texto > p:first-child { margin-bottom: 20px; }
+.portada-texto h1 { font-size: clamp(50px, 6.5vw, 78px); font-weight: 700; letter-spacing: -.055em; line-height: 1.08; margin: 0 0 24px; }
+.portada-texto > p { color: var(--curso-secundario); font-size: 21px; }
+.portada-texto .enlace-principal { display: inline-block; color: #fff; background: #0b6178; padding: 13px 20px; border-radius: 4px; font-size: 15px; font-weight: 700; text-decoration: none; margin-top: 12px; }
+.portada-texto .enlace-principal:hover { background: #083e4e; }
+.portada-emblema { background: #f1f7f8; border-top: 3px solid var(--curso-azul); padding: 44px 30px; text-align: center; }
+.portada-emblema p { margin: 0; }
+.portada-emblema img { width: 190px; max-width: 100%; height: auto; }
+#el-curso > h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 18px; color: var(--curso-secundario); }
+.indice-curso { border-top: 1px solid var(--curso-linea); }
+.indice-curso p { margin: 0; }
+.indice-curso a { display: grid; grid-template-columns: 42px 1fr 1fr 24px; gap: 20px; align-items: center; padding: 23px 4px; border-bottom: 1px solid var(--curso-linea); text-decoration: none; color: var(--curso-tinta); }
+.indice-curso a:hover { background: #f5f9fa; }
+.indice-curso strong { font-size: 12px; font-weight: 700; color: var(--curso-azul); }
+.nombre-apartado { font-size: 21px; font-weight: 700; letter-spacing: -.02em; }
+.detalle-apartado { font-size: 15px; color: var(--curso-secundario); }
+.flecha-apartado { font-size: 22px; color: var(--curso-azul); text-align: right; }
+.contenido-pendiente { margin-block: 22px 36px; padding: 22px 24px; background: #f5f8f9; border-left: 3px solid #b5d1d9; color: var(--curso-secundario); font-size: 16px; }
+.contenido-pendiente p:last-child { margin-bottom: 0; }
+.nav-footer { color: var(--curso-secundario); font-size: 12px; padding-block: 22px; }
+.nav-footer a { color: var(--curso-secundario); }
+@media (max-width: 991px) {
+  .navbar-nav { gap: 0; padding-top: 18px; }
+  .portada-curso { grid-template-columns: 1fr 230px; gap: 40px; }
+  .portada-emblema { padding: 40px 24px; }
+  .portada-emblema img { width: 155px; }
+  .indice-curso a { grid-template-columns: 30px 1fr 1fr 20px; gap: 15px; }
+}
+@media (max-width: 600px) {
+  .navbar { padding-block: 12px; }
+  main.content { padding-top: 28px; padding-bottom: 36px; }
+  .portada-curso { grid-template-columns: 1fr; padding-block: 22px 38px; }
+  .portada-emblema { display: none; }
+  .portada-texto > p { font-size: 18px; }
+  .portada-texto h1 { font-size: 54px; }
+  .indice-curso a { grid-template-columns: 26px 1fr 20px; gap: 10px 15px; padding-block: 19px; }
+  .nombre-apartado { font-size: 20px; }
+  .detalle-apartado { grid-column: 2; grid-row: 2; font-size: 14px; }
+  .flecha-apartado { grid-column: 3; grid-row: 1 / 3; }
+  #title-block-header .subtitle { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
