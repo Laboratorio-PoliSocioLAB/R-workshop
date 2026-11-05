@@ -1,1 +1,1 @@
-Sitemap: https://jesusmgodoy.github.io/R-workshop/sitemap.xml
+Sitemap: https://laboratorio-polisociolab.github.io/R-workshop/sitemap.xml
