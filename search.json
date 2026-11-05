@@ -7,6 +7,13 @@
     "text": "El logotipo de R se conserva sin modificaciones.\n© 2016 The R Foundation. Licencia CC BY-SA 4.0.\nArchivo original · Condiciones de distribución.\nEsta licencia corresponde al logotipo y no determina la licencia de los materiales propios del taller."
   },
   {
+    "objectID": "creditos.html#logotipos-institucionales",
+    "href": "creditos.html#logotipos-institucionales",
+    "title": "Créditos",
+    "section": "Logotipos institucionales",
+    "text": "Logotipos institucionales\n\nUniversidad de Granada. Marca oficial, con el encuadre ajustado y las formas, colores y proporciones conservados. Archivo oficial.\nFacultad de Ciencias Políticas y Sociología. Archivo vectorial facilitado para el taller, conservado sin modificaciones."
+  },
+  {
     "objectID": "actividades.html",
     "href": "actividades.html",
     "title": "Actividades",
@@ -60,14 +67,14 @@
     "href": "materiales.html",
     "title": "Materiales",
     "section": "",
-    "text": "Materiales próximamente."
+    "text": "Dataset gss_cat del paquete forcats: una selección de variables de la General Social Survey, con 21.483 observaciones y 9 variables.\nDescargar encuesta_social.csv\nProcedencia y descripción de las variables."
   },
   {
     "objectID": "materiales.html#descargas",
     "href": "materiales.html#descargas",
     "title": "Materiales",
     "section": "",
-    "text": "Materiales próximamente."
+    "text": "Dataset gss_cat del paquete forcats: una selección de variables de la General Social Survey, con 21.483 observaciones y 9 variables.\nDescargar encuesta_social.csv\nProcedencia y descripción de las variables."
   },
   {
     "objectID": "recursos.html",
