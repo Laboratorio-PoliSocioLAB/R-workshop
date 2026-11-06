@@ -189,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>¿Cuántas horas de televisión ven al día las personas que respondieron a esa pregunta en la <em>General Social Survey</em> (GSS)? Para contestar, tendrás que localizar la columna, distinguir las respuestas disponibles de las ausentes y decidir con cuántas observaciones calculas la media. Empezarás con cinco personas para poder seguir cada operación a mano y después repetirás el razonamiento con el archivo completo.</p>
-<p>Abre RStudio junto a esta guía. Irás creando tu propio proyecto <code>taller_R</code> y un documento llamado <code>sesion-1.qmd</code>. Sigue los apartados en orden. En cada uno añadirás algo al documento, ejecutarás el código y comprobarás el resultado. Intenta resolver los ejercicios antes de desplegar las soluciones.</p>
+<p>Abre RStudio junto a esta guía. Irás creando tu propio proyecto <code>taller_R</code> y un documento llamado <code>sesion-1.qmd</code>. Trabajaremos en el editor <strong>Visual</strong> de RStudio. En cada apartado añadirás algo al documento, ejecutarás el código y comprobarás el resultado. Intenta resolver los ejercicios antes de desplegar las soluciones.</p>
 <p>Cuando un resultado te sorprenda, detente y pregúntate qué objeto usó R, qué operación hizo y qué devolvió. Esas tres preguntas te servirán tanto para aprender el lenguaje como para revisar un análisis.</p>
 <p><a href="#preparar" class="btn btn-primary no-external">Empieza por preparar RStudio</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 <details class="indice-cuaderno-movil">
@@ -233,9 +233,9 @@ En este cuaderno
   <figcaption>Los números llevan a la explicación de cada panel. <a href="imagenes/rstudio-paneles.png" target="_blank" rel="noopener">Abrir la captura a tamaño completo</a>.</figcaption>
 </figure>
 <section id="panel-editor" class="level4">
-<h4 data-anchor-id="panel-editor">1. Editor (<em>Source</em>)</h4>
+<h4 data-anchor-id="panel-editor">1. Editor</h4>
 <p>Es el lugar donde escribes lo que quieres conservar. Cada archivo abierto tiene su propia pestaña. Cuando crees <code>sesion-1.qmd</code>, aquí escribirás tus explicaciones y los bloques de R. <strong>Guardar</strong> conserva los cambios en el archivo. El triángulo verde de un bloque ejecuta ese bloque. <strong>Render</strong> genera el HTML a partir de todo el documento.</p>
-<p>En un <code>.qmd</code>, los botones <em>Source</em> y <em>Visual</em> muestran el mismo archivo de dos maneras. <em>Source</em> deja ver los símbolos que delimitan los bloques. <em>Visual</em> muestra el texto con formato y permite insertar bloques desde la barra de herramientas. Puedes cambiar de vista mientras editas el mismo documento.</p>
+<p>En esta sesión usaremos la vista <strong>Visual</strong>. Verás el texto con formato y podrás crear encabezados e insertar bloques de R desde la barra del editor.</p>
 </section>
 <section id="panel-consola" class="level4">
 <h4 data-anchor-id="panel-consola">2. Consola (<em>Console</em>)</h4>
@@ -272,26 +272,16 @@ En este cuaderno
 <section id="crea-y-guarda-sesion-1.qmd" class="level3">
 <h3 data-anchor-id="crea-y-guarda-sesion-1.qmd">Crea y guarda <code>sesion-1.qmd</code></h3>
 <ol type="1">
-<li><p>Elige <em>File → New File → Quarto Document</em>. Escribe «Sesión 1 · Introducción a R y RStudio» como título, selecciona <strong>HTML</strong> y crea el documento.</p></li>
-<li><p>Pulsa <em>Source</em> en el editor para ver el texto que contiene el archivo. Quédate con estas líneas iniciales para que todos partamos del mismo punto. Las líneas <code>---</code> delimitan la cabecera, donde indicamos el título y el formato de salida.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sesión 1 · Introducción a R y RStudio"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> es</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>En esta sesión voy a explorar una encuesta con R.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Guarda el documento con el nombre <code>sesion-1.qmd</code> dentro de <code>taller_R</code>, junto a <code>taller_R.Rproj</code>. Comprueba en <em>Files</em> que ves los dos archivos. Esta ubicación permitirá usar las mismas rutas al ejecutar un bloque en RStudio y al generar el HTML.</p></li>
+<li>Elige <em>File → New File → Quarto Document</em>. Escribe «Sesión 1 · Introducción a R y RStudio» en <em>Title</em>, selecciona <strong>HTML</strong> y deja <strong>Knitr</strong> en <em>Engine</em>. Marca <em>Use visual markdown editor</em> y pulsa <em>Create</em>.</li>
+<li>Comprueba que está seleccionado <strong>Visual</strong> en la barra del editor. Deja el recuadro inicial con el título y el formato que ha creado RStudio. Debajo, sustituye el contenido de ejemplo por un párrafo que diga «En esta sesión voy a explorar una encuesta con R». Si la línea tiene formato de encabezado, abre el selector de estilo de la barra y elige <em>Normal</em>.</li>
+<li>Guarda el documento con el nombre <code>sesion-1.qmd</code> dentro de <code>taller_R</code>, junto a <code>taller_R.Rproj</code>. Comprueba en <em>Files</em> que ves los dos archivos. Esta ubicación permitirá usar las mismas rutas al ejecutar un bloque en RStudio y al generar el HTML.</li>
 </ol>
 </section>
 <section id="escribe-y-ejecuta-el-primer-bloque" class="level3">
 <h3 data-anchor-id="escribe-y-ejecuta-el-primer-bloque">Escribe y ejecuta el primer bloque</h3>
-<p>Coloca el cursor en una línea nueva debajo de la frase inicial. Puedes insertar el bloque con el menú del editor <em>Visual</em> o escribirlo en <em>Source</em>. Elige el método que te resulte más cómodo.</p>
-<section id="desde-el-editor-visual" class="level4">
-<h4 data-anchor-id="desde-el-editor-visual">Desde el editor <em>Visual</em></h4>
 <ol type="1">
-<li>Pulsa <em>Visual</em> en la barra del editor.</li>
-<li>En esa misma barra, abre el desplegable junto al icono verde con una <strong>C</strong> y un signo <strong>+</strong>. Selecciona <strong>R</strong>, la primera opción que aparece en la captura.</li>
+<li>En el editor <strong>Visual</strong>, coloca el cursor en una línea nueva debajo de la frase inicial.</li>
+<li>En la barra del editor, abre el desplegable junto al icono verde con una <strong>C</strong> y un signo <strong>+</strong>. Selecciona <strong>R</strong>, la primera opción que aparece en la captura.</li>
 <li>RStudio insertará un bloque vacío donde dejaste el cursor. Haz clic dentro y escribe <code>26 + 5</code>. El menú ya ha creado el bloque, así que escribe directamente la operación.</li>
 </ol>
 <div class="quarto-figure quarto-figure-left">
@@ -300,31 +290,24 @@ En este cuaderno
 <figcaption>Menú para insertar un bloque en RStudio. La opción R aparece al abrir el desplegable junto al icono verde.</figcaption>
 </figure>
 </div>
-</section>
-<section id="desde-el-editor-source" class="level4">
-<h4 data-anchor-id="desde-el-editor-source">Desde el editor <em>Source</em></h4>
-<p>Pulsa <em>Source</em> y escribe las tres líneas siguientes. La primera abre un bloque de R y la última lo cierra. Las tres marcas que aparecen en ambas líneas son acentos graves.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">26</span> <span class="sc">+</span> <span class="dv">5</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Con cualquiera de los dos métodos, pulsa el triángulo verde del bloque. R debe devolver <code>[1] 31</code>. Añade debajo, fuera del bloque, una frase que explique la operación. Así quedarán en el mismo archivo el cálculo y lo que significa.</p>
+<p>Pulsa el triángulo verde del bloque. R debe devolver <code>[1] 31</code>. Añade debajo, fuera del bloque, una frase que explique la operación. Así quedarán en el mismo archivo el cálculo y lo que significa.</p>
 <p>Antes de renderizar, instala estos paquetes <strong>una sola vez en la consola</strong>, pulsando <strong>Enter</strong> al final de la línea. Quarto usa <code>rmarkdown</code> para procesar los bloques de R. Usarás <code>tidyverse</code> más adelante para importar la encuesta.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"tidyverse"</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"tidyverse"</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Guarda el documento y pulsa <strong>Render</strong>. Quarto ejecuta los bloques de arriba abajo en una sesión nueva de R. Comprueba que en <code>sesion-1.html</code> aparecen el título, el cálculo, el resultado y tu frase. Cuando vuelvas a renderizar, Quarto actualizará el HTML a partir de lo que hayas guardado en el <code>.qmd</code>. <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank" rel="noopener">Guía de Quarto para RStudio</a>.</p>
-<p>Para los siguientes apartados, añade el encabezado indicado a tu documento escribiendo <code>##</code>, un espacio y el título. Crea un bloque de R por cada ejemplo de código y copia <strong>solo las instrucciones</strong> dentro del bloque. Los resultados que ves en esta guía sirven para comprobar lo que devuelve R. Puedes escribir tus observaciones entre bloques. Ejecútalos en orden, porque unos usarán objetos creados en los anteriores. Para cada ejercicio, crea tu propio bloque e intenta escribir el código antes de mirar la solución.</p>
-</section>
+<p>Para cada apartado, escribe el título indicado en una línea nueva. Con el cursor en esa línea, abre el selector de estilo de la barra, que suele mostrar <em>Normal</em>, y elige <strong>Header 2</strong> para convertirlo en un encabezado de segundo nivel. Pulsa <strong>Enter</strong> al final del título para volver a un párrafo normal. <a href="https://quarto.org/docs/visual-editor/" target="_blank" rel="noopener">Guía del editor Visual</a>.</p>
+<p>Para cada ejemplo de código, inserta un bloque con el botón verde y copia <strong>solo las instrucciones</strong> dentro del bloque. Los resultados que ves en esta guía sirven para comprobar lo que devuelve R. Puedes escribir tus observaciones entre bloques. Ejecútalos en orden, porque unos usarán objetos creados en los anteriores. Para cada ejercicio, crea tu propio bloque e intenta escribir el código antes de mirar la solución.</p>
 </section>
 </section>
 <section id="objetos" class="level2">
 <h2 data-anchor-id="objetos">2. Guarda valores y haz cálculos</h2>
-<p>Añade el encabezado <code>## Objetos y cálculos</code> debajo de lo que ya tienes en <code>sesion-1.qmd</code>. En el primer bloque guardaremos los valores para poder volver a usarlos.</p>
+<p>Añade el encabezado «Objetos y cálculos» debajo de lo que ya tienes en <code>sesion-1.qmd</code>. En el primer bloque guardaremos los valores para poder volver a usarlos.</p>
 <p>Empecemos por la primera persona del archivo. <code>age</code> es su edad, <code>tvhours</code> son sus horas diarias de televisión y <code>marital</code> es su estado civil. Al ejecutar <code>age &lt;- 26</code>, R guarda el número 26 con el nombre <code>age</code>. A partir de ese momento puedes escribir <code>age</code> cada vez que quieras usar ese valor.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="dv">12</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>age_en_5 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">5</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>age_en_5</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>age_en_5 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">5</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>age_en_5</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Lee <code>age_en_5 &lt;- age + 5</code> de derecha a izquierda. R busca el valor de <code>age</code>, le suma 5 y guarda el resultado con el nombre <code>age_en_5</code>. Como la asignación utiliza un nombre nuevo, <code>age</code> conserva el valor 26. Si vuelves a asignar un valor al mismo nombre, R lo sustituye. Los nombres distinguen mayúsculas y minúsculas, así que <code>age</code> y <code>Age</code> son dos nombres distintos.</p>
 <pre class="text"><code>[1] 31
 [1] TRUE</code></pre>
@@ -368,56 +351,56 @@ En este cuaderno
 </tr>
 </tbody>
 </table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(age)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(marital)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">"12"</span>) <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Married"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span> <span class="sc">&amp;</span> age <span class="sc">&lt;</span> <span class="dv">65</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(age)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(marital)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">"12"</span>) <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Married"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span> <span class="sc">&amp;</span> age <span class="sc">&lt;</span> <span class="dv">65</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>class(age)</code> devuelve <code>"numeric"</code> y <code>class(marital)</code> devuelve <code>"character"</code>. La suma devuelve 13 una vez hecha la conversión. La comparación con <code>"Married"</code> devuelve <code>FALSE</code> porque la respuesta registrada es <code>"Never married"</code>.</p>
 <p><code>&lt;-</code> guarda un valor y <code>==</code> pregunta si dos valores son iguales. En <code>age &gt;= 18 &amp; age &lt; 65</code>, R comprueba cada condición por separado y solo devuelve <code>TRUE</code> si ambas se cumplen. Para pedir que se cumpla al menos una, usa <code>|</code>. Para invertir una condición, usa <code>!</code>. Para comprobar si un valor está entre varios posibles, usa <code>%in%</code>.</p>
 </section>
 <section id="cómo-leer-una-función-y-sus-argumentos" class="level3">
 <h3 data-anchor-id="cómo-leer-una-función-y-sus-argumentos">Cómo leer una función y sus argumentos</h3>
 <p>Una <strong>función</strong> ejecuta una operación. Sus argumentos van entre paréntesis y se separan con comas. Aquí, el primer argumento de <code>round()</code> es el valor que quieres redondear y <code>digits</code> indica cuántos decimales conservar.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>, <span class="at">digits =</span> <span class="dv">1</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>, <span class="at">digits =</span> <span class="dv">1</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>En ambos casos, R calcula primero <code>tvhours / 5</code>, que vale 2,4. Al escribir <code>digits = 1</code>, pides que conserve un decimal y ves <code>2.4</code> en la consola. En la segunda línea solo das el número que quieres redondear. R usa el valor por defecto de <code>digits</code>, que es 0, y devuelve <code>2</code>.</p>
 <p><strong>Pruébalo.</strong> Guarda en <code>edad_en_10</code> la edad que tendrá esta persona dentro de diez años. Comprueba si entonces tendrá al menos 40.</p>
 <details class="solucion-cuaderno">
 <summary>
 Ver solución
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">10</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>edad_en_10</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="sc">&gt;=</span> <span class="dv">40</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">10</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>edad_en_10</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="sc">&gt;=</span> <span class="dv">40</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La edad será <code>36</code>, así que la comparación devuelve <code>FALSE</code>.</p>
 </details>
 </section>
 </section>
 <section id="vectores" class="level2">
 <h2 data-anchor-id="vectores">3. Trabaja con cinco respuestas</h2>
-<p>Añade el encabezado <code>## Vectores y valores ausentes</code> al final de tu <code>.qmd</code>. Conserva los bloques anteriores para que el documento muestre cómo pasaste de una persona a cinco.</p>
+<p>Añade el encabezado «Vectores y valores ausentes» al final de tu <code>.qmd</code>. Conserva los bloques anteriores para que el documento muestre cómo pasaste de una persona a cinco.</p>
 <p>Hasta ahora usábamos un valor por variable. Vamos a guardar cinco edades bajo un mismo nombre con <code>c()</code>, que combina valores en el orden en que los escribimos. El resultado es un <strong>vector</strong>. Repetimos la operación con el estado civil y las horas de televisión. La primera posición de los tres vectores corresponde a la misma persona. Si cambias el orden de un solo vector, pierdes esa correspondencia.</p>
 <p>Cada vector de este ejemplo reúne valores de un mismo tipo. Si escribes una edad entre comillas en <code>c(26, "48")</code>, R convierte también el 26 a texto. Conviene comprobar el tipo antes de intentar calcular una media.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">2</span>]</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">2</span>]</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>R cuenta las posiciones desde 1. <code>length(age)</code> pregunta cuántos valores hay y devuelve 5. <code>age[2]</code> pide el valor de la segunda posición y devuelve 48. Dentro de los corchetes también puedes dar varias posiciones. En <code>age[c(1, 3)]</code>, <code>c(1, 3)</code> construye la selección y los corchetes extraen la primera y la tercera edad.</p>
 <section id="seleccionar-por-una-condición" class="level3">
 <h3 data-anchor-id="seleccionar-por-una-condición">Seleccionar por una condición</h3>
 <p>Para averiguar qué personas tienen más de 40 años podrías revisar las edades una a una. R puede hacer la misma comparación con todas de una vez. Antes de ejecutar <code>age &gt; 40</code>, mira las cinco edades e intenta predecir qué posiciones darán <code>TRUE</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>criterio <span class="ot">&lt;-</span> age <span class="sc">&gt;</span> <span class="dv">40</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>criterio</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>age[criterio]</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>criterio <span class="ot">&lt;-</span> age <span class="sc">&gt;</span> <span class="dv">40</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>criterio</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>age[criterio]</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>criterio</code> conserva la longitud y el orden de <code>age</code>. Puedes leerlo en paralelo con las edades.</p>
 <table class="caption-top table">
 <thead>
@@ -461,9 +444,9 @@ Ver solución
 <section id="cómo-cambia-una-media-si-faltan-respuestas" class="level3">
 <h3 data-anchor-id="cómo-cambia-una-media-si-faltan-respuestas">Cómo cambia una media si faltan respuestas</h3>
 <p>En <code>tvhours</code>, la segunda posición contiene <code>NA</code>. Esto indica que no hay un valor registrado para esa persona. Un cero representaría una respuesta conocida de cero horas y entraría en la media. Con <code>is.na()</code> puedes preguntar en qué posiciones falta un dato. R devuelve <code>TRUE</code> en la segunda posición y <code>FALSE</code> en las demás.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(tvhours)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(tvhours)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Con <code>mean(tvhours)</code>, la media queda como <code>NA</code> porque uno de sus valores es desconocido. Con <code>na.rm = TRUE</code>, pides a R que use solo las respuestas disponibles para ese cálculo. Puedes comprobarlo a mano. La suma es 12 + 2 + 4 + 1 = 19 y hay <strong>cuatro</strong> respuestas, así que la media es 19 / 4 = 4,75 horas. El <code>NA</code> sigue en el vector para las consultas posteriores.</p>
 <p>Si comparas directamente un dato ausente, e.g.&nbsp;<code>NA &gt; 40</code>, R devuelve <code>NA</code> porque desconoce la respuesta. Para averiguar si un dato falta, usa <code>is.na()</code>.</p>
 <p><strong>Pruébalo.</strong> Selecciona las horas de televisión registradas para las personas de más de 40 años. ¿Por qué hay un <code>NA</code> en el resultado? ¿Cuántas respuestas se usan al calcular la media?</p>
@@ -471,25 +454,25 @@ Ver solución
 <summary>
 Ver solución
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>horas_mayores_40 <span class="ot">&lt;-</span> tvhours[criterio]</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>horas_mayores_40</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(horas_mayores_40, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>horas_mayores_40 <span class="ot">&lt;-</span> tvhours[criterio]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>horas_mayores_40</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(horas_mayores_40, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La selección devuelve <code>NA</code> y <code>2</code>. La persona de 48 años no tiene un valor registrado. La media devuelve <code>2</code> horas porque solo hay una respuesta válida en ese grupo.</p>
 </details>
 </section>
 </section>
 <section id="data-frame" class="level2">
 <h2 data-anchor-id="data-frame">4. Pasa de los vectores a una tabla</h2>
-<p>Añade el encabezado <code>## Mi primera tabla</code> y crea un bloque para reunir los tres vectores que acabas de preparar.</p>
+<p>Añade el encabezado «Mi primera tabla» y crea un bloque para reunir los tres vectores que acabas de preparar.</p>
 <p>Hasta aquí hemos mantenido las variables en objetos separados. Un <strong>data frame</strong> las reúne en una tabla, de modo que podamos consultar juntas las respuestas de una persona. Cada columna tiene el mismo número de filas. Sus tipos pueden ser distintos. En este caso, <code>age</code> es numérica y <code>marital</code> contiene texto.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>datos_muestra <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age, marital, tvhours)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>datos_muestra</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_muestra)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>datos_muestra <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age, marital, tvhours)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>datos_muestra</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_muestra)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La tabla tiene cinco filas y tres columnas. Busca la segunda fila. En ella están juntas la edad de 48 años, la respuesta <code>"Divorced"</code> y el <code>NA</code> de las horas de televisión. Si quitáramos ese <code>NA</code> de su columna antes de construir la tabla, las horas de la tercera persona pasarían a la segunda posición y perderíamos la correspondencia. Conservamos el ausente en la tabla y decidimos cómo tratarlo en cada cálculo.</p>
 </section>
 <section id="importar" class="level2">
 <h2 data-anchor-id="importar">5. Importa y explora la encuesta completa</h2>
-<p>Añade el encabezado <code>## Importación y exploración de la encuesta</code>. Antes de escribir el código, vamos a darle un sitio al archivo de datos.</p>
+<p>Añade el encabezado «Importación y exploración de la encuesta». Antes de escribir el código, vamos a darle un sitio al archivo de datos.</p>
 <section id="crea-las-subcarpetas-y-coloca-el-csv" class="level3">
 <h3 data-anchor-id="crea-las-subcarpetas-y-coloca-el-csv">Crea las subcarpetas y coloca el CSV</h3>
 <ol type="1">
@@ -508,26 +491,26 @@ Ver solución
 └── outputs/</code></pre>
 <p>El HTML de tu primera prueba también puede aparecer en <code>taller_R</code>. El árbol muestra los archivos y carpetas que necesitas localizar para continuar.</p>
 <p>En un bloque de R de tu <code>.qmd</code>, escribe y ejecuta esta comprobación.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La ruta es <strong>relativa</strong>. Desde <code>taller_R</code>, indica que R debe entrar en <code>datos</code> y buscar allí el CSV. Si la comprobación devuelve <code>TRUE</code>, pasa a la importación. Si devuelve <code>FALSE</code>, revisa la ubicación del <code>.qmd</code>, el nombre de la carpeta y el nombre del archivo.</p>
 </section>
 <section id="qué-ocurre-al-leer-el-csv" class="level3">
 <h3 data-anchor-id="qué-ocurre-al-leer-el-csv">Qué ocurre al leer el CSV</h3>
 <p>Las cinco filas anteriores se escribieron a mano para ver de dónde sale cada valor. El CSV contiene la selección <code>gss_cat</code> de la GSS. El archivo guarda los nombres de las variables en la primera línea y los valores de cada observación en las siguientes. Al importarlo, R interpreta las columnas y reúne las respuestas en una tabla.</p>
 <p>Un <strong>paquete</strong> añade funciones a R. En esta sesión usamos <code>tidyverse</code>, un conjunto que incluye <code>readr</code>, donde está <code>read_csv()</code>. Instalar un paquete lo deja disponible. <code>library(tidyverse)</code> lo carga en la sesión de R que estás usando. Como esta instrucción queda en el <code>.qmd</code>, Quarto también la ejecutará al pulsar <strong>Render</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>En la asignación, <code>read_csv()</code> abre el archivo, lee su contenido y devuelve un <em>tibble</em>, un tipo de data frame. <code>&lt;-</code> guarda esa tabla con el nombre <code>datos</code>. El CSV se usa como entrada y los comandos siguientes consultan el objeto en R.</p>
 </section>
 <section id="qué-comprobar-antes-de-calcular" class="level3">
 <h3 data-anchor-id="qué-comprobar-antes-de-calcular">Qué comprobar antes de calcular</h3>
 <p><code>dim(datos)</code> devuelve <code>21483 9</code>, es decir, <strong>21.483 observaciones y 9 variables</strong>. Usa <code>names(datos)</code> para confirmar cómo se escriben los nombres. Después, mira las primeras filas con <code>head(datos, n = 5)</code>. Allí reconocerás las cinco edades del ejercicio inicial, ahora acompañadas del resto de variables. Si la consola deja columnas fuera de la vista, <code>dim(datos)</code> te permite comprobar cuántas se han importado.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos<span class="sc">$</span>tvhours)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>str()</code> te ayuda a comprobar los tipos. Busca <code>tvhours</code> y confirma que se leyó como una columna numérica. <code>summary(datos$tvhours)</code> resume esa columna e indica cuántos datos faltan. <code>tail(datos, n = 5)</code> permite inspeccionar el extremo final del archivo. Si esperaras una columna numérica y apareciera como texto, ese sería un motivo para revisar cómo se importó antes de calcular.</p>
 </section>
 <section id="cuándo-pedir-una-fila-una-columna-o-un-valor" class="level3">
@@ -568,31 +551,31 @@ Ver solución
 <summary>
 Ver solución
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(datos<span class="sc">$</span>age))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(datos<span class="sc">$</span>age))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La edad media es aproximadamente <strong>47,18 años</strong> y faltan <strong>76</strong> edades. <code>is.na(datos$age)</code> da un resultado lógico por fila. Al sumarlos, R trata cada <code>TRUE</code> como 1 y cada <code>FALSE</code> como 0. Por eso la suma cuenta las edades ausentes.</p>
 </details>
 </section>
 </section>
 <section id="factores" class="level2">
 <h2 data-anchor-id="factores">6. Reconoce las categorías con factores</h2>
-<p>Añade el encabezado <code>## Factores y categorías</code> y usa un bloque nuevo para convertir la columna <code>marital</code>.</p>
+<p>Añade el encabezado «Factores y categorías» y usa un bloque nuevo para convertir la columna <code>marital</code>.</p>
 <p>La columna <code>marital</code> se importa como texto. Podemos convertirla en un <strong>factor</strong> para que R trate sus etiquetas como categorías de una variable. Un factor guarda una respuesta por observación y tiene un listado de categorías posibles, sus <strong>niveles</strong>. Es útil, e.g.&nbsp;cuando queremos fijar el orden en que aparecen las categorías de un gráfico.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>marital_muestra <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos_muestra<span class="sc">$</span>marital)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(marital_muestra)</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_muestra)</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>marital_muestra <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos_muestra<span class="sc">$</span>marital)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(marital_muestra)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_muestra)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>En la tabla pequeña, <code>length()</code> cuenta cinco respuestas y <code>levels()</code> muestra tres niveles. Dos personas aparecen como <code>"Divorced"</code> y otras dos como <code>"Never married"</code>. Todas siguen ocupando su fila. En la encuesta completa aparecen seis niveles. Uno es <code>"No answer"</code>. El archivo usa esa etiqueta para indicar que la persona no respondió. R la reconoce como un texto registrado, de modo que <code>is.na()</code> solo detectaría los <code>NA</code> y no marcaría esas filas.</p>
 <section id="cuándo-importa-el-orden-de-las-categorías" class="level3">
 <h3 data-anchor-id="cuándo-importa-el-orden-de-las-categorías">Cuándo importa el orden de las categorías</h3>
 <p>El estado civil es <strong>nominal</strong>. Que R muestre primero <code>"Divorced"</code> y después <code>"Married"</code> refleja el orden de las etiquetas. Entre esas categorías no hay una jerarquía. El ejemplo de nivel de estudios de las diapositivas sirve para ver el otro caso. En una variable <strong>ordinal</strong>, el orden de las categorías forma parte de su significado.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Medio"</span>, <span class="st">"Bajo"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Bajo"</span>)</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">factor</span>(estudios,</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Medio"</span>, <span class="st">"Bajo"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Bajo"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">factor</span>(estudios,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Las respuestas siguen empezando por <code>"Medio"</code>. Lo que has definido con <code>levels = c("Bajo", "Medio", "Alto")</code> es el orden de las categorías, y <code>ordered = TRUE</code> indica que ese orden tiene significado. Puedes decir que <code>"Alto"</code> está por encima de <code>"Medio"</code>, pero esas etiquetas por sí solas no indican a qué distancia está cada nivel.</p>
 <p><strong>Comprueba si lo has entendido.</strong> Si llega otra persona que responde <code>"Medio"</code>, ¿cambia el número de respuestas? ¿Cambia el número de niveles?</p>
 <details class="solucion-cuaderno">
@@ -617,7 +600,7 @@ Ver respuesta
 </section>
 <section id="practica-final" class="level2">
 <h2 data-anchor-id="practica-final">8. Comprueba lo que has aprendido</h2>
-<p>Recupera la pregunta del comienzo. ¿Cuántas personas de la encuesta <strong>completa</strong> tienen registradas sus horas de televisión y cuál es la media entre ellas? Añade <code>## Práctica final</code> al final de tu <code>.qmd</code> y crea debajo un bloque de R.</p>
+<p>Recupera la pregunta del comienzo. ¿Cuántas personas de la encuesta <strong>completa</strong> tienen registradas sus horas de televisión y cuál es la media entre ellas? Añade el encabezado «Práctica final» al final de tu <code>.qmd</code> y crea debajo un bloque de R.</p>
 <ol type="1">
 <li>Extrae el vector de horas y distingue las respuestas registradas de los valores ausentes.</li>
 <li>Cuenta cuántas respuestas registradas hay. Calcula la media usando esas respuestas y redondéala a dos decimales.</li>
@@ -629,9 +612,9 @@ Ver respuesta
 <summary>
 Ver solución de la práctica final
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>horas_registradas <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(datos<span class="sc">$</span>tvhours)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(horas_registradas)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>horas_registradas <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(horas_registradas)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>is.na(datos$tvhours)</code> marca los valores ausentes. Al anteponer <code>!</code>, los <code>TRUE</code> pasan a señalar las respuestas registradas. <code>sum()</code> las cuenta y <code>mean(..., na.rm = TRUE)</code> usa ese mismo conjunto de respuestas para calcular la media. Aplicamos <code>round()</code> al final para redondear la cifra que vamos a comunicar.</p>
 <p>Una forma de redactarlo sería «En el archivo de la GSS, <strong>11.337 personas</strong> tienen registradas sus horas diarias de televisión. Entre ellas, la media es de <strong>2,98 horas diarias</strong>». Indicar cuántas respuestas entran en la media permite entender a quién se refiere el resultado.</p>
 </details>
