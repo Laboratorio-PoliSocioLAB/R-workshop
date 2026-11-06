@@ -384,14 +384,16 @@ En este cuaderno
 </section>
 <section id="cómo-leer-una-función-y-sus-argumentos" class="level3">
 <h3 data-anchor-id="cómo-leer-una-función-y-sus-argumentos">Cómo leer una función y sus argumentos</h3>
-<p>Una <strong>función</strong> ejecuta una operación. Sus argumentos van entre paréntesis y se separan con comas. Aquí, el primer argumento de <code>round()</code> es el valor que quieres redondear y <code>digits</code> indica cuántos decimales conservar.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Redondea el mismo cálculo a un decimal y luego a un entero.</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>, <span class="at">digits =</span> <span class="dv">1</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Lee <code>sum(2, 3)</code> como «suma 2 y 3». <code>sum</code> es el nombre de la <strong>función</strong> y le dice a R qué operación hacer. El 2 y el 3 son los <strong>argumentos</strong>, es decir, los datos que recibe para hacer la suma. Van entre paréntesis y se separan con comas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma dos números.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Añade un tercer número a la suma.</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 2.4
-[1] 2</code></pre>
-<p>En ambos casos, R calcula primero <code>tvhours / 5</code>, que vale 2,4. Al escribir <code>digits = 1</code>, pides que conserve un decimal y ves <code>2.4</code> en la consola. En la segunda línea solo das el número que quieres redondear. R usa el valor por defecto de <code>digits</code>, que es 0, y devuelve <code>2</code>.</p>
+<pre class="text"><code>[1] 5
+[1] 9</code></pre>
+<p>En la primera llamada, R devuelve 5. En la segunda hace la misma operación con tres argumentos y devuelve 9.</p>
 <p><strong>Pruébalo.</strong> Guarda en <code>edad_en_10</code> la edad que tendrá esta persona dentro de diez años. Comprueba si entonces tendrá al menos 40.</p>
 <details class="solucion-cuaderno">
 <summary>
@@ -762,7 +764,7 @@ Ver solución de la práctica final
 <p><strong>Salida de R</strong></p>
 <pre class="text"><code>[1] 11337
 [1] 2.98</code></pre>
-<p><code>is.na(datos$tvhours)</code> marca los valores ausentes. Al anteponer <code>!</code>, los <code>TRUE</code> pasan a señalar las respuestas registradas. <code>sum()</code> las cuenta y <code>mean(..., na.rm = TRUE)</code> usa ese mismo conjunto de respuestas para calcular la media. Aplicamos <code>round()</code> al final para redondear la cifra que vamos a comunicar.</p>
+<p><code>is.na(datos$tvhours)</code> marca los valores ausentes. Al anteponer <code>!</code>, los <code>TRUE</code> pasan a señalar las respuestas registradas. <code>sum()</code> las cuenta y <code>mean(..., na.rm = TRUE)</code> usa ese mismo conjunto de respuestas para calcular la media. Al final, <code>round()</code> recibe la media y el argumento <code>digits = 2</code> indica que queremos redondearla a dos decimales.</p>
 <p>Una forma de redactarlo sería «En el archivo de la GSS, <strong>11.337 personas</strong> tienen registradas sus horas diarias de televisión. Entre ellas, la media es de <strong>2,98 horas diarias</strong>». Indicar cuántas respuestas entran en la media permite entender a quién se refiere el resultado.</p>
 </details>
 <p>Con esto ya has recorrido el camino desde un CSV hasta un resultado que puedes explicar y reproducir. La siguiente sesión retoma la misma encuesta para seleccionar, filtrar y ordenar observaciones y calcular resúmenes por grupos.</p>
