@@ -294,7 +294,7 @@ En este cuaderno
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">26</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Salida de R</strong></p>
 <pre class="text"><code>[1] 31</code></pre>
-<p>Pulsa el triángulo verde del bloque. La línea que empieza por <code>#</code> es un <strong>comentario</strong>. Sirve para explicar el código a quien lo lee. R la ignora al hacer el cálculo. En el cuaderno, los recuadros «Salida de R» muestran lo que puedes comparar con tu resultado. En tu <code>.qmd</code>, escribe el código y los comentarios dentro del bloque y añade debajo una frase que explique el resultado.</p>
+<p>Pulsa el triángulo verde del bloque. La línea que empieza por <code>#</code> es un <strong>comentario</strong>. Sirve para explicar el código a quien lo lee. R la ignora al hacer el cálculo. En el cuaderno, los recuadros «Salida de R» muestran lo que puedes comparar con tu resultado. Las salidas largas se abren al pulsar «Ver salida de R». En tu <code>.qmd</code>, escribe el código y los comentarios dentro del bloque y añade debajo una frase que explique el resultado.</p>
 <p>Antes de renderizar, instala estos paquetes <strong>una sola vez en la consola</strong>, pulsando <strong>Enter</strong> al final de la línea. Quarto usa <code>rmarkdown</code> para procesar los bloques de R. Usarás <code>tidyverse</code> más adelante para importar la encuesta.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Descarga e instala los paquetes que usaremos durante la sesión.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"tidyverse"</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
@@ -579,7 +579,10 @@ Ver solución
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span>
 <span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
+<details class="salida-r-cuaderno">
+<summary>
+Ver salida de R de la importación
+</summary>
 <pre class="text"><code>[1] 21483     9
 [1] "year"    "marital" "age"     "race"    "rincome" "partyid"
 [7] "relig"   "denom"   "tvhours"
@@ -591,6 +594,7 @@ Ver solución
 3  2000 Widowed          67 White Not appli… Indepe… Prot… No d…       2
 4  2000 Never married    39 White Not appli… Ind,ne… Orth… Not …       4
 5  2000 Divorced         25 White Not appli… Not st… None  Not …       1</code></pre>
+</details>
 <p>En la asignación, <code>read_csv()</code> abre el archivo, lee su contenido y devuelve un <em>tibble</em>, un tipo de data frame. <code>&lt;-</code> guarda esa tabla con el nombre <code>datos</code>. El CSV se usa como entrada y los comandos siguientes consultan el objeto en R.</p>
 </section>
 <section id="qué-comprobar-antes-de-calcular" class="level3">
@@ -602,7 +606,10 @@ Ver solución
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra las cinco últimas filas del archivo.</span></span>
 <span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
+<details class="salida-r-cuaderno">
+<summary>
+Ver salida de R de la exploración
+</summary>
 <pre class="text"><code>spc_tbl_ [21,483 × 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ year   : num [1:21483] 2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
  $ marital: chr [1:21483] "Never married" "Divorced" "Widowed" "Never married" ...
@@ -636,6 +643,7 @@ Ver solución
 3  2014 Never married    24 White $10000 - … Ind,ne… None  Not …       4
 4  2014 Never married    27 White $25000 or… Not st… Cath… Not …      NA
 5  2014 Widowed          71 White $20000 - … Ind,ne… Prot… Other       2</code></pre>
+</details>
 <p><code>str()</code> te ayuda a comprobar los tipos. Busca <code>tvhours</code> y confirma que se leyó como una columna numérica. <code>summary(datos$tvhours)</code> resume esa columna e indica cuántos datos faltan. <code>tail(datos, n = 5)</code> permite inspeccionar el extremo final del archivo. Si esperaras una columna numérica y apareciera como texto, ese sería un motivo para revisar cómo se importó antes de calcular.</p>
 </section>
 <section id="cuándo-pedir-una-fila-una-columna-o-un-valor" class="level3">
