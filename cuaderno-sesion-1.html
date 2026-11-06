@@ -293,8 +293,8 @@ En este cuaderno
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma 5 a la edad de la primera persona encuestada.</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">26</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 31</code></pre>
-<p>Pulsa el triángulo verde del bloque. La línea que empieza por <code>#</code> es un <strong>comentario</strong>. Sirve para explicar el código a quien lo lee. R la ignora al hacer el cálculo. En el cuaderno, los recuadros «Salida de R» muestran lo que puedes comparar con tu resultado. Las salidas largas se abren al pulsar «Ver salida de R». En tu <code>.qmd</code>, escribe el código y los comentarios dentro del bloque y añade debajo una frase que explique el resultado.</p>
+<pre class="text salida-r"><code>[1] 31</code></pre>
+<p>Pulsa el triángulo verde del bloque. La línea que empieza por <code>#</code> es un <strong>comentario</strong>. Sirve para explicar el código a quien lo lee. R la ignora al hacer el cálculo. El recuadro que aparece debajo del código muestra lo que devuelve R. Compáralo con tu resultado. Las salidas largas se abren al pulsar «Ver salida de R». En tu <code>.qmd</code>, escribe el código y los comentarios dentro del bloque y añade debajo una frase que explique el resultado.</p>
 <p>Antes de renderizar, instala los paquetes <strong>una sola vez en la consola</strong>. Empieza por <code>rmarkdown</code>. Copia la instrucción y pulsa <strong>Enter</strong>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala el paquete que Quarto usa para procesar los bloques de R.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
@@ -322,8 +322,7 @@ En este cuaderno
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si la persona tiene al menos 18 años ahora.</span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 31
+<pre class="text salida-r"><code>[1] 31
 [1] TRUE</code></pre>
 <p>Lee <code>age_en_5 &lt;- age + 5</code> de derecha a izquierda. R busca el valor de <code>age</code>, le suma 5 y guarda el resultado con el nombre <code>age_en_5</code>. Como la asignación utiliza un nombre nuevo, <code>age</code> conserva el valor 26. Si vuelves a asignar un valor al mismo nombre, R lo sustituye. Los nombres distinguen mayúsculas y minúsculas, así que <code>age</code> y <code>Age</code> son dos nombres distintos.</p>
 <p>La primera salida aparece al pedir <code>age_en_5</code>. La segunda responde a la pregunta «¿tiene al menos 18 años?». El <code>[1]</code> indica la posición del primer valor impreso en cada línea. El resultado viene a continuación.</p>
@@ -376,8 +375,7 @@ En este cuaderno
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si está casada y si tiene entre 18 y 64 años.</span></span>
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Married"</span></span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span> <span class="sc">&amp;</span> age <span class="sc">&lt;</span> <span class="dv">65</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] "numeric"
+<pre class="text salida-r"><code>[1] "numeric"
 [1] "character"
 [1] 13
 [1] FALSE
@@ -393,8 +391,7 @@ En este cuaderno
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Añade un tercer número a la suma.</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 5
+<pre class="text salida-r"><code>[1] 5
 [1] 9</code></pre>
 <p>En la primera llamada, R devuelve 5. En la segunda hace la misma operación con tres argumentos y devuelve 9.</p>
 <p><strong>Pruébalo.</strong> Guarda en <code>edad_en_10</code> la edad que tendrá esta persona dentro de diez años. Comprueba si entonces tendrá al menos 40.</p>
@@ -408,8 +405,7 @@ Ver solución
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si entonces tendrá al menos 40 años.</span></span>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="sc">&gt;=</span> <span class="dv">40</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 36
+<pre class="text salida-r"><code>[1] 36
 [1] FALSE</code></pre>
 <p>La edad será <code>36</code>, así que la comparación devuelve <code>FALSE</code>.</p>
 </details>
@@ -429,8 +425,7 @@ Ver solución
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)   <span class="co"># Cuenta cuántas edades hay.</span></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">2</span>]        <span class="co"># Muestra la segunda edad.</span></span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]  <span class="co"># Muestra la primera y la tercera.</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 5
+<pre class="text salida-r"><code>[1] 5
 [1] 48
 [1] 26 67</code></pre>
 <p>R cuenta las posiciones desde 1. <code>length(age)</code> pregunta cuántos valores hay y devuelve 5. <code>age[2]</code> pide el valor de la segunda posición y devuelve 48. Dentro de los corchetes también puedes dar varias posiciones. En <code>age[c(1, 3)]</code>, <code>c(1, 3)</code> construye la selección y los corchetes extraen la primera y la tercera edad.</p>
@@ -446,8 +441,7 @@ Ver solución
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] FALSE  TRUE  TRUE FALSE FALSE
+<pre class="text salida-r"><code>[1] FALSE  TRUE  TRUE FALSE FALSE
 [1] 48 67
 [1] 26</code></pre>
 <p><code>criterio</code> conserva la longitud y el orden de <code>age</code>. Puedes leerlo en paralelo con las edades.</p>
@@ -499,8 +493,7 @@ Ver solución
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara qué ocurre al calcular la media con y sin los valores ausentes.</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] FALSE  TRUE FALSE FALSE FALSE
+<pre class="text salida-r"><code>[1] FALSE  TRUE FALSE FALSE FALSE
 [1] NA
 [1] 4.75</code></pre>
 <p>Con <code>mean(tvhours)</code>, la media queda como <code>NA</code> porque uno de sus valores es desconocido. Con <code>na.rm = TRUE</code>, pides a R que use solo las respuestas disponibles para ese cálculo. Puedes comprobarlo a mano. La suma es 12 + 2 + 4 + 1 = 19 y hay <strong>cuatro</strong> respuestas, así que la media es 19 / 4 = 4,75 horas. El <code>NA</code> sigue en el vector para las consultas posteriores.</p>
@@ -516,8 +509,7 @@ Ver solución
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de las horas que sí están registradas.</span></span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(horas_mayores_40, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] NA  2
+<pre class="text salida-r"><code>[1] NA  2
 [1] 2</code></pre>
 <p>La selección devuelve <code>NA</code> y <code>2</code>. La persona de 48 años no tiene un valor registrado. La media devuelve <code>2</code> horas porque solo hay una respuesta válida en ese grupo.</p>
 </details>
@@ -533,8 +525,7 @@ Ver solución
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta primero las filas y luego las columnas.</span></span>
 <span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_muestra)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>  age       marital tvhours
+<pre class="text salida-r"><code>  age       marital tvhours
 1  26 Never married      12
 2  48      Divorced      NA
 3  67       Widowed       2
@@ -566,8 +557,7 @@ Ver solución
 <p>En un bloque de R de tu <code>.qmd</code>, escribe y ejecuta esta comprobación.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba que R encuentra el CSV dentro de la carpeta datos.</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] TRUE</code></pre>
+<pre class="text salida-r"><code>[1] TRUE</code></pre>
 <p>La ruta es <strong>relativa</strong>. Desde <code>taller_R</code>, indica que R debe entrar en <code>datos</code> y buscar allí el CSV. Si la comprobación devuelve <code>TRUE</code>, pasa a la importación. Si devuelve <code>FALSE</code>, revisa la ubicación del <code>.qmd</code>, el nombre de la carpeta y el nombre del archivo.</p>
 </section>
 <section id="qué-ocurre-al-leer-el-csv" class="level3">
@@ -586,7 +576,7 @@ Ver solución
 <summary>
 Ver salida de R de la importación
 </summary>
-<pre class="text"><code>[1] 21483     9
+<pre class="text salida-r"><code>[1] 21483     9
 [1] "year"    "marital" "age"     "race"    "rincome" "partyid"
 [7] "relig"   "denom"   "tvhours"
 # A tibble: 5 × 9
@@ -613,7 +603,7 @@ Ver salida de R de la importación
 <summary>
 Ver salida de R de la exploración
 </summary>
-<pre class="text"><code>spc_tbl_ [21,483 × 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+<pre class="text salida-r"><code>spc_tbl_ [21,483 × 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ year   : num [1:21483] 2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
  $ marital: chr [1:21483] "Never married" "Divorced" "Widowed" "Never married" ...
  $ age    : num [1:21483] 26 48 67 39 25 25 36 44 44 47 ...
@@ -692,8 +682,7 @@ Ver solución
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta las filas en las que falta la edad.</span></span>
 <span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(datos<span class="sc">$</span>age))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 47.18008
+<pre class="text salida-r"><code>[1] 47.18008
 [1] 76</code></pre>
 <p>La edad media es aproximadamente <strong>47,18 años</strong> y faltan <strong>76</strong> edades. <code>is.na(datos$age)</code> da un resultado lógico por fila. Al sumarlos, R trata cada <code>TRUE</code> como 1 y cada <code>FALSE</code> como 0. Por eso la suma cuenta las edades ausentes.</p>
 </details>
@@ -711,8 +700,7 @@ Ver solución
 <span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Haz la misma conversión con el archivo completo.</span></span>
 <span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
 <span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 5
+<pre class="text salida-r"><code>[1] 5
 [1] "Divorced"      "Never married" "Widowed"
 [1] "Divorced"      "Married"       "Never married" "No answer"
 [5] "Separated"     "Widowed"</code></pre>
@@ -728,8 +716,7 @@ Ver solución
 <span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
 <span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] "Bajo"  "Medio" "Alto"</code></pre>
+<pre class="text salida-r"><code>[1] "Bajo"  "Medio" "Alto"</code></pre>
 <p>Las respuestas siguen empezando por <code>"Medio"</code>. Lo que has definido con <code>levels = c("Bajo", "Medio", "Alto")</code> es el orden de las categorías, y <code>ordered = TRUE</code> indica que ese orden tiene significado. Puedes decir que <code>"Alto"</code> está por encima de <code>"Medio"</code>, pero esas etiquetas por sí solas no indican a qué distancia está cada nivel.</p>
 <p><strong>Comprueba si lo has entendido.</strong> Si llega otra persona que responde <code>"Medio"</code>, ¿cambia el número de respuestas? ¿Cambia el número de niveles?</p>
 <details class="solucion-cuaderno">
@@ -772,8 +759,7 @@ Ver solución de la práctica final
 <span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de esas respuestas y redondéala a dos decimales.</span></span>
 <span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
-<pre class="text"><code>[1] 11337
+<pre class="text salida-r"><code>[1] 11337
 [1] 2.98</code></pre>
 <p><code>is.na(datos$tvhours)</code> marca los valores ausentes. Al anteponer <code>!</code>, los <code>TRUE</code> pasan a señalar las respuestas registradas. <code>sum()</code> las cuenta y <code>mean(..., na.rm = TRUE)</code> usa ese mismo conjunto de respuestas para calcular la media. Al final, <code>round()</code> recibe la media y el argumento <code>digits = 2</code> indica que queremos redondearla a dos decimales.</p>
 <p>Una forma de redactarlo sería «En el archivo de la GSS, <strong>11.337 personas</strong> tienen registradas sus horas diarias de televisión. Entre ellas, la media es de <strong>2,98 horas diarias</strong>». Indicar cuántas respuestas entran en la media permite entender a quién se refiere el resultado.</p>

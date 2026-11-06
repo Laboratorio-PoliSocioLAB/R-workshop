@@ -47,6 +47,7 @@ h2 { border: 0; font-size: 25px; font-weight: 700; margin-block: 36px 20px; lett
 :is(.solucion-cuaderno, .indice-cuaderno-movil, .salida-r-cuaderno) > summary { color: #0b6178; font-weight: 700; cursor: pointer; }
 :is(.solucion-cuaderno, .indice-cuaderno-movil, .salida-r-cuaderno)[open] > summary { margin-bottom: 14px; }
 :is(.solucion-cuaderno, .indice-cuaderno-movil, .salida-r-cuaderno) > :last-child { margin-bottom: 0; }
+pre.salida-r { border-left: 3px solid var(--curso-azul); padding-left: .75rem; }
 .indice-cuaderno-movil { display: none; }
 .tour-rstudio { margin: 24px 0; }
 .tour-rstudio-captura { position: relative; }
