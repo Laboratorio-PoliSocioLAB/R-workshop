@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introducción a R y RStudio – Taller de R</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./r.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3c872c88186c3143be61f2e5a189e97c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./r.svg" alt="Logotipo de R" class="navbar-logo light-content">
+    <img src="./r.svg" alt="Logotipo de R" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Taller de R</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./preparacion.html"> 
+<span class="menu-text">Preparación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sesiones.html"> 
+<span class="menu-text">Sesiones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materiales.html"> 
+<span class="menu-text">Materiales</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./actividades.html"> 
+<span class="menu-text">Actividades</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./recursos.html"> 
+<span class="menu-text">Recursos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En este cuaderno</h2>
+   
+  <ul class="collapse">
+  <li><a href="#preparar" id="toc-preparar" class="nav-link active" data-scroll-target="#preparar">1. Prepara tu espacio de trabajo</a></li>
+  <li><a href="#objetos" id="toc-objetos" class="nav-link" data-scroll-target="#objetos">2. Guarda valores y haz cálculos</a></li>
+  <li><a href="#vectores" id="toc-vectores" class="nav-link" data-scroll-target="#vectores">3. Trabaja con cinco respuestas</a></li>
+  <li><a href="#data-frame" id="toc-data-frame" class="nav-link" data-scroll-target="#data-frame">4. Pasa de los vectores a una tabla</a></li>
+  <li><a href="#importar" id="toc-importar" class="nav-link" data-scroll-target="#importar">5. Importa y explora la encuesta completa</a></li>
+  <li><a href="#factores" id="toc-factores" class="nav-link" data-scroll-target="#factores">6. Reconoce las categorías con factores</a></li>
+  <li><a href="#resolver-problemas" id="toc-resolver-problemas" class="nav-link" data-scroll-target="#resolver-problemas">7. Qué hacer cuando aparece un mensaje</a></li>
+  <li><a href="#practica-final" id="toc-practica-final" class="nav-link" data-scroll-target="#practica-final">8. Comprueba lo que has aprendido</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introducción a R y RStudio</h1>
+<p class="subtitle lead">Taller 1 · Sesión 1 · Cuaderno de aprendizaje autónomo</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>¿Qué podemos averiguar sobre las personas encuestadas a partir de un archivo de datos? En esta sesión usarás una selección de la <em>General Social Survey</em> (GSS) para dar los primeros pasos: escribir un script, importar la encuesta y comprobar qué información contiene.</p>
+<p><strong>Cómo usar el cuaderno.</strong> Lee un apartado, ejecuta el código en RStudio y compara la salida con la que se indica. Los ejemplos se apoyan en los anteriores, así que conviene seguir el orden. Antes de desplegar una solución, intenta resolver el ejercicio en tu script.</p>
+<p><a href="datos/taller-1/sesion-1/encuesta_social.csv" class="btn btn-primary" download="encuesta_social.csv">Descargar la encuesta</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary">Ver las diapositivas de la sesión</a></p>
+<details class="indice-cuaderno-movil">
+<summary>
+En este cuaderno
+</summary>
+<ol type="1">
+<li><a href="#preparar">Prepara tu espacio de trabajo</a></li>
+<li><a href="#objetos">Guarda valores y haz cálculos</a></li>
+<li><a href="#vectores">Trabaja con cinco respuestas</a></li>
+<li><a href="#data-frame">Pasa de los vectores a una tabla</a></li>
+<li><a href="#importar">Importa y explora la encuesta completa</a></li>
+<li><a href="#factores">Reconoce las categorías con factores</a></li>
+<li><a href="#resolver-problemas">Qué hacer cuando aparece un mensaje</a></li>
+<li><a href="#practica-final">Comprueba lo que has aprendido</a></li>
+</ol>
+</details>
+<section id="preparar" class="level2">
+<h2 data-anchor-id="preparar">1. Prepara tu espacio de trabajo</h2>
+<p><strong>R</strong> interpreta las instrucciones y realiza los cálculos. <strong>RStudio</strong> es el entorno desde el que escribirás, ejecutarás y guardarás esas instrucciones. Instala primero <a href="https://cran.r-project.org/">R desde CRAN</a> y después <a href="https://docs.posit.co/ide/user/download.html">RStudio Desktop</a>. Si no puedes instalar programas, puedes seguir el cuaderno en un proyecto de RStudio en <a href="https://posit.cloud/">Posit Cloud</a>; en ese caso, sube el CSV al proyecto desde el panel <em>Files</em>.</p>
+<ol type="1">
+<li>En RStudio, elige <em>File → New Project → New Directory → New Project</em>. Llama a la carpeta <code>taller_R</code>.</li>
+<li>Crea las subcarpetas <code>datos</code> y <code>scripts</code>. Descarga <code>encuesta_social.csv</code> y guárdalo en <code>datos</code>, con ese nombre exacto.</li>
+<li>Abre <em>File → New File → R Script</em> y guarda el archivo como <code>scripts/sesion-1.R</code>.</li>
+</ol>
+<p>El <strong>editor</strong> (<em>Source</em>) contiene el código que guardas. La <strong>consola</strong> (<em>Console</em>) muestra los resultados y los mensajes de R. El panel <strong>Environment</strong> muestra los objetos que has creado; <strong>Files</strong> te permite localizar los archivos del proyecto. Para enviar una línea del editor a la consola, pon el cursor sobre ella y pulsa <strong>Ctrl + Enter</strong> en Windows o Linux, o <strong>Cmd + Enter</strong> en macOS. También puedes seleccionar varias líneas y ejecutarlas juntas.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Comprueba que estás en el proyecto correcto
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ejecuta estas líneas en la consola. La primera debe mostrar la carpeta <code>taller_R</code>; la segunda debe devolver <code>TRUE</code> cuando el CSV esté en su sitio.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La ruta parte de la carpeta del <strong>proyecto</strong>, aunque el script esté en <code>scripts/</code>. Si devuelve <code>FALSE</code>, revisa la carpeta abierta, la ubicación del archivo y su nombre.</p>
+</div>
+</div>
+<p>Un script <code>.R</code> guarda las instrucciones y los comentarios (texto precedido por <code>#</code>). Un documento Quarto <code>.qmd</code>, como este cuaderno, reúne explicaciones, código y resultados. Para hacer la práctica solo necesitas el script.</p>
+</section>
+<section id="objetos" class="level2">
+<h2 data-anchor-id="objetos">2. Guarda valores y haz cálculos</h2>
+<p>Empecemos por la primera persona encuestada. <code>age</code> es su edad, <code>tvhours</code> son sus horas diarias de televisión y <code>marital</code> es su estado civil. El operador <code>&lt;-</code> guarda lo que hay a la derecha con el nombre de la izquierda. Escribir el nombre por sí solo permite consultar el valor guardado.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>age_en_5 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">5</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>age_en_5</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Verás <code>31</code> y <code>TRUE</code>. El cálculo se ha guardado en <code>age_en_5</code>; <code>age</code> sigue valiendo <code>26</code>. Si vuelves a asignar un valor al mismo nombre, R lo sustituye. Los nombres distinguen mayúsculas y minúsculas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Ejemplo</th>
+<th>Qué representa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Numérico</td>
+<td><code>26</code></td>
+<td>Un número con el que puedes operar.</td>
+</tr>
+<tr class="even">
+<td>Texto</td>
+<td><code>"Never married"</code></td>
+<td>Una cadena de caracteres, entre comillas.</td>
+</tr>
+<tr class="odd">
+<td>Lógico</td>
+<td><code>TRUE</code> o <code>FALSE</code></td>
+<td>El resultado de una condición.</td>
+</tr>
+<tr class="even">
+<td>Entero</td>
+<td><code>2000L</code></td>
+<td>Un número especificado como entero en R.</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(age)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(marital)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">"12"</span>) <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Married"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span> <span class="sc">&amp;</span> age <span class="sc">&lt;</span> <span class="dv">65</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>class()</code> identifica la clase del objeto. El texto <code>"12"</code> necesita convertirse a número antes de sumarle 1. <code>==</code> comprueba si dos valores son iguales y <code>&amp;</code> exige que se cumplan ambas condiciones. Para pedir que se cumpla al menos una, usa <code>|</code>; para negar una condición, <code>!</code>; para comprobar si un valor está en un conjunto, <code>%in%</code>.</p>
+<p>Una <strong>función</strong> ejecuta una operación. Sus argumentos van entre paréntesis y se separan con comas. Aquí, el primer argumento de <code>round()</code> es el valor que quieres redondear y <code>digits</code> indica cuántos decimales conservar.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>, <span class="at">digits =</span> <span class="dv">1</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tvhours <span class="sc">/</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La primera línea devuelve <code>2.4</code>. La segunda devuelve <code>2</code>, porque el valor por defecto de <code>digits</code> es 0.</p>
+<p><strong>Pruébalo.</strong> Guarda en <code>edad_en_10</code> la edad que tendrá esta persona dentro de diez años. Comprueba si entonces tendrá al menos 40.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">10</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>edad_en_10</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="sc">&gt;=</span> <span class="dv">40</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La edad será <code>36</code>, así que la comparación devuelve <code>FALSE</code>.</p>
+</details>
+</section>
+<section id="vectores" class="level2">
+<h2 data-anchor-id="vectores">3. Trabaja con cinco respuestas</h2>
+<p>Ahora sustituimos los tres valores individuales por <strong>vectores</strong> con las cinco primeras respuestas del archivo. <code>c()</code> reúne los valores en orden. La primera posición de cada vector corresponde a la misma persona; la segunda, a la siguiente, y así sucesivamente. Cada vector de este ejemplo tiene un solo tipo de dato.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">2</span>]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Los corchetes seleccionan posiciones: <code>age[2]</code> devuelve <code>48</code> y <code>age[c(1, 3)]</code> devuelve <code>26</code> y <code>67</code>. Los paréntesis, como en <code>length(age)</code>, sirven aquí para llamar a una función.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>criterio <span class="ot">&lt;-</span> age <span class="sc">&gt;</span> <span class="dv">40</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>criterio</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>age[criterio]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>criterio</code> contiene un <code>TRUE</code> o un <code>FALSE</code> por cada edad. Con <code>age[criterio]</code> conservas las posiciones donde la condición se cumple: <code>48</code> y <code>67</code>. La última línea devuelve <code>26</code>: el cambio se hizo en una copia.</p>
+<p><strong>¿Qué pasa si falta una respuesta?</strong> <code>NA</code> indica un valor ausente. La segunda persona no tiene un valor registrado en <code>tvhours</code>. Usa <code>is.na()</code> para localizarlo.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(tvhours)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La primera media devuelve <code>NA</code>. Con <code>na.rm = TRUE</code>, la media es <code>4.75</code> horas: se calcula con <strong>cuatro</strong> respuestas válidas. El dato ausente no cuenta como cero y sigue presente en el vector.</p>
+<p><strong>Pruébalo.</strong> Selecciona las horas de televisión registradas para las personas de más de 40 años. ¿Por qué hay un <code>NA</code> en el resultado? ¿Cuántas respuestas se usan al calcular la media?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>horas_mayores_40 <span class="ot">&lt;-</span> tvhours[criterio]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>horas_mayores_40</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(horas_mayores_40, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La selección devuelve <code>NA</code> y <code>2</code>. La persona de 48 años no tiene un valor registrado. La media devuelve <code>2</code> horas porque solo hay una respuesta válida en ese grupo.</p>
+</details>
+</section>
+<section id="data-frame" class="level2">
+<h2 data-anchor-id="data-frame">4. Pasa de los vectores a una tabla</h2>
+<p>Un <strong>data frame</strong> reúne varias columnas con el mismo número de filas. En nuestra encuesta, cada fila es una persona y cada columna es una variable. Las columnas pueden ser de tipos distintos: <code>age</code> es numérica y <code>marital</code> es texto.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>datos_muestra <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age, marital, tvhours)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>datos_muestra</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_muestra)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La tabla tiene cinco filas y tres columnas. El valor ausente sigue en la segunda fila de <code>tvhours</code>: conserva su posición aunque no tengamos la respuesta.</p>
+</section>
+<section id="importar" class="level2">
+<h2 data-anchor-id="importar">5. Importa y explora la encuesta completa</h2>
+<p>Un <strong>paquete</strong> añade funciones a R. En la sesión usamos <code>tidyverse</code>, un conjunto de paquetes que incluye <code>readr</code>, donde está <code>read_csv()</code>. Si todavía no lo tienes instalado, ejecuta lo siguiente <strong>una vez en la consola</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ahora añade estas líneas a tu script. <code>library()</code> carga el paquete en la sesión actual: tendrás que volver a ejecutarla si reinicias R.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>read_csv()</code> devuelve un <em>tibble</em>, un tipo de data frame. <code>dim(datos)</code> debe mostrar <code>21483 9</code>: <strong>21.483 observaciones y 9 variables</strong>. <code>head()</code> muestra las mismas cinco personas del ejemplo inicial, ahora con todas las variables del archivo. <code>datos</code> conserva la encuesta completa.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>str()</code> ayuda a comprobar cómo se importaron las columnas. <code>summary()</code> resume una variable; para <code>tvhours</code> muestra, entre otros valores, la media y el número de ausentes. <code>tail()</code> muestra las últimas filas. Estos comandos consultan los datos sin modificarlos.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Escribe…</th>
+<th>Para obtener…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>datos["age"]</code></td>
+<td>La columna de edad como tabla.</td>
+</tr>
+<tr class="even">
+<td><code>datos$age</code></td>
+<td>Las edades como vector, con el que puedes calcular una media.</td>
+</tr>
+<tr class="odd">
+<td><code>datos[1, 3]</code></td>
+<td>Un tibble de una celda: primera fila, tercera columna (edad <code>26</code>).</td>
+</tr>
+<tr class="even">
+<td><code>datos[3, ]</code></td>
+<td>La tercera fila completa, con todas las variables de esa persona.</td>
+</tr>
+</tbody>
+</table>
+<p>En <code>[fila, columna]</code>, lo que va antes de la coma selecciona filas; lo que va después, columnas. Dejar un lado vacío significa «todas». Con <code>$</code> extraes el vector de una columna por su nombre.</p>
+<p><strong>Pruébalo.</strong> Calcula la edad media de quienes tienen una edad registrada. ¿Cuántas edades faltan?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(datos<span class="sc">$</span>age))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>La edad media es aproximadamente <strong>47,18 años</strong> y faltan <strong>76</strong> edades. <code>is.na()</code> marca los valores ausentes y <code>sum()</code> cuenta los <code>TRUE</code>.</p>
+</details>
+</section>
+<section id="factores" class="level2">
+<h2 data-anchor-id="factores">6. Reconoce las categorías con factores</h2>
+<p>Un <strong>factor</strong> permite representar una variable categórica. Sus <strong>niveles</strong> son las categorías posibles que reconoce R. Convertir una columna en factor no reduce el número de filas ni elimina las respuestas repetidas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>marital_muestra <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos_muestra<span class="sc">$</span>marital)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(marital_muestra)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_muestra)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En la tabla pequeña hay cinco respuestas y tres niveles: <code>Divorced</code>, <code>Never married</code> y <code>Widowed</code>. En la encuesta completa hay seis niveles. Uno es <code>"No answer"</code>: aparece como una etiqueta del archivo y no es lo mismo que un <code>NA</code> de R.</p>
+<p>El estado civil es <strong>nominal</strong>: sus categorías no tienen una jerarquía. Cuando el orden sí tiene significado, como en el ejemplo de nivel de estudios de la sesión, puedes indicarlo explícitamente:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Medio"</span>, <span class="st">"Bajo"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Bajo"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">factor</span>(estudios,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>R devuelve <code>"Bajo" "Medio" "Alto"</code>: respeta el orden indicado en <code>levels</code>.</p>
+</section>
+<section id="resolver-problemas" class="level2">
+<h2 data-anchor-id="resolver-problemas">7. Qué hacer cuando aparece un mensaje</h2>
+<p>Lee primero el mensaje y localiza el nombre de la función, el objeto o el archivo. Cambia una cosa y vuelve a ejecutar la instrucción.</p>
+<ul>
+<li><strong>Error:</strong> <code>object 'Datos' not found</code>. La instrucción se ha detenido. Comprueba que ejecutaste la asignación y que escribiste <code>datos</code> con minúscula.</li>
+<li><strong>Advertencia:</strong> <code>NAs introduced by coercion</code>. Una conversión ha devuelto <code>NA</code>. Por ejemplo, <code>as.numeric("Never married")</code> no puede producir un número.</li>
+<li><strong>Mensaje informativo:</strong> <code>Rows: 21483 Columns: 9</code>. Indica el tamaño del archivo que acabas de importar.</li>
+<li><strong>La consola muestra <code>+</code> al inicio de la línea.</strong> R espera que completes la instrucción. Revisa los paréntesis y las comillas. Puedes pulsar <strong>Esc</strong> y escribir la línea completa de nuevo.</li>
+<li><strong>R no encuentra <code>encuesta_social.csv</code>.</strong> Comprueba el proyecto con <code>getwd()</code> y la ruta con <code>file.exists("datos/encuesta_social.csv")</code>.</li>
+</ul>
+<p>Si el mensaje señala un símbolo inesperado, revisa también las comas entre argumentos y las comillas rectas en los textos. Si una línea usa un objeto que aún no existe, vuelve a ejecutar primero la línea que lo crea.</p>
+</section>
+<section id="practica-final" class="level2">
+<h2 data-anchor-id="practica-final">8. Comprueba lo que has aprendido</h2>
+<p>Con la encuesta <strong>completa</strong>, averigua cuántas personas tienen registradas sus horas diarias de televisión y calcula la media entre esas personas. Escribe una frase que explique el resultado y a cuántas respuestas se refiere. Después, guarda el script, reinicia R y vuelve a ejecutarlo desde la primera línea para comprobar que puedes repetir el cálculo sin depender de objetos que ya estaban en memoria.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución de la práctica final
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>horas_registradas <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(horas_registradas)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En este archivo, <strong>11.337 personas</strong> tienen registradas sus horas diarias de televisión. Entre esas personas, la media es de <strong>2,98 horas diarias</strong>. El resultado describe las respuestas disponibles en el archivo.</p>
+</details>
+<p>Con esto ya has recorrido el camino desde un CSV hasta un resultado que puedes explicar y reproducir. La siguiente sesión retoma la misma encuesta para seleccionar, filtrar y ordenar observaciones y calcular resúmenes por grupos.</p>
+<p><strong>Para consultar:</strong> <a href="https://forcats.tidyverse.org/reference/gss_cat.html">documentación de <code>gss_cat</code></a> y <a href="https://davidrsch.github.io/r4ds-es/"><em>R para Ciencia de Datos</em></a>.</p>
+<p><em>Cuaderno basado en la sesión 1 del taller de Jesús Martín Godoy y Nadia Adelshina.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/laboratorio-polisociolab\.github\.io\/R-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Taller de R · Ciencias Sociales</p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://polisocio.ugr.es/investigacion/polisociolab" target="_blank" rel="noopener">PoliSocioLAB</a></p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./creditos.html">
+<p>Créditos</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
