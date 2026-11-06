@@ -1,0 +1,155 @@
+---
+title: "Sesión 1 · Introducción a R y RStudio"
+lang: es
+format: html
+engine: knitr
+---
+
+Escribe aquí tu nombre. Sigue el [cuaderno de la sesión](https://laboratorio-polisociolab.github.io/R-workshop/cuaderno-sesion-1.html){target="_blank" rel="noopener"} y ejecuta los bloques de arriba abajo. Escribe tus respuestas como texto debajo del bloque correspondiente.
+
+## 1. Prepara tu espacio de trabajo
+
+Guarda este documento junto a la carpeta `datos`, que debe contener `encuesta_social.csv`. La comprobación debe devolver `TRUE`.
+
+```{r}
+#| label: comprobar-archivo
+file.exists("datos/encuesta_social.csv")
+```
+
+## 2. Guarda valores y haz cálculos
+
+Usa las respuestas de la primera persona encuestada para practicar asignaciones, comparaciones y funciones.
+
+```{r}
+#| label: asignar-y-calcular
+age <- 26
+tvhours <- 12
+marital <- "Never married"
+age_en_5 <- age + 5
+
+age_en_5
+age >= 18
+class(age)
+class(marital)
+as.numeric("12") + 1
+marital == "Married"
+age >= 18 & age < 65
+round(tvhours / 5, digits = 1)
+round(tvhours / 5)
+```
+
+Guarda en `edad_en_10` la edad de esta persona dentro de diez años y comprueba si entonces tendrá al menos 40.
+
+```{r}
+#| label: ejercicio-edad
+# Escribe aquí tu código.
+```
+
+## 3. Trabaja con cinco respuestas
+
+Cada posición de los tres vectores corresponde a la misma persona.
+
+```{r}
+#| label: seleccionar-vectores
+age <- c(26, 48, 67, 39, 25)
+tvhours <- c(12, NA, 2, 4, 1)
+marital <- c("Never married", "Divorced", "Widowed",
+             "Never married", "Divorced")
+
+length(age)
+age[2]
+age[c(1, 3)]
+
+criterio <- age > 40
+criterio
+age[criterio]
+
+age_modificado <- age
+age_modificado[1] <- 27
+age[1]
+
+is.na(tvhours)
+mean(tvhours)
+mean(tvhours, na.rm = TRUE)
+```
+
+Selecciona las horas de televisión de las personas mayores de 40 años y calcula la media de las respuestas disponibles.
+
+```{r}
+#| label: ejercicio-horas-mayores
+# Escribe aquí tu código.
+```
+
+Explica por qué aparece un `NA` al seleccionar las horas y cuántas respuestas entran en la media.
+
+## 4. Pasa de los vectores a una tabla
+
+```{r}
+#| label: crear-tabla
+datos_muestra <- data.frame(age, marital, tvhours)
+datos_muestra
+dim(datos_muestra)
+```
+
+## 5. Importa y explora la encuesta completa
+
+Antes de ejecutar este bloque o pulsar **Render**, instala `rmarkdown` y `tidyverse` una vez en la consola, tal como indica el cuaderno.
+
+```{r}
+#| label: importar-encuesta
+library(tidyverse)
+datos <- read_csv("datos/encuesta_social.csv")
+
+dim(datos)
+names(datos)
+head(datos, n = 5)
+str(datos)
+summary(datos$tvhours)
+tail(datos, n = 5)
+
+datos["age"]
+datos[1, 3]
+datos[3, ]
+```
+
+Calcula la edad media de las personas con edad registrada y cuenta cuántas edades faltan.
+
+```{r}
+#| label: ejercicio-edades-ausentes
+# Escribe aquí tu código.
+```
+
+## 6. Reconoce las categorías con factores
+
+```{r}
+#| label: convertir-factores
+marital_muestra <- factor(datos_muestra$marital)
+length(marital_muestra)
+levels(marital_muestra)
+
+datos$marital <- factor(datos$marital)
+levels(datos$marital)
+
+estudios <- c("Medio", "Bajo", "Alto", "Medio", "Bajo")
+estudios <- factor(estudios,
+                   levels = c("Bajo", "Medio", "Alto"),
+                   ordered = TRUE)
+levels(estudios)
+```
+
+Si se incorpora otra persona que responde `"Medio"`, explica cómo cambia el número de respuestas y el de niveles.
+
+## 7. Qué hacer cuando aparece un mensaje
+
+Si aparece un error, consulta el apartado correspondiente del cuaderno. Si quieres anotar lo ocurrido, escribe debajo el mensaje y cómo lo resolviste.
+
+## 8. Práctica final
+
+Calcula cuántas personas de la encuesta completa tienen registradas sus horas diarias de televisión y cuál es la media entre esas personas.
+
+```{r}
+#| label: practica-final
+# Escribe aquí tu código.
+```
+
+Escribe una frase que explique la media y a cuántas respuestas se refiere. Guarda el documento y pulsa **Render** para comprobar que tus cálculos y tu frase aparecen en `sesion-1.html`.
