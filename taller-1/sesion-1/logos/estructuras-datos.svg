@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="100%" height="100%">
+  <defs>
+    <style>
+      text { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      .header-title { font-size: 19px; font-weight: bold; }
+      .cell-val { font-size: 16px; font-weight: bold; fill: #131516; }
+      .cell-val-sm { font-size: 14px; font-weight: bold; fill: #131516; }
+      .tbl-header { font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .tbl-cell { font-size: 15px; fill: #222222; }
+      .tbl-cell-bold { font-size: 15px; font-weight: bold; fill: #131516; }
+      .desc-text { font-size: 14px; fill: #333333; line-height: 1.4; }
+      .levels-text { font-size: 13.5px; fill: #666666; font-style: italic; }
+      .col-type { font-size: 13px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ==================== 1. VECTOR ==================== -->
+  <g transform="translate(40, 20)">
+    <text x="0" y="22" class="header-title" fill="#107895">Vector (datos$age)</text>
+    
+    <!-- Contenedor del vector -->
+    <rect x="0" y="34" width="310" height="56" rx="6" fill="#e8f3f7" stroke="#107895" stroke-width="2"/>
+    
+    <!-- Celdas -->
+    <rect x="8" y="42" width="52" height="40" rx="4" fill="#ffffff" stroke="#107895" stroke-width="1.5"/>
+    <text x="34" y="67" text-anchor="middle" class="cell-val">26</text>
+
+    <rect x="68" y="42" width="52" height="40" rx="4" fill="#ffffff" stroke="#107895" stroke-width="1.5"/>
+    <text x="94" y="67" text-anchor="middle" class="cell-val">40</text>
+
+    <rect x="128" y="42" width="52" height="40" rx="4" fill="#ffffff" stroke="#107895" stroke-width="1.5"/>
+    <text x="154" y="67" text-anchor="middle" class="cell-val">67</text>
+
+    <rect x="188" y="42" width="52" height="40" rx="4" fill="#ffffff" stroke="#107895" stroke-width="1.5"/>
+    <text x="214" y="67" text-anchor="middle" class="cell-val">33</text>
+
+    <rect x="248" y="42" width="52" height="40" rx="4" fill="#f0f7f9" stroke="#107895" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="274" y="67" text-anchor="middle" class="cell-val" fill="#888">...</text>
+
+    <!-- Explicación breve -->
+    <text x="0" y="112" class="desc-text">Secuencia de valores del <tspan font-weight="bold">mismo tipo</tspan></text>
+    <text x="0" y="132" class="desc-text">(todos números, todo texto o todo lógicos).</text>
+  </g>
+
+  <!-- ==================== 2. FACTOR ==================== -->
+  <g transform="translate(40, 195)">
+    <text x="0" y="22" class="header-title" fill="#9a2515">Factor (datos$race)</text>
+    
+    <!-- Contenedor del factor -->
+    <rect x="0" y="34" width="310" height="56" rx="6" fill="#fdf2f0" stroke="#9a2515" stroke-width="2"/>
+    
+    <!-- Celdas con colores categóricos -->
+    <rect x="8" y="42" width="62" height="40" rx="4" fill="#ffffff" stroke="#9a2515" stroke-width="1.5"/>
+    <text x="39" y="67" text-anchor="middle" class="cell-val-sm">White</text>
+
+    <rect x="76" y="42" width="62" height="40" rx="4" fill="#ffffff" stroke="#9a2515" stroke-width="1.5"/>
+    <text x="107" y="67" text-anchor="middle" class="cell-val-sm">Black</text>
+
+    <rect x="144" y="42" width="62" height="40" rx="4" fill="#ffffff" stroke="#9a2515" stroke-width="1.5"/>
+    <text x="175" y="67" text-anchor="middle" class="cell-val-sm">Other</text>
+
+    <rect x="212" y="42" width="46" height="40" rx="4" fill="#ffffff" stroke="#9a2515" stroke-width="1.5"/>
+    <text x="235" y="67" text-anchor="middle" class="cell-val-sm">White</text>
+
+    <rect x="264" y="42" width="38" height="40" rx="4" fill="#fae8e5" stroke="#9a2515" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="283" y="67" text-anchor="middle" class="cell-val" fill="#888">...</text>
+
+    <!-- Niveles y breve explicación -->
+    <text x="0" y="112" class="levels-text">Levels (categorías): White, Black, Other</text>
+    <text x="0" y="136" class="desc-text">Valores restringidos a un <tspan font-weight="bold">catálogo prefijado</tspan></text>
+    <text x="0" y="156" class="desc-text">de etiquetas o categorías.</text>
+  </g>
+
+  <!-- ==================== 3. DATA FRAME ==================== -->
+  <g transform="translate(420, 20)">
+    <text x="0" y="22" class="header-title" fill="#2e7d32">Data frame (datos)</text>
+
+    <!-- TABLA -->
+    <g transform="translate(0, 34)">
+      <!-- Cabecera -->
+      <rect x="0" y="0" width="105" height="40" fill="#2e7d32" rx="4 0 0 0"/>
+      <text x="52" y="25" text-anchor="middle" class="tbl-header">age</text>
+
+      <rect x="108" y="0" width="125" height="40" fill="#2e7d32"/>
+      <text x="170" y="25" text-anchor="middle" class="tbl-header">race</text>
+
+      <rect x="236" y="0" width="120" height="40" fill="#2e7d32" rx="0 4 0 0"/>
+      <text x="296" y="25" text-anchor="middle" class="tbl-header">tvhours</text>
+
+      <!-- Fila 1 -->
+      <rect x="0" y="43" width="105" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="52" y="67" text-anchor="middle" class="tbl-cell-bold">26</text>
+
+      <rect x="108" y="43" width="125" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="170" y="67" text-anchor="middle" class="tbl-cell">White</text>
+
+      <rect x="236" y="43" width="120" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="296" y="67" text-anchor="middle" class="tbl-cell">12</text>
+
+      <!-- Fila 2 -->
+      <rect x="0" y="84" width="105" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="52" y="108" text-anchor="middle" class="tbl-cell-bold">40</text>
+
+      <rect x="108" y="84" width="125" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="170" y="108" text-anchor="middle" class="tbl-cell">Black</text>
+
+      <rect x="236" y="84" width="120" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="296" y="108" text-anchor="middle" class="tbl-cell">7</text>
+
+      <!-- Fila 3 -->
+      <rect x="0" y="125" width="105" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="52" y="149" text-anchor="middle" class="tbl-cell-bold">67</text>
+
+      <rect x="108" y="125" width="125" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="170" y="149" text-anchor="middle" class="tbl-cell">White</text>
+
+      <rect x="236" y="125" width="120" height="38" fill="#ffffff" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="296" y="149" text-anchor="middle" class="tbl-cell">2</text>
+
+      <!-- Fila 4 -->
+      <rect x="0" y="166" width="105" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="52" y="190" text-anchor="middle" class="tbl-cell-bold">33</text>
+
+      <rect x="108" y="166" width="125" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="170" y="190" text-anchor="middle" class="tbl-cell">Other</text>
+
+      <rect x="236" y="166" width="120" height="38" fill="#f4f8f4" stroke="#d5d5d5" stroke-width="1.2"/>
+      <text x="296" y="190" text-anchor="middle" class="tbl-cell">4</text>
+
+      <!-- Etiquetas de tipo al pie de cada columna -->
+      <text x="52" y="228" text-anchor="middle" class="col-type" fill="#107895">numeric</text>
+      <text x="170" y="228" text-anchor="middle" class="col-type" fill="#9a2515">factor</text>
+      <text x="296" y="228" text-anchor="middle" class="col-type" fill="#107895">numeric</text>
+    </g>
+
+    <!-- Explicación breve -->
+    <text x="0" y="300" class="desc-text">• Es una colección de <tspan font-weight="bold">vectores de la misma longitud</tspan>.</text>
+    <text x="0" y="324" class="desc-text">• Cada columna puede tener un <tspan font-weight="bold">tipo de dato distinto</tspan>.</text>
+    <text x="0" y="348" class="desc-text">• Cada fila representa un caso (persona encuestada).</text>
+  </g>
+</svg>
