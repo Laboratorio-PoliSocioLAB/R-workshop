@@ -154,14 +154,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">En este cuaderno</h2>
    
   <ul class="collapse">
-  <li><a href="#preparar" id="toc-preparar" class="nav-link active" data-scroll-target="#preparar">1. Prepara tu espacio de trabajo</a></li>
-  <li><a href="#objetos" id="toc-objetos" class="nav-link" data-scroll-target="#objetos">2. Guarda valores y haz cálculos</a></li>
-  <li><a href="#vectores" id="toc-vectores" class="nav-link" data-scroll-target="#vectores">3. Trabaja con cinco respuestas</a></li>
-  <li><a href="#data-frame" id="toc-data-frame" class="nav-link" data-scroll-target="#data-frame">4. Pasa de los vectores a una tabla</a></li>
-  <li><a href="#importar" id="toc-importar" class="nav-link" data-scroll-target="#importar">5. Importa y explora la encuesta completa</a></li>
-  <li><a href="#factores" id="toc-factores" class="nav-link" data-scroll-target="#factores">6. Reconoce las categorías con factores</a></li>
-  <li><a href="#resolver-problemas" id="toc-resolver-problemas" class="nav-link" data-scroll-target="#resolver-problemas">7. Qué hacer cuando aparece un mensaje</a></li>
-  <li><a href="#practica-final" id="toc-practica-final" class="nav-link" data-scroll-target="#practica-final">8. Comprueba lo que has aprendido</a></li>
+  <li><a href="#esquema-talleres" id="toc-esquema-talleres" class="nav-link active" data-scroll-target="#esquema-talleres">De la pregunta al resultado</a></li>
+  <li><a href="#que-es-r-rstudio" id="toc-que-es-r-rstudio" class="nav-link" data-scroll-target="#que-es-r-rstudio">R y RStudio en el taller</a></li>
+  <li><a href="#elegir-lenguaje" id="toc-elegir-lenguaje" class="nav-link" data-scroll-target="#elegir-lenguaje">Elegir entre R y Python</a></li>
+  <li><a href="#primeros-pasos" id="toc-primeros-pasos" class="nav-link" data-scroll-target="#primeros-pasos">1. Primeros pasos</a></li>
+  <li><a href="#tour-rstudio" id="toc-tour-rstudio" class="nav-link" data-scroll-target="#tour-rstudio">Tour por RStudio</a></li>
+  <li><a href="#tipos-de-archivo" id="toc-tipos-de-archivo" class="nav-link" data-scroll-target="#tipos-de-archivo">Un script de R y un documento Quarto</a></li>
+  <li><a href="#crear-proyecto" id="toc-crear-proyecto" class="nav-link" data-scroll-target="#crear-proyecto">Crea el proyecto del taller</a></li>
+  <li><a href="#crear-documento-quarto" id="toc-crear-documento-quarto" class="nav-link" data-scroll-target="#crear-documento-quarto">Crea tu documento Quarto</a></li>
+  <li><a href="#objetos-y-valores" id="toc-objetos-y-valores" class="nav-link" data-scroll-target="#objetos-y-valores">Objetos y valores</a></li>
+  <li><a href="#tipos-de-datos" id="toc-tipos-de-datos" class="nav-link" data-scroll-target="#tipos-de-datos">Tipos de datos</a></li>
+  <li><a href="#operaciones-aritmeticas" id="toc-operaciones-aritmeticas" class="nav-link" data-scroll-target="#operaciones-aritmeticas">Operaciones aritméticas</a></li>
+  <li><a href="#operadores-logicos" id="toc-operadores-logicos" class="nav-link" data-scroll-target="#operadores-logicos">Operadores lógicos</a></li>
+  <li><a href="#funciones-en-r" id="toc-funciones-en-r" class="nav-link" data-scroll-target="#funciones-en-r">Funciones</a></li>
+  <li><a href="#estructuras-datos" id="toc-estructuras-datos" class="nav-link" data-scroll-target="#estructuras-datos">Estructuras de datos</a></li>
+  <li><a href="#estructuras-datos-vectores" id="toc-estructuras-datos-vectores" class="nav-link" data-scroll-target="#estructuras-datos-vectores">Vectores</a></li>
+  <li><a href="#manipulacion-vectores" id="toc-manipulacion-vectores" class="nav-link" data-scroll-target="#manipulacion-vectores">Consultar y modificar un vector</a></li>
+  <li><a href="#parentesis-corchetes" id="toc-parentesis-corchetes" class="nav-link" data-scroll-target="#parentesis-corchetes">Paréntesis y corchetes</a></li>
+  <li><a href="#vectores-condicion" id="toc-vectores-condicion" class="nav-link" data-scroll-target="#vectores-condicion">Seleccionar valores con un criterio</a></li>
+  <li><a href="#valores-ausentes-na" id="toc-valores-ausentes-na" class="nav-link" data-scroll-target="#valores-ausentes-na">Valores ausentes</a></li>
+  <li><a href="#estructuras-datos-dataframe" id="toc-estructuras-datos-dataframe" class="nav-link" data-scroll-target="#estructuras-datos-dataframe">Crear un data frame</a></li>
+  <li><a href="#dataset-gss-cat" id="toc-dataset-gss-cat" class="nav-link" data-scroll-target="#dataset-gss-cat">Conocer y descargar la encuesta</a></li>
+  <li><a href="#paquetes-r" id="toc-paquetes-r" class="nav-link" data-scroll-target="#paquetes-r">Instalar y cargar paquetes</a></li>
+  <li><a href="#cargar-datos-encuesta" id="toc-cargar-datos-encuesta" class="nav-link" data-scroll-target="#cargar-datos-encuesta">Importar el CSV</a></li>
+  <li><a href="#explorar-datos-encuesta" id="toc-explorar-datos-encuesta" class="nav-link" data-scroll-target="#explorar-datos-encuesta">Explorar los datos</a></li>
+  <li><a href="#manipulacion-dataframe-valores" id="toc-manipulacion-dataframe-valores" class="nav-link" data-scroll-target="#manipulacion-dataframe-valores">Consultar columnas, celdas y filas</a></li>
+  <li><a href="#estructuras-datos-factores" id="toc-estructuras-datos-factores" class="nav-link" data-scroll-target="#estructuras-datos-factores">Factores y niveles</a></li>
+  <li><a href="#factor-no-ordenado" id="toc-factor-no-ordenado" class="nav-link" data-scroll-target="#factor-no-ordenado">Factores sin orden y con orden</a></li>
+  <li><a href="#resolucion-problemas-mensajes" id="toc-resolucion-problemas-mensajes" class="nav-link" data-scroll-target="#resolucion-problemas-mensajes">Interpretar los mensajes de R</a></li>
+  <li><a href="#resolucion-problemas-comprobaciones" id="toc-resolucion-problemas-comprobaciones" class="nav-link" data-scroll-target="#resolucion-problemas-comprobaciones">Qué revisar cuando algo falla</a></li>
+  <li><a href="#repaso" id="toc-repaso" class="nav-link" data-scroll-target="#repaso">Repaso de la sesión</a></li>
+  <li><a href="#proxima-sesion" id="toc-proxima-sesion" class="nav-link" data-scroll-target="#proxima-sesion">Próxima sesión y lecturas</a></li>
   </ul>
 </nav>
     </div>
@@ -188,420 +211,779 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En un programa de menús como SPSS o Excel, cada paso del análisis es un clic que no deja rastro: si meses después necesitas comprobar cómo obtuviste un dato o repetir el cálculo con un archivo actualizado, tienes que rehacerlo de memoria. Con R escribes las instrucciones en un documento junto a tus explicaciones y puedes volver a ejecutarlas de principio a fin con un solo clic.</p>
-<p>En este cuaderno darás tus primeros pasos con R y RStudio trabajando con datos reales de la <em>General Social Survey</em> (<code>encuesta_social.csv</code>). Empezarás guardando los datos de una sola persona, pasarás a cinco respuestas para poder comprobar a mano cada operación y terminarás importando y explorando las 21&nbsp;483 observaciones de la encuesta completa.</p>
-<p>Abre RStudio junto a esta página. A medida que avances irás creando tu proyecto <code>taller_R</code> y el documento <code>sesion-1.qmd</code>, donde escribirás el código, comprobarás lo que devuelve R y anotarás tus propios resultados. En cada apartado encontrarás ejercicios con la solución desplegable para que puedas intentarlos antes de consultarla.</p>
-<p><a href="#preparar" class="btn btn-primary no-external">Empieza por preparar RStudio</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
+<div id="intro-cuaderno">
+<p>En esta sesión verás cómo se pasa de una encuesta a un resultado que otra persona pueda comprobar. Después conocerás las herramientas del taller y prepararás tu ordenador para ejecutar las primeras instrucciones.</p>
+<p>Pulsa <strong>Siguiente</strong> para empezar o usa el índice para volver a un apartado.</p>
+<p><a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
+</div>
 <details class="indice-cuaderno-movil">
 <summary>
 En este cuaderno
 </summary>
-<ol type="1">
-<li><a href="#preparar">Prepara tu espacio de trabajo</a>
 <ul>
-<li><a href="#paneles-rstudio" class="no-external">Conoce los paneles de RStudio</a></li>
-</ul></li>
-<li><a href="#objetos">Guarda valores y haz cálculos</a></li>
-<li><a href="#vectores">Trabaja con cinco respuestas</a></li>
-<li><a href="#data-frame">Pasa de los vectores a una tabla</a></li>
-<li><a href="#importar">Importa y explora la encuesta completa</a></li>
-<li><a href="#factores">Reconoce las categorías con factores</a></li>
-<li><a href="#resolver-problemas">Qué hacer cuando aparece un mensaje</a></li>
-<li><a href="#practica-final">Comprueba lo que has aprendido</a></li>
-</ol>
+<li><a href="#intro-cuaderno" class="no-external">Presentación</a></li>
+<li><a href="#esquema-talleres" class="no-external">De la pregunta al resultado</a></li>
+<li><a href="#que-es-r-rstudio" class="no-external">R y RStudio en el taller</a></li>
+<li><a href="#elegir-lenguaje" class="no-external">Elegir entre R y Python</a></li>
+<li><a href="#primeros-pasos" class="no-external">1. Primeros pasos</a></li>
+<li><a href="#tour-rstudio" class="no-external">Tour por RStudio</a></li>
+<li><a href="#tipos-de-archivo" class="no-external">Un script de R y un documento Quarto</a></li>
+<li><a href="#crear-proyecto" class="no-external">Crea el proyecto del taller</a></li>
+<li><a href="#crear-documento-quarto" class="no-external">Crea tu documento Quarto</a></li>
+<li><a href="#objetos-y-valores" class="no-external">Objetos y valores</a></li>
+<li><a href="#tipos-de-datos" class="no-external">Tipos de datos</a></li>
+<li><a href="#operaciones-aritmeticas" class="no-external">Operaciones aritméticas</a></li>
+<li><a href="#operadores-logicos" class="no-external">Operadores lógicos</a></li>
+<li><a href="#funciones-en-r" class="no-external">Funciones</a></li>
+<li><a href="#estructuras-datos" class="no-external">Estructuras de datos</a></li>
+<li><a href="#estructuras-datos-vectores" class="no-external">Vectores</a></li>
+<li><a href="#manipulacion-vectores" class="no-external">Consultar y modificar un vector</a></li>
+<li><a href="#parentesis-corchetes" class="no-external">Paréntesis y corchetes</a></li>
+<li><a href="#vectores-condicion" class="no-external">Seleccionar valores con un criterio</a></li>
+<li><a href="#valores-ausentes-na" class="no-external">Valores ausentes</a></li>
+<li><a href="#estructuras-datos-dataframe" class="no-external">Crear un data frame</a></li>
+<li><a href="#dataset-gss-cat" class="no-external">Conocer y descargar la encuesta</a></li>
+<li><a href="#paquetes-r" class="no-external">Instalar y cargar paquetes</a></li>
+<li><a href="#cargar-datos-encuesta" class="no-external">Importar el CSV</a></li>
+<li><a href="#explorar-datos-encuesta" class="no-external">Explorar los datos</a></li>
+<li><a href="#manipulacion-dataframe-valores" class="no-external">Consultar columnas, celdas y filas</a></li>
+<li><a href="#estructuras-datos-factores" class="no-external">Factores y niveles</a></li>
+<li><a href="#factor-no-ordenado" class="no-external">Factores sin orden y con orden</a></li>
+<li><a href="#resolucion-problemas-mensajes" class="no-external">Interpretar los mensajes de R</a></li>
+<li><a href="#resolucion-problemas-comprobaciones" class="no-external">Qué revisar cuando algo falla</a></li>
+<li><a href="#repaso" class="no-external">Repaso de la sesión</a></li>
+<li><a href="#proxima-sesion" class="no-external">Próxima sesión y lecturas</a></li>
+</ul>
 </details>
-<section id="preparar" class="level2">
-<h2 data-anchor-id="preparar">1. Prepara tu espacio de trabajo</h2>
-<section id="qué-son-r-rstudio-y-quarto" class="level3">
-<h3 data-anchor-id="qué-son-r-rstudio-y-quarto">Qué son R, RStudio y Quarto</h3>
-<p><strong>R es un lenguaje de programación</strong> pensado para trabajar con datos, hacer análisis estadísticos y crear gráficos. Un lenguaje de programación tiene reglas para escribir instrucciones que un ordenador pueda interpretar. Cuando escribes <code>26 + 5</code>, usas una instrucción del lenguaje R. El programa R la interpreta, hace la suma y devuelve 31.</p>
-<p><strong>RStudio es un entorno de desarrollo</strong>, es decir, una aplicación que reúne herramientas para escribir y ejecutar código, gestionar los archivos de trabajo y consultar los resultados.</p>
-<p><strong>Quarto es una herramienta para crear documentos</strong> que combinan texto, código y resultados. Tú escribes y guardas el archivo editable, que termina en <code>.qmd</code>. Cuando pulsas <strong>Render</strong> en RStudio, Quarto pide a R que ejecute los bloques de código y genera un archivo HTML que puedes abrir en el navegador. Editarás el <code>.qmd</code> cada vez que quieras cambiar una explicación o un cálculo.</p>
-<p>Instala primero <a href="https://cran.r-project.org/" target="_blank" rel="noopener">R desde CRAN</a> y después <a href="https://docs.posit.co/ide/user/download.html" target="_blank" rel="noopener">RStudio Desktop</a>. Si RStudio indica que falta Quarto, <a href="https://quarto.org/docs/get-started/" target="_blank" rel="noopener">instálalo desde su web oficial</a> y vuelve a abrir RStudio. También puedes seguir los pasos en un proyecto de RStudio en <a href="https://posit.cloud/" target="_blank" rel="noopener">Posit Cloud</a>.</p>
+<section id="esquema-talleres" class="level2">
+<h2 data-anchor-id="esquema-talleres">De la pregunta al resultado</h2>
+<p><strong>¿Cuántas horas de televisión ven al día las personas encuestadas?</strong> Para responder, necesitamos saber qué mide la encuesta, encontrar la columna correspondiente y decidir qué hacer cuando falta una respuesta. Usaremos esta pregunta para seguir el recorrido que va desde un archivo de datos hasta un resultado que otra persona pueda entender y comprobar.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagenes/data-workflow.png" class="img-fluid figure-img" alt="Primero se importan y ordenan los datos. Después se transforman, visualizan y modelan en un ciclo para entenderlos. Al final se comunican los resultados. La programación acompaña todo el proceso."></p>
+<figcaption>Esquema del trabajo con datos.</figcaption>
+</figure>
+</div>
+<p>El esquema de <em>R for Data Science</em> distingue la preparación de los datos, su exploración y la comunicación de los resultados. Las flechas del centro forman un ciclo. Si un gráfico te muestra algo inesperado, puedes volver a los datos, revisar cómo los has preparado y rehacer el gráfico. Escribir los pasos en R permite repetir ese recorrido. <a href="https://r4ds.hadley.nz/intro.html#what-you-will-learn" target="_blank" rel="noopener">Wickham, Çetinkaya-Rundel y Grolemund, <em>R for Data Science</em>, 2.ª ed., introducción</a>.</p>
+<section id="proceso-datos" class="level3">
+<h3 data-anchor-id="proceso-datos">El proceso paso a paso</h3>
+<p>Trabajaremos con <code>encuesta_social.csv</code>, un archivo que guarda en forma de tabla una selección de respuestas de la <em>General Social Survey</em> de Estados Unidos. La columna <code>tvhours</code> recoge las horas diarias de televisión. <a href="https://forcats.tidyverse.org/reference/gss_cat.html" target="_blank" rel="noopener">Documentación de <code>gss_cat</code></a>.</p>
+<ol type="1">
+<li><strong>Importar.</strong> Abrimos el CSV desde R y lo cargamos como una tabla de datos. Comprobamos que se han leído las 21 483 observaciones y las 9 variables del archivo.</li>
+<li><strong>Ordenar.</strong> Revisamos que la estructura de la tabla tenga sentido para la pregunta. Cada fila corresponde a una observación, cada columna a una variable y cada celda contiene un solo valor. En este archivo, la edad está en <code>age</code> y las horas de televisión están en <code>tvhours</code>. Ordenar en el sentido de <em>tidy data</em> se refiere a esa estructura. Podemos cambiar el orden de las filas y la tabla seguirá teniendo la misma estructura. <a href="https://r4ds.hadley.nz/data-tidy.html#tidy-data" target="_blank" rel="noopener">Capítulo sobre datos ordenados</a>.</li>
+<li><strong>Transformar.</strong> Preparamos los datos para responder a la pregunta. En este caso, contamos cuántas personas tienen un valor registrado en <code>tvhours</code> y calculamos la media con esos valores. Una respuesta de cero horas entra en el cálculo. Una celda con <code>NA</code> indica que falta el dato y queda fuera de esa media.</li>
+<li><strong>Visualizar y modelar.</strong> Un gráfico mostraría cuántas personas declararon cada número de horas. Un modelo estadístico ayudaría a estudiar una pregunta distinta, como si las horas de televisión tienden a aumentar con la edad. Para la pregunta de esta sesión basta con describir las respuestas del archivo.</li>
+<li><strong>Comunicar.</strong> Indicamos qué hemos calculado, en qué unidad y con cuántas respuestas. En este archivo, <strong>entre las 11 337 personas con horas registradas, la media es de 2,98 horas diarias de televisión</strong>. Si alguien quiere comprobarlo, podrá seguir los pasos que hayamos anotado.</li>
+</ol>
+<p><strong>Antes de seguir.</strong> Una persona declara que ve cero horas de televisión y de otra no hay un dato registrado. ¿Cuál de las dos cuenta al calcular la media?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>La persona que declara cero horas cuenta como una respuesta más y aporta un cero a la suma. Para la otra persona, desconocemos las horas. Por eso la media se calcula con las respuestas que sí están registradas.</p>
+</details>
 </section>
-<section id="paneles-rstudio" class="level3">
-<h3 data-anchor-id="paneles-rstudio">Conoce los paneles de RStudio</h3>
-<p>Abre RStudio y compara tu ventana con la captura de la presentación. Los paneles pueden aparecer en otro orden o mostrar otras pestañas. Guíate por los nombres. Si todavía no has abierto un archivo, puede que la consola ocupe toda la columna izquierda. El editor aparecerá al crear <code>sesion-1.qmd</code>.</p>
+</section>
+<section id="que-es-r-rstudio" class="level2">
+<h2 data-anchor-id="que-es-r-rstudio">R y RStudio en el taller</h2>
+<p><strong>R es un lenguaje de programación pensado para trabajar con datos, hacer análisis estadísticos y crear gráficos.</strong> El programa R interpreta las instrucciones escritas en ese lenguaje y ejecuta los cálculos. <a href="https://www.r-project.org/about.html" target="_blank" rel="noopener">Proyecto R</a>.</p>
+<p><strong>RStudio es la aplicación donde trabajaremos con R.</strong> Desde su ventana puedes escribir instrucciones y ver qué devuelve R. Después de instalar los dos programas, recorreremos esa ventana para aprender dónde se hace cada cosa. <a href="https://docs.posit.co/ide/user/" target="_blank" rel="noopener">Guía de RStudio</a>.</p>
+<section id="por-que-r" class="level3">
+<h3 data-anchor-id="por-que-r">¿Por qué empezamos con R?</h3>
+<p>En Ciencias Sociales es habitual recibir una tabla de respuestas y necesitar una media, una comparación entre grupos o un gráfico. R reúne herramientas para preparar esos datos, analizarlos y presentar los resultados. Además, es software libre y puedes usarlo en casa. <a href="https://www.r-project.org/about.html" target="_blank" rel="noopener">Proyecto R</a>.</p>
+<p>Imagina que dentro de un mes alguien te pregunta cómo obtuviste las 2,98 horas de televisión. Si guardaste el código y anotaste qué archivo usaste y cómo trataste los valores ausentes, podrá revisar qué respuestas entraron en la media. Si recibes una versión corregida del CSV con la misma estructura, puedes volver a ejecutar esos pasos y comprobar qué cambia. <a href="https://r4ds.hadley.nz/intro.html#what-you-will-learn" target="_blank" rel="noopener">Introducción de <em>R for Data Science</em></a>.</p>
+</section>
+</section>
+<section id="elegir-lenguaje" class="level2">
+<h2 data-anchor-id="elegir-lenguaje">Elegir entre R y Python</h2>
+<section id="por-que-python" class="level3">
+<h3 data-anchor-id="por-que-python">¿Cuándo puede convenir Python?</h3>
+<p><strong>Python es un lenguaje de propósito general.</strong> Se usa para analizar datos y también para tareas como automatizar la descarga periódica de archivos o desarrollar aplicaciones web. Puede ser una elección práctica si el equipo ya usa Python para esas tareas o si necesita una herramienta que ya tiene disponible en ese lenguaje. <a href="https://www.python.org/about/" target="_blank" rel="noopener">Aplicaciones de Python</a>.</p>
+<p>Por ejemplo, si estudias miles de actas municipales, podrías usar Python para recopilar los documentos y extraer el texto. Si el equipo trabaja con R para el análisis, puede recibir una tabla con una fila por documento y continuar desde ahí.</p>
+</section>
+<section id="r-vs-python" class="level3">
+<h3 data-anchor-id="r-vs-python">R y Python: ¿cuál elegir?</h3>
+<p>Piensa en la tarea que tienes delante, las herramientas que necesita y quién tendrá que repetir el trabajo. En este taller ya tenemos un CSV y queremos explorar una encuesta, hacer cálculos y explicar las decisiones. Por eso empezaremos con R. En un proyecto más amplio, puedes usar un lenguaje en todo el recorrido o combinar ambos si cada uno resuelve bien una parte.</p>
+<p><strong>Antes de seguir.</strong> Quieres calcular la media de una columna del CSV en RStudio. ¿Qué herramienta ejecutará el cálculo? Si otra persona del equipo ya tiene un programa en Python que descarga una versión nueva del CSV cada semana, ¿podéis aprovecharlo?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>R ejecutará el cálculo y RStudio será el lugar desde el que escribas y pruebes las instrucciones. Podéis conservar el programa en Python para descargar el CSV y usar R para analizarlo. Lo que conecta ambas tareas es el archivo, que debe mantener las columnas y el formato que espera el análisis.</p>
+</details>
+<p>En el siguiente apartado prepararás tu espacio de trabajo en RStudio. Al final de la sesión volverás a la pregunta sobre las horas de televisión.</p>
+</section>
+</section>
+<section id="primeros-pasos" class="level2">
+<h2 data-anchor-id="primeros-pasos">1. Primeros pasos</h2>
+<section id="instalacion" class="level3">
+<h3 data-anchor-id="instalacion">Instala R y RStudio</h3>
+<p>Instala <strong>R primero</strong>. RStudio lo necesita para ejecutar el código del taller. Una vez instalados los dos programas, abrirás RStudio para trabajar. Si ya los tienes, puedes pasar a la comprobación al final del apartado.</p>
+<section id="instala-r" class="level4">
+<h4 data-anchor-id="instala-r">1. Instala R</h4>
+<p>Descarga el instalador que corresponda a tu sistema. Las páginas de CRAN indican qué versiones del sistema son compatibles.</p>
+<ul>
+<li><strong>Windows.</strong> Descarga el instalador <code>.exe</code> de la sección <em>Download R for Windows</em>. Ábrelo desde Descargas y sigue los pasos del asistente. <a href="https://cran.r-project.org/bin/windows/base/" target="_blank" rel="noopener">R para Windows</a>.</li>
+<li><strong>macOS.</strong> En el menú Apple , abre <em>Acerca de este Mac</em>. Si ves <em>Chip Apple</em>, elige el paquete <code>arm64</code>. Si ves un procesador Intel, elige <code>x86_64</code>. Abre el archivo <code>.pkg</code> y sigue el asistente. <a href="https://cran.r-project.org/bin/macosx/" target="_blank" rel="noopener">R para macOS</a>.</li>
+<li><strong>Linux.</strong> Sigue las instrucciones de CRAN para tu distribución, e.g.&nbsp;Ubuntu, Debian o Fedora. <a href="https://cloud.r-project.org/bin/linux/" target="_blank" rel="noopener">R para Linux</a>.</li>
+</ul>
+</section>
+<section id="instala-rstudio-desktop" class="level4">
+<h4 data-anchor-id="instala-rstudio-desktop">2. Instala RStudio Desktop</h4>
+<p>En la página de Posit, ve a <strong>RStudio Desktop</strong> y descarga el instalador para tu sistema. En Windows, abre el <code>.exe</code> y sigue el asistente. En macOS, abre el <code>.dmg</code> y arrastra RStudio a <em>Aplicaciones</em>. En Linux, instala el paquete indicado para tu distribución. Comprueba en la página qué versiones de tu sistema admite cada instalador. <a href="https://docs.posit.co/ide/user/download.html#rstudio-desktop" target="_blank" rel="noopener">Descargas de RStudio Desktop</a>.</p>
+</section>
+<section id="comprobar-instalacion" class="level4">
+<h4 data-anchor-id="comprobar-instalacion">Comprueba que funciona</h4>
+<p>Abre RStudio y pulsa la pestaña <em>Console</em>. Busca el símbolo <code>&gt;</code>, que indica que R está listo para recibir una instrucción. Escribe <code>2 + 3</code> y pulsa <strong>Enter</strong>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pide a R que sume dos números.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5</code></pre>
+<p>Si aparece el 5, RStudio ha podido enviarle la instrucción a R y mostrar el resultado. Si RStudio indica que no encuentra R, comprueba que terminaste la instalación de R y vuelve a abrir RStudio.</p>
+</section>
+</section>
+</section>
+<section id="tour-rstudio" class="level2">
+<h2 data-anchor-id="tour-rstudio">Tour por RStudio</h2>
+<p>Ya has usado la consola para hacer una suma. Ahora fíjate en qué parte de la ventana puedes escribir el código que quieres guardar, dónde ves lo que R tiene en memoria y dónde están tus archivos.</p>
+<p>La captura muestra una sesión de trabajo que ya está en marcha. Por ahora, fíjate en los nombres de los paneles. Si tu ventana tiene otra distribución, busca esos mismos nombres.</p>
 <figure class="tour-rstudio figure">
   <div class="tour-rstudio-captura">
-    <img src="imagenes/rstudio-paneles.png" width="1915" height="973" loading="lazy" alt="Ventana de RStudio con cuatro zonas numeradas. El editor está arriba a la izquierda, la consola abajo a la izquierda, el panel que contiene Environment arriba a la derecha y el que contiene Files abajo a la derecha." class="figure-img">
+    <img src="imagenes/rstudio-tour-cuaderno.png" width="3024" height="1906" alt="Ventana de RStudio con el editor arriba a la izquierda, Console debajo, Environment arriba a la derecha y Files debajo." class="figure-img">
     <a class="tour-rstudio-marca no-external" href="#panel-editor" aria-label="1. Editor">1</a>
     <a class="tour-rstudio-marca no-external" href="#panel-consola" aria-label="2. Consola">2</a>
     <a class="tour-rstudio-marca no-external" href="#panel-entorno" aria-label="3. Entorno">3</a>
     <a class="tour-rstudio-marca no-external" href="#panel-consulta" aria-label="4. Archivos y otras pestañas">4</a>
   </div>
-  <figcaption>Los números llevan a la explicación de cada panel. <a href="imagenes/rstudio-paneles.png" target="_blank" rel="noopener">Abrir la captura a tamaño completo</a>.</figcaption>
+  <figcaption>Pulsa un número para ir a la explicación de ese panel. <a href="imagenes/rstudio-tour-cuaderno.png" target="_blank" rel="noopener">Abrir la captura a tamaño completo</a>.</figcaption>
 </figure>
-<section id="panel-editor" class="level4">
-<h4 data-anchor-id="panel-editor">1. Editor</h4>
-<p>Es el lugar donde escribes lo que quieres conservar. Cada archivo abierto tiene su propia pestaña. Cuando crees <code>sesion-1.qmd</code>, aquí escribirás tus explicaciones y los bloques de R. <strong>Guardar</strong> conserva los cambios en el archivo. El triángulo verde de un bloque ejecuta ese bloque. <strong>Render</strong> genera el HTML a partir de todo el documento.</p>
-<p>En esta sesión usaremos la vista <strong>Visual</strong>. Verás el texto con formato y podrás crear encabezados e insertar bloques de R desde la barra del editor.</p>
+<section id="panel-editor" class="level3">
+<h3 data-anchor-id="panel-editor">1. Editor</h3>
+<p>El editor es el espacio donde escribes y revisas lo que quieres guardar en un archivo. En la captura ocupa la parte superior izquierda y tiene dos archivos abiertos, cada uno en su pestaña. Si acabas de abrir RStudio, puede que solo veas la consola a la izquierda. El editor aparecerá cuando abras o crees un archivo.</p>
 </section>
-<section id="panel-consola" class="level4">
-<h4 data-anchor-id="panel-consola">2. Consola (<em>Console</em>)</h4>
-<p>Aquí puedes pedirle a R que haga algo y ver su respuesta de inmediato. Pulsa la pestaña <em>Console</em>. La pestaña vecina, <em>Terminal</em>, sirve para enviar órdenes al sistema operativo. Al final de <em>Console</em> verás <code>&gt;</code>, que indica que R está listo para recibir una instrucción. Escribe solo <code>26 + 5</code> y pulsa <strong>Enter</strong>. Debajo debe aparecer <code>[1] 31</code>.</p>
-<p>La consola sirve para probar una idea o leer un mensaje. Si quieres que un cálculo forme parte de tu trabajo y se repita al pulsar <strong>Render</strong>, escríbelo en un bloque del editor y guarda el documento. En esta sesión usarás la consola para comprobaciones rápidas y para instalar los paquetes.</p>
+<section id="panel-consola" class="level3">
+<h3 data-anchor-id="panel-consola">2. Consola (<em>Console</em>)</h3>
+<p>Aquí probaste <code>2 + 3</code> al terminar la instalación. El símbolo <code>&gt;</code> señala dónde escribir la instrucción. Tras pulsar <strong>Enter</strong>, R muestra su respuesta en la misma consola.</p>
 </section>
-<section id="panel-entorno" class="level4">
-<h4 data-anchor-id="panel-entorno">3. Entorno (<em>Environment</em>)</h4>
-<p>Este panel te permite ver qué tiene R en memoria durante la sesión. En la captura está abierta la pestaña <em>Tutorial</em>. Pulsa <em>Environment</em> en ese mismo panel. Puede estar vacío al empezar. Vuelve a <em>Console</em>, escribe <code>edad_prueba &lt;- 26</code> y pulsa <strong>Enter</strong>. Ahora debe aparecer <code>edad_prueba</code> en <em>Environment</em> con el valor 26.</p>
-<p>Acabas de crear un <strong>objeto</strong>, un valor al que has dado un nombre. Si escribes <code>edad_prueba</code> en la consola, R muestra su contenido. El objeto estará disponible mientras trabajas en esa sesión. El código que lo crea es lo que guardarías en el <code>.qmd</code> si quisieras volver a crearlo al renderizar.</p>
-<p>En la pestaña <em>History</em> del mismo panel puedes buscar las instrucciones que ya has ejecutado. <em>Environment</em> te muestra el objeto <code>edad_prueba</code> y <em>History</em> te permite encontrar la instrucción que lo creó.</p>
+<section id="panel-entorno" class="level3">
+<h3 data-anchor-id="panel-entorno">3. Entorno (<em>Environment</em>)</h3>
+<p>Muestra los datos y resultados a los que se les ha dado un nombre mientras se trabaja con R. En la captura puedes ver <code>edad</code> con el valor 25. Si solo has hecho la suma de la instalación, es normal que tu panel esté vacío.</p>
 </section>
-<section id="panel-consulta" class="level4">
-<h4 data-anchor-id="panel-consulta">4. Archivos y otras pestañas de consulta</h4>
+<section id="panel-consulta" class="level3">
+<h3 data-anchor-id="panel-consulta">4. Archivos y otras pestañas</h3>
 <ul>
-<li><strong>Files</strong> muestra los archivos y carpetas. Aquí buscarás <code>taller_R.Rproj</code> y <code>sesion-1.qmd</code> después de crearlos. También usarás esta pestaña para crear la carpeta <code>datos</code>.</li>
-<li><strong>Plots</strong> muestra los gráficos que produces con R. Es normal que esté vacía al empezar.</li>
-<li><strong>Packages</strong> muestra los paquetes instalados. Un paquete es un conjunto de herramientas que añade funciones a R. Más adelante instalarás y cargarás los que necesita el taller.</li>
-<li><strong>Help</strong> muestra la documentación. Para probarlo, escribe <code>?mean</code> en la consola. Se abrirá la ayuda de la función que calcula la media.</li>
-<li><strong>Viewer</strong> muestra contenido web dentro de RStudio. Según tu configuración, la vista previa del HTML de Quarto puede aparecer aquí o abrirse en otra ventana.</li>
+<li><strong>Files</strong> muestra lo que hay guardado en una carpeta. En la captura puedes ver la lista de archivos debajo de <em>Name</em>.</li>
+<li><strong>Plots</strong> muestra los gráficos que generas con R.</li>
+<li><strong>Packages</strong> permite consultar los paquetes instalados, que son conjuntos de herramientas que amplían lo que puedes hacer con R.</li>
+<li><strong>Help</strong> permite consultar la ayuda de R.</li>
 </ul>
-<p>Si buscas el documento donde escribiste el código, mira en <em>Files</em>. Si buscas el valor que R acaba de guardar, mira en <em>Environment</em>. Prueba a pasar de un panel a otro antes de seguir. <a href="https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html" target="_blank" rel="noopener">Guía de los paneles de RStudio</a>.</p>
+<p><strong>Antes de seguir.</strong> Mira tu ventana de RStudio. ¿Dónde escribirías otra suma? ¿En qué pestaña buscarías un archivo que ya guardaste?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>Puedes probar la suma en <em>Console</em> y buscar el archivo en <em>Files</em>.</p>
+</details>
 </section>
 </section>
-<section id="crea-el-proyecto-taller_r" class="level3">
-<h3 data-anchor-id="crea-el-proyecto-taller_r">Crea el proyecto <code>taller_R</code></h3>
+<section id="tipos-de-archivo" class="level2">
+<h2 data-anchor-id="tipos-de-archivo">Un script de R y un documento Quarto</h2>
+<p>Ya sabes dónde se escribe código y dónde aparece la respuesta de R. Ahora veremos dos maneras de guardar esas instrucciones. Puedes reconocer cada tipo de archivo por lo que viene después del punto en su nombre, <code>.R</code> o <code>.qmd</code>.</p>
+<ul>
+<li><strong>Un script <code>.R</code></strong> guarda instrucciones de R y puede incluir comentarios que empiezan por <code>#</code>. Desde RStudio puedes ejecutar una línea, una selección o el script completo. Al probar un cálculo en la consola, verás allí lo que devuelve R.</li>
+<li><strong>Un documento Quarto <code>.qmd</code></strong> combina explicaciones y código. El código se escribe en <strong>bloques</strong>, unos recuadros donde puedes colocar y ejecutar una o varias instrucciones. Usaremos el editor <strong>Visual</strong> de RStudio para escribir el documento. Cuando pulses <strong>Render</strong>, Quarto ejecutará los bloques y generará un archivo HTML con el texto y los resultados que podrás leer en el navegador. <a href="https://r4ds.hadley.nz/quarto.html#quarto-basics" target="_blank" rel="noopener">Quarto en <em>R for Data Science</em></a>.</li>
+</ul>
+<section id="el-mismo-cálculo-en-los-dos-archivos" class="level3">
+<h3 data-anchor-id="el-mismo-cálculo-en-los-dos-archivos">El mismo cálculo en los dos archivos</h3>
+<p>Recupera la suma que usaste al comprobar la instalación. Puedes guardar la misma instrucción en un script o en un bloque de R de Quarto.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma dos números.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5</code></pre>
+<p>En Quarto puedes añadir debajo del bloque una frase para explicar el cálculo, e.g.&nbsp;«Sumé 2 y 3 para comprobar que R funciona». Al pulsar <strong>Render</strong>, podrás leer la instrucción, el resultado y tu explicación en el mismo HTML.</p>
+</section>
+<section id="por-qué-usaremos-quarto-en-el-taller" class="level3">
+<h3 data-anchor-id="por-qué-usaremos-quarto-en-el-taller">Por qué usaremos Quarto en el taller</h3>
+<p>Si estás empezando, ayuda poder trabajar en pequeños pasos. Escribes un bloque, lo ejecutas, compruebas el resultado y anotas lo que significa antes de pasar al siguiente. Cuando vuelvas al documento en casa, tendrás a mano tanto las instrucciones como el motivo por el que las escribiste.</p>
+<p><strong>Antes de seguir.</strong> Has generado un HTML y quieres corregir una explicación. ¿En qué archivo harías el cambio?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>Abre el archivo <code>.qmd</code> en RStudio, cambia la explicación o el código y pulsa <strong>Render</strong>. Quarto generará el HTML actualizado a partir de ese documento.</p>
+</details>
+</section>
+</section>
+<section id="crear-proyecto" class="level2">
+<h2 data-anchor-id="crear-proyecto">Crea el proyecto del taller</h2>
+<p>En el tour vimos la pestaña <em>Files</em>, donde puedes consultar los archivos de una carpeta. Ahora vamos a crear una carpeta propia para el taller y decirle a RStudio que la use como punto de partida.</p>
+<p>Un <strong>proyecto de RStudio</strong> tiene una carpeta principal y un archivo con extensión <code>.Rproj</code> que permite abrirla como espacio de trabajo. En esa carpeta guardaremos los datos, el código y los resultados del taller. Cuando abras el proyecto otro día, RStudio volverá a situarte en la misma carpeta. <a href="https://docs.posit.co/ide/user/ide/guide/code/projects.html" target="_blank" rel="noopener">Guía de proyectos de RStudio</a>.</p>
+<section id="crea-taller_r-en-rstudio-desktop" class="level3">
+<h3 data-anchor-id="crea-taller_r-en-rstudio-desktop">Crea <code>taller_R</code> en RStudio Desktop</h3>
 <ol type="1">
-<li>En RStudio, elige <em>File → New Project → New Directory → New Project</em>.</li>
-<li>Escribe <code>taller_R</code> en <em>Directory name</em>. En <em>Create project as subdirectory of</em> elige dónde quieres guardar la carpeta y pulsa <em>Create Project</em>.</li>
-<li>Comprueba que en la esquina superior derecha de RStudio aparece <code>taller_R</code> y que en el panel <em>Files</em> ves <code>taller_R.Rproj</code>. Cuando retomes el trabajo, puedes abrir el proyecto desde ese archivo.</li>
+<li>En el menú superior, elige <em>File → New Project…</em>.</li>
+<li>En la ventana que se abre, pulsa <em>New Directory</em> y después <em>New Project</em>. Así RStudio creará la carpeta y el proyecto juntos.</li>
+<li>En <em>Directory name</em>, escribe exactamente <code>taller_R</code>. En <em>Create project as subdirectory of</em>, elige la carpeta donde quieres guardarlo, e.g.&nbsp;<em>Documentos</em>. RStudio creará <code>taller_R</code> dentro del lugar que elijas.</li>
+<li>Pulsa <em>Create Project</em>. RStudio abrirá el proyecto que acabas de crear.</li>
 </ol>
-<p>Escribe <code>getwd()</code> en la consola y pulsa <strong>Enter</strong>. R mostrará la carpeta desde la que busca los archivos. La ruta será distinta en cada ordenador, pero su último componente debe ser <code>taller_R</code>. Si estás en otra carpeta, abre primero el archivo <code>taller_R.Rproj</code>.</p>
+<p>Si ya abriste un proyecto <code>taller_R</code> para el taller, puedes pasar directamente a la comprobación.</p>
 </section>
-<section id="crea-y-guarda-sesion-1.qmd" class="level3">
-<h3 data-anchor-id="crea-y-guarda-sesion-1.qmd">Crea y guarda <code>sesion-1.qmd</code></h3>
-<ol type="1">
-<li>Elige <em>File → New File → Quarto Document</em>. Escribe <code>quarto</code> en <em>Title</em>, selecciona <strong>HTML</strong> y deja <strong>Knitr</strong> en <em>Engine</em>. Marca <em>Use visual markdown editor</em> y pulsa <em>Create</em>.</li>
-<li>Comprueba que está seleccionado <strong>Visual</strong> en la barra del editor. Deja el recuadro inicial con el título y el formato que ha creado RStudio. Debajo, sustituye el contenido de ejemplo por un párrafo que diga «En esta sesión voy a explorar una encuesta con R». Si la línea tiene formato de encabezado, abre el selector de estilo de la barra y elige <em>Normal</em>.</li>
-<li>Guarda el documento con el nombre <code>sesion-1.qmd</code> dentro de <code>taller_R</code>, junto a <code>taller_R.Rproj</code>. Comprueba en <em>Files</em> que ves los dos archivos. Esta ubicación permitirá usar las mismas rutas al ejecutar un bloque en RStudio y al generar el HTML.</li>
-</ol>
+<section id="comprueba-que-estás-en-el-proyecto" class="level3">
+<h3 data-anchor-id="comprueba-que-estás-en-el-proyecto">Comprueba que estás en el proyecto</h3>
+<p>En RStudio Desktop, busca <strong><code>taller_R</code></strong> en la esquina superior derecha. En <em>Files</em> debería aparecer <strong><code>taller_R.Rproj</code></strong>. RStudio crea ese archivo al preparar el proyecto. Cuando retomes el taller, ábrelo con un doble clic desde la carpeta <code>taller_R</code> o desde <em>File → Open Project…</em> en RStudio.</p>
 </section>
-<section id="escribe-y-ejecuta-el-primer-bloque" class="level3">
-<h3 data-anchor-id="escribe-y-ejecuta-el-primer-bloque">Escribe y ejecuta el primer bloque</h3>
+</section>
+<section id="crear-documento-quarto" class="level2">
+<h2 data-anchor-id="crear-documento-quarto">Crea tu documento Quarto</h2>
 <ol type="1">
-<li>En el editor <strong>Visual</strong>, coloca el cursor en una línea nueva debajo de la frase inicial.</li>
-<li>En la barra del editor, abre el desplegable junto al icono verde con una <strong>C</strong> y un signo <strong>+</strong>. Selecciona <strong>R</strong>, la primera opción que aparece en la captura.</li>
-<li>RStudio insertará un bloque vacío donde dejaste el cursor. Haz clic dentro y escribe las dos líneas que aparecen debajo de la captura.</li>
+<li>Con el proyecto <code>taller_R</code> abierto, elige <strong>File → New File → Quarto Document…</strong>.</li>
+<li>En <strong>Title</strong>, escribe <code>quarto</code>. Selecciona <strong>HTML</strong>, deja marcada la opción <strong>Use visual markdown editor</strong> y pulsa <strong>Create</strong>.</li>
+<li>Guarda el documento como <code>quarto.qmd</code> junto a <code>taller_R.Rproj</code>. Si aparece contenido de ejemplo, puedes borrarlo del cuerpo del documento.</li>
+<li>En el editor <strong>Visual</strong>, coloca el cursor en una línea vacía. Abre el desplegable junto al icono verde con una <strong>C</strong> y un <strong>+</strong> y elige <strong>R</strong>.</li>
+<li>Escribe este cálculo dentro del bloque y pulsa el triángulo verde del bloque para ejecutarlo.</li>
 </ol>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="imagenes/rstudio-insertar-bloque-r.png" class="img-fluid figure-img" alt="Desplegable de la barra del editor visual de RStudio, junto al icono verde con una C y un signo más. La primera opción es R." width="210"></p>
-<figcaption>Menú para insertar un bloque en RStudio. La opción R aparece al abrir el desplegable junto al icono verde.</figcaption>
-</figure>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma 5 a la edad de la primera persona encuestada.</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">26</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Salida de R</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba que puedes ejecutar un bloque de R.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5</code></pre>
+<section id="genera-tu-primer-html" class="level3">
+<h3 data-anchor-id="genera-tu-primer-html">Genera tu primer HTML</h3>
+<p>Si aún no tienes instalado <code>rmarkdown</code>, ejecuta esta instrucción en la <strong>consola</strong> de RStudio. Quarto lo usa para preparar documentos con código de R. <a href="https://quarto.org/docs/computations/r.html#installation" target="_blank" rel="noopener">Instalación para usar R con Quarto</a>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala el paquete que prepara Quarto para generar documentos con R.</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Con el paquete instalado, guarda el documento y pulsa <strong>Render</strong>. Comprueba que el HTML muestra el cálculo y el resultado, 5.</p>
+<p>En los próximos pasos probarás instrucciones cortas en la consola. Volverás a <code>quarto.qmd</code> cuando empieces a trabajar con vectores. <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank" rel="noopener">Guía de Quarto en RStudio</a>.</p>
+</section>
+</section>
+<section id="objetos-y-valores" class="level2">
+<h2 data-anchor-id="objetos-y-valores">Objetos y valores</h2>
+<p>En la primera fila de <code>gss_cat</code>, la persona encuestada tiene <strong>26 años</strong>. Vamos a usar ese dato para aprender a guardarlo con un nombre y volver a utilizarlo. Para practicar basta con escribir el número en la consola de RStudio. Cargaremos el archivo completo más adelante. <a href="https://forcats.tidyverse.org/reference/gss_cat.html" target="_blank" rel="noopener">Datos de la encuesta <code>gss_cat</code></a>.</p>
+<section id="guarda-un-valor-con-un-nombre" class="level3">
+<h3 data-anchor-id="guarda-un-valor-con-un-nombre">Guarda un valor con un nombre</h3>
+<p>Escribe <code>age &lt;- 26</code> en <em>Console</em> y pulsa <strong>Enter</strong>. Puedes leerlo como «<code>age</code> recibe 26».</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la edad de la primera persona encuestada.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><strong><code>26</code></strong> es el <strong>valor</strong> que queremos guardar.</li>
+<li><strong><code>age</code></strong> es el nombre que usamos para referirnos a ese valor. También es el nombre de la columna de edad en la encuesta.</li>
+<li><strong><code>&lt;-</code></strong> es el signo de <strong>asignación</strong>. Le pide a R que guarde lo que hay a la derecha con el nombre de la izquierda.</li>
+</ul>
+<p>Acabas de crear un <strong>objeto</strong> llamado <code>age</code>. La asignación guarda el valor en la sesión de R. Para verlo, escribe el nombre en la consola.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta el valor que acabas de guardar.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>age</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 26</code></pre>
+<p>También puedes localizar <code>age</code> en <em>Environment</em>, el panel que vimos en el tour. Escribe el nombre tal como lo creaste. R distingue entre <code>age</code> y <code>Age</code>.</p>
+</section>
+<section id="usa-el-objeto-en-un-cálculo" class="level3">
+<h3 data-anchor-id="usa-el-objeto-en-un-cálculo">Usa el objeto en un cálculo</h3>
+<p>¿Qué edad tendría esa persona cinco años después? Escribe <code>age + 5</code>. R busca el valor de <code>age</code> y le suma 5.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma cinco años a la edad guardada.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>age <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <pre class="text salida-r"><code>[1] 31</code></pre>
-<p>Pulsa el triángulo verde del bloque. La línea que empieza por <code>#</code> es un <strong>comentario</strong>. Sirve para explicar el código a quien lo lee. R la ignora al hacer el cálculo. El recuadro que aparece debajo del código muestra lo que devuelve R. Compáralo con tu resultado. Las salidas largas se abren al pulsar «Ver salida de R». En tu <code>.qmd</code>, escribe el código y los comentarios dentro del bloque y añade debajo una frase que explique el resultado.</p>
-<p>Antes de renderizar, instala los paquetes <strong>una sola vez en la consola</strong>. Empieza por <code>rmarkdown</code>. Copia la instrucción y pulsa <strong>Enter</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala el paquete que Quarto usa para procesar los bloques de R.</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Cuando vuelva a aparecer <code>&gt;</code> en la consola, comprueba que la instalación ha terminado sin errores. Después, copia esta instrucción y pulsa <strong>Enter</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala las herramientas que usaremos para importar la encuesta.</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Espera a que vuelva a aparecer <code>&gt;</code> antes de continuar. Los mensajes de progreso pueden variar según el equipo.</p>
-<p>Guarda el documento y pulsa <strong>Render</strong>. Quarto ejecuta los bloques de arriba abajo en una sesión nueva de R. Comprueba que en <code>sesion-1.html</code> aparecen el título, el cálculo, el resultado y tu frase. Cuando vuelvas a renderizar, Quarto actualizará el HTML a partir de lo que hayas guardado en el <code>.qmd</code>. <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank" rel="noopener">Guía de Quarto para RStudio</a>.</p>
-<p>Para cada apartado, escribe el título indicado en una línea nueva. Con el cursor en esa línea, abre el selector de estilo de la barra, que suele mostrar <em>Normal</em>, y elige <strong>Header 2</strong> para convertirlo en un encabezado de segundo nivel. Pulsa <strong>Enter</strong> al final del título para volver a un párrafo normal. <a href="https://quarto.org/docs/visual-editor/" target="_blank" rel="noopener">Guía del editor Visual</a>.</p>
-<p>Para cada ejemplo, inserta un bloque con el botón verde y copia el código con sus comentarios. Ejecuta los bloques en orden, porque unos usarán objetos creados en los anteriores. Escribe tus observaciones entre bloques. Para cada ejercicio, crea tu propio bloque e intenta escribir el código antes de mirar la solución.</p>
-</section>
-</section>
-<section id="objetos" class="level2">
-<h2 data-anchor-id="objetos">2. Guarda valores y haz cálculos</h2>
-<p>Añade el encabezado «Objetos y cálculos» debajo de lo que ya tienes en <code>sesion-1.qmd</code>. En el primer bloque guardaremos los valores para poder volver a usarlos.</p>
-<p>Empecemos por la primera persona del archivo. <code>age</code> es su edad, <code>tvhours</code> son sus horas diarias de televisión y <code>marital</code> es su estado civil. Al ejecutar <code>age &lt;- 26</code>, R guarda el número 26 con el nombre <code>age</code>. A partir de ese momento puedes escribir <code>age</code> cada vez que quieras usar ese valor.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las tres respuestas de la primera persona.</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="dv">12</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la edad dentro de cinco años y muestra el resultado.</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>age_en_5 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">5</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>age_en_5</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si la persona tiene al menos 18 años ahora.</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 31
-[1] TRUE</code></pre>
-<p>Lee <code>age_en_5 &lt;- age + 5</code> de derecha a izquierda. R busca el valor de <code>age</code>, le suma 5 y guarda el resultado con el nombre <code>age_en_5</code>. Como la asignación utiliza un nombre nuevo, <code>age</code> conserva el valor 26. Si vuelves a asignar un valor al mismo nombre, R lo sustituye. Los nombres distinguen mayúsculas y minúsculas, así que <code>age</code> y <code>Age</code> son dos nombres distintos.</p>
-<p>La primera salida aparece al pedir <code>age_en_5</code>. La segunda responde a la pregunta «¿tiene al menos 18 años?». El <code>[1]</code> indica la posición del primer valor impreso en cada línea. El resultado viene a continuación.</p>
-<section id="cómo-distingue-r-los-números-del-texto" class="level3">
-<h3 data-anchor-id="cómo-distingue-r-los-números-del-texto">Cómo distingue R los números del texto</h3>
-<p>Las comillas cambian lo que R entiende. <code>12</code> es un número que puedes sumar. <code>"12"</code> son dos caracteres. Con <code>as.numeric("12")</code> puedes pedirle a R que interprete esos caracteres como un número. Si quieres comprobar cómo reconoce R un valor, usa <code>class()</code>.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo</th>
-<th>Ejemplo</th>
-<th>Qué representa</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Numérico</td>
-<td><code>26</code></td>
-<td>Un número con el que puedes operar.</td>
-</tr>
-<tr class="even">
-<td>Texto</td>
-<td><code>"Never married"</code></td>
-<td>Una cadena de caracteres, entre comillas.</td>
-</tr>
-<tr class="odd">
-<td>Lógico</td>
-<td><code>TRUE</code> o <code>FALSE</code></td>
-<td>El resultado de una condición.</td>
-</tr>
-<tr class="even">
-<td>Entero</td>
-<td><code>2000L</code></td>
-<td>Un número especificado como entero en R.</td>
-</tr>
-</tbody>
-</table>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si la edad y el estado civil son números o texto.</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(age)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(marital)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Convierte "12" a número para poder sumarle 1.</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">"12"</span>) <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si está casada y si tiene entre 18 y 64 años.</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Married"</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;=</span> <span class="dv">18</span> <span class="sc">&amp;</span> age <span class="sc">&lt;</span> <span class="dv">65</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] "numeric"
-[1] "character"
-[1] 13
-[1] FALSE
-[1] TRUE</code></pre>
-<p><code>class(age)</code> devuelve <code>"numeric"</code> y <code>class(marital)</code> devuelve <code>"character"</code>. La suma devuelve 13 una vez hecha la conversión. La comparación con <code>"Married"</code> devuelve <code>FALSE</code> porque la respuesta registrada es <code>"Never married"</code>.</p>
-<p><code>&lt;-</code> guarda un valor y <code>==</code> pregunta si dos valores son iguales. En <code>age &gt;= 18 &amp; age &lt; 65</code>, R comprueba cada condición por separado y solo devuelve <code>TRUE</code> si ambas se cumplen. Para pedir que se cumpla al menos una, usa <code>|</code>. Para invertir una condición, usa <code>!</code>. Para comprobar si un valor está entre varios posibles, usa <code>%in%</code>.</p>
-</section>
-<section id="cómo-leer-una-función-y-sus-argumentos" class="level3">
-<h3 data-anchor-id="cómo-leer-una-función-y-sus-argumentos">Cómo leer una función y sus argumentos</h3>
-<p>Lee <code>sum(2, 3)</code> como «suma 2 y 3». <code>sum</code> es el nombre de la <strong>función</strong> y le dice a R qué operación hacer. El 2 y el 3 son los <strong>argumentos</strong>, es decir, los datos que recibe para hacer la suma. Van entre paréntesis y se separan con comas.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma dos números.</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Añade un tercer número a la suma.</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 5
-[1] 9</code></pre>
-<p>En la primera llamada, R devuelve 5. En la segunda hace la misma operación con tres argumentos y devuelve 9.</p>
-<p><strong>Pruébalo.</strong> Guarda en <code>edad_en_10</code> la edad que tendrá esta persona dentro de diez años. Comprueba si entonces tendrá al menos 40.</p>
+<p>Si vuelves a escribir <code>age</code>, verás 26. La suma mostró el resultado y el objeto conserva la edad original.</p>
+<p><strong>Pruébalo.</strong> En esa misma fila de la encuesta constan <strong>12 horas diarias de televisión</strong>. Guarda el 12 con el nombre <code>tvhours</code> y comprueba qué valor te devuelve R al escribir ese nombre.</p>
 <details class="solucion-cuaderno">
 <summary>
 Ver solución
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la edad dentro de diez años y muéstrala.</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="ot">&lt;-</span> age <span class="sc">+</span> <span class="dv">10</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>edad_en_10</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si entonces tendrá al menos 40 años.</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>edad_en_10 <span class="sc">&gt;=</span> <span class="dv">40</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 36
-[1] FALSE</code></pre>
-<p>La edad será <code>36</code>, así que la comparación devuelve <code>FALSE</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las horas y consulta el valor.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>tvhours</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 12</code></pre>
 </details>
 </section>
 </section>
-<section id="vectores" class="level2">
-<h2 data-anchor-id="vectores">3. Trabaja con cinco respuestas</h2>
-<p>Añade el encabezado «Vectores y valores ausentes» al final de tu <code>.qmd</code>. Conserva los bloques anteriores para que el documento muestre cómo pasaste de una persona a cinco.</p>
-<p>Hasta ahora usábamos un valor por variable. Vamos a guardar cinco edades bajo un mismo nombre con <code>c()</code>, que combina valores en el orden en que los escribimos. El resultado es un <strong>vector</strong>. Repetimos la operación con el estado civil y las horas de televisión. La primera posición de los tres vectores corresponde a la misma persona. Si cambias el orden de un solo vector, pierdes esa correspondencia.</p>
-<p>Cada vector de este ejemplo reúne valores de un mismo tipo. Si escribes una edad entre comillas en <code>c(26, "48")</code>, R convierte también el 26 a texto. Conviene comprobar el tipo antes de intentar calcular una media.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reúne las respuestas de las cinco personas en el mismo orden.</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>,</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>             <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)   <span class="co"># Cuenta cuántas edades hay.</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">2</span>]        <span class="co"># Muestra la segunda edad.</span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]  <span class="co"># Muestra la primera y la tercera.</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="tipos-de-datos" class="level2">
+<h2 data-anchor-id="tipos-de-datos">Tipos de datos</h2>
+<details class="solucion-cuaderno">
+<summary>
+Repaso opcional sobre cómo se miden las variables
+</summary>
+<p>Antes de ver cómo guarda R un dato, conviene preguntarse qué representa ese dato en la encuesta.</p>
+<p><strong>Variables que agrupan respuestas en categorías</strong></p>
+<ul>
+<li><strong>Nominal.</strong> Las categorías no tienen un orden natural. En <code>marital</code>, «casado» y «viudo» son respuestas distintas que no se ordenan de menor a mayor.</li>
+<li><strong>Ordinal.</strong> Las categorías se pueden ordenar. En <code>rincome</code>, los tramos de ingresos van de menor a mayor. Saber el tramo no te dice cuánto ingresó exactamente la persona.</li>
+<li><strong>Binaria.</strong> Tiene dos categorías. Si a partir de la edad registramos «¿Tiene 18 años o más?», las respuestas posibles son «sí» y «no».</li>
+</ul>
+<p><strong>Variables que expresan cantidades</strong></p>
+<ul>
+<li><strong>Discreta.</strong> Toma valores separados. En el archivo, <code>age</code> recoge la edad en años cumplidos. Una persona de 26 años y medio figura con 26 años cumplidos.</li>
+<li><strong>Continua.</strong> Puede tomar valores intermedios según la precisión de la medida. Si midiéramos con un reloj el tiempo dedicado a ver la televisión, podríamos registrar 1,5 horas, 1,51 horas o un valor entre ambos. El archivo del taller recoge las horas declaradas en números enteros.</li>
+</ul>
+<p>Al comparar cantidades también importa qué significa el cero. En una <strong>escala de intervalo</strong>, tienen sentido las diferencias. Entre 2000 y 2002 hay dos años, pero el origen del calendario es una convención y no indica que antes no hubiera tiempo. En una <strong>escala de razón</strong>, cero indica ausencia de lo que medimos. Cero horas de televisión significa que la persona no vio televisión, y cuatro horas son el doble de dos. La forma de registrar el dato y el significado del cero son dos cuestiones distintas.</p>
+<p>En lo que sigue cambiaremos de pregunta. Veremos cómo indicar a R que guarde un valor como número, texto o valor lógico.</p>
+</details>
+<p>En el paso anterior guardamos <code>26</code> con el nombre <code>age</code>. En la misma fila de la encuesta hay otros valores, como el año de la entrevista y el estado civil. R distingue qué clase de valor le das por cómo lo escribes.</p>
+<ul>
+<li><strong>Número.</strong> Escribe <code>26</code> sin comillas. R lo reconoce como un número y puedes usarlo en un cálculo.</li>
+<li><strong>Texto.</strong> Escribe <code>"Never married"</code> entre comillas. Es la respuesta de la primera persona sobre su estado civil.</li>
+<li><strong>Valor lógico.</strong> Escribe <code>TRUE</code> o <code>FALSE</code> en mayúsculas y sin comillas. Sirven para representar verdadero o falso. Como esta persona tiene 26 años, podemos guardar <code>TRUE</code> para indicar que es mayor de edad. Ese dato lo deducimos de la edad.</li>
+<li><strong>Entero.</strong> Escribe <code>2000L</code> con la letra <strong>L</strong> pegada al número. Tanto <code>2000</code> como <code>2000L</code> representan el mismo año. La <strong>L</strong> le indica a R que guarde ese número con el tipo entero. <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/NumericConstants.html" target="_blank" rel="noopener">Manual de R sobre números</a>.</li>
+</ul>
+<p>Prueba estas líneas en la consola. Primero guardas los valores. Después, al escribir cada nombre, ves lo que devuelve R.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda datos de la primera persona y si es mayor de edad.</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>mayor_edad <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>year <span class="ot">&lt;-</span> <span class="dv">2000</span>L</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta los cuatro valores.</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>age</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>marital</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>mayor_edad</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>year</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 26
+[1] "Never married"
+[1] TRUE
+[1] 2000</code></pre>
+<p>Fíjate en que R muestra el texto con comillas. Al mostrar el año, imprime <code>2000</code> aunque lo hayas guardado como entero.</p>
+<section id="comprobar-tipo-de-dato" class="level3">
+<h3 data-anchor-id="comprobar-tipo-de-dato">Comprueba cómo guardó R un valor</h3>
+<p><code>typeof()</code> muestra el tipo de dato que R está usando. Escribe entre paréntesis el nombre del objeto que quieres consultar.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba cómo guardó R la edad y el año.</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(age)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(year)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "double"
+[1] "integer"</code></pre>
+<p><code>"double"</code> es el tipo que R usa cuando escribimos <code>26</code>. Puede representar números con decimales. <code>"integer"</code> indica que R guardó <code>2000L</code> como entero. Al consultar solo el valor, los dos se muestran sin decimales.</p>
+<p>Si quieres ver a la vez qué tipo tiene un objeto y qué contiene, prueba <code>str()</code>. Su nombre viene de <em>structure</em>, «estructura».</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mira el tipo y el valor de mayor_edad.</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mayor_edad)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code> logi TRUE</code></pre>
+<p><code>logi</code> indica que el dato es lógico y <code>TRUE</code> es el valor que guardaste.</p>
+<p><strong>Pruébalo.</strong> Para guardar las horas de televisión como un número, ¿escribirías <code>12</code> o <code>"12"</code>? Comprueba qué tipo reconoce R en cada caso con <code>typeof()</code>.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>Escribirías <code>12</code>. Con comillas, R interpreta <code>"12"</code> como texto. Esta diferencia importa si luego quieres sumar esas horas o calcular una media.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara el mismo valor escrito con y sin comillas.</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="dv">12</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="st">"12"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "double"
+[1] "character"</code></pre>
+</details>
+</section>
+</section>
+<section id="operaciones-aritmeticas" class="level2">
+<h2 data-anchor-id="operaciones-aritmeticas">Operaciones aritméticas</h2>
+<p>Ya has usado <code>+</code> para sumar. En R también puedes usar <code>-</code> para restar, <code>*</code> para multiplicar y <code>/</code> para dividir. Practicaremos en la consola con números de la encuesta que puedes escribir directamente.</p>
+<section id="calcula-una-diferencia" class="level3">
+<h3 data-anchor-id="calcula-una-diferencia">Calcula una diferencia</h3>
+<p>Las dos primeras personas de la encuesta tienen 26 y 48 años. ¿Cuántos años de diferencia hay entre ellas?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Resta la edad menor de la mayor.</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="dv">48</span> <span class="sc">-</span> <span class="dv">26</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 22</code></pre>
+<p>La diferencia es de 22 años.</p>
+</section>
+<section id="suma-y-divide-para-calcular-una-media" class="level3">
+<h3 data-anchor-id="suma-y-divide-para-calcular-una-media">Suma y divide para calcular una media</h3>
+<p>La tercera persona tiene 67 años. Para calcular la edad media de estas tres personas, primero suma sus edades y después divide el total entre 3.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suma las tres edades y divide el total entre tres.</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>(<span class="dv">26</span> <span class="sc">+</span> <span class="dv">48</span> <span class="sc">+</span> <span class="dv">67</span>) <span class="sc">/</span> <span class="dv">3</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 47</code></pre>
+<p>Los paréntesis hacen que R sume primero las edades. Si escribes <code>26 + 48 + 67 / 3</code>, R divide solo 67 entre 3 y después suma las otras dos edades.</p>
+<p><strong>Pruébalo.</strong> La primera persona declaró 12 horas diarias de televisión. Si mantuviera ese ritmo los siete días, ¿cuántas horas serían en una semana? Prueba con <code>*</code>.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiplica las horas diarias por los siete días de la semana.</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span> <span class="sc">*</span> <span class="dv">7</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 84</code></pre>
+<p>Serían 84 horas si se mantuviera ese ritmo cada día. Es una estimación a partir de la respuesta diaria.</p>
+</details>
+</section>
+</section>
+<section id="operadores-logicos" class="level2">
+<h2 data-anchor-id="operadores-logicos">Operadores lógicos</h2>
+<p>En el apartado de tipos de datos guardaste <code>TRUE</code> para indicar que una persona era mayor de edad. Ahora le pedirás a R que compruebe una condición con los datos que ya conoces. En los ejemplos de este apartado, R devuelve <code>TRUE</code> (verdadero) cuando la condición se cumple y <code>FALSE</code> (falso) cuando no se cumple.</p>
+<section id="comprueba-una-condición" class="level3">
+<h3 data-anchor-id="comprueba-una-condición">Comprueba una condición</h3>
+<p>Abre la consola de RStudio. Usaremos dos valores de la primera persona de la encuesta. Tiene 26 años y su respuesta sobre el estado civil fue «Never married» («nunca se ha casado»). Ejecuta estas líneas para tener los dos valores a mano.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la edad y el estado civil de la primera persona.</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">26</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ahora prueba las comparaciones una a una. Antes de pulsar <strong>Intro</strong>, intenta anticipar qué devolverá R.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Tiene más de 30 años?</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>age <span class="sc">&gt;</span> <span class="dv">30</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Su respuesta es «Never married»?</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">==</span> <span class="st">"Never married"</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ¿Su respuesta es distinta de «Never married»?</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>marital <span class="sc">!=</span> <span class="st">"Never married"</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] FALSE
+[1] TRUE
+[1] FALSE</code></pre>
+<p><code>&gt;</code> significa «mayor que», <code>==</code> significa «igual a» y <code>!=</code> significa «distinto de». Fíjate en los dos signos de <code>==</code>. Antes usaste <code>&lt;-</code> para guardar un valor. Aquí usas <code>==</code> para comprobar si dos valores son iguales.</p>
+</section>
+<section id="pide-que-se-cumplan-las-dos-condiciones-con-y" class="level3">
+<h3 data-anchor-id="pide-que-se-cumplan-las-dos-condiciones-con-y">Pide que se cumplan las dos condiciones con «y»</h3>
+<p>¿Tiene más de 30 años <strong>y</strong> nunca se ha casado? Escribe <code>&amp;</code> entre las dos comparaciones. Los paréntesis ayudan a ver dónde empieza y termina cada condición.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si se cumplen las dos condiciones.</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>(age <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">&amp;</span> (marital <span class="sc">==</span> <span class="st">"Never married"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] FALSE</code></pre>
+<p>La primera condición da <code>FALSE</code> y la segunda da <code>TRUE</code>. Con <code>&amp;</code> solo obtienes <code>TRUE</code> si se cumplen las dos.</p>
+</section>
+<section id="pide-que-se-cumpla-al-menos-una-condición-con-o" class="level3">
+<h3 data-anchor-id="pide-que-se-cumpla-al-menos-una-condición-con-o">Pide que se cumpla al menos una condición con «o»</h3>
+<p>¿Tiene más de 30 años <strong>o</strong> nunca se ha casado? Mantén las mismas comparaciones y cambia <code>&amp;</code> por la barra vertical <code>|</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si se cumple al menos una condición.</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>(age <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">|</span> (marital <span class="sc">==</span> <span class="st">"Never married"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] TRUE</code></pre>
+<p>La primera condición sigue dando <code>FALSE</code>. Basta con que la segunda sea <code>TRUE</code>. Si se cumplieran las dos condiciones, el resultado también sería <code>TRUE</code>.</p>
+<p><strong>Pruébalo.</strong> Cambia <code>age &gt; 30</code> por <code>age &gt; 20</code> en los dos ejemplos. Antes de ejecutarlos, piensa qué devuelve ahora cada comparación y qué resultado esperas con <code>&amp;</code> y con <code>|</code>.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si se cumplen las dos condiciones con el nuevo límite.</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>(age <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="sc">&amp;</span> (marital <span class="sc">==</span> <span class="st">"Never married"</span>)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba si se cumple al menos una con el mismo límite.</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>(age <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="sc">|</span> (marital <span class="sc">==</span> <span class="st">"Never married"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] TRUE
+[1] TRUE</code></pre>
+<p>Como 26 es mayor que 20 y la respuesta coincide con «Never married», las dos condiciones se cumplen. En este caso, tanto <code>&amp;</code> como <code>|</code> devuelven <code>TRUE</code>.</p>
+</details>
+</section>
+</section>
+<section id="funciones-en-r" class="level2">
+<h2 data-anchor-id="funciones-en-r">Funciones</h2>
+<p>Ya has usado <code>typeof()</code> para averiguar el tipo de un dato. <code>typeof()</code> es una <strong>función</strong>, una instrucción que R ya sabe ejecutar. Para usar una función, escribe su nombre seguido de paréntesis. Dentro puedes indicar con qué dato quieres trabajar o cómo quieres que se realice la tarea. Esos valores se llaman <strong>argumentos</strong>.</p>
+<section id="usa-una-función-y-guarda-el-resultado" class="level3">
+<h3 data-anchor-id="usa-una-función-y-guarda-el-resultado">Usa una función y guarda el resultado</h3>
+<p>Prueba en la consola con el estado civil de la primera persona de la encuesta. <code>toupper()</code> convierte un texto a mayúsculas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la respuesta original y conviértela a mayúsculas.</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="st">"Never married"</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">toupper</span>(marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "NEVER MARRIED"</code></pre>
+<p>En <code>toupper(marital)</code>, <code>toupper</code> es el nombre de la función y <code>marital</code> es el argumento. R toma el texto guardado en <code>marital</code> y devuelve una versión en mayúsculas. Si quieres reutilizar esa versión, guárdala con <code>&lt;-</code> y dale un nombre distinto.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la versión en mayúsculas en un objeto nuevo.</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>marital_mayusculas <span class="ot">&lt;-</span> <span class="fu">toupper</span>(marital)</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la versión nueva y la respuesta original.</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>marital_mayusculas</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>marital</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "NEVER MARRIED"
+[1] "Never married"</code></pre>
+</section>
+<section id="distingue-un-argumento-obligatorio-de-uno-opcional" class="level3">
+<h3 data-anchor-id="distingue-un-argumento-obligatorio-de-uno-opcional">Distingue un argumento obligatorio de uno opcional</h3>
+<p>En <code>toupper(marital)</code>, el texto es un argumento <strong>obligatorio</strong>. La función necesita saber qué texto convertir. Otras funciones también aceptan argumentos <strong>opcionales</strong>. Con <code>print()</code>, por ejemplo, indicas qué valor quieres mostrar y, si ese valor es un texto, puedes elegir si se muestra entre comillas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra la respuesta con la configuración habitual.</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(marital)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra la misma respuesta sin comillas.</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(marital, <span class="at">quote =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "Never married"
+[1] Never married</code></pre>
+<p>Lee la segunda llamada de izquierda a derecha. <code>marital</code> es lo que quieres mostrar. La coma separa los argumentos. <code>quote = FALSE</code> indica que quieres mostrar el texto sin comillas. <code>quote</code> es el nombre del argumento y <code>FALSE</code> es el valor que le das. Si lo omites, R usa el <strong>valor por defecto</strong> para mostrar este texto, <code>quote = TRUE</code>. Cambia la forma de mostrar la respuesta y <code>marital</code> conserva su valor.</p>
+</section>
+<section id="consulta-la-ayuda-de-una-función" class="level3">
+<h3 data-anchor-id="consulta-la-ayuda-de-una-función">Consulta la ayuda de una función</h3>
+<p>Escribe un signo de interrogación seguido del nombre de la función en la consola y pulsa <strong>Intro</strong>. RStudio mostrará la documentación en la pestaña <strong>Help</strong>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Abre la ayuda de la función print.</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>?print</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Busca <strong>Arguments</strong> («argumentos») y localiza <code>quote</code>. La descripción indica qué controla esa opción. Para comprobar el valor por defecto que hemos usado, sigue el enlace <strong>print.default</strong> y busca <code>quote = TRUE</code> en <strong>Usage</strong> («uso»). El apartado <strong>Examples</strong> («ejemplos») muestra llamadas que puedes probar en la consola.</p>
+<p><strong>Pruébalo.</strong> La segunda persona de la encuesta respondió «Divorced» («divorciado/a»). Guarda esa respuesta en <code>marital_segunda</code>, convierte el texto a mayúsculas y guarda el resultado con otro nombre. Después, muéstralo sin comillas.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda la respuesta de la segunda persona.</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>marital_segunda <span class="ot">&lt;-</span> <span class="st">"Divorced"</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda una versión en mayúsculas.</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>marital_segunda_mayusculas <span class="ot">&lt;-</span> <span class="fu">toupper</span>(marital_segunda)</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra la versión en mayúsculas sin comillas.</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(marital_segunda_mayusculas, <span class="at">quote =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] DIVORCED</code></pre>
+</details>
+</section>
+</section>
+<section id="estructuras-datos" class="level2">
+<h2 data-anchor-id="estructuras-datos">Estructuras de datos</h2>
+<p><strong>Entre las cinco primeras personas de la encuesta, ¿qué edades tienen las que respondieron «Divorced»?</strong> Para contestar necesitamos dos datos de cada persona, la edad y el estado civil. Una <strong>estructura de datos</strong> es la forma en que R organiza esos valores para que podamos consultarlos juntos o por separado.</p>
+<section id="un-vector-guarda-los-valores-de-una-variable" class="level3">
+<h3 data-anchor-id="un-vector-guarda-los-valores-de-una-variable">Un vector guarda los valores de una variable</h3>
+<p>Hasta ahora, <code>age</code> guardaba un solo valor, 26. Para tener las edades de las cinco personas juntas podemos guardar la secuencia <strong>26, 48, 67, 39, 25</strong> en un <strong>vector</strong>. Cada número ocupa una posición. Si consultas la segunda, obtienes 48, la edad de la segunda persona.</p>
+<p>En los vectores que usaremos, todos los valores son del mismo tipo. Un vector de edades contiene números. Otro vector puede contener las cinco respuestas de estado civil como texto, en el mismo orden. La segunda edad y la segunda respuesta de estado civil pertenecen a la misma persona.</p>
+</section>
+<section id="un-data-frame-reúne-las-variables-de-la-encuesta" class="level3">
+<h3 data-anchor-id="un-data-frame-reúne-las-variables-de-la-encuesta">Un data frame reúne las variables de la encuesta</h3>
+<p>Si colocamos los dos vectores como columnas de una tabla, podemos leer juntas las respuestas de cada persona. En R, esa tabla se llama <strong>data frame</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Edad (<code>age</code>)</th>
+<th style="text-align: left;">Estado civil (<code>marital</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">Never married</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Divorced</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">67</td>
+<td style="text-align: left;">Widowed</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Never married</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Divorced</td>
+</tr>
+</tbody>
+</table>
+<p>Cada <strong>fila</strong> corresponde a una persona y cada <strong>columna</strong> a una variable. Las columnas tienen el mismo número de filas, aunque pueden guardar tipos de datos distintos. Aquí la edad es numérica y el estado civil está escrito como texto. Para contestar la pregunta inicial, busca «Divorced» en la segunda columna y lee la edad en esas mismas filas. Son <strong>48 y 25 años</strong>.</p>
+</section>
+<section id="un-factor-distingue-las-respuestas-de-las-categorías" class="level3">
+<h3 data-anchor-id="un-factor-distingue-las-respuestas-de-las-categorías">Un factor distingue las respuestas de las categorías</h3>
+<p>Si queremos hacer una tabla de frecuencias del estado civil, nos interesa saber qué categorías hay y cuántas personas aparecen en cada una. Un <strong>factor</strong> guarda la categoría de cada persona y, además, una lista de categorías posibles. En R, esas categorías se llaman <strong>niveles</strong>.</p>
+<p>Entre estas cinco personas aparecen tres niveles, «Divorced», «Never married» y «Widowed». Dos personas respondieron «Divorced». Sus respuestas siguen en sus respectivas filas y comparten el mismo nivel. En el estado civil, los niveles son categorías sin jerarquía. En una variable como el nivel de estudios, podemos indicar qué categoría va antes que otra.</p>
+</section>
+</section>
+<section id="estructuras-datos-vectores" class="level2">
+<h2 data-anchor-id="estructuras-datos-vectores">Vectores</h2>
+<p>Hasta ahora, <code>age</code> guardaba una sola edad. Vamos a usar ese mismo nombre para guardar las edades de las cinco primeras personas de la encuesta. Un <strong>vector</strong> permite reunir varios valores en un solo objeto y conservar su orden.</p>
+<section id="crea-tu-primer-vector" class="level3">
+<h3 data-anchor-id="crea-tu-primer-vector">Crea tu primer vector</h3>
+<p>Pega estas líneas en un nuevo bloque de R de <code>quarto.qmd</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las cinco edades en el orden de la encuesta.</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pide a R que muestre lo que hay en age.</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>age</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Pulsa el <strong>triángulo verde del bloque</strong>. En el resultado deberías ver las cinco edades.</p>
+<pre class="text salida-r"><code>[1] 26 48 67 39 25</code></pre>
+<p><code>c()</code> viene de <em>combine</em>, «combinar». Reúne los valores que escribes entre paréntesis, separados por comas. La primera instrucción guarda el vector en <code>age</code> con <code>&lt;-</code>. La segunda consulta el objeto. El <code>[1]</code> lo añade R al mostrar el resultado e indica que esa línea empieza en la posición 1 del vector.</p>
+</section>
+<section id="comprueba-qué-has-guardado" class="level3">
+<h3 data-anchor-id="comprueba-qué-has-guardado">Comprueba qué has guardado</h3>
+<p>Inserta otro bloque de R debajo del anterior. Pega estas tres instrucciones y ejecuta el bloque. Las tres consultan <code>age</code>, el objeto que acabas de crear.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta cuántas edades hay.</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta el tipo de dato y la estructura del vector.</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(age)</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(age)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <pre class="text salida-r"><code>[1] 5
-[1] 48
-[1] 26 67</code></pre>
-<p>R cuenta las posiciones desde 1. <code>length(age)</code> pregunta cuántos valores hay y devuelve 5. <code>age[2]</code> pide el valor de la segunda posición y devuelve 48. Dentro de los corchetes también puedes dar varias posiciones. En <code>age[c(1, 3)]</code>, <code>c(1, 3)</code> construye la selección y los corchetes extraen la primera y la tercera edad.</p>
-<section id="seleccionar-por-una-condición" class="level3">
-<h3 data-anchor-id="seleccionar-por-una-condición">Seleccionar por una condición</h3>
-<p>Para averiguar qué personas tienen más de 40 años podrías revisar las edades una a una. R puede hacer la misma comparación con todas de una vez. Antes de ejecutar <code>age &gt; 40</code>, mira las cinco edades e intenta predecir qué posiciones darán <code>TRUE</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Marca las edades mayores de 40 y extrae las que cumplen la condición.</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>criterio <span class="ot">&lt;-</span> age <span class="sc">&gt;</span> <span class="dv">40</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>criterio</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>age[criterio]</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Cambia la primera edad en una copia y comprueba el valor original.</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] FALSE  TRUE  TRUE FALSE FALSE
-[1] 48 67
-[1] 26</code></pre>
-<p><code>criterio</code> conserva la longitud y el orden de <code>age</code>. Puedes leerlo en paralelo con las edades.</p>
+[1] "double"
+ num [1:5] 26 48 67 39 25</code></pre>
+<p><code>length()</code> devuelve 5 porque hay cinco elementos. <code>typeof()</code> indica que R los guardó como números de tipo <code>double</code>. En la salida de <code>str()</code>, <code>num</code> indica que el vector es numérico y <code>[1:5]</code> indica que sus posiciones van de la 1 a la 5.</p>
+</section>
+<section id="guarda-otras-respuestas-de-las-mismas-personas" class="level3">
+<h3 data-anchor-id="guarda-otras-respuestas-de-las-mismas-personas">Guarda otras respuestas de las mismas personas</h3>
+<p>Inserta un tercer bloque, pega el código de abajo y ejecútalo. Crearás dos vectores más. <code>tvhours</code> guarda las horas diarias de televisión y <code>marital</code> guarda el estado civil. Conservamos el orden de la encuesta en ambos. Así, el segundo valor de cada vector sigue correspondiendo a la misma persona.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las horas diarias de televisión y el estado civil.</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>marital <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>, <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta los dos vectores.</span></span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>tvhours</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>marital</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 12 NA  2  4  1
+[1] "Never married" "Divorced"      "Widowed"       "Never married"
+[5] "Divorced"</code></pre>
+<p>Cada vector tiene su propio tipo. En <code>tvhours</code>, los números van sin comillas. <code>NA</code> marca que falta la respuesta de la segunda persona y ocupa su posición. En <code>marital</code>, cada respuesta es texto y va entre comillas. R puede repartir la salida en varias líneas. Aquí <code>[5]</code> indica que la última línea empieza en la quinta posición.</p>
+<p>Guarda <code>quarto.qmd</code>. En el siguiente paso usarás las posiciones para consultar edades concretas.</p>
+</section>
+</section>
+<section id="manipulacion-vectores" class="level2">
+<h2 data-anchor-id="manipulacion-vectores">Consultar y modificar un vector</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Posición</th>
-<th><code>age</code></th>
-<th><code>age &gt; 40</code></th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>26</td>
-<td><code>FALSE</code></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>48</td>
-<td><code>TRUE</code></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>67</td>
-<td><code>TRUE</code></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>39</td>
-<td><code>FALSE</code></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>25</td>
-<td><code>FALSE</code></td>
+<td>Edad</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">25</td>
 </tr>
 </tbody>
 </table>
-<p>En <code>age[criterio]</code>, R conserva los valores de las posiciones 2 y 3. El resultado contiene las <strong>edades</strong> 48 y 67. La comparación y la selección son dos pasos distintos. En el ejercicio usarás la misma selección para recuperar las horas de televisión de esas personas.</p>
-<p>Los corchetes también sirven para cambiar un valor si los usas a la izquierda de <code>&lt;-</code>. En el ejemplo, <code>age_modificado[1] &lt;- 27</code> sustituye la primera edad de la copia. La última línea devuelve 26 porque consulta el vector original.</p>
+<p>En R, la primera posición es la <strong>1</strong>. Escribe la posición entre corchetes para consultar un valor. Los dos puntos de <code>1:3</code> generan las posiciones 1, 2 y 3. Si las posiciones no son consecutivas, puedes reunirlas con <code>c()</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la primera edad.</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta las tres primeras edades.</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta solo la primera y la tercera edad.</span></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 26
+[1] 26 48 67
+[1] 26 67</code></pre>
+<p>Si quieres practicar cómo cambiar una posición, haz primero una copia. Así podrás seguir usando las edades originales en el resto del cuaderno.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Copia el vector, cambia la primera edad en la copia y comprueba ambos.</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>age_modificado <span class="ot">&lt;-</span> age</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>age_modificado[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">27</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>age_modificado</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>age</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 27 48 67 39 25
+[1] 26 48 67 39 25</code></pre>
 </section>
-<section id="cómo-cambia-una-media-si-faltan-respuestas" class="level3">
-<h3 data-anchor-id="cómo-cambia-una-media-si-faltan-respuestas">Cómo cambia una media si faltan respuestas</h3>
-<p>En <code>tvhours</code>, la segunda posición contiene <code>NA</code>. Esto indica que no hay un valor registrado para esa persona. Un cero representaría una respuesta conocida de cero horas y entraría en la media. Con <code>is.na()</code> puedes preguntar en qué posiciones falta un dato. R devuelve <code>TRUE</code> en la segunda posición y <code>FALSE</code> en las demás.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Marca en qué posiciones faltan horas de televisión.</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(tvhours)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara qué ocurre al calcular la media con y sin los valores ausentes.</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] FALSE  TRUE FALSE FALSE FALSE
-[1] NA
-[1] 4.75</code></pre>
-<p>Con <code>mean(tvhours)</code>, la media queda como <code>NA</code> porque uno de sus valores es desconocido. Con <code>na.rm = TRUE</code>, pides a R que use solo las respuestas disponibles para ese cálculo. Puedes comprobarlo a mano. La suma es 12 + 2 + 4 + 1 = 19 y hay <strong>cuatro</strong> respuestas, así que la media es 19 / 4 = 4,75 horas. El <code>NA</code> sigue en el vector para las consultas posteriores.</p>
-<p>Si comparas directamente un dato ausente, e.g.&nbsp;<code>NA &gt; 40</code>, R devuelve <code>NA</code> porque desconoce la respuesta. Para averiguar si un dato falta, usa <code>is.na()</code>.</p>
-<p><strong>Pruébalo.</strong> Selecciona las horas de televisión registradas para las personas de más de 40 años. ¿Por qué hay un <code>NA</code> en el resultado? ¿Cuántas respuestas se usan al calcular la media?</p>
+<section id="parentesis-corchetes" class="level2">
+<h2 data-anchor-id="parentesis-corchetes">Paréntesis y corchetes</h2>
+<p>Si la primera edad está en <code>age[1]</code>, ¿por qué no escribimos <code>age(1)</code>? Porque al cambiar los corchetes por paréntesis, cambia lo que le pides a R. Fíjate en el nombre que aparece antes de cada signo.</p>
+<section id="paréntesis-para-pedir-una-operación" class="level3">
+<h3 data-anchor-id="paréntesis-para-pedir-una-operación">Paréntesis <code>()</code> para pedir una operación</h3>
+<p>En <code>mean(age)</code>, <code>mean</code> es la <strong>función</strong> que calcula la media. Dentro de los paréntesis va el <strong>argumento</strong>, el dato con el que debe trabajar. En este caso le pasas el vector entero. Si cambias <code>mean</code> por <code>length</code> y dejas <code>age</code> dentro, trabajas con los mismos datos y le pides otra operación.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de las cinco edades.</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(age)</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta cuántas edades hay en el vector.</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 41
+[1] 5</code></pre>
+</section>
+<section id="corchetes-para-indicar-posiciones" class="level3">
+<h3 data-anchor-id="corchetes-para-indicar-posiciones">Corchetes <code>[]</code> para indicar posiciones</h3>
+<p>En <code>age[1]</code>, <code>age</code> es el <strong>vector</strong> y <code>1</code> es la <strong>posición</strong> que quieres consultar. Puedes pensar en los corchetes como la dirección de un casillero. Si escribes <code>1:3</code>, señalas tres casilleros seguidos y R te devuelve los valores que ya están ahí.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la primera edad.</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span>]</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta las edades de las posiciones 1, 2 y 3.</span></span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 26
+[1] 26 48 67</code></pre>
+<p>Los corchetes también indican dónde <strong>cambiar</strong> un valor. En el paso anterior, <code>age_modificado[1]</code> señalaba la primera posición de la copia y <code>&lt;- 27</code> indicaba qué valor guardar allí.</p>
+<p><strong>Vuelve a <code>age(1)</code>.</strong> Con esos paréntesis, R buscaría una función llamada <code>age</code> y trataría de pasarle <code>1</code> como argumento. Como <code>age</code> es el nombre del vector, para pedir su primer valor escribe <code>age[1]</code>.</p>
+</section>
+</section>
+<section id="vectores-condicion" class="level2">
+<h2 data-anchor-id="vectores-condicion">Seleccionar valores con un criterio</h2>
+<p>Queremos recuperar las edades de las personas <strong>mayores de 40 años</strong>. Antes comparaste una sola edad con un límite. Ahora R comprueba la misma condición para cada posición de <code>age</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba qué edades son mayores de 40 y guarda las respuestas.</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>criterio <span class="ot">&lt;-</span> age <span class="sc">&gt;</span> <span class="dv">40</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>criterio</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] FALSE  TRUE  TRUE FALSE FALSE</code></pre>
+<p>El primer resultado es <code>FALSE</code> porque 26 es menor que 40. El segundo es <code>TRUE</code> porque 48 sí supera ese límite. Cuando pasas <code>criterio</code> entre corchetes, R conserva las edades que están en posiciones marcadas con <code>TRUE</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Recupera las edades que cumplen el criterio.</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>age[criterio]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 48 67</code></pre>
+<p><strong>Pruébalo.</strong> Selecciona las edades menores de 30 años. Puedes probar primero la comparación y después colocarla directamente entre los corchetes.</p>
 <details class="solucion-cuaderno">
 <summary>
 Ver solución
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecciona las horas de las mismas personas que tenían más de 40 años.</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>horas_mayores_40 <span class="ot">&lt;-</span> tvhours[criterio]</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>horas_mayores_40</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de las horas que sí están registradas.</span></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(horas_mayores_40, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] NA  2
-[1] 2</code></pre>
-<p>La selección devuelve <code>NA</code> y <code>2</code>. La persona de 48 años no tiene un valor registrado. La media devuelve <code>2</code> horas porque solo hay una respuesta válida en ese grupo.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecciona las edades por debajo de 30 años.</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>age[age <span class="sc">&lt;</span> <span class="dv">30</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 26 25</code></pre>
 </details>
 </section>
+<section id="valores-ausentes-na" class="level2">
+<h2 data-anchor-id="valores-ausentes-na">Valores ausentes</h2>
+<p>En <code>tvhours</code>, la segunda persona tiene un <code>NA</code>. El archivo carece de un valor de horas de televisión para esa persona. En cambio, un <code>0</code> indicaría que la persona declaró cero horas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Intenta calcular la media con todos los valores.</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media con las horas que sí están registradas.</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] NA
+[1] 4.75</code></pre>
+<p>Por defecto, <code>mean()</code> devuelve <code>NA</code> cuando encuentra un dato ausente. Con el argumento <code>na.rm = TRUE</code> le pides que lo deje fuera del cálculo. La media de <strong>4,75 horas diarias</strong> se ha calculado sumando 12, 2, 4 y 1 y dividiendo entre <strong>cuatro respuestas válidas</strong>. El vector <code>tvhours</code> conserva sus cinco posiciones.</p>
 </section>
-<section id="data-frame" class="level2">
-<h2 data-anchor-id="data-frame">4. Pasa de los vectores a una tabla</h2>
-<p>Añade el encabezado «Mi primera tabla» y crea un bloque para reunir los tres vectores que acabas de preparar.</p>
-<p>Hasta aquí hemos mantenido las variables en objetos separados. Un <strong>data frame</strong> las reúne en una tabla, de modo que podamos consultar juntas las respuestas de una persona. Cada columna tiene el mismo número de filas. Sus tipos pueden ser distintos. En este caso, <code>age</code> es numérica y <code>marital</code> contiene texto.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Junta los tres vectores en una tabla y muéstrala.</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>datos_muestra <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age, marital, tvhours)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>datos_muestra</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta primero las filas y luego las columnas.</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_muestra)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="estructuras-datos-dataframe" class="level2">
+<h2 data-anchor-id="estructuras-datos-dataframe">Crear un data frame</h2>
+<p>Los tres vectores tienen cinco elementos y siguen el mismo orden de personas. <code>data.frame()</code> los coloca como columnas de una sola tabla. Cada fila reúne los datos de una persona y todas las columnas tienen el mismo número de filas. La edad y las horas son numéricas y el estado civil es texto.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reúne edad, estado civil y horas de televisión en una tabla.</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>datos_muestra <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age, marital, tvhours)</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>datos_muestra</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <pre class="text salida-r"><code>  age       marital tvhours
 1  26 Never married      12
 2  48      Divorced      NA
 3  67       Widowed       2
 4  39 Never married       4
-5  25      Divorced       1
-[1] 5 3</code></pre>
-<p>La tabla tiene cinco filas y tres columnas. Busca la segunda fila. En ella están juntas la edad de 48 años, la respuesta <code>"Divorced"</code> y el <code>NA</code> de las horas de televisión. Si quitáramos ese <code>NA</code> de su columna antes de construir la tabla, las horas de la tercera persona pasarían a la segunda posición y perderíamos la correspondencia. Conservamos el ausente en la tabla y decidimos cómo tratarlo en cada cálculo.</p>
+5  25      Divorced       1</code></pre>
+<p>Lee la segunda fila de izquierda a derecha. La segunda persona tiene 48 años, respondió «Divorced» y figura con un dato ausente en las horas de televisión. En el siguiente paso pasarás de esta tabla escrita a mano al archivo completo.</p>
 </section>
-<section id="importar" class="level2">
-<h2 data-anchor-id="importar">5. Importa y explora la encuesta completa</h2>
-<p>Añade el encabezado «Importación y exploración de la encuesta». Antes de escribir el código, vamos a darle un sitio al archivo de datos.</p>
-<section id="crea-las-subcarpetas-y-coloca-el-csv" class="level3">
-<h3 data-anchor-id="crea-las-subcarpetas-y-coloca-el-csv">Crea las subcarpetas y coloca el CSV</h3>
+<section id="dataset-gss-cat" class="level2">
+<h2 data-anchor-id="dataset-gss-cat">Conocer y descargar la encuesta</h2>
+<p>El archivo del taller contiene <code>gss_cat</code>, una selección de datos de la <em>General Social Survey</em> de Estados Unidos preparada para practicar con R. Incluye <strong>21.483 observaciones y 9 variables</strong>. Entre ellas están las tres que acabas de usar. <a href="https://forcats.tidyverse.org/reference/gss_cat.html" target="_blank" rel="noopener">Ficha de <code>gss_cat</code></a>.</p>
+<p>Un <strong>CSV</strong> es un archivo de texto tabular. En este archivo la primera línea contiene los nombres de las variables y las comas separan las columnas. Al importarlo, R convertirá esas líneas en una tabla con la que podrás trabajar.</p>
 <ol type="1">
-<li>En el panel <em>Files</em> de RStudio, sitúate en <code>taller_R</code>, donde ves <code>taller_R.Rproj</code> y <code>sesion-1.qmd</code>.</li>
-<li>Pulsa <em>New Folder</em> y crea <code>datos</code>. Repite la operación desde <code>taller_R</code> para crear <code>scripts</code>, <code>tablas</code> y <code>outputs</code>. Las cuatro deben quedar al mismo nivel. <code>datos</code> contendrá los datos originales. Las otras tres quedan preparadas para otros archivos de código, tablas y resultados del taller.</li>
-<li>Descarga el CSV y muévelo a <code>datos</code>. En Posit Cloud, entra primero en <code>datos</code> en el panel <em>Files</em> y usa <em>Upload</em>. Comprueba que se llama exactamente <code>encuesta_social.csv</code>.</li>
+<li>En <strong>Files</strong>, abre la carpeta del proyecto <code>taller_R</code> y pulsa <strong>New Folder</strong> para crear <code>datos</code>.</li>
+<li><a href="datos/taller-1/sesion-1/encuesta_social.csv" target="_blank" rel="noopener" download="encuesta_social.csv">Descarga <code>encuesta_social.csv</code></a> y muévelo a <code>datos</code>. Si tu navegador añade un sufijo como <code>(1)</code>, deja el nombre en <code>encuesta_social.csv</code>.</li>
+<li>En <strong>Files</strong>, entra en <code>datos</code> y comprueba que aparece el CSV. <code>quarto.qmd</code> debe estar un nivel por encima, junto al archivo del proyecto.</li>
 </ol>
-<p><a href="datos/taller-1/sesion-1/encuesta_social.csv" class="btn btn-primary" download="encuesta_social.csv">Descargar la encuesta</a></p>
-<pre class="text"><code>taller_R/
-├── taller_R.Rproj
-├── sesion-1.qmd
-├── datos/
-│   └── encuesta_social.csv
-├── scripts/
-├── tablas/
-└── outputs/</code></pre>
-<p>El HTML de tu primera prueba también puede aparecer en <code>taller_R</code>. El árbol muestra los archivos y carpetas que necesitas localizar para continuar.</p>
-<p>En un bloque de R de tu <code>.qmd</code>, escribe y ejecuta esta comprobación.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba que R encuentra el CSV dentro de la carpeta datos.</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">file.exists</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] TRUE</code></pre>
-<p>La ruta es <strong>relativa</strong>. Desde <code>taller_R</code>, indica que R debe entrar en <code>datos</code> y buscar allí el CSV. Si la comprobación devuelve <code>TRUE</code>, pasa a la importación. Si devuelve <code>FALSE</code>, revisa la ubicación del <code>.qmd</code>, el nombre de la carpeta y el nombre del archivo.</p>
 </section>
-<section id="qué-ocurre-al-leer-el-csv" class="level3">
-<h3 data-anchor-id="qué-ocurre-al-leer-el-csv">Qué ocurre al leer el CSV</h3>
-<p>Las cinco filas anteriores se escribieron a mano para ver de dónde sale cada valor. El CSV contiene la selección <code>gss_cat</code> de la GSS. El archivo guarda los nombres de las variables en la primera línea y los valores de cada observación en las siguientes. Al importarlo, R interpreta las columnas y reúne las respuestas en una tabla.</p>
-<p>Un <strong>paquete</strong> añade funciones a R. En esta sesión usamos <code>tidyverse</code>, un conjunto que incluye <code>readr</code>, donde está <code>read_csv()</code>. Instalar un paquete lo deja disponible. <code>library(tidyverse)</code> lo carga en la sesión de R que estás usando. Como esta instrucción queda en el <code>.qmd</code>, Quarto también la ejecutará al pulsar <strong>Render</strong>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga las herramientas para leer el CSV y guárdalo en una tabla.</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el tamaño, los nombres de las columnas y las primeras filas.</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<details class="salida-r-cuaderno">
+<section id="paquetes-r" class="level2">
+<h2 data-anchor-id="paquetes-r">Instalar y cargar paquetes</h2>
+<p>Un <strong>paquete</strong> reúne funciones, datos o documentación que amplían lo que puedes hacer con R. Usaremos <code>tidyverse</code>, una colección de paquetes que incluye <code>readr</code> para importar archivos CSV.</p>
+<p>Si aún no tienes instalado <code>tidyverse</code>, ejecuta esta instrucción en la <strong>consola</strong>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala tidyverse para usar sus herramientas de trabajo con datos.</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Instalar guarda los paquetes en el ordenador. <strong>Cargar</strong> un paquete lo deja disponible en la sesión de R que estás usando. Añade la siguiente instrucción a un bloque de <code>quarto.qmd</code>, antes de la importación. Así Quarto también la ejecutará al generar el HTML.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga tidyverse en esta sesión de R.</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Es normal que aparezcan mensajes sobre los paquetes cargados y sus versiones. La llamada del taller a <code>install.packages()</code> lleva el nombre entre comillas. Con <code>library(tidyverse)</code> puedes escribirlo directamente.</p>
+</section>
+<section id="cargar-datos-encuesta" class="level2">
+<h2 data-anchor-id="cargar-datos-encuesta">Importar el CSV</h2>
+<p><code>read_csv()</code> lee el archivo y lo convierte en una tabla. Usa la ruta <code>"datos/encuesta_social.csv"</code>. Significa «entra en la carpeta <code>datos</code> y busca <code>encuesta_social.csv</code>». Esta ruta funciona porque <code>quarto.qmd</code> está en la carpeta principal de <code>taller_R</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importa el CSV y guarda la tabla completa.</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra las primeras cinco filas para revisar la importación.</span></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>El mensaje de importación indica cuántas filas y columnas se leyeron y qué tipos de datos detectó R. <code>head()</code> te devuelve una vista de las primeras cinco filas. Reconocerás las edades del vector <code>age</code>. La salida se identifica como <em>tibble</em>, una variante del data frame. <code>&lt;dbl&gt;</code> indica números y <code>&lt;chr&gt;</code> indica texto.</p>
+<details class="solucion-cuaderno">
 <summary>
-Ver salida de R de la importación
+Ver las primeras cinco filas
 </summary>
-<pre class="text salida-r"><code>[1] 21483     9
-[1] "year"    "marital" "age"     "race"    "rincome" "partyid"
-[7] "relig"   "denom"   "tvhours"
-# A tibble: 5 × 9
-   year marital         age race  rincome    partyid relig denom tvhours
-  &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
-1  2000 Never married    26 White $8000 to … Ind,ne… Prot… Sout…      12
-2  2000 Divorced         48 White $8000 to … Not st… Prot… Bapt…      NA
-3  2000 Widowed          67 White Not appli… Indepe… Prot… No d…       2
-4  2000 Never married    39 White Not appli… Ind,ne… Orth… Not …       4
-5  2000 Divorced         25 White Not appli… Not st… None  Not …       1</code></pre>
+<pre class="text salida-r"><code># A tibble: 5 × 9
+   year marital         age race  rincome        partyid     relig denom tvhours
+  &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1  2000 Never married    26 White $8000 to 9999  Ind,near r… Prot… Sout…      12
+2  2000 Divorced         48 White $8000 to 9999  Not str re… Prot… Bapt…      NA
+3  2000 Widowed          67 White Not applicable Independent Prot… No d…       2
+4  2000 Never married    39 White Not applicable Ind,near r… Orth… Not …       4
+5  2000 Divorced         25 White Not applicable Not str de… None  Not …       1</code></pre>
 </details>
-<p>En la asignación, <code>read_csv()</code> abre el archivo, lee su contenido y devuelve un <em>tibble</em>, un tipo de data frame. <code>&lt;-</code> guarda esa tabla con el nombre <code>datos</code>. El CSV se usa como entrada y los comandos siguientes consultan el objeto en R.</p>
 </section>
-<section id="qué-comprobar-antes-de-calcular" class="level3">
-<h3 data-anchor-id="qué-comprobar-antes-de-calcular">Qué comprobar antes de calcular</h3>
-<p><code>dim(datos)</code> devuelve <code>21483 9</code>, es decir, <strong>21.483 observaciones y 9 variables</strong>. Usa <code>names(datos)</code> para confirmar cómo se escriben los nombres. Después, mira las primeras filas con <code>head(datos, n = 5)</code>. Allí reconocerás las cinco edades del ejercicio inicial, ahora acompañadas del resto de variables. Según el ancho de tu consola, R puede abreviar algunos valores o dejar columnas fuera de la vista. También puede mostrar mensajes al cargar los paquetes y al leer el CSV.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa los tipos de datos y resume las horas de televisión.</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos<span class="sc">$</span>tvhours)</span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra las cinco últimas filas del archivo.</span></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<details class="salida-r-cuaderno">
+<section id="explorar-datos-encuesta" class="level2">
+<h2 data-anchor-id="explorar-datos-encuesta">Explorar los datos</h2>
+<p>Antes de hacer un análisis conviene comprobar qué se ha importado. Empieza por las dimensiones y los nombres.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el número de filas y columnas y el nombre de cada variable.</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 21483     9
+[1] "year"    "marital" "age"     "race"    "rincome" "partyid" "relig"
+[8] "denom"   "tvhours"</code></pre>
+<p><code>dim()</code> muestra primero las filas y después las columnas. Para revisar el contenido, prueba estas funciones una a una.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa la estructura y el tipo de cada columna.</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Lee un resumen de cada variable.</span></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos)</span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara las cinco primeras filas con las cinco últimas.</span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(datos, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Busca <code>age</code> en el resumen. Para esa variable numérica, R muestra valores como el mínimo, la mediana y la media. Busca después <code>tvhours</code> y fíjate en el recuento de <code>NA</code>. El resumen que muestra R depende del tipo de cada columna.</p>
+<details class="solucion-cuaderno">
 <summary>
-Ver salida de R de la exploración
+Ver un ejemplo de la salida completa
 </summary>
 <pre class="text salida-r"><code>spc_tbl_ [21,483 × 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ year   : num [1:21483] 2000 2000 2000 2000 2000 2000 2000 2000 2000 2000 ...
@@ -626,147 +1008,553 @@ Ver salida de R de la exploración
   ..   tvhours = col_double()
   .. )
  - attr(*, "problems")=&lt;externalptr&gt;
-   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's
-  0.000   1.000   2.000   2.981   4.000  24.000   10146
+      year        marital               age            race
+ Min.   :2000   Length:21483       Min.   :18.00   Length:21483
+ 1st Qu.:2002   Class :character   1st Qu.:33.00   Class :character
+ Median :2006   Mode  :character   Median :46.00   Mode  :character
+ Mean   :2007                      Mean   :47.18
+ 3rd Qu.:2010                      3rd Qu.:59.00
+ Max.   :2014                      Max.   :89.00
+                                   NA's   :76
+   rincome            partyid             relig              denom
+ Length:21483       Length:21483       Length:21483       Length:21483
+ Class :character   Class :character   Class :character   Class :character
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character
+
+
+
+
+    tvhours
+ Min.   : 0.000
+ 1st Qu.: 1.000
+ Median : 2.000
+ Mean   : 2.981
+ 3rd Qu.: 4.000
+ Max.   :24.000
+ NA's   :10146
 # A tibble: 5 × 9
-   year marital         age race  rincome    partyid relig denom tvhours
-  &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
-1  2014 Widowed          89 White Not appli… Not st… Prot… Unit…       3
-2  2014 Divorced         56 White $25000 or… Indepe… None  Not …       4
-3  2014 Never married    24 White $10000 - … Ind,ne… None  Not …       4
-4  2014 Never married    27 White $25000 or… Not st… Cath… Not …      NA
-5  2014 Widowed          71 White $20000 - … Ind,ne… Prot… Other       2</code></pre>
+   year marital         age race  rincome        partyid     relig denom tvhours
+  &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1  2000 Never married    26 White $8000 to 9999  Ind,near r… Prot… Sout…      12
+2  2000 Divorced         48 White $8000 to 9999  Not str re… Prot… Bapt…      NA
+3  2000 Widowed          67 White Not applicable Independent Prot… No d…       2
+4  2000 Never married    39 White Not applicable Ind,near r… Orth… Not …       4
+5  2000 Divorced         25 White Not applicable Not str de… None  Not …       1
+# A tibble: 5 × 9
+   year marital         age race  rincome        partyid     relig denom tvhours
+  &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+1  2014 Widowed          89 White Not applicable Not str re… Prot… Unit…       3
+2  2014 Divorced         56 White $25000 or more Independent None  Not …       4
+3  2014 Never married    24 White $10000 - 14999 Ind,near d… None  Not …       4
+4  2014 Never married    27 White $25000 or more Not str de… Cath… Not …      NA
+5  2014 Widowed          71 White $20000 - 24999 Ind,near r… Prot… Other       2</code></pre>
 </details>
-<p><code>str()</code> te ayuda a comprobar los tipos. Busca <code>tvhours</code> y confirma que se leyó como una columna numérica. <code>summary(datos$tvhours)</code> resume esa columna e indica cuántos datos faltan. <code>tail(datos, n = 5)</code> permite inspeccionar el extremo final del archivo. Si esperaras una columna numérica y apareciera como texto, ese sería un motivo para revisar cómo se importó antes de calcular.</p>
 </section>
-<section id="cuándo-pedir-una-fila-una-columna-o-un-valor" class="level3">
-<h3 data-anchor-id="cuándo-pedir-una-fila-una-columna-o-un-valor">Cuándo pedir una fila, una columna o un valor</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Escribe…</th>
-<th>Para obtener…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>datos["age"]</code></td>
-<td>La columna de edad como tabla.</td>
-</tr>
-<tr class="even">
-<td><code>datos$age</code></td>
-<td>Las edades como vector, con el que puedes calcular una media.</td>
-</tr>
-<tr class="odd">
-<td><code>datos[1, 3]</code></td>
-<td>Un tibble de una celda: primera fila, tercera columna (edad <code>26</code>).</td>
-</tr>
-<tr class="even">
-<td><code>datos[3, ]</code></td>
-<td>La tercera fila completa, con todas las variables de esa persona.</td>
-</tr>
-</tbody>
-</table>
-<p>Piensa primero qué necesitas. Para ver todas las respuestas de la tercera persona, usa <code>datos[3, ]</code>. La posición antes de la coma selecciona la fila y el hueco después de la coma conserva todas las columnas. Si quieres calcular la edad media, necesitas el vector de edades y puedes obtenerlo con <code>datos$age</code>. <code>datos["age"]</code> conserva la estructura de tabla. Contiene la misma información de edad, pero es un objeto de otro tipo.</p>
-<p><strong>Pruébalo.</strong> Calcula la edad media de quienes tienen una edad registrada. ¿Cuántas edades faltan?</p>
+<section id="manipulacion-dataframe-valores" class="level2">
+<h2 data-anchor-id="manipulacion-dataframe-valores">Consultar columnas, celdas y filas</h2>
+<p>Con un vector usabas una posición. En una tabla puedes indicar dos coordenadas dentro de los corchetes. Escribe la <strong>fila antes de la coma</strong> y la <strong>columna después</strong>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la celda de la fila 1 y la columna 3.</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">1</span>, <span class="dv">3</span>]</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la fila 3 completa dejando vacío el lugar de la columna.</span></span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>datos[<span class="dv">3</span>, ]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <details class="solucion-cuaderno">
 <summary>
-Ver solución
+Ver la celda y la fila
 </summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de las edades registradas.</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta las filas en las que falta la edad.</span></span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(datos<span class="sc">$</span>age))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 47.18008
-[1] 76</code></pre>
-<p>La edad media es aproximadamente <strong>47,18 años</strong> y faltan <strong>76</strong> edades. <code>is.na(datos$age)</code> da un resultado lógico por fila. Al sumarlos, R trata cada <code>TRUE</code> como 1 y cada <code>FALSE</code> como 0. Por eso la suma cuenta las edades ausentes.</p>
+<pre class="text salida-r"><code># A tibble: 1 × 1
+    age
+  &lt;dbl&gt;
+1    26
+# A tibble: 1 × 9
+   year marital   age race  rincome        partyid     relig      denom  tvhours
+  &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt;      &lt;chr&gt;    &lt;dbl&gt;
+1  2000 Widowed    67 White Not applicable Independent Protestant No de…       2</code></pre>
+</details>
+<p>La tercera columna es <code>age</code>. La primera consulta devuelve una tabla de una fila y una columna, con la edad 26. La segunda devuelve todas las variables de la tercera persona. Con un solo selector, <code>datos["age"]</code> y <code>datos[3]</code> conservan la columna como tabla. En cambio, <code>datos$age</code> devuelve sus valores como vector. Para ver la diferencia, muestra solo los cinco primeros resultados de cada forma.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra la columna age como tabla, por nombre y por posición.</span></span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos[<span class="st">"age"</span>], <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos[<span class="dv">3</span>], <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-5"><a href="#cb81-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra las cinco primeras edades como vector.</span></span>
+<span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos<span class="sc">$</span>age, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="solucion-cuaderno">
+<summary>
+Comparar las salidas
+</summary>
+<pre class="text salida-r"><code># A tibble: 5 × 1
+    age
+  &lt;dbl&gt;
+1    26
+2    48
+3    67
+4    39
+5    25
+# A tibble: 5 × 1
+    age
+  &lt;dbl&gt;
+1    26
+2    48
+3    67
+4    39
+5    25
+[1] 26 48 67 39 25</code></pre>
 </details>
 </section>
+<section id="estructuras-datos-factores" class="level2">
+<h2 data-anchor-id="estructuras-datos-factores">Factores y niveles</h2>
+<p>El vector <code>marital</code> tiene cinco respuestas, algunas repetidas. Con <code>factor()</code> puedes representar esas respuestas como una variable categórica. Sus <strong>niveles</strong> son las categorías que reconoce R. <code>levels()</code> devuelve la lista de niveles.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convierte el estado civil de las cinco personas en un factor.</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>marital_factor <span class="ot">&lt;-</span> <span class="fu">factor</span>(marital)</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Muestra las cinco respuestas y la lista de categorías.</span></span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>marital_factor</span>
+<span id="cb83-6"><a href="#cb83-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_factor)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] Never married Divorced      Widowed       Never married Divorced
+Levels: Divorced Never married Widowed
+[1] "Divorced"      "Never married" "Widowed"</code></pre>
+<p>Sigues teniendo cinco respuestas en el mismo orden. Entre las cinco aparecen tres categorías distintas. El orden alfabético de las etiquetas en la lista carece de significado estadístico para el estado civil.</p>
 </section>
-<section id="factores" class="level2">
-<h2 data-anchor-id="factores">6. Reconoce las categorías con factores</h2>
-<p>Añade el encabezado «Factores y categorías» y usa un bloque nuevo para convertir la columna <code>marital</code>.</p>
-<p>La columna <code>marital</code> se importa como texto. Podemos convertirla en un <strong>factor</strong> para que R trate sus etiquetas como categorías de una variable. Un factor guarda una respuesta por observación y tiene un listado de categorías posibles, sus <strong>niveles</strong>. Es útil, e.g.&nbsp;cuando queremos fijar el orden en que aparecen las categorías de un gráfico.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convierte las cinco respuestas en un factor.</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>marital_muestra <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos_muestra<span class="sc">$</span>marital)</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(marital_muestra) <span class="co"># Cuenta las respuestas, incluidas las repetidas.</span></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_muestra) <span class="co"># Muestra las categorías del factor.</span></span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Haz la misma conversión con el archivo completo.</span></span>
-<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
-<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 5
-[1] "Divorced"      "Never married" "Widowed"
+<section id="factor-no-ordenado" class="level2">
+<h2 data-anchor-id="factor-no-ordenado">Factores sin orden y con orden</h2>
+<section id="estado-civil-en-la-encuesta-completa" class="level3">
+<h3 data-anchor-id="estado-civil-en-la-encuesta-completa">Estado civil en la encuesta completa</h3>
+<p>Al importar el CSV, <code>read_csv()</code> guardó <code>marital</code> como texto. Puedes convertir esa columna en un <strong>factor nominal</strong> porque sus categorías carecen de una jerarquía natural.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa cómo se importó la columna de estado civil.</span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos<span class="sc">$</span>marital)</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Convierte la columna a factor y consulta sus niveles.</span></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>marital <span class="ot">&lt;-</span> <span class="fu">factor</span>(datos<span class="sc">$</span>marital)</span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(datos<span class="sc">$</span>marital)</span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba cómo está representada la columna después del cambio.</span></span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos<span class="sc">$</span>marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<details class="solucion-cuaderno">
+<summary>
+Ver la estructura y los seis niveles
+</summary>
+<pre class="text salida-r"><code> chr [1:21483] "Never married" "Divorced" "Widowed" "Never married" ...
 [1] "Divorced"      "Married"       "Never married" "No answer"
-[5] "Separated"     "Widowed"</code></pre>
-<p>En la tabla pequeña, <code>length()</code> cuenta cinco respuestas y <code>levels()</code> muestra tres niveles. Dos personas aparecen como <code>"Divorced"</code> y otras dos como <code>"Never married"</code>. Todas siguen ocupando su fila. En la encuesta completa aparecen seis niveles. Uno es <code>"No answer"</code>. El archivo usa esa etiqueta para indicar que la persona no respondió. R la reconoce como un texto registrado, de modo que <code>is.na()</code> solo detectaría los <code>NA</code> y no marcaría esas filas.</p>
-<section id="cuándo-importa-el-orden-de-las-categorías" class="level3">
-<h3 data-anchor-id="cuándo-importa-el-orden-de-las-categorías">Cuándo importa el orden de las categorías</h3>
-<p>El estado civil es <strong>nominal</strong>. Que R muestre primero <code>"Divorced"</code> y después <code>"Married"</code> refleja el orden de las etiquetas. Entre esas categorías no hay una jerarquía. El ejemplo de nivel de estudios de las diapositivas sirve para ver el otro caso. En una variable <strong>ordinal</strong>, el orden de las categorías forma parte de su significado.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las respuestas de cinco personas sobre su nivel de estudios.</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Medio"</span>, <span class="st">"Bajo"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Bajo"</span>)</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define el orden de las categorías y compruébalo.</span></span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">factor</span>(estudios,</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ordered =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] "Bajo"  "Medio" "Alto"</code></pre>
-<p>Las respuestas siguen empezando por <code>"Medio"</code>. Lo que has definido con <code>levels = c("Bajo", "Medio", "Alto")</code> es el orden de las categorías, y <code>ordered = TRUE</code> indica que ese orden tiene significado. Puedes decir que <code>"Alto"</code> está por encima de <code>"Medio"</code>, pero esas etiquetas por sí solas no indican a qué distancia está cada nivel.</p>
-<p><strong>Comprueba si lo has entendido.</strong> Si llega otra persona que responde <code>"Medio"</code>, ¿cambia el número de respuestas? ¿Cambia el número de niveles?</p>
-<details class="solucion-cuaderno">
-<summary>
-Ver respuesta
-</summary>
-<p>Habría seis respuestas y seguiría habiendo tres niveles. La nueva respuesta usa una categoría que ya estaba definida.</p>
+[5] "Separated"     "Widowed"
+ Factor w/ 6 levels "Divorced","Married",..: 3 1 6 3 1 2 3 1 2 2 ...</code></pre>
 </details>
+<p>Ahora <code>str()</code> identifica un factor con seis niveles. Los números que muestra en la estructura son códigos internos de las categorías. La transformación afecta a la tabla <code>datos</code> que tienes en R. El CSV que guardaste en <code>datos/</code> sigue siendo el archivo original.</p>
+</section>
+<section id="factor-ordenado" class="level3">
+<h3 data-anchor-id="factor-ordenado">Nivel de estudios como ejemplo de variable ordinal</h3>
+<p>En un nivel de estudios simplificado, «Bajo», «Medio» y «Alto» sí tienen una jerarquía. Practica con las cinco respuestas de ejemplo de la presentación. <code>levels</code> fija el orden de menor a mayor y <code>ordered = TRUE</code> indica a R que ese orden tiene significado.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crea un vector de ejemplo con cinco respuestas sobre estudios.</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Medio"</span>, <span class="st">"Bajo"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Bajo"</span>)</span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define los niveles en orden de menor a mayor.</span></span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a>estudios <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a>  estudios,</span>
+<span id="cb87-7"><a href="#cb87-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
+<span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">ordered =</span> <span class="cn">TRUE</span></span>
+<span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb87-10"><a href="#cb87-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-11"><a href="#cb87-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa los niveles y comprueba que R reconoce el orden.</span></span>
+<span id="cb87-12"><a href="#cb87-12" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(estudios)</span>
+<span id="cb87-13"><a href="#cb87-13" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(estudios)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "Bajo"  "Medio" "Alto"
+ Ord.factor w/ 3 levels "Bajo"&lt;"Medio"&lt;..: 2 1 3 2 1</code></pre>
+<p>El símbolo <code>&lt;</code> en la salida de <code>str()</code> muestra el orden entre categorías. Las respuestas individuales mantienen sus posiciones en el vector.</p>
 </section>
 </section>
-<section id="resolver-problemas" class="level2">
-<h2 data-anchor-id="resolver-problemas">7. Qué hacer cuando aparece un mensaje</h2>
-<p>Si un bloque falla, localiza primero la línea que se estaba ejecutando. Si el problema aparece al pulsar <strong>Render</strong>, RStudio muestra en qué bloque se detuvo. Lee el mensaje buscando una pista concreta, como el nombre de una función, un objeto o un archivo. Corrige una cosa y vuelve a probar ese bloque.</p>
-<ul>
-<li><strong>Error.</strong> <code>object 'Datos' not found</code> detiene la instrucción. Si el bloque de importación creó <code>datos</code>, escribe ese nombre con minúscula. Si aparece <code>object 'datos' not found</code> aun con el nombre correcto, comprueba si ejecutaste el bloque que lo crea.</li>
-<li><strong>Advertencia.</strong> <code>NAs introduced by coercion</code> indica que R siguió adelante y produjo <code>NA</code> al intentar una conversión. Si estabas convirtiendo una columna, revisa qué contenía. Una etiqueta como <code>"Never married"</code> debe conservarse como categoría.</li>
-<li><strong>Mensaje informativo.</strong> <code>Rows: 21483 Columns: 9</code> indica el tamaño del archivo importado. Puedes contrastarlo con <code>dim(datos)</code>.</li>
-<li><strong>La consola muestra <code>+</code> al inicio de la línea.</strong> R espera que completes la instrucción. Revisa los paréntesis y las comillas. Puedes pulsar <strong>Esc</strong> y escribir la línea completa de nuevo.</li>
-<li><strong>R no encuentra <code>encuesta_social.csv</code>.</strong> Comprueba el proyecto con <code>getwd()</code> y la ruta con <code>file.exists("datos/encuesta_social.csv")</code>.</li>
-</ul>
-<p>Si el mensaje señala un símbolo inesperado, revisa también las comas entre argumentos y las comillas rectas en los textos. Cuando un bloque funcione por separado y falle al renderizar, comprueba si depende de algo que escribiste en la consola. El documento debe incluir ese paso en un bloque anterior.</p>
+<section id="resolucion-problemas-mensajes" class="level2">
+<h2 data-anchor-id="resolucion-problemas-mensajes">Interpretar los mensajes de R</h2>
+<p>Cuando aparezca un mensaje inesperado, lee primero qué operación estabas haciendo y qué nombre o instrucción menciona R. El texto puede variar según el idioma y la versión de R.</p>
+<section id="error" class="level3">
+<h3 data-anchor-id="error">Error</h3>
+<p>R se detuvo en esa instrucción. Prueba este ejemplo <strong>en la consola</strong> para ver qué ocurre si escribes <code>Datos</code> con mayúscula cuando la tabla se llama <code>datos</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Provoca un error para reconocerlo y luego corrige el nombre.</span></span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(Datos<span class="sc">$</span>age)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>Error: object 'Datos' not found</code></pre>
 </section>
-<section id="practica-final" class="level2">
-<h2 data-anchor-id="practica-final">8. Comprueba lo que has aprendido</h2>
-<p>Para cerrar la sesión, aplica lo que has visto a la encuesta <strong>completa</strong>: ¿cuántas personas tienen registradas sus horas de televisión y cuál es la media entre ellas? Añade el encabezado «Práctica final» al final de tu <code>.qmd</code> y crea debajo un bloque de R.</p>
+<section id="advertencia-o-warning" class="level3">
+<h3 data-anchor-id="advertencia-o-warning">Advertencia o <em>warning</em></h3>
+<p>R puede devolver un resultado y advertir de un problema. Prueba en la <strong>consola</strong> qué ocurre al intentar convertir «hola» en un número.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Prueba qué devuelve R al intentar convertir una palabra en número.</span></span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">"hola"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] NA
+Warning message:
+NAs introduced by coercion</code></pre>
+<p>R devolvió <code>NA</code> y avisó de que la conversión introdujo un dato ausente. Si te ocurre al convertir una columna, revisa qué valores de origen no pudo interpretar.</p>
+</section>
+<section id="mensaje-informativo" class="level3">
+<h3 data-anchor-id="mensaje-informativo">Mensaje informativo</h3>
+<p>Al importar el CSV, <code>read_csv()</code> muestra información sobre el archivo. Puedes reconocer el principio del mensaje que viste al ejecutar la importación.</p>
+<pre class="text salida-r"><code>Rows: 21483 Columns: 9</code></pre>
+<p>Es el recuento de filas y columnas que ha leído R. Los mensajes informativos también pueden aparecer al cargar un paquete.</p>
+</section>
+</section>
+<section id="resolucion-problemas-comprobaciones" class="level2">
+<h2 data-anchor-id="resolucion-problemas-comprobaciones">Qué revisar cuando algo falla</h2>
 <ol type="1">
-<li>Extrae el vector de horas y distingue las respuestas registradas de los valores ausentes.</li>
-<li>Cuenta cuántas respuestas registradas hay. Calcula la media usando esas respuestas y redondéala a dos decimales.</li>
-<li>Escribe debajo del bloque una frase con la media, su unidad y el número de respuestas con el que la calculaste.</li>
-<li>Guarda el <code>.qmd</code>, pulsa <strong>Render</strong> y comprueba en <code>sesion-1.html</code> que aparecen los cálculos y tu interpretación.</li>
+<li><strong>El nombre.</strong> R distingue mayúsculas de minúsculas. Comprueba que has escrito <code>datos</code> y que ya ejecutaste el bloque que crea ese objeto.</li>
+<li><strong>Los paréntesis.</strong> En <code>mean(age)</code>, cada paréntesis de apertura tiene su cierre. Si la consola muestra <code>+</code> al inicio de la línea, puede estar esperando que completes la instrucción. Puedes pulsar <strong>Esc</strong> y volver a escribirla.</li>
+<li><strong>Las comas.</strong> Comprueba que separas los argumentos y los valores. En <code>c(26, 48, 67)</code>, cada coma separa una edad de la siguiente.</li>
+<li><strong>Las comillas.</strong> Escribe el texto entre comillas rectas, como <code>"Never married"</code>. Escribe los números directamente, como <code>26</code>.</li>
+<li><strong>La ruta.</strong> Para que <code>"datos/encuesta_social.csv"</code> funcione, comprueba el nombre del archivo y que lo guardaste en la carpeta <code>datos</code> de <code>taller_R</code>. Si el error aparece al pulsar <strong>Render</strong>, comprueba también que <code>quarto.qmd</code> está junto a <code>taller_R.Rproj</code>.</li>
 </ol>
-<p><strong>Si te atascas</strong>, recupera lo que hiciste con <code>is.na()</code> y <code>mean()</code> en el vector de cinco personas. Piensa cómo invertir el criterio para marcar las respuestas disponibles.</p>
-<details class="solucion-cuaderno">
-<summary>
-Ver solución de la práctica final
-</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Marca y cuenta las respuestas que tienen horas registradas.</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>horas_registradas <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(datos<span class="sc">$</span>tvhours)</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(horas_registradas)</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media de esas respuestas y redondéala a dos decimales.</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<pre class="text salida-r"><code>[1] 11337
-[1] 2.98</code></pre>
-<p><code>is.na(datos$tvhours)</code> marca los valores ausentes. Al anteponer <code>!</code>, los <code>TRUE</code> pasan a señalar las respuestas registradas. <code>sum()</code> las cuenta y <code>mean(..., na.rm = TRUE)</code> usa ese mismo conjunto de respuestas para calcular la media. Al final, <code>round()</code> recibe la media y el argumento <code>digits = 2</code> indica que queremos redondearla a dos decimales.</p>
-<p>Una forma de redactarlo sería «En el archivo de la GSS, <strong>11.337 personas</strong> tienen registradas sus horas diarias de televisión. Entre ellas, la media es de <strong>2,98 horas diarias</strong>». Indicar cuántas respuestas entran en la media permite entender a quién se refiere el resultado.</p>
-</details>
-<p>Con esto ya has recorrido el camino desde un CSV hasta un resultado que puedes explicar y reproducir. La siguiente sesión retoma la misma encuesta para seleccionar, filtrar y ordenar observaciones y calcular resúmenes por grupos.</p>
-<p>Para conocer el origen del archivo y el significado de sus variables, consulta la <a href="https://forcats.tidyverse.org/reference/gss_cat.html" target="_blank" rel="noopener">documentación de <code>gss_cat</code></a>. Si quieres repasar la importación y el trabajo con tablas, puedes seguir con <a href="https://davidrsch.github.io/r4ds-es/" target="_blank" rel="noopener"><em>R para Ciencia de Datos</em></a>.</p>
-<p><em>Cuaderno basado en la sesión 1 del taller de Jesús Martín Godoy y Nadia Adelshina.</em></p>
+<p>Corrige una cosa cada vez y ejecuta de nuevo el bloque. Si funciona en la consola pero falla al pulsar <strong>Render</strong>, revisa que todos los bloques que crean o cargan los objetos estén guardados en el documento y aparezcan antes de los que los utilizan.</p>
+</section>
+<section id="repaso" class="level2">
+<h2 data-anchor-id="repaso">Repaso de la sesión</h2>
+<p>Abre <code>quarto.qmd</code>, guarda los cambios y pulsa <strong>Render</strong>. Usa el HTML para comprobar tu recorrido. Deberías poder encontrar un ejemplo de cada una de estas tareas.</p>
+<ul>
+<li>Crear un objeto con <code>&lt;-</code> y usarlo en una operación, una comparación o una función.</li>
+<li>Crear un vector, consultar posiciones y seleccionar valores que cumplan una condición.</li>
+<li>Calcular una media con datos ausentes y explicar cuántas respuestas entran en el cálculo.</li>
+<li>Distinguir un vector, un factor y un data frame y reconocer qué representan en la encuesta.</li>
+<li>Importar el CSV, comprobar sus dimensiones y consultar una variable o una fila.</li>
+</ul>
+<p>Añade una frase debajo del bloque de la media de televisión en la que expliques qué pasó con la segunda persona. Si puedes entender el resultado al releerlo otro día, tendrás una nota a la que volver en la próxima sesión.</p>
+</section>
+<section id="proxima-sesion" class="level2">
+<h2 data-anchor-id="proxima-sesion">Próxima sesión y lecturas</h2>
+<p>En la próxima sesión pasarás de consultar valores a transformar tablas. Practicarás cómo seleccionar columnas, filtrar y ordenar filas con <code>select()</code>, <code>filter()</code> y <code>arrange()</code>. Usarás <code>|&gt;</code> para encadenar operaciones, <code>mutate()</code> para crear variables y <code>count()</code> para contar observaciones. También agruparás casos y calcularás resúmenes con <code>group_by()</code> y <code>summarise()</code>, teniendo en cuenta los valores ausentes.</p>
+<ul>
+<li><a href="https://fhernanb.github.io/Manual-de-R/" target="_blank" rel="noopener"><em>Manual de R</em>, de Freddy Hernández y Oscar Usuga</a>.</li>
+<li><a href="https://davidrsch.github.io/r4ds-es/" target="_blank" rel="noopener"><em>R para Ciencia de Datos</em>, de Hadley Wickham, Mine Çetinkaya-Rundel y Garrett Grolemund</a>.</li>
+</ul>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector("main.content");
+  if (!main) return;
+
+  const sections = Array.from(main.querySelectorAll(":scope > section.level2"));
+  if (sections.length === 0) return;
+
+  const intro = document.getElementById("intro-cuaderno");
+  const mobileToc = main.querySelector(".indice-cuaderno-movil");
+  const pasos = intro ? [intro, ...sections] : sections;
+
+  function extraerHash(enlace) {
+    if (!enlace) return "";
+    if (enlace.hash) return enlace.hash.replace(/^#/, "");
+    const href = enlace.getAttribute("href") || "";
+    return href.includes("#") ? href.split("#")[1] : "";
+  }
+
+  // Asegurar que las listas del TOC no queden ocultas por la clase collapse de Bootstrap
+  document.querySelectorAll("#TOC ul").forEach((ul) => {
+    ul.classList.remove("collapse");
+    ul.classList.add("show");
+  });
+
+  // Desactivar el scrollspy nativo de Quarto para que no interfiera ni desmarque
+  // el apartado activo al estar los otros pasos ocultos con display: none.
+  const navToc = document.getElementById("TOC");
+  if (navToc) {
+    navToc.classList.remove("toc-active");
+  }
+  document.querySelectorAll("#TOC a").forEach((a) => {
+    a.removeAttribute("data-scroll-target");
+  });
+
+  // Añadir "Presentación" al inicio del índice lateral de Quarto si existe #intro-cuaderno
+  const tocUl = document.querySelector("#TOC > ul");
+  if (intro && tocUl && !tocUl.querySelector('a[href="#intro-cuaderno"]')) {
+    const liIntro = document.createElement("li");
+    const aIntro = document.createElement("a");
+    aIntro.href = "#intro-cuaderno";
+    aIntro.id = "toc-intro-cuaderno";
+    aIntro.className = "nav-link";
+    aIntro.textContent = "Presentación";
+    liIntro.appendChild(aIntro);
+    tocUl.prepend(liIntro);
+  }
+
+  let modoCompleto = false;
+  let pasoActual = 0;
+
+  const titulos = pasos.map((sec, idx) => {
+    if (sec === intro) return "Presentación";
+    const h2 = sec.querySelector("h2");
+    if (h2 && !h2.hasAttribute("tabindex")) {
+      h2.setAttribute("tabindex", "-1");
+    }
+    return h2 ? h2.textContent.trim() : `Apartado ${idx}`;
+  });
+
+  // Navegación inferior en cada apartado
+  const navsInferiores = pasos.map((sec, idx) => {
+    const nav = document.createElement("nav");
+    nav.className = "navegacion-pasos-cuaderno";
+    nav.setAttribute("aria-label", `Navegación de ${titulos[idx]}`);
+
+    const filaBotones = document.createElement("div");
+    filaBotones.className = "navegacion-pasos-fila";
+
+    if (idx > 0) {
+      const btnAnt = document.createElement("button");
+      btnAnt.type = "button";
+      btnAnt.className = "boton-paso boton-paso-anterior";
+      btnAnt.innerHTML = `<span class="boton-paso-direccion">← Anterior</span><span class="boton-paso-titulo">${titulos[idx - 1]}</span>`;
+      btnAnt.addEventListener("click", () => {
+        irAPaso(idx - 1, { scrollTop: true, focusHeading: true, actualizarHash: true });
+      });
+      filaBotones.appendChild(btnAnt);
+    } else {
+      const hueco = document.createElement("div");
+      hueco.className = "boton-paso-hueco";
+      hueco.setAttribute("aria-hidden", "true");
+      filaBotones.appendChild(hueco);
+    }
+
+    if (idx < pasos.length - 1) {
+      const btnSig = document.createElement("button");
+      btnSig.type = "button";
+      btnSig.className = "boton-paso boton-paso-siguiente";
+      btnSig.innerHTML = `<span class="boton-paso-direccion">Siguiente →</span><span class="boton-paso-titulo">${titulos[idx + 1]}</span>`;
+      btnSig.addEventListener("click", () => {
+        irAPaso(idx + 1, { scrollTop: true, focusHeading: true, actualizarHash: true });
+      });
+      filaBotones.appendChild(btnSig);
+    } else {
+      const hueco = document.createElement("div");
+      hueco.className = "boton-paso-hueco";
+      hueco.setAttribute("aria-hidden", "true");
+      filaBotones.appendChild(hueco);
+    }
+
+    const pieModo = document.createElement("div");
+    pieModo.className = "navegacion-pasos-modo";
+    const btnVerTodo = document.createElement("button");
+    btnVerTodo.type = "button";
+    btnVerTodo.className = "enlace-modo-completo";
+    btnVerTodo.textContent = "Mostrar todo el cuaderno seguido";
+    btnVerTodo.addEventListener("click", () => {
+      cambiarModo(true);
+    });
+    pieModo.appendChild(btnVerTodo);
+
+    nav.appendChild(filaBotones);
+    nav.appendChild(pieModo);
+    sec.appendChild(nav);
+    return nav;
+  });
+
+  // Enlace discreto al final cuando se muestra todo seguido
+  const pieVolverPasos = document.createElement("div");
+  pieVolverPasos.className = "navegacion-pasos-modo";
+  const btnVolverPasos = document.createElement("button");
+  btnVolverPasos.type = "button";
+  btnVolverPasos.className = "enlace-modo-completo";
+  btnVolverPasos.textContent = "Volver a mostrar por apartados";
+  btnVolverPasos.addEventListener("click", () => {
+    cambiarModo(false);
+  });
+  pieVolverPasos.appendChild(btnVolverPasos);
+  main.appendChild(pieVolverPasos);
+
+  let sincronizando = false;
+  function sincronizarToc(idActivo) {
+    if (!idActivo || sincronizando) return;
+    sincronizando = true;
+    const cleanId = idActivo.replace(/^#/, "");
+
+    // 1. En el menú lateral de Quarto (#TOC)
+    const tocLinks = document.querySelectorAll("#TOC a");
+    tocLinks.forEach((a) => {
+      const targetId = extraerHash(a);
+      const coincide = (targetId === cleanId);
+      
+      if (coincide) {
+        a.classList.add("active", "toc-activo");
+        a.setAttribute("aria-current", "true");
+      } else {
+        a.classList.remove("active", "toc-activo");
+        a.removeAttribute("aria-current");
+      }
+    });
+
+    // 2. En el menú desplegable móvil
+    if (mobileToc) {
+      const mobileLinks = mobileToc.querySelectorAll("a");
+      mobileLinks.forEach((a) => {
+        const targetId = extraerHash(a);
+        const coincide = (targetId === cleanId);
+        if (coincide) {
+          a.classList.add("active", "toc-activo");
+        } else {
+          a.classList.remove("active", "toc-activo");
+        }
+      });
+    }
+    sincronizando = false;
+  }
+
+  function obtenerPasoVisibleId() {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+      return pasos[pasos.length - 1].id;
+    }
+    const scrollPos = window.scrollY + 140;
+    let pasoVisible = 0;
+    for (let i = 0; i < pasos.length; i++) {
+      if (pasos[i].offsetTop <= scrollPos) {
+        pasoVisible = i;
+      }
+    }
+    return pasos[pasoVisible]?.id || pasos[0].id;
+  }
+
+  // Mantener el TOC sincronizado durante el scroll y en modo completo
+  window.addEventListener("scroll", () => {
+    if (modoCompleto) {
+      sincronizarToc(obtenerPasoVisibleId());
+    } else {
+      sincronizarToc(pasos[pasoActual].id);
+    }
+  }, { passive: true });
+
+  // Blindar el TOC contra cualquier modificación externa
+  const tocContainer = document.getElementById("TOC");
+  if (tocContainer) {
+    const observer = new MutationObserver(() => {
+      if (sincronizando) return;
+      const idEsperado = modoCompleto ? obtenerPasoVisibleId() : pasos[pasoActual]?.id;
+      if (idEsperado) {
+        const activeLinks = tocContainer.querySelectorAll("a.active, a.toc-activo");
+        const cleanEsperado = idEsperado.replace(/^#/, "");
+        let desajustado = false;
+        if (activeLinks.length !== 1) {
+          desajustado = true;
+        } else {
+          const targetId = extraerHash(activeLinks[0]);
+          if (targetId !== cleanEsperado) {
+            desajustado = true;
+          }
+        }
+        if (desajustado) {
+          sincronizarToc(idEsperado);
+        }
+      }
+    });
+    observer.observe(tocContainer, { attributes: true, subtree: true, attributeFilter: ["class"] });
+  }
+
+  function actualizarVista() {
+    if (modoCompleto) {
+      pasos.forEach((sec) => {
+        sec.hidden = false;
+      });
+      navsInferiores.forEach((nav) => {
+        nav.hidden = true;
+      });
+      pieVolverPasos.hidden = false;
+      sincronizarToc(obtenerPasoVisibleId());
+    } else {
+      pasos.forEach((sec, idx) => {
+        sec.hidden = idx !== pasoActual;
+      });
+      navsInferiores.forEach((nav, idx) => {
+        nav.hidden = idx !== pasoActual;
+      });
+      pieVolverPasos.hidden = true;
+      sincronizarToc(pasos[pasoActual].id);
+    }
+  }
+
+  function irAPaso(indice, opciones = {}) {
+    const idx = Math.max(0, Math.min(pasos.length - 1, indice));
+    pasoActual = idx;
+    actualizarVista();
+
+    const sec = pasos[idx];
+    if (opciones.actualizarHash && sec.id) {
+      const nuevoHash = sec === intro ? window.location.pathname : `#${sec.id}`;
+      history.replaceState(null, "", nuevoHash);
+    }
+    if (opciones.focusHeading) {
+      const h2 = sec.querySelector("h2");
+      if (h2) h2.focus({ preventScroll: true });
+    }
+    if (opciones.scrollTop) {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  }
+
+  function cambiarModo(nuevoModoCompleto) {
+    modoCompleto = nuevoModoCompleto;
+    actualizarVista();
+  }
+
+  function indiceDeHash(hash) {
+    if (!hash || hash === "#") return -1;
+    const destino = document.getElementById(decodeURIComponent(hash.slice(1)));
+    return destino ? pasos.findIndex((sec) => sec.contains(destino)) : -1;
+  }
+
+  // Interceptar clics en el índice (TOC Quarto y móvil) y enlaces internos
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest('#TOC a, .indice-cuaderno-movil a, a.tour-rstudio-marca, a[href*="#"]');
+    if (!link) return;
+    const id = extraerHash(link);
+    if (!id) return;
+
+    const idx = pasos.findIndex((sec) => sec.id === id || sec.contains(document.getElementById(id)));
+    if (idx === -1) return;
+
+    e.preventDefault();
+    const destino = document.getElementById(id);
+
+    if (modoCompleto) {
+      if (destino) {
+        destino.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      sincronizarToc(pasos[idx].id);
+      const nuevoHash = pasos[idx] === intro ? window.location.pathname : `#${id}`;
+      history.replaceState(null, "", nuevoHash);
+    } else {
+      pasoActual = idx;
+      actualizarVista();
+      const nuevoHash = pasos[idx] === intro ? window.location.pathname : `#${pasos[idx].id}`;
+      history.replaceState(null, "", nuevoHash);
+      if (destino && destino !== pasos[idx]) {
+        destino.scrollIntoView({ behavior: "instant", block: "start" });
+      } else {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }
+    }
+
+    if (mobileToc && mobileToc.open && mobileToc.contains(link)) {
+      mobileToc.open = false;
+    }
+  });
+
+  window.addEventListener("hashchange", () => {
+    const idx = indiceDeHash(window.location.hash);
+    if (idx !== -1 && !modoCompleto) {
+      pasoActual = idx;
+      actualizarVista();
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      const destino = document.getElementById(id);
+      if (destino && destino !== pasos[idx]) {
+        destino.scrollIntoView({ behavior: "instant", block: "start" });
+      } else {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }
+    }
+  });
+
+  const idxInicial = indiceDeHash(window.location.hash);
+  if (idxInicial !== -1) {
+    pasoActual = idxInicial;
+  }
+  actualizarVista();
+  if (idxInicial !== -1) {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    const destino = document.getElementById(id);
+    if (destino && destino !== pasos[idxInicial]) {
+      destino.scrollIntoView({ behavior: "instant", block: "start" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  }
+});
+</script>
 
 
 </section>

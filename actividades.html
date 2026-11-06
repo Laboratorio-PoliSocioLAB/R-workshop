@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -41,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-04a30caa94964a7d481b1c7be4f9f0eb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3c872c88186c3143be61f2e5a189e97c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No se han encontrado resultados",
@@ -63,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,13 +149,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta práctica</h2>
+   
+  <ul class="collapse">
+  <li><a href="#antes-de-empezar" id="toc-antes-de-empezar" class="nav-link active" data-scroll-target="#antes-de-empezar">Antes de empezar</a></li>
+  <li><a href="#practica-objetos" id="toc-practica-objetos" class="nav-link" data-scroll-target="#practica-objetos">1. Trabaja con los datos de una persona</a></li>
+  <li><a href="#practica-vectores" id="toc-practica-vectores" class="nav-link" data-scroll-target="#practica-vectores">2. Consulta edades por posición y por condición</a></li>
+  <li><a href="#practica-valores-ausentes" id="toc-practica-valores-ausentes" class="nav-link" data-scroll-target="#practica-valores-ausentes">3. Calcula una media cuando falta una respuesta</a></li>
+  <li><a href="#practica-data-frame" id="toc-practica-data-frame" class="nav-link" data-scroll-target="#practica-data-frame">4. Reúne las respuestas en una tabla</a></li>
+  <li><a href="#practica-csv" id="toc-practica-csv" class="nav-link" data-scroll-target="#practica-csv">5. Explora la encuesta completa</a></li>
+  <li><a href="#practica-retos" id="toc-practica-retos" class="nav-link" data-scroll-target="#practica-retos">Dos retos opcionales</a></li>
+  <li><a href="#practica-revision" id="toc-practica-revision" class="nav-link" data-scroll-target="#practica-revision">Revisa tu documento</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Actividades</h1>
+<p class="subtitle lead">Taller 1 · Sesión 1 · Práctica después de clase</p>
 </div>
 
 
@@ -137,9 +188,296 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="taller-1-sesión-1" class="level2">
-<h2 data-anchor-id="taller-1-sesión-1">Taller 1 · Sesión 1</h2>
-<p>Completa los ejercicios en tu archivo Quarto y comprueba el resultado con las soluciones del <a href="./cuaderno-sesion-1.html" target="_blank" rel="noopener">cuaderno de la sesión 1</a>. En la <a href="./cuaderno-sesion-1.html#practica-final" target="_blank" rel="noopener">práctica final</a> usarás la encuesta completa para calcular una media y explicar a cuántas respuestas se refiere.</p>
+<section id="antes-de-empezar" class="level2">
+<h2 data-anchor-id="antes-de-empezar">Antes de empezar</h2>
+<p>Vas a trabajar con las mismas respuestas de la encuesta que viste en clase. Primero practicarás con cinco personas. Al final abrirás el CSV completo y responderás una pregunta con tus propios resultados.</p>
+<ol type="1">
+<li>Abre el proyecto <code>taller_R</code> y el documento <code>quarto.qmd</code>. Al final del documento escribe el encabezado <strong>Práctica de la sesión 1</strong>.</li>
+<li>Para cada ejercicio, añade un bloque de R en el editor <strong>Visual</strong>. Escribe tu código, ejecuta el bloque y comprueba el resultado. Cuando se pida una explicación, escríbela debajo del bloque en una frase.</li>
+<li>Empieza por el ejercicio 1 y sigue el orden. Volverás a usar algunos objetos que hayas creado. Si te atascas, abre primero la pista. Usa la solución para comprobar tu intento.</li>
+</ol>
+<p>Puedes consultar el <a href="./cuaderno-sesion-1.html" target="_blank" rel="noopener">cuaderno de la sesión 1</a> y las <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/" target="_blank" rel="noopener">diapositivas de clase</a>.</p>
+<p>Estas son las <strong>cinco primeras personas de la encuesta</strong>. Puedes hacer los ejercicios 1 a 4 con esta tabla. Usarás el archivo CSV a partir del ejercicio 5.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Persona</th>
+<th style="text-align: right;">Edad (<code>age</code>)</th>
+<th style="text-align: left;">Estado civil (<code>marital</code>)</th>
+<th style="text-align: right;">Horas diarias de televisión (<code>tvhours</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">Never married</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Divorced</td>
+<td style="text-align: right;"><code>NA</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: left;">Widowed</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Never married</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Divorced</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="practica-objetos" class="level2">
+<h2 data-anchor-id="practica-objetos">1. Trabaja con los datos de una persona</h2>
+<p>Fíjate en la <strong>tercera persona</strong> de la tabla.</p>
+<ol type="1">
+<li>Guarda su edad en un objeto llamado <code>edad_persona</code>, sus horas diarias de televisión en <code>horas_persona</code> y su estado civil en <code>estado_persona</code>.</li>
+<li>Usa <code>typeof()</code> para comprobar cómo se guardaron la edad y el estado civil.</li>
+<li>Si esa persona viera las mismas horas de televisión cada día, ¿cuántas vería en siete días? Haz el cálculo usando <code>horas_persona</code>.</li>
+<li>Escribe dos comparaciones. ¿Tiene más de 40 años? ¿Declaró más de 3 horas diarias de televisión? Antes de ejecutarlas, predice si R devolverá <code>TRUE</code> o <code>FALSE</code>. Combina después ambas condiciones con <code>&amp;</code> y con <code>|</code>. ¿Por qué obtienes respuestas distintas?</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Usa <code>&lt;-</code> para guardar un valor, comillas para el texto y <code>*</code> para multiplicar. Escribe cada comparación por separado antes de unirlas. Con <code>&amp;</code> se tienen que cumplir las dos condiciones. Con <code>|</code> basta con que se cumpla una.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda los tres datos de la tercera persona.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>edad_persona <span class="ot">&lt;-</span> <span class="dv">67</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>horas_persona <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>estado_persona <span class="ot">&lt;-</span> <span class="st">"Widowed"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el tipo de dato de la edad y del estado civil.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(edad_persona)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(estado_persona)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula las horas de una semana si cada día ve las mismas.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>horas_persona <span class="sc">*</span> <span class="dv">7</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba las dos condiciones por separado.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>edad_persona <span class="sc">&gt;</span> <span class="dv">40</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>horas_persona <span class="sc">&gt;</span> <span class="dv">3</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Combina las condiciones con «y» y con «o».</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>(edad_persona <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">&amp;</span> (horas_persona <span class="sc">&gt;</span> <span class="dv">3</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>(edad_persona <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">|</span> (horas_persona <span class="sc">&gt;</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] "double"
+[1] "character"
+[1] 14
+[1] TRUE
+[1] FALSE
+[1] FALSE
+[1] TRUE</code></pre>
+<p>La edad es numérica y el estado civil es texto. A ese ritmo vería 14 horas semanales. Como solo se cumple la condición de la edad, «y» devuelve <code>FALSE</code> y «o» devuelve <code>TRUE</code>.</p>
+</details>
+</section>
+<section id="practica-vectores" class="level2">
+<h2 data-anchor-id="practica-vectores">2. Consulta edades por posición y por condición</h2>
+<ol type="1">
+<li>Guarda las cinco edades de la tabla, en el mismo orden, en un vector llamado <code>age_practica</code>. Comprueba cuántos valores contiene.</li>
+<li>Recupera las edades de las personas de las posiciones <strong>2 a 4</strong>, ambas incluidas. Luego recupera solo las de las posiciones <strong>2 y 4</strong>.</li>
+<li>Recupera ahora las edades <strong>menores de 40 años</strong>. Guarda primero la comparación en un objeto llamado <code>criterio_practica</code> y muestra su contenido. Después úsalo entre corchetes para quedarte con las edades que cumplen la condición.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Usa <code>c()</code> para reunir los datos y <code>length()</code> para contarlos. Dentro de los corchetes, puedes indicar un intervalo con <code>:</code>, reunir posiciones concretas con <code>c()</code> o pasar un vector de valores <code>TRUE</code> y <code>FALSE</code>.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las edades y cuenta los elementos.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>age_practica <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(age_practica)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta primero tres posiciones seguidas y luego solo dos.</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>age_practica[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>age_practica[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Marca las edades menores de 40 y recupera esos valores.</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>criterio_practica <span class="ot">&lt;-</span> age_practica <span class="sc">&lt;</span> <span class="dv">40</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>criterio_practica</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>age_practica[criterio_practica]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5
+[1] 48 67 39
+[1] 48 39
+[1]  TRUE FALSE FALSE  TRUE  TRUE
+[1] 26 39 25</code></pre>
+<p>En la última consulta, R conserva las edades en las posiciones donde la comparación dio <code>TRUE</code>. El orden de esas edades sigue siendo el de la tabla original.</p>
+</details>
+</section>
+<section id="practica-valores-ausentes" class="level2">
+<h2 data-anchor-id="practica-valores-ausentes">3. Calcula una media cuando falta una respuesta</h2>
+<ol type="1">
+<li>Crea <code>tvhours_practica</code> con las cinco horas diarias de televisión de la tabla, incluido el dato ausente de la segunda persona.</li>
+<li>Calcula la media con <code>mean()</code>. Mira qué devuelve R y vuelve a calcularla indicando que debe usar las respuestas disponibles.</li>
+<li>Escribe una frase con la media y el número de respuestas que entraron en el cálculo. ¿Qué cambiaría si sustituyeras el <code>NA</code> por un cero? Puedes responder mirando la tabla.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Escribe <code>NA</code> sin comillas. Revisa para qué sirve el argumento <code>na.rm</code> de <code>mean()</code>. Cuenta cuántos números aparecen en la columna de televisión.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las horas en el orden de la tabla, incluido el dato ausente.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>tvhours_practica <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media primero con el comportamiento por defecto.</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours_practica)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Pide a R que use solo las respuestas disponibles.</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours_practica, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] NA
+[1] 4.75</code></pre>
+<p>La media es de <strong>4,75 horas diarias</strong> entre las <strong>cuatro personas con respuesta registrada</strong>. Si pusieras cero, sumarías las mismas horas y dividirías entre cinco. Eso daría 3,8 horas e implicaría tratar la respuesta ausente como si la persona hubiera declarado cero horas.</p>
+</details>
+</section>
+<section id="practica-data-frame" class="level2">
+<h2 data-anchor-id="practica-data-frame">4. Reúne las respuestas en una tabla</h2>
+<ol type="1">
+<li>Guarda las cinco respuestas de estado civil en un vector llamado <code>marital_practica</code>.</li>
+<li>Usa <code>data.frame()</code> para crear una tabla llamada <code>muestra_practica</code> con los tres vectores de la práctica. Pon primero las edades, después el estado civil y al final las horas de televisión.</li>
+<li>Muestra la <strong>cuarta fila completa</strong> y explica qué datos recoge. Después extrae solo la columna de edades como vector y comprueba cuántos elementos contiene.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>En una tabla, la fila va antes de la coma y la columna después. Si dejas vacío lo que va después de la coma, R devuelve todas las columnas de esa fila. Para extraer una columna como vector, usa <code>$</code> seguido de su nombre.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Guarda las respuestas de estado civil en el orden de la encuesta.</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>marital_practica <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>, <span class="st">"Widowed"</span>, <span class="st">"Never married"</span>, <span class="st">"Divorced"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Reúne los tres vectores como columnas.</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>muestra_practica <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(age_practica, marital_practica, tvhours_practica)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta la cuarta fila completa.</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>muestra_practica[<span class="dv">4</span>, ]</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Extrae las edades como vector y cuenta los elementos.</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>muestra_practica<span class="sc">$</span>age_practica</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(muestra_practica<span class="sc">$</span>age_practica)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>  age_practica marital_practica tvhours_practica
+4           39    Never married                4
+[1] 26 48 67 39 25
+[1] 5</code></pre>
+<p>La cuarta persona tiene 39 años, nunca se ha casado y declaró 4 horas diarias de televisión. El vector de edades conserva un valor por persona.</p>
+</details>
+</section>
+<section id="practica-csv" class="level2">
+<h2 data-anchor-id="practica-csv">5. Explora la encuesta completa</h2>
+<p>Comprueba que <code>encuesta_social.csv</code> está en la carpeta <code>datos</code> de <code>taller_R</code>. Si te falta el archivo o el paquete <code>tidyverse</code>, consulta <a href="./cuaderno-sesion-1.html#dataset-gss-cat" target="_blank" rel="noopener">cómo descargar la encuesta</a> o <a href="./cuaderno-sesion-1.html#paquetes-r" target="_blank" rel="noopener">cómo instalar el paquete</a>.</p>
+<ol type="1">
+<li>Carga <code>tidyverse</code> en un bloque de R e importa el CSV en un objeto llamado <code>datos_practica</code>. Comprueba cuántas filas y columnas tiene y si entre los nombres de las variables aparece <code>tvhours</code>.</li>
+<li>Consulta <code>summary()</code> para la columna <code>tvhours</code>. Busca el recuento de <code>NA</code>. A partir del total de filas, calcula cuántas personas tienen una respuesta registrada.</li>
+<li>Calcula la media de horas diarias de televisión entre esas personas. Escribe una frase que incluya la media aproximada, cuántas respuestas entraron en el cálculo y qué hiciste con los datos ausentes.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Usa <code>read_csv("datos/encuesta_social.csv")</code> para importar y <code>dim()</code> para ver las dimensiones. Con <code>names()</code> puedes revisar los nombres. Aplica <code>summary()</code> y <code>mean()</code> al vector <code>datos_practica$tvhours</code>. Resta del total de filas el número que aparece bajo <code>NA's</code>.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga el paquete e importa el archivo del proyecto.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>datos_practica <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba las dimensiones y los nombres.</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_practica)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos_practica)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa el número de datos ausentes y calcula las respuestas disponibles.</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos_practica<span class="sc">$</span>tvhours)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="dv">21483</span> <span class="sc">-</span> <span class="dv">10146</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media con las respuestas disponibles.</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos_practica<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Después de los mensajes de carga e importación, verás estos resultados.</p>
+<pre class="text salida-r"><code>[1] 21483     9
+[1] "year"    "marital" "age"     "race"    "rincome" "partyid" "relig"
+[8] "denom"   "tvhours"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's
+  0.000   1.000   2.000   2.981   4.000  24.000   10146
+[1] 11337
+[1] 2.980771</code></pre>
+<p>Entre las <strong>11.337 personas con respuesta registrada</strong> en el archivo, la media fue de <strong>2,98 horas diarias</strong> de televisión. Para calcularla, dejamos fuera las <strong>10.146 observaciones</strong> sin valor registrado en <code>tvhours</code>.</p>
+</details>
+</section>
+<section id="practica-retos" class="level2">
+<h2 data-anchor-id="practica-retos">Dos retos opcionales</h2>
+<section id="respuestas-y-niveles" class="level3">
+<h3 data-anchor-id="respuestas-y-niveles">Respuestas y niveles</h3>
+<p>Convierte <code>marital_practica</code> en un factor y guarda el resultado en <code>marital_factor_practica</code>. Comprueba cuántas respuestas contiene y qué niveles tiene. Explica por qué los dos recuentos son distintos.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convierte las respuestas en un factor.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>marital_factor_practica <span class="ot">&lt;-</span> <span class="fu">factor</span>(marital_practica)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta las respuestas y muestra los niveles del factor.</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(marital_factor_practica)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(marital_factor_practica)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5
+[1] "Divorced"      "Never married" "Widowed"</code></pre>
+<p>Hay cinco respuestas y tres categorías distintas. Algunas personas dieron la misma respuesta y comparten un nivel.</p>
+</details>
+</section>
+<section id="encuentra-el-error" class="level3">
+<h3 data-anchor-id="encuentra-el-error">Encuentra el error</h3>
+<p>Alguien escribió <code>mean(Datos_practica$tvhours, na.rm = TRUE)</code> y R le indicó que el objeto <code>Datos_practica</code> no existía. Revisa el nombre que usaste en el ejercicio 5, corrige la instrucción y ejecuta solo la versión corregida.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Usa el nombre con el que guardaste la tabla.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos_practica<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 2.980771</code></pre>
+<p>El objeto se creó con la primera letra en minúscula. R distingue <code>datos_practica</code> de <code>Datos_practica</code>.</p>
+</details>
+</section>
+</section>
+<section id="practica-revision" class="level2">
+<h2 data-anchor-id="practica-revision">Revisa tu documento</h2>
+<p>Si aparece un error, vuelve al primer bloque señalado por R y revisa si los objetos que necesita se crearon en un bloque anterior. <a href="./cuaderno-sesion-1.html#resolucion-problemas-comprobaciones" target="_blank" rel="noopener">Qué revisar cuando algo falla</a>.</p>
 
 
 </section>
