@@ -188,10 +188,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En esta sesión responderás con datos reales a una pregunta concreta: ¿cuántas horas de televisión dicen ver al día las personas encuestadas en la <em>General Social Survey</em> (GSS)? Para llegar a la respuesta aprenderás a localizar una variable, a distinguir las respuestas válidas de los valores ausentes y a decidir con cuántos casos calculas una media.</p>
-<p>Empezarás con las respuestas de cinco personas, pocas para que puedas comprobar a mano cada operación. Después aplicarás el mismo razonamiento a la encuesta completa.</p>
-<p><strong>Cómo usar este cuaderno.</strong> Ten RStudio abierto junto a esta guía. Crearás un proyecto llamado <code>taller_R</code> y, dentro de él, tu propio documento <code>sesion-1.qmd</code>, que escribirás con el editor <strong>Visual</strong>. En cada apartado añadirás texto y código, lo ejecutarás y compararás tu resultado con el del cuaderno. Intenta resolver cada ejercicio antes de desplegar su solución.</p>
-<p>Si un resultado no es el que esperabas, hazte tres preguntas: qué objeto ha usado R, qué operación ha hecho y qué ha devuelto. Te ayudarán a aprender el lenguaje y, más adelante, a revisar cualquier análisis.</p>
+<p>Entre 2000 y 2014, 21&nbsp;483 personas respondieron a la <em>General Social Survey</em> de Estados Unidos. Una de las preguntas parecía sencilla: cuántas horas ves la televisión al día. Casi la mitad no la contestó.</p>
+<p>Si alguien te pide la media, ¿la calculas con todas las personas o solo con las que respondieron? ¿Y cómo lo cuentas para que quien te lea sepa qué significa ese número? Al terminar esta sesión sabrás obtener la respuesta con R y explicar con cuántos datos la has calculado.</p>
+<p><strong>Así llegarás hasta ella:</strong></p>
+<ol type="1">
+<li><p><strong>Con cinco personas.</strong> Son tan pocas que podrás comprobar a mano cada cálculo que haga R.</p></li>
+<li><p><strong>Con la encuesta completa.</strong> Repetirás el mismo razonamiento con las 21&nbsp;483 filas del archivo.</p></li>
+<li><p><strong>En tu propio documento.</strong> Crearás <code>sesion-1.qmd</code>, donde quedarán juntos tu código, sus resultados y tus explicaciones.</p></li>
+</ol>
+<p><strong>Antes de empezar.</strong> Abre RStudio al lado de esta página. En cada apartado escribirás código, lo ejecutarás y compararás tu resultado con el del cuaderno. Las soluciones de los ejercicios están plegadas: intenta resolverlos antes de abrirlas. Si tu resultado no coincide, comprueba que has ejecutado los bloques anteriores en orden y que has copiado el código tal cual, con las mismas comillas y mayúsculas. En el <a href="#resolver-problemas" class="no-external">apartado 7</a> encontrarás qué hacer cuando R muestra un mensaje.</p>
 <p><a href="#preparar" class="btn btn-primary no-external">Empieza por preparar RStudio</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 <details class="indice-cuaderno-movil">
 <summary>
