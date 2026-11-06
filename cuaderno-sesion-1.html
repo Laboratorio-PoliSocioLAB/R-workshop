@@ -191,13 +191,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>¿Cuántas horas de televisión ven al día las personas que respondieron a esa pregunta en la <em>General Social Survey</em> (GSS)? Para contestar, tendrás que localizar la columna, distinguir las respuestas disponibles de las ausentes y decidir con cuántas observaciones calculas la media. Empezarás con cinco personas para poder seguir cada operación a mano y después repetirás el razonamiento con el archivo completo.</p>
 <p>Abre RStudio junto a esta guía. Irás creando tu propio proyecto <code>taller_R</code> y un documento llamado <code>sesion-1.qmd</code>. Sigue los apartados en orden. En cada uno añadirás algo al documento, ejecutarás el código y comprobarás el resultado. Intenta resolver los ejercicios antes de desplegar las soluciones.</p>
 <p>Cuando un resultado te sorprenda, detente y pregúntate qué objeto usó R, qué operación hizo y qué devolvió. Esas tres preguntas te servirán tanto para aprender el lenguaje como para revisar un análisis.</p>
-<p><a href="#preparar" class="btn btn-primary">Empieza por crear el proyecto</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
+<p><a href="#preparar" class="btn btn-primary no-external">Empieza por preparar RStudio</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 <details class="indice-cuaderno-movil">
 <summary>
 En este cuaderno
 </summary>
 <ol type="1">
-<li><a href="#preparar">Prepara tu espacio de trabajo</a></li>
+<li><a href="#preparar">Prepara tu espacio de trabajo</a>
+<ul>
+<li><a href="#paneles-rstudio" class="no-external">Conoce los paneles de RStudio</a></li>
+</ul></li>
 <li><a href="#objetos">Guarda valores y haz cálculos</a></li>
 <li><a href="#vectores">Trabaja con cinco respuestas</a></li>
 <li><a href="#data-frame">Pasa de los vectores a una tabla</a></li>
@@ -212,9 +215,50 @@ En este cuaderno
 <section id="qué-son-r-rstudio-y-quarto" class="level3">
 <h3 data-anchor-id="qué-son-r-rstudio-y-quarto">Qué son R, RStudio y Quarto</h3>
 <p><strong>R es un lenguaje de programación</strong> pensado para trabajar con datos, hacer análisis estadísticos y crear gráficos. Un lenguaje de programación tiene reglas para escribir instrucciones que un ordenador pueda interpretar. Cuando escribes <code>26 + 5</code>, usas una instrucción del lenguaje R. El programa R la interpreta, hace la suma y devuelve 31.</p>
-<p><strong>RStudio es un entorno de desarrollo</strong>, es decir, una aplicación que reúne herramientas para escribir y ejecutar código. En su editor escribirás el código que quieres guardar. En la consola puedes enviar una instrucción a R y ver su respuesta en el momento. El panel <em>Environment</em> muestra los objetos que has creado en la sesión y el panel <em>Files</em> te permite navegar por los archivos de tu proyecto.</p>
+<p><strong>RStudio es un entorno de desarrollo</strong>, es decir, una aplicación que reúne herramientas para escribir y ejecutar código, gestionar los archivos de trabajo y consultar los resultados.</p>
 <p><strong>Quarto es una herramienta para crear documentos</strong> que combinan texto, código y resultados. Tú escribes y guardas el archivo editable, que termina en <code>.qmd</code>. Cuando pulsas <strong>Render</strong> en RStudio, Quarto pide a R que ejecute los bloques de código y genera un archivo HTML que puedes abrir en el navegador. Editarás el <code>.qmd</code> cada vez que quieras cambiar una explicación o un cálculo.</p>
 <p>Instala primero <a href="https://cran.r-project.org/" target="_blank" rel="noopener">R desde CRAN</a> y después <a href="https://docs.posit.co/ide/user/download.html" target="_blank" rel="noopener">RStudio Desktop</a>. Si RStudio indica que falta Quarto, <a href="https://quarto.org/docs/get-started/" target="_blank" rel="noopener">instálalo desde su web oficial</a> y vuelve a abrir RStudio. También puedes seguir los pasos en un proyecto de RStudio en <a href="https://posit.cloud/" target="_blank" rel="noopener">Posit Cloud</a>.</p>
+</section>
+<section id="paneles-rstudio" class="level3">
+<h3 data-anchor-id="paneles-rstudio">Conoce los paneles de RStudio</h3>
+<p>Abre RStudio y compara tu ventana con la captura de la presentación. Los paneles pueden aparecer en otro orden o mostrar otras pestañas. Guíate por los nombres. Si todavía no has abierto un archivo, puede que la consola ocupe toda la columna izquierda. El editor aparecerá al crear <code>sesion-1.qmd</code>.</p>
+<figure class="tour-rstudio figure">
+  <div class="tour-rstudio-captura">
+    <img src="imagenes/rstudio-paneles.png" width="1915" height="973" loading="lazy" alt="Ventana de RStudio con cuatro zonas numeradas. El editor está arriba a la izquierda, la consola abajo a la izquierda, el panel que contiene Environment arriba a la derecha y el que contiene Files abajo a la derecha." class="figure-img">
+    <a class="tour-rstudio-marca no-external" href="#panel-editor" aria-label="1. Editor">1</a>
+    <a class="tour-rstudio-marca no-external" href="#panel-consola" aria-label="2. Consola">2</a>
+    <a class="tour-rstudio-marca no-external" href="#panel-entorno" aria-label="3. Entorno">3</a>
+    <a class="tour-rstudio-marca no-external" href="#panel-consulta" aria-label="4. Archivos y otras pestañas">4</a>
+  </div>
+  <figcaption>Los números llevan a la explicación de cada panel. <a href="imagenes/rstudio-paneles.png" target="_blank" rel="noopener">Abrir la captura a tamaño completo</a>.</figcaption>
+</figure>
+<section id="panel-editor" class="level4">
+<h4 data-anchor-id="panel-editor">1. Editor (<em>Source</em>)</h4>
+<p>Es el lugar donde escribes lo que quieres conservar. Cada archivo abierto tiene su propia pestaña. Cuando crees <code>sesion-1.qmd</code>, aquí escribirás tus explicaciones y los bloques de R. <strong>Guardar</strong> conserva los cambios en el archivo. El triángulo verde de un bloque ejecuta ese bloque. <strong>Render</strong> genera el HTML a partir de todo el documento.</p>
+<p>En un <code>.qmd</code>, los botones <em>Source</em> y <em>Visual</em> muestran el mismo archivo de dos maneras. <em>Source</em> deja ver los símbolos que delimitan los bloques. <em>Visual</em> muestra el texto con formato y permite insertar bloques desde la barra de herramientas. Puedes cambiar de vista mientras editas el mismo documento.</p>
+</section>
+<section id="panel-consola" class="level4">
+<h4 data-anchor-id="panel-consola">2. Consola (<em>Console</em>)</h4>
+<p>Aquí puedes pedirle a R que haga algo y ver su respuesta de inmediato. Pulsa la pestaña <em>Console</em>. La pestaña vecina, <em>Terminal</em>, sirve para enviar órdenes al sistema operativo. Al final de <em>Console</em> verás <code>&gt;</code>, que indica que R está listo para recibir una instrucción. Escribe solo <code>26 + 5</code> y pulsa <strong>Enter</strong>. Debajo debe aparecer <code>[1] 31</code>.</p>
+<p>La consola sirve para probar una idea o leer un mensaje. Si quieres que un cálculo forme parte de tu trabajo y se repita al pulsar <strong>Render</strong>, escríbelo en un bloque del editor y guarda el documento. En esta sesión usarás la consola para comprobaciones rápidas y para instalar los paquetes.</p>
+</section>
+<section id="panel-entorno" class="level4">
+<h4 data-anchor-id="panel-entorno">3. Entorno (<em>Environment</em>)</h4>
+<p>Este panel te permite ver qué tiene R en memoria durante la sesión. En la captura está abierta la pestaña <em>Tutorial</em>. Pulsa <em>Environment</em> en ese mismo panel. Puede estar vacío al empezar. Vuelve a <em>Console</em>, escribe <code>edad_prueba &lt;- 26</code> y pulsa <strong>Enter</strong>. Ahora debe aparecer <code>edad_prueba</code> en <em>Environment</em> con el valor 26.</p>
+<p>Acabas de crear un <strong>objeto</strong>, un valor al que has dado un nombre. Si escribes <code>edad_prueba</code> en la consola, R muestra su contenido. El objeto estará disponible mientras trabajas en esa sesión. El código que lo crea es lo que guardarías en el <code>.qmd</code> si quisieras volver a crearlo al renderizar.</p>
+<p>En la pestaña <em>History</em> del mismo panel puedes buscar las instrucciones que ya has ejecutado. <em>Environment</em> te muestra el objeto <code>edad_prueba</code> y <em>History</em> te permite encontrar la instrucción que lo creó.</p>
+</section>
+<section id="panel-consulta" class="level4">
+<h4 data-anchor-id="panel-consulta">4. Archivos y otras pestañas de consulta</h4>
+<ul>
+<li><strong>Files</strong> muestra los archivos y carpetas. Aquí buscarás <code>taller_R.Rproj</code> y <code>sesion-1.qmd</code> después de crearlos. También usarás esta pestaña para crear la carpeta <code>datos</code>.</li>
+<li><strong>Plots</strong> muestra los gráficos que produces con R. Es normal que esté vacía al empezar.</li>
+<li><strong>Packages</strong> muestra los paquetes instalados. Un paquete es un conjunto de herramientas que añade funciones a R. Más adelante instalarás y cargarás los que necesita el taller.</li>
+<li><strong>Help</strong> muestra la documentación. Para probarlo, escribe <code>?mean</code> en la consola. Se abrirá la ayuda de la función que calcula la media.</li>
+<li><strong>Viewer</strong> muestra contenido web dentro de RStudio. Según tu configuración, la vista previa del HTML de Quarto puede aparecer aquí o abrirse en otra ventana.</li>
+</ul>
+<p>Si buscas el documento donde escribiste el código, mira en <em>Files</em>. Si buscas el valor que R acaba de guardar, mira en <em>Environment</em>. Prueba a pasar de un panel a otro antes de seguir. <a href="https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html" target="_blank" rel="noopener">Guía de los paneles de RStudio</a>.</p>
+</section>
 </section>
 <section id="crea-el-proyecto-taller_r" class="level3">
 <h3 data-anchor-id="crea-el-proyecto-taller_r">Crea el proyecto <code>taller_R</code></h3>
@@ -242,15 +286,33 @@ En este cuaderno
 </section>
 <section id="escribe-y-ejecuta-el-primer-bloque" class="level3">
 <h3 data-anchor-id="escribe-y-ejecuta-el-primer-bloque">Escribe y ejecuta el primer bloque</h3>
-<p>Debajo de la frase inicial, añade el bloque siguiente. La primera línea abre un bloque de R y la última lo cierra. Las tres marcas que aparecen en ambas líneas son acentos graves. También puedes insertar un bloque desde el menú <em>Insert</em> del editor y escribir la operación en su interior.</p>
+<p>Coloca el cursor en una línea nueva debajo de la frase inicial. Puedes insertar el bloque con el menú del editor <em>Visual</em> o escribirlo en <em>Source</em>. Elige el método que te resulte más cómodo.</p>
+<section id="desde-el-editor-visual" class="level4">
+<h4 data-anchor-id="desde-el-editor-visual">Desde el editor <em>Visual</em></h4>
+<ol type="1">
+<li>Pulsa <em>Visual</em> en la barra del editor.</li>
+<li>En esa misma barra, abre el desplegable junto al icono verde con una <strong>C</strong> y un signo <strong>+</strong>. Selecciona <strong>R</strong>, la primera opción que aparece en la captura.</li>
+<li>RStudio insertará un bloque vacío donde dejaste el cursor. Haz clic dentro y escribe <code>26 + 5</code>. El menú ya ha creado el bloque, así que escribe directamente la operación.</li>
+</ol>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="imagenes/rstudio-insertar-bloque-r.png" class="img-fluid figure-img" alt="Desplegable de la barra del editor visual de RStudio, junto al icono verde con una C y un signo más. La primera opción es R." width="210"></p>
+<figcaption>Menú para insertar un bloque en RStudio. La opción R aparece al abrir el desplegable junto al icono verde.</figcaption>
+</figure>
+</div>
+</section>
+<section id="desde-el-editor-source" class="level4">
+<h4 data-anchor-id="desde-el-editor-source">Desde el editor <em>Source</em></h4>
+<p>Pulsa <em>Source</em> y escribe las tres líneas siguientes. La primera abre un bloque de R y la última lo cierra. Las tres marcas que aparecen en ambas líneas son acentos graves.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">26</span> <span class="sc">+</span> <span class="dv">5</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Pulsa el triángulo verde del bloque. R debe devolver <code>[1] 31</code>. Añade debajo, fuera del bloque, una frase que explique la operación. Así quedarán en el mismo archivo el cálculo y lo que significa.</p>
+<p>Con cualquiera de los dos métodos, pulsa el triángulo verde del bloque. R debe devolver <code>[1] 31</code>. Añade debajo, fuera del bloque, una frase que explique la operación. Así quedarán en el mismo archivo el cálculo y lo que significa.</p>
 <p>Antes de renderizar, instala estos paquetes <strong>una sola vez en la consola</strong>, pulsando <strong>Enter</strong> al final de la línea. Quarto usa <code>rmarkdown</code> para procesar los bloques de R. Usarás <code>tidyverse</code> más adelante para importar la encuesta.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"rmarkdown"</span>, <span class="st">"tidyverse"</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Guarda el documento y pulsa <strong>Render</strong>. Quarto ejecuta los bloques de arriba abajo en una sesión nueva de R. Comprueba que en <code>sesion-1.html</code> aparecen el título, el cálculo, el resultado y tu frase. Cuando vuelvas a renderizar, Quarto actualizará el HTML a partir de lo que hayas guardado en el <code>.qmd</code>. <a href="https://quarto.org/docs/get-started/hello/rstudio.html" target="_blank" rel="noopener">Guía de Quarto para RStudio</a>.</p>
 <p>Para los siguientes apartados, añade el encabezado indicado a tu documento escribiendo <code>##</code>, un espacio y el título. Crea un bloque de R por cada ejemplo de código y copia <strong>solo las instrucciones</strong> dentro del bloque. Los resultados que ves en esta guía sirven para comprobar lo que devuelve R. Puedes escribir tus observaciones entre bloques. Ejecútalos en orden, porque unos usarán objetos creados en los anteriores. Para cada ejercicio, crea tu propio bloque e intenta escribir el código antes de mirar la solución.</p>
+</section>
 </section>
 </section>
 <section id="objetos" class="level2">

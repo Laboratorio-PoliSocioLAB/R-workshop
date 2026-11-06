@@ -48,6 +48,16 @@ h2 { border: 0; font-size: 25px; font-weight: 700; margin-block: 36px 20px; lett
 .solucion-cuaderno[open] summary, .indice-cuaderno-movil[open] summary { margin-bottom: 14px; }
 .solucion-cuaderno > :last-child, .indice-cuaderno-movil > :last-child { margin-bottom: 0; }
 .indice-cuaderno-movil { display: none; }
+.tour-rstudio { margin: 24px 0; }
+.tour-rstudio-captura { position: relative; }
+.tour-rstudio img { display: block; width: 100%; height: auto; border: 1px solid var(--curso-linea); border-radius: 5px; }
+.tour-rstudio figcaption { margin-top: 10px; font-size: .9em; }
+.tour-rstudio-marca { position: absolute; display: grid; place-items: center; width: clamp(25px, 4vw, 35px); aspect-ratio: 1; border: 2px solid #fff; border-radius: 50%; background: #0b6178; color: #fff; font-weight: 700; line-height: 1; text-decoration: none; box-shadow: 0 1px 3px #0005; }
+.tour-rstudio-marca:hover, .tour-rstudio-marca:focus-visible { background: #083e4e; color: #fff; }
+.tour-rstudio-marca[href$="#panel-editor"] { top: 16%; left: 2%; }
+.tour-rstudio-marca[href$="#panel-consola"] { bottom: 5%; left: 2%; }
+.tour-rstudio-marca[href$="#panel-entorno"] { top: 13%; left: 78%; }
+.tour-rstudio-marca[href$="#panel-consulta"] { top: 48%; left: 78%; }
 #quarto-document-content > p > .btn { margin-block: 0 8px; white-space: normal; }
 .nav-footer { color: var(--curso-secundario); font-size: 12px; padding-block: 22px; }
 .nav-footer a { color: var(--curso-secundario); }
