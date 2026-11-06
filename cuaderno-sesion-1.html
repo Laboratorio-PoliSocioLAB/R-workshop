@@ -188,15 +188,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Entre 2000 y 2014, 21&nbsp;483 personas respondieron a la <em>General Social Survey</em> de Estados Unidos. Una de las preguntas parecía sencilla: cuántas horas ves la televisión al día. Casi la mitad no la contestó.</p>
-<p>Si alguien te pide la media, ¿la calculas con todas las personas o solo con las que respondieron? ¿Y cómo lo cuentas para que quien te lea sepa qué significa ese número? Al terminar esta sesión sabrás obtener la respuesta con R y explicar con cuántos datos la has calculado.</p>
-<p><strong>Así llegarás hasta ella:</strong></p>
-<ol type="1">
-<li><p><strong>Con cinco personas.</strong> Son tan pocas que podrás comprobar a mano cada cálculo que haga R.</p></li>
-<li><p><strong>Con la encuesta completa.</strong> Repetirás el mismo razonamiento con las 21&nbsp;483 filas del archivo.</p></li>
-<li><p><strong>En tu propio documento.</strong> Crearás <code>sesion-1.qmd</code>, donde quedarán juntos tu código, sus resultados y tus explicaciones.</p></li>
-</ol>
-<p><strong>Antes de empezar.</strong> Abre RStudio al lado de esta página. En cada apartado escribirás código, lo ejecutarás y compararás tu resultado con el del cuaderno. Las soluciones de los ejercicios están plegadas: intenta resolverlos antes de abrirlas. Si tu resultado no coincide, comprueba que has ejecutado los bloques anteriores en orden y que has copiado el código tal cual, con las mismas comillas y mayúsculas. En el <a href="#resolver-problemas" class="no-external">apartado 7</a> encontrarás qué hacer cuando R muestra un mensaje.</p>
+<p>En un programa de menús como SPSS o Excel, cada paso del análisis es un clic que no deja rastro: si meses después necesitas comprobar cómo obtuviste un dato o repetir el cálculo con un archivo actualizado, tienes que rehacerlo de memoria. Con R escribes las instrucciones en un documento junto a tus explicaciones y puedes volver a ejecutarlas de principio a fin con un solo clic.</p>
+<p>En este cuaderno darás tus primeros pasos con R y RStudio trabajando con datos reales de la <em>General Social Survey</em> (<code>encuesta_social.csv</code>). Empezarás guardando los datos de una sola persona, pasarás a cinco respuestas para poder comprobar a mano cada operación y terminarás importando y explorando las 21&nbsp;483 observaciones de la encuesta completa.</p>
+<p>Abre RStudio junto a esta página. A medida que avances irás creando tu proyecto <code>taller_R</code> y el documento <code>sesion-1.qmd</code>, donde escribirás el código, comprobarás lo que devuelve R y anotarás tus propios resultados. En cada apartado encontrarás ejercicios con la solución desplegable para que puedas intentarlos antes de consultarla.</p>
 <p><a href="#preparar" class="btn btn-primary no-external">Empieza por preparar RStudio</a> <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-1/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 <details class="indice-cuaderno-movil">
 <summary>
@@ -747,7 +741,7 @@ Ver respuesta
 </section>
 <section id="practica-final" class="level2">
 <h2 data-anchor-id="practica-final">8. Comprueba lo que has aprendido</h2>
-<p>Recupera la pregunta del comienzo. ¿Cuántas personas de la encuesta <strong>completa</strong> tienen registradas sus horas de televisión y cuál es la media entre ellas? Añade el encabezado «Práctica final» al final de tu <code>.qmd</code> y crea debajo un bloque de R.</p>
+<p>Para cerrar la sesión, aplica lo que has visto a la encuesta <strong>completa</strong>: ¿cuántas personas tienen registradas sus horas de televisión y cuál es la media entre ellas? Añade el encabezado «Práctica final» al final de tu <code>.qmd</code> y crea debajo un bloque de R.</p>
 <ol type="1">
 <li>Extrae el vector de horas y distingue las respuestas registradas de los valores ausentes.</li>
 <li>Cuenta cuántas respuestas registradas hay. Calcula la media usando esas respuestas y redondéala a dos decimales.</li>
