@@ -1456,7 +1456,8 @@ font-size: 0.9em;
 }
 
 #repaso-sesion-1-vectores .intro-repaso,
-#repaso-sesion-1-dataframe .intro-repaso {
+#repaso-sesion-1-dataframe .intro-repaso,
+#repaso-corchete-uno .intro-repaso {
 font-size: 24px;
 color: #222222;
 margin: 0 0 10px 0 !important;
@@ -1472,8 +1473,21 @@ line-height: 1.3;
 color: #222222;
 }
 .reveal section.ejemplos .puente-hoy strong { color: #107895; }
-#repaso-sesion-1-vectores .card-op-desc { font-size: 21px; }
-#repaso-sesion-1-vectores .card-op-terminal { font-size: 20px; }
+#repaso-sesion-1-vectores .card-op-desc,
+#repaso-corchete-uno .card-op-desc { font-size: 21px; }
+#repaso-sesion-1-vectores .card-op-terminal,
+#repaso-corchete-uno .card-op-terminal { font-size: 20px; }
+#repaso-corchete-uno .hl-idx {
+background: #fff3cd;
+color: #9a2515;
+border-radius: 3px;
+padding: 0 3px;
+}
+#repaso-corchete-uno .puente-hoy {
+margin-top: 12px !important;
+padding: 6px 14px;
+font-size: 20px;
+}
 
 .reveal section.repaso-df .intro-repaso { font-size: 24px; color: #222222; margin: 0 0 10px 0 !important; }
 .reveal section.repaso-df .grid-repaso-df {
@@ -2758,6 +2772,68 @@ display:block!important;
 <p class="puente-hoy"><strong>Hoy:</strong> en lugar de coordenadas numéricas, usaremos verbos legibles de tidyverse: <code>select()</code> para elegir columnas y <code>filter()</code> para filtrar personas.</p>
 <aside class="notes">
 <p>Aclaración pedagógica clave sobre el signo $: R no puede calcular la media de un data frame completo porque contiene texto y números mezclados. Para calcular mean(), necesitamos extraer la columna como un vector de números; eso es exactamente lo que hace el operador $ (datos$tvhours). Con corchetes [fila, columna] se accede por posición: dejar vacío un lado significa “todas”. En tidyverse sustituimos esta sintaxis por select() y filter(), mucho más legibles.</p>
+<style type="text/css">
+span.MJX_Assistive_MathML {
+position:absolute!important;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 1px 0 0 0!important;
+border: 0!important;
+height: 1px!important;
+width: 1px!important;
+overflow: hidden!important;
+display:block!important;
+}</style></aside>
+</section>
+<section id="repaso-corchete-uno" class="slide level2 ejemplos">
+<h2>¿Por qué sale <code>[1]</code> en las respuestas de R?</h2>
+<p class="intro-repaso">No se refiere a la 1ª persona de la encuesta: <strong><code>[1]</code></strong> es solo un marcador de posición de la respuesta.</p>
+
+<div class="grid-operaciones">
+  <div class="card-op card-rojo">
+    <div class="card-op-header">1. No indica la 1ª persona de la encuesta</div>
+    <div class="card-op-terminal">
+      <div class="code-in">age[3]</div>
+      <div class="code-out"><span class="hl-idx">[1]</span> 67</div>
+      <div class="code-in">mean(age)</div>
+      <div class="code-out"><span class="hl-idx">[1]</span> 41</div>
+    </div>
+    <p class="card-op-desc">Pedimos la <strong>3ª persona</strong> (67) o una <strong>media</strong> (41) y sigue saliendo <code>[1]</code>, nunca <code>[3]</code>.</p>
+  </div>
+
+  <div class="card-op card-azul">
+    <div class="card-op-header">2. Señala la posición en la respuesta</div>
+    <div class="card-op-terminal">
+      <div class="code-in">age[age &gt; 40]</div>
+      <div class="code-out"><span class="hl-idx">[1]</span> 48 67</div>
+      <div class="code-in">age[c(3, 5)]</div>
+      <div class="code-out"><span class="hl-idx">[1]</span> 67 25</div>
+    </div>
+    <p class="card-op-desc">Todo resultado simple es un vector: <code>[1]</code> marca que <strong>48</strong> o <strong>67</strong> son el <strong>1er dato de la salida</strong>.</p>
+  </div>
+
+  <div class="card-op card-verde">
+    <div class="card-op-header">3. Para qué sirve en listas largas</div>
+    <div class="card-op-terminal">
+      <div class="code-in">datos$age[1:14]</div>
+      <div class="code-out"> <span class="hl-idx">[1]</span> 26 48 67 39 25 25 36 44 44</div>
+      <div class="code-out"><span class="hl-idx">[10]</span> 47 53 52 52 51</div>
+    </div>
+    <p class="card-op-desc">Si la salida salta de línea, cada renglón empieza con su índice: <strong>47</strong> es el <strong>10º valor</strong> devuelto.</p>
+  </div>
+
+  <div class="card-op card-azul">
+    <div class="card-op-header">4. No confundir código con respuesta</div>
+    <div class="card-op-terminal">
+      <div class="code-in">age[1]</div>
+      <div class="code-out"><span class="hl-idx">[1]</span> 26</div>
+    </div>
+    <p class="card-op-desc"><strong>En tu código</strong>, <code>[1]</code> pide la 1ª persona. <strong>En la salida</strong>, <code>[1]</code> solo numera la línea (coinciden por casualidad).</p>
+  </div>
+</div>
+
+<p class="puente-hoy"><strong>Hoy:</strong> las tablas de <code>tidyverse</code> numeran las filas a la izquierda, pero cada vector o media (e.g. <code>mean(...)</code>) empieza por <code>[1]</code>.</p>
+<aside class="notes">
+<p>Duda muy habitual al empezar con R: al ejecutar age[1] aparece [1] 26, y es fácil creer que ese [1] de la consola significa «primera persona de la encuesta». En realidad: 1. Al pedir age[3] (tercera persona: 67) o mean(age) (41), R también imprime [1], porque la respuesta es un nuevo vector cuya primera posición es 67 o 41. 2. En age[age &gt; 40], 48 era la segunda persona de age, pero en la respuesta aparece con [1] porque ocupa el primer lugar del resultado devuelto. 3. Su utilidad práctica se ve al imprimir vectores largos como datos$age[1:14]: la primera línea comienza con [1] y la segunda con [10] (indicando que 47 es el décimo elemento de la respuesta) para no perder la cuenta. 4. Por tanto, nunca se copia el [1] de la salida dentro del código ni representa el identificador del caso. Todas las salidas han sido comprobadas en R.</p>
 <style type="text/css">
 span.MJX_Assistive_MathML {
 position:absolute!important;
