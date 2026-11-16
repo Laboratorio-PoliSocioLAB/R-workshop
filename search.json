@@ -238,6 +238,13 @@
     "text": "Sigue el cuaderno para crear el proyecto taller_R y escribir tu propio documento quarto.qmd. Añadirás los bloques de R y tus explicaciones a medida que aprendas a explorar una encuesta.\nAbrir el cuaderno de la sesión 1"
   },
   {
+    "objectID": "sesiones.html#taller-1-sesión-2-manipulación-y-análisis-descriptivo-de-datos-con-tidyverse-parte-i",
+    "href": "sesiones.html#taller-1-sesión-2-manipulación-y-análisis-descriptivo-de-datos-con-tidyverse-parte-i",
+    "title": "Sesiones",
+    "section": "Taller 1 · Sesión 2: manipulación y análisis descriptivo de datos con tidyverse (parte I)",
+    "text": "Taller 1 · Sesión 2: manipulación y análisis descriptivo de datos con tidyverse (parte I)\nRetoma tu proyecto taller_R para limpiar, seleccionar, filtrar y transformar la encuesta con |&gt; y tidyverse, guardar la tabla preparada en un nuevo CSV y hacer una primera comparación entre grupos de edad.\nAbrir el cuaderno de la sesión 2"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Taller de R para las Ciencias Sociales",
