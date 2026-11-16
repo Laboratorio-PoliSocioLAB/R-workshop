@@ -154,6 +154,13 @@
     "text": "Renombrar las columnas con rename()\nLas dos columnas que hemos seleccionado tienen nombres en inglés (age y tvhours). Para trabajar más cómodamente, vamos a cambiarlos en datos_trabajo con rename() por edad y horas_tv.\nLa regla que sigue rename() es siempre nombre nuevo a la izquierda del = y nombre actual a la derecha (e.g. edad = age). No confundas este =, que sirve para emparejar cada nombre nuevo con el anterior dentro de la función, con &lt;-, que guarda la tabla actualizada en datos_trabajo.\n# Cambia el nombre de las dos columnas en datos_trabajo\ndatos_trabajo &lt;- datos_trabajo |&gt;\n  rename(edad = age,\n         horas_tv = tvhours)\n\n# Muestra las tres primeras filas para comprobar el cambio\nhead(datos_trabajo, n = 3)\n# A tibble: 3 × 2\n   edad horas_tv\n  &lt;dbl&gt;    &lt;dbl&gt;\n1    26       12\n2    67        2\n3    39        4\nSeguimos conservando las 11.299 filas y las 2 columnas, y horas_tv mantiene la unidad original (horas diarias de televisión). El cambio solo afecta a datos_trabajo: tanto datos como encuesta_social.csv conservan age y tvhours. A partir de aquí usaremos edad y horas_tv."
   },
   {
+    "objectID": "cuaderno-sesion-2.html#paso-4-filtrar-ordenar",
+    "href": "cuaderno-sesion-2.html#paso-4-filtrar-ordenar",
+    "title": "Manipulación y análisis descriptivo de datos con tidyverse (parte I)",
+    "section": "Paso 4: filtrar y ordenar por edad",
+    "text": "Paso 4: filtrar y ordenar por edad\nAhora queremos asegurar que la muestra se limita a personas adultas y ordenarla de menor a mayor edad. Encadenamos dos verbos de dplyr sobre datos_trabajo:\n\nfilter(edad &gt;= 18) selecciona personas de 18 años o más. El signo &gt;= incluye a quienes tienen exactamente 18 años (mientras que edad &gt; 18 las excluiría).\narrange(edad) ordena la tabla de menor a mayor edad, moviendo las filas completas para que cada persona conserve sus propias horas de televisión.\n\n# Asegura población de 18 años o más y ordena de menor a mayor edad\ndatos_trabajo &lt;- datos_trabajo |&gt;\n  filter(edad &gt;= 18) |&gt;\n  arrange(edad)\n\n# Comprueba las tres primeras filas ya ordenadas\nhead(datos_trabajo, n = 3)\n# A tibble: 3 × 2\n   edad horas_tv\n  &lt;dbl&gt;    &lt;dbl&gt;\n1    18        4\n2    18        0\n3    18        1\nEn esta encuesta no hay menores de 18 años, así que el filtro no elimina ninguna fila y seguimos manteniendo los 11.299 casos (con datos y el CSV original intactos).\n\nOrdenar de mayor a menor: escribe arrange(desc(edad)). Para ordenar de menor a mayor basta con arrange(edad), ya que el orden ascendente es el predeterminado y no existe ascend() en dplyr."
+  },
+  {
     "objectID": "sesiones.html",
     "href": "sesiones.html",
     "title": "Sesiones",

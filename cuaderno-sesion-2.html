@@ -164,6 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#paso-2-filas-repetidas" id="toc-paso-2-filas-repetidas" class="nav-link" data-scroll-target="#paso-2-filas-repetidas">Paso 2: comprobar filas repetidas</a></li>
   <li><a href="#paso-3-seleccionar-columnas" id="toc-paso-3-seleccionar-columnas" class="nav-link" data-scroll-target="#paso-3-seleccionar-columnas">Paso 3: seleccionar las columnas</a></li>
   <li><a href="#renombrar-columnas" id="toc-renombrar-columnas" class="nav-link" data-scroll-target="#renombrar-columnas">Renombrar las columnas con <code>rename()</code></a></li>
+  <li><a href="#paso-4-filtrar-ordenar" id="toc-paso-4-filtrar-ordenar" class="nav-link" data-scroll-target="#paso-4-filtrar-ordenar">Paso 4: filtrar y ordenar por edad</a></li>
   </ul>
 </nav>
     </div>
@@ -212,6 +213,7 @@ En este cuaderno
 <li><a href="#paso-2-filas-repetidas" class="no-external">Paso 2: comprobar filas repetidas</a></li>
 <li><a href="#paso-3-seleccionar-columnas" class="no-external">Paso 3: seleccionar las columnas</a></li>
 <li><a href="#renombrar-columnas" class="no-external">Renombrar las columnas con <code>rename()</code></a></li>
+<li><a href="#paso-4-filtrar-ordenar" class="no-external">Paso 4: filtrar y ordenar por edad</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -522,6 +524,31 @@ $ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,�
 2    67        2
 3    39        4</code></pre>
 <p>Seguimos conservando las <strong>11.299 filas</strong> y las <strong>2 columnas</strong>, y <code>horas_tv</code> mantiene la unidad original (horas diarias de televisión). El cambio solo afecta a <code>datos_trabajo</code>: tanto <code>datos</code> como <code>encuesta_social.csv</code> conservan <code>age</code> y <code>tvhours</code>. A partir de aquí usaremos <code>edad</code> y <code>horas_tv</code>.</p>
+</section>
+<section id="paso-4-filtrar-ordenar" class="level2">
+<h2 data-anchor-id="paso-4-filtrar-ordenar">Paso 4: filtrar y ordenar por edad</h2>
+<p>Ahora queremos asegurar que la muestra se limita a personas adultas y ordenarla de menor a mayor edad. Encadenamos dos verbos de <code>dplyr</code> sobre <code>datos_trabajo</code>:</p>
+<ul>
+<li><code>filter(edad &gt;= 18)</code> selecciona personas de <strong>18 años o más</strong>. El signo <code>&gt;=</code> incluye a quienes tienen exactamente 18 años (mientras que <code>edad &gt; 18</code> las excluiría).</li>
+<li><code>arrange(edad)</code> ordena la tabla <strong>de menor a mayor edad</strong>, moviendo las filas completas para que cada persona conserve sus propias horas de televisión.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Asegura población de 18 años o más y ordena de menor a mayor edad</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(edad <span class="sc">&gt;=</span> <span class="dv">18</span>) <span class="sc">|&gt;</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(edad)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba las tres primeras filas ya ordenadas</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_trabajo, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code># A tibble: 3 × 2
+   edad horas_tv
+  &lt;dbl&gt;    &lt;dbl&gt;
+1    18        4
+2    18        0
+3    18        1</code></pre>
+<p>En esta encuesta <strong>no hay menores de 18 años</strong>, así que el filtro no elimina ninguna fila y seguimos manteniendo los <strong>11.299 casos</strong> (con <code>datos</code> y el CSV original intactos).</p>
+<ul>
+<li><strong>Ordenar de mayor a menor:</strong> escribe <code>arrange(desc(edad))</code>. Para ordenar de menor a mayor basta con <code>arrange(edad)</code>, ya que el orden ascendente es el predeterminado y no existe <code>ascend()</code> en <code>dplyr</code>.</li>
+</ul>
 
 
 </section>
