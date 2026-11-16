@@ -170,6 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#seleccionar-grupos-comparacion" id="toc-seleccionar-grupos-comparacion" class="nav-link" data-scroll-target="#seleccionar-grupos-comparacion">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
   <li><a href="#guardar-datos-csv" id="toc-guardar-datos-csv" class="nav-link" data-scroll-target="#guardar-datos-csv">Guardar el trabajo en un archivo CSV</a></li>
   <li><a href="#primer-analisis" id="toc-primer-analisis" class="nav-link" data-scroll-target="#primer-analisis">Un primer análisis: ¿quién ve más televisión?</a></li>
+  <li><a href="#recap-sesion" id="toc-recap-sesion" class="nav-link" data-scroll-target="#recap-sesion">Qué hemos aprendido</a></li>
   </ul>
 </nav>
     </div>
@@ -224,6 +225,7 @@ En este cuaderno
 <li><a href="#seleccionar-grupos-comparacion" class="no-external">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
 <li><a href="#guardar-datos-csv" class="no-external">Guardar el trabajo en un archivo CSV</a></li>
 <li><a href="#primer-analisis" class="no-external">Un primer análisis: ¿quién ve más televisión?</a></li>
+<li><a href="#recap-sesion" class="no-external">Qué hemos aprendido</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -714,6 +716,43 @@ $ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,�
 [1] 222</code></pre>
 <p><strong>Conclusión.</strong> Las personas de <strong>65 o más años</strong> dedican de media <strong>222 minutos diarios</strong> (unas 3,7 horas) frente a los <strong>167 minutos</strong> (unas 2,8 horas) del grupo joven (<strong>18–29 años</strong>): <strong>55 minutos más de televisión al día</strong>, casi una hora diaria de diferencia.</p>
 <p>Como ya eliminamos los <code>NA</code> en el paso 1, aquí no hace falta añadir <code>na.rm = TRUE</code> dentro de <code>mean()</code>. En la siguiente sesión darás un paso más: en lugar de filtrar cada grupo a mano, aprenderás a calcular estos resúmenes para los cuatro grupos de edad a la vez y a visualizarlos con gráficos.</p>
+</section>
+<section id="recap-sesion" class="level2">
+<h2 data-anchor-id="recap-sesion">Qué hemos aprendido</h2>
+<p>En esta sesión has pasado de consultar valores sueltos a preparar una base de datos completa de principio a fin, manteniendo intacto el archivo original (<code>encuesta_social.csv</code>). Estas son las piezas clave que conviene fijar:</p>
+<ul>
+<li><strong>Encadenar pasos con <code>|&gt;</code>:</strong> lee el <em>pipe</em> como «y después». Toma el resultado de una línea y lo pasa a la función siguiente sin llenar el entorno de tablas intermedias.</li>
+<li><strong>Limpiar ausentes con <code>drop_na()</code>:</strong> retira las filas con <code>NA</code> únicamente en las variables necesarias para tu pregunta (<code>age</code> y <code>tvhours</code>), sin descartar casos por columnas que no vas a usar.</li>
+<li><strong>Revisar repetidos con <code>distinct()</code>:</strong> permite contar si hay filas idénticas antes de reducir columnas, sin borrarlas automáticamente si no hay un identificador individual que confirme que son duplicados.</li>
+<li><strong>Seleccionar y renombrar (<code>select()</code> y <code>rename()</code>):</strong> conserva solo las columnas necesarias y les da nombres claros (<code>nombre_nuevo = nombre_actual</code>).</li>
+<li><strong>Filtrar y ordenar (<code>filter()</code> y <code>arrange()</code>):</strong> elige las filas que cumplen una condición —con <code>==</code> para un valor, o con <code>%in% c(...)</code> para una lista de categorías— y ordena las filas completas de menor a mayor (o de mayor a menor con <code>desc()</code>).</li>
+<li><strong>Transformar y clasificar (<code>mutate()</code> y <code>case_when()</code>):</strong> crea nuevas columnas (como <code>tv_minutos</code>) o agrupa valores por tramos siguiendo el orden de las reglas hasta llegar a <code>TRUE</code>.</li>
+<li><strong>Guardar la tabla preparada (<code>write_csv()</code>):</strong> exporta el resultado limpio a <code>outputs/encuesta_preparada.csv</code> para retomarlo directamente en el análisis sin repetir la limpieza.</li>
+</ul>
+<details class="solucion-cuaderno">
+<summary>
+Ver todo el recorrido en un solo bloque
+</summary>
+<p>Si encadenamos con <code>|&gt;</code> los pasos que fuimos haciendo uno a uno, la preparación completa de <code>datos_trabajo</code> queda así:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="ot">&lt;-</span> datos <span class="sc">|&gt;</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(age, tvhours) <span class="sc">|&gt;</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age, tvhours) <span class="sc">|&gt;</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">edad =</span> age,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">horas_tv =</span> tvhours) <span class="sc">|&gt;</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(edad <span class="sc">&gt;=</span> <span class="dv">18</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(edad) <span class="sc">|&gt;</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">tv_minutos =</span> horas_tv <span class="sc">*</span> <span class="dv">60</span>,</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">grupo_edad =</span> <span class="fu">case_when</span>(</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>      edad <span class="sc">&lt;=</span> <span class="dv">29</span> <span class="sc">~</span> <span class="st">"18–29"</span>,</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>      edad <span class="sc">&lt;=</span> <span class="dv">44</span> <span class="sc">~</span> <span class="st">"30–44"</span>,</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>      edad <span class="sc">&lt;=</span> <span class="dv">64</span> <span class="sc">~</span> <span class="st">"45–64"</span>,</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"65 o más"</span></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Al ejecutar este bloque junto con la exportación a <code>outputs/encuesta_preparada.csv</code>, obtienes exactamente la misma tabla de <strong>11.299 filas y 4 columnas</strong> lista para analizar.</p>
+</details>
+<p>En la próxima sesión continuaremos con la <strong>parte II</strong>, centrada en el <strong>análisis de datos</strong>.</p>
 
 
 </section>
