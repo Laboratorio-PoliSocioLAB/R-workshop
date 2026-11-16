@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -114,8 +149,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En este cuaderno</h2>
+   
+  <ul class="collapse">
+  <li><a href="#repaso-sesion-1" id="toc-repaso-sesion-1" class="nav-link active" data-scroll-target="#repaso-sesion-1">Repaso breve de la sesión 1</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -144,11 +185,69 @@ ul.task-list li input[type="checkbox"] {
 <p>En la sesión anterior cargaste una encuesta real en R y aprendiste a consultar valores concretos con corchetes y con <code>$</code>. En esta segunda sesión damos el siguiente paso: preparar una base de datos completa para responder a una pregunta concreta: <strong>¿quién ve más televisión, jóvenes o mayores?</strong></p>
 <p>Partirás de la misma encuesta de la <em>General Social Survey</em> (<code>encuesta_social.csv</code>) y trabajarás sobre una copia llamada <code>datos_trabajo</code> para dejar el archivo original intacto. Con las funciones de <code>tidyverse</code> —en especial de <code>dplyr</code> y <code>tidyr</code>— y el operador <em>pipe</em> (<code>|&gt;</code>), encadenarás operaciones paso a paso para tratar los valores ausentes (<code>NA</code>), comprobar si hay filas repetidas, seleccionar y renombrar columnas (<code>edad</code> y <code>horas_tv</code>), filtrar casos, ordenar resultados y crear nuevas variables como <code>tv_minutos</code> y <code>grupo_edad</code>.</p>
 <p>Al terminar guardarás la tabla preparada en un nuevo archivo CSV (<code>outputs/encuesta_preparada.csv</code>) y calcularás una primera comparación del tiempo diario de televisión entre el grupo joven y el de mayor edad. Todo quedará documentado en tu proyecto <code>taller_R</code> para que puedas volver a ejecutar el proceso completo cuando lo necesites.</p>
-<p><strong>Cómo trabajar con el cuaderno.</strong> Sigue los apartados en orden dentro de tu proyecto de RStudio. Antes de ejecutar cada bloque de código, intenta anticipar qué devolverá R o qué cambiará en la tabla y compruébalo después con tus propios resultados.</p>
+<p><strong>Cómo trabajar con el cuaderno.</strong> Pulsa <strong>Siguiente</strong> para avanzar o vuelve a un apartado desde el índice. Sigue los pasos en orden dentro de tu proyecto de RStudio. Antes de ejecutar cada bloque de código, intenta anticipar qué devolverá R o qué cambiará en la tabla y compruébalo después con tus propios resultados.</p>
 <p><a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-2/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 </div>
+<details class="indice-cuaderno-movil">
+<summary>
+En este cuaderno
+</summary>
+<ul>
+<li><a href="#intro-cuaderno" class="no-external">Presentación</a></li>
+<li><a href="#repaso-sesion-1" class="no-external">Repaso breve de la sesión 1</a></li>
+</ul>
+</details>
+<section id="repaso-sesion-1" class="level2">
+<h2 data-anchor-id="repaso-sesion-1">Repaso breve de la sesión 1</h2>
+<p>Antes de transformar la encuesta completa, conviene tener presentes cuatro piezas de la sesión anterior que reaparecerán en cada paso de hoy. Si quieres comprobarlas en RStudio, puedes probar estos ejemplos con las cinco primeras personas de <code>encuesta_social.csv</code>.</p>
+<section id="objetos-vectores-condiciones-y-na" class="level3">
+<h3 data-anchor-id="objetos-vectores-condiciones-y-na">Objetos, vectores, condiciones y <code>NA</code></h3>
+<ol type="1">
+<li><strong>Guardar valores en un objeto (<code>&lt;-</code> y <code>c()</code>).</strong> El operador <code>&lt;-</code> guarda un resultado con un nombre y <code>c()</code> reúne varios valores en un vector. Hoy usaremos <code>&lt;-</code> para guardar la tabla preparada en <code>datos_trabajo</code>.</li>
+<li><strong>Pedir una acción con una función.</strong> Escribimos el nombre de la función y, entre paréntesis, los datos con los que trabaja (e.g.&nbsp;<code>mean(age)</code> o <code>length(age)</code>). Los verbos que usaremos hoy (<code>select()</code>, <code>filter()</code>, <code>mutate()</code>) funcionan exactamente igual.</li>
+<li><strong>Evaluar una condición.</strong> Una comparación como <code>age &gt; 40</code> devuelve <code>TRUE</code> o <code>FALSE</code> para cada posición del vector, y permite seleccionar los casos que la cumplen (<code>age[age &gt; 40]</code>). Hoy <code>filter()</code> usará este mismo tipo de condiciones para elegir filas.</li>
+<li><strong>Distinguir <code>NA</code> de <code>0</code>.</strong> Un <code>0</code> es una respuesta válida (cero horas); <code>NA</code> indica que falta el dato. Por defecto, <code>mean()</code> devuelve <code>NA</code> si hay algún dato ausente y necesita <code>na.rm = TRUE</code> para excluirlo. Hoy usaremos <code>drop_na()</code> para retirar filas con <code>NA</code> antes de transformar la tabla.</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cinco primeras personas de la encuesta</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">26</span>, <span class="dv">48</span>, <span class="dv">67</span>, <span class="dv">39</span>, <span class="dv">25</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>tvhours <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="cn">NA</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">1</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Funciones y condiciones sobre vectores</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(age)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>age[age <span class="sc">&gt;</span> <span class="dv">40</span>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Valores ausentes frente a respuestas disponibles</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 41
+[1] 48 67
+[1] NA
+[1] 4.75</code></pre>
+</section>
+<section id="el-data-frame-y-cómo-consultarlo" class="level3">
+<h3 data-anchor-id="el-data-frame-y-cómo-consultarlo">El data frame y cómo consultarlo</h3>
+<p>Al importar <code>encuesta_social.csv</code>, R guarda la encuesta en <code>datos</code>: una <strong>matriz de datos</strong> de <strong>21.483 filas</strong> (personas encuestadas) y <strong>9 columnas</strong> (variables de la misma longitud). Cada columna tiene su tipo: numérica (<code>&lt;dbl&gt;</code>, con la que podemos calcular medias) o texto (<code>&lt;chr&gt;</code>, con respuestas entre comillas como <code>"Divorced"</code>).</p>
+<p>En la sesión 1 consultamos <code>datos</code> de dos formas que hoy sustituiremos por verbos más legibles de <code>tidyverse</code>:</p>
+<ul>
+<li><strong>Extraer una columna como vector con <code>$</code>:</strong> <code>mean(datos$tvhours, na.rm = TRUE)</code> devuelve <code>2.980771</code>.</li>
+<li><strong>Consultar por coordenadas <code>[fila, columna]</code>:</strong> <code>datos[1, 3]</code> devuelve una casilla concreta (<code>26</code>), mientras que <code>datos[3, ]</code> devuelve todas las variables de la tercera persona.</li>
+</ul>
+<p>Hoy dejaremos los corchetes a un lado y trabajaremos sobre una copia llamada <code>datos_trabajo</code> con <code>select()</code> (para elegir columnas) y <code>filter()</code> (para quedarnos con ciertas filas), sin tocar el archivo original en el disco.</p>
+</section>
+<section id="qué-significa-1-en-las-salidas-de-r" class="level3">
+<h3 data-anchor-id="qué-significa-1-en-las-salidas-de-r">Qué significa <code>[1]</code> en las salidas de R</h3>
+<p>Al ejecutar <code>age[1]</code> aparece <code>[1] 26</code> y es fácil pensar que ese <code>[1]</code> identifica a la primera persona de la encuesta. <strong>No es así</strong>: <code>[1]</code> solo indica la posición dentro del resultado que imprime R.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Aunque pidas la 3.ª persona o una media, la salida empieza por [1]</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>age[<span class="dv">3</span>]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>age[age <span class="sc">&gt;</span> <span class="dv">40</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 67
+[1] 48 67</code></pre>
+<p>En <code>age[age &gt; 40]</code>, <code>48</code> era la segunda persona de <code>age</code>, pero aparece con <code>[1]</code> porque ocupa el primer lugar de la respuesta devuelta. Si imprimes una lista larga que salta de línea (e.g.&nbsp;<code>datos$age[1:14]</code> en una consola estrecha), cada renglón empieza indicando en qué posición retoma la cuenta (e.g.&nbsp;<code>[10]</code> para el décimo valor).</p>
+<p><strong>Importante.</strong> Nunca escribas ese <code>[1]</code> de la salida dentro de tu código ni lo interpretes como el identificador de la persona encuestada.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
