@@ -155,6 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul class="collapse">
   <li><a href="#repaso-sesion-1" id="toc-repaso-sesion-1" class="nav-link active" data-scroll-target="#repaso-sesion-1">Repaso breve de la sesión 1</a></li>
+  <li><a href="#empezar-cargar-datos" id="toc-empezar-cargar-datos" class="nav-link" data-scroll-target="#empezar-cargar-datos">Al iniciar RStudio y cargar la encuesta</a></li>
   </ul>
 </nav>
     </div>
@@ -194,6 +195,7 @@ En este cuaderno
 <ul>
 <li><a href="#intro-cuaderno" class="no-external">Presentación</a></li>
 <li><a href="#repaso-sesion-1" class="no-external">Repaso breve de la sesión 1</a></li>
+<li><a href="#empezar-cargar-datos" class="no-external">Al iniciar RStudio y cargar la encuesta</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -243,9 +245,44 @@ En este cuaderno
 [1] 48 67</code></pre>
 <p>En <code>age[age &gt; 40]</code>, <code>48</code> era la segunda persona de <code>age</code>, pero aparece con <code>[1]</code> porque ocupa el primer lugar de la respuesta devuelta. Si imprimes una lista larga que salta de línea (e.g.&nbsp;<code>datos$age[1:14]</code> en una consola estrecha), cada renglón empieza indicando en qué posición retoma la cuenta (e.g.&nbsp;<code>[10]</code> para el décimo valor).</p>
 <p><strong>Importante.</strong> Nunca escribas ese <code>[1]</code> de la salida dentro de tu código ni lo interpretes como el identificador de la persona encuestada.</p>
-
-
 </section>
+</section>
+<section id="empezar-cargar-datos" class="level2">
+<h2 data-anchor-id="empezar-cargar-datos">Al iniciar RStudio y cargar la encuesta</h2>
+<p>Cada vez que inicias una nueva sesión en RStudio, el entorno de R empieza vacío: los paquetes y las tablas que cargaste en la sesión 1 no permanecen en memoria al cerrar el programa. Para retomar el trabajo:</p>
+<ol type="1">
+<li><strong>Abre tu proyecto.</strong> Entra en la carpeta <code>taller_R</code> que creaste en la sesión 1 y haz doble clic en <code>taller_R.Rproj</code>.</li>
+<li><strong>Abre tu documento de trabajo.</strong> En RStudio, abre el documento Quarto (<code>.qmd</code>) donde vas guardando tus bloques de código y notas.</li>
+<li><strong>Vuelve a cargar <code>tidyverse</code> y la encuesta.</strong> Comprueba que <code>encuesta_social.csv</code> sigue dentro de la carpeta <code>datos/</code> de tu proyecto y ejecuta el bloque inicial.</li>
+</ol>
+<p>Usamos <code>read_csv()</code>, del paquete <code>readr</code> (incluido en <code>tidyverse</code>), para importar el archivo CSV en el objeto <code>datos</code>. Después, <code>glimpse(datos)</code> muestra una vista compacta de las variables, sus tipos y los primeros valores, como alternativa más recogida al <code>str(datos)</code> de la sesión 1.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cargar tidyverse</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer el CSV y guardarlo en el data frame datos</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisar las variables, sus tipos y algunos valores</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(datos)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Al ejecutar estas líneas, <code>datos</code> volverá a aparecer en el panel <strong>Environment</strong> con sus 21.483 filas y 9 columnas. Si antes quieres despejar la pantalla, recuerda que limpiar el panel <strong>Console</strong> solo borra el texto visible, no los objetos guardados; para vaciar objetos del entorno habría que usar el icono de la escoba en <strong>Environment</strong>.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver la salida de glimpse(datos)
+</summary>
+<pre class="text salida-r"><code>Rows: 21,483
+Columns: 9
+$ year    &lt;dbl&gt; 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 20…
+$ marital &lt;chr&gt; "Never married", "Divorced", "Widowed", "Never married", "Divo…
+$ age     &lt;dbl&gt; 26, 48, 67, 39, 25, 25, 36, 44, 44, 47, 53, 52, 52, 51, 52, 40…
+$ race    &lt;chr&gt; "White", "White", "White", "White", "White", "White", "White",…
+$ rincome &lt;chr&gt; "$8000 to 9999", "$8000 to 9999", "Not applicable", "Not appli…
+$ partyid &lt;chr&gt; "Ind,near rep", "Not str republican", "Independent", "Ind,near…
+$ relig   &lt;chr&gt; "Protestant", "Protestant", "Protestant", "Orthodox-christian"…
+$ denom   &lt;chr&gt; "Southern baptist", "Baptist-dk which", "No denomination", "No…
+$ tvhours &lt;dbl&gt; 12, NA, 2, 4, 1, NA, 3, NA, 0, 3, 2, NA, 1, NA, 1, 7, NA, 3, 3…</code></pre>
+</details>
+
+
 </section>
 
 </main> <!-- /main -->
