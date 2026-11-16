@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Actividades · Sesión 2 – Taller de R</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./r.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3c872c88186c3143be61f2e5a189e97c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./r.svg" alt="Logotipo de R" class="navbar-logo light-content">
+    <img src="./r.svg" alt="Logotipo de R" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Taller de R</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./preparacion.html"> 
+<span class="menu-text">Preparación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sesiones.html"> 
+<span class="menu-text">Sesiones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materiales.html"> 
+<span class="menu-text">Materiales</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./actividades.html"> 
+<span class="menu-text">Actividades</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./recursos.html"> 
+<span class="menu-text">Recursos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta práctica</h2>
+   
+  <ul class="collapse">
+  <li><a href="#antes-de-empezar" id="toc-antes-de-empezar" class="nav-link active" data-scroll-target="#antes-de-empezar">Antes de empezar</a></li>
+  <li><a href="#practica2-carga" id="toc-practica2-carga" class="nav-link" data-scroll-target="#practica2-carga">1. Arranca el entorno y revisa la encuesta</a></li>
+  <li><a href="#practica2-limpieza" id="toc-practica2-limpieza" class="nav-link" data-scroll-target="#practica2-limpieza">2. Limpia valores ausentes y revisa filas repetidas</a></li>
+  <li><a href="#practica2-seleccion-renombre" id="toc-practica2-seleccion-renombre" class="nav-link" data-scroll-target="#practica2-seleccion-renombre">3. Selecciona y renombra las columnas con <code>|&gt;</code></a></li>
+  <li><a href="#practica2-filtrar-ordenar" id="toc-practica2-filtrar-ordenar" class="nav-link" data-scroll-target="#practica2-filtrar-ordenar">4. Excluye <code>"No answer"</code> y ordena para revisar extremos</a></li>
+  <li><a href="#practica2-mutate" id="toc-practica2-mutate" class="nav-link" data-scroll-target="#practica2-mutate">5. Transforma y clasifica el consumo con <code>mutate()</code> y <code>case_when()</code></a></li>
+  <li><a href="#practica2-exportar-comparar" id="toc-practica2-exportar-comparar" class="nav-link" data-scroll-target="#practica2-exportar-comparar">6. Exporta la tabla preparada y compara dos grupos</a></li>
+  <li><a href="#practica2-retos" id="toc-practica2-retos" class="nav-link" data-scroll-target="#practica2-retos">Dos retos opcionales</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Actividades · Sesión 2</h1>
+<p class="subtitle lead">Taller 1 · Sesión 2 · Problem set: preparación y limpieza de datos con tidyverse</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="antes-de-empezar" class="level2">
+<h2 data-anchor-id="antes-de-empezar">Antes de empezar</h2>
+<p>En este <em>problem set</em> pondrás en práctica lo aprendido en la sesión 1 y, sobre todo, en la sesión 2 sobre el mismo archivo de la <em>General Social Survey</em> (<code>encuesta_social.csv</code>), pero respondiendo a una pregunta distinta a la de clase: <strong>¿varían las horas diarias de televisión según el estado civil y entre los años 2000 y 2014?</strong></p>
+<ol type="1">
+<li>Abre tu proyecto <code>taller_R</code> haciendo doble clic en <code>taller_R.Rproj</code> y comprueba que <code>encuesta_social.csv</code> está dentro de <code>datos/</code>.</li>
+<li>Trabaja en tu documento Quarto (<code>.qmd</code>) dentro de un apartado nuevo titulado <strong>Práctica de la sesión 2</strong> (o en un archivo nuevo dentro de <code>taller_R</code>).</li>
+<li>Sigue los ejercicios en orden: cada paso reutiliza la tabla de trabajo <code>datos_tv</code> del anterior, dejando siempre intactos <code>datos</code> y el CSV original. Si te atascas, abre primero la pista y usa la solución para comprobar tu resultado.</li>
+</ol>
+<p>Puedes consultar el <a href="./cuaderno-sesion-2.html" target="_blank" rel="noopener">cuaderno de la sesión 2</a> y las <a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-2/" target="_blank" rel="noopener">diapositivas de clase</a>.</p>
+</section>
+<section id="practica2-carga" class="level2">
+<h2 data-anchor-id="practica2-carga">1. Arranca el entorno y revisa la encuesta</h2>
+<p><em>(Repaso de la sesión 1 + inicio de la sesión 2)</em></p>
+<ol type="1">
+<li>Carga el paquete <code>tidyverse</code> e importa <code>"datos/encuesta_social.csv"</code> en un objeto llamado <code>datos</code>.</li>
+<li>Ejecuta <code>glimpse(datos)</code> para comprobar cuántas filas y columnas tiene la encuesta y qué tipo de dato tienen <code>marital</code> y <code>tvhours</code>.</li>
+<li><strong>(Sesión 1)</strong> Extrae la columna <code>tvhours</code> con <code>$</code> y calcula su media con <code>mean()</code>, primero sin añadir ningún argumento más y después excluyendo los valores ausentes. Revisa también <code>summary(datos$tvhours)</code> para confirmar cuántos <code>NA</code> hay.</li>
+<li><strong>(Sesión 1)</strong> Ejecuta <code>datos$tvhours[1:12]</code> y explica en una frase qué significa el <code>[1]</code> que imprime R al comienzo de la línea (y por qué aparece un <code>0</code> en la novena posición frente a varios <code>NA</code>).</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Usa <code>library(tidyverse)</code> y <code>read_csv("datos/encuesta_social.csv")</code>. Recuerda que <code>mean()</code> necesita <code>na.rm = TRUE</code> cuando hay valores ausentes. En la salida de un vector, los números entre corchetes al principio de cada línea solo indican la posición dentro de la respuesta devuelta.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga tidyverse e importa el archivo CSV</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"datos/encuesta_social.csv"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa variables, tipos y primeros valores</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(datos)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcula la media con $ primero por defecto y luego excluyendo NA</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(datos<span class="sc">$</span>tvhours, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos<span class="sc">$</span>tvhours)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Consulta los primeros 12 valores del vector tvhours</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>datos<span class="sc">$</span>tvhours[<span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Después de los mensajes de importación de <code>read_csv()</code>, verás estos resultados:</p>
+<pre class="text salida-r"><code>Rows: 21,483
+Columns: 9
+$ year    &lt;dbl&gt; 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 20…
+$ marital &lt;chr&gt; "Never married", "Divorced", "Widowed", "Never married", "Divo…
+$ age     &lt;dbl&gt; 26, 48, 67, 39, 25, 25, 36, 44, 44, 47, 53, 52, 52, 51, 52, 40…
+$ race    &lt;chr&gt; "White", "White", "White", "White", "White", "White", "White",…
+$ rincome &lt;chr&gt; "$8000 to 9999", "$8000 to 9999", "Not applicable", "Not appli…
+$ partyid &lt;chr&gt; "Ind,near rep", "Not str republican", "Independent", "Ind,near…
+$ relig   &lt;chr&gt; "Protestant", "Protestant", "Protestant", "Orthodox-christian"…
+$ denom   &lt;chr&gt; "Southern baptist", "Baptist-dk which", "No denomination", "No…
+$ tvhours &lt;dbl&gt; 12, NA, 2, 4, 1, NA, 3, NA, 0, 3, 2, NA, 1, NA, 1, 7, NA, 3, 3…
+
+[1] NA
+[1] 2.980771
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  0.000   1.000   2.000   2.981   4.000  24.000   10146 
+ [1] 12 NA  2  4  1 NA  3 NA  0  3  2 NA</code></pre>
+<p><code>marital</code> es de tipo texto (<code>&lt;chr&gt;</code>) y <code>tvhours</code> es numérica (<code>&lt;dbl&gt;</code>), con <code>10.146</code> datos ausentes (<code>NA</code>). En <code>datos$tvhours[1:12]</code>, <code>[1]</code> marca la posición del primer elemento de la respuesta (no identifica a la primera persona); el <code>0</code> de la novena posición indica que esa persona declaró cero horas válidas, mientras que <code>NA</code> señala ausencia de dato.</p>
+</details>
+</section>
+<section id="practica2-limpieza" class="level2">
+<h2 data-anchor-id="practica2-limpieza">2. Limpia valores ausentes y revisa filas repetidas</h2>
+<ol type="1">
+<li>Sin modificar todavía <code>datos</code>, comprueba con <code>|&gt;</code> y <code>nrow()</code> cuántas filas quedarían con <code>drop_na(tvhours)</code> frente a <code>drop_na(marital, tvhours)</code>. ¿Cambia el recuento al añadir <code>marital</code>? ¿Por qué?</li>
+<li>Guarda en una copia nueva llamada <code>datos_tv</code> el resultado de <code>datos |&gt; drop_na(marital, tvhours)</code>.</li>
+<li>Comprueba con <code>distinct()</code> y <code>nrow()</code> cuántas filas únicas hay en todas las columnas de <code>datos_tv</code>. ¿Cuántas coincidencias encuentras? ¿Debemos eliminarlas? Explica por qué en una frase.</li>
+<li>Usa <code>datos_tv |&gt; distinct(marital)</code> para listar todas las categorías de estado civil que aparecen tras limpiar los <code>NA</code>. Fíjate en la sexta categoría: ¿por qué <code>drop_na()</code> no la eliminó?</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Encadena <code>datos |&gt; drop_na(...) |&gt; nrow()</code> para comparar antes de asignar con <code>&lt;-</code>. Con <code>distinct(marital)</code> ves los valores distintos de esa columna; recuerda la diferencia entre un valor ausente real (<code>NA</code>) y una respuesta guardada como texto.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el recuento según las columnas revisadas</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>datos <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(tvhours) <span class="sc">|&gt;</span> <span class="fu">nrow</span>()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>datos <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(marital, tvhours) <span class="sc">|&gt;</span> <span class="fu">nrow</span>()</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Crea la tabla de trabajo dejando datos intacto</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="ot">&lt;-</span> datos <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(marital, tvhours)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba filas repetidas en las nueve variables y categorías de marital</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(datos_tv)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span> <span class="fu">distinct</span>() <span class="sc">|&gt;</span> <span class="fu">nrow</span>()</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span> <span class="fu">distinct</span>(marital)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11337
+[1] 11337
+[1] 11337
+[1] 11287
+# A tibble: 6 × 1
+  marital      
+  &lt;chr&gt;        
+1 Never married
+2 Widowed      
+3 Divorced     
+4 Married      
+5 Separated    
+6 No answer    </code></pre>
+<p>El recuento no cambia al añadir <code>marital</code> (<code>11.337</code> filas en ambos casos) porque en <code>marital</code> no hay <code>NA</code> técnicos. Al comparar todas las variables aparecen 50 filas idénticas (<code>11.337</code> frente a <code>11.287</code>), pero <strong>no las eliminamos</strong> porque dos personas pueden compartir todas esas respuestas y la tabla no tiene un identificador individual. Por último, <code>drop_na()</code> no retiró <code>"No answer"</code> porque está guardada como texto (<code>&lt;chr&gt;</code>), no como <code>NA</code>.</p>
+</details>
+</section>
+<section id="practica2-seleccion-renombre" class="level2">
+<h2 data-anchor-id="practica2-seleccion-renombre">3. Selecciona y renombra las columnas con <code>|&gt;</code></h2>
+<ol type="1">
+<li>Encadena en un único flujo con <code>|&gt;</code> sobre <code>datos_tv</code> la selección de las columnas <code>year</code>, <code>marital</code> y <code>tvhours</code> y el cambio de nombre a <code>anio</code>, <code>estado_civil</code> y <code>horas_tv</code>. Guarda el resultado en <code>datos_tv</code>.</li>
+<li>Comprueba las dimensiones con <code>dim(datos_tv)</code> y muestra las cuatro primeras filas con <code>head(datos_tv, n = 4)</code>.</li>
+<li>Comprueba también que <code>datos</code> sigue conservando sus 9 variables y sus 21.483 filas originales.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Encadena <code>select(...)</code> y después <code>rename(nombre_nuevo = nombre_actual)</code> usando <code>|&gt;</code>. Evita escribir <code>ñ</code> en el nombre <code>anio</code> para trabajar más cómodamente en R.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecciona tres columnas y renómbralas en un mismo pipe</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year, marital, tvhours) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">anio =</span> year,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">estado_civil =</span> marital,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">horas_tv =</span> tvhours)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el resultado y verifica que datos sigue intacto</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_tv)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_tv, <span class="at">n =</span> <span class="dv">4</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11337     3
+# A tibble: 4 × 3
+   anio estado_civil  horas_tv
+  &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;
+1  2000 Never married       12
+2  2000 Widowed              2
+3  2000 Never married        4
+4  2000 Divorced             1
+[1] 21483     9</code></pre>
+<p><code>datos_tv</code> pasa a tener <code>11.337</code> filas y <code>3</code> columnas (<code>anio</code>, <code>estado_civil</code> y <code>horas_tv</code>), mientras que <code>datos</code> conserva intactas sus <code>21.483</code> filas y <code>9</code> columnas.</p>
+</details>
+</section>
+<section id="practica2-filtrar-ordenar" class="level2">
+<h2 data-anchor-id="practica2-filtrar-ordenar">4. Excluye <code>"No answer"</code> y ordena para revisar extremos</h2>
+<ol type="1">
+<li>Sin modificar todavía <code>datos_tv</code>, cuenta con <code>filter()</code> y <code>nrow()</code> cuántas filas tienen <code>estado_civil == "No answer"</code>.</li>
+<li>Actualiza <code>datos_tv</code> encadenando dos pasos con <code>|&gt;</code>: primero excluye los casos con <code>"No answer"</code> (usando <code>!=</code>) y después ordena la tabla <strong>de mayor a menor</strong> <code>horas_tv</code>.</li>
+<li>Comprueba cuántas filas quedan con <code>nrow(datos_tv)</code> y muestra las cinco primeras filas con <code>head(datos_tv, n = 5)</code>. ¿Cuál es el máximo diario registrado? ¿Por qué conviene revisar estos valores extremos al limpiar una encuesta?</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Para excluir una categoría usa <code>estado_civil != "No answer"</code>. Para ordenar de mayor a menor usa <code>arrange(desc(horas_tv))</code>.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cuenta primero cuántos casos tienen "No answer"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">==</span> <span class="st">"No answer"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Excluye esos casos y ordena de mayor a menor horas de televisión</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">!=</span> <span class="st">"No answer"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(horas_tv))</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa el nuevo total de filas y los cinco valores más altos</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(datos_tv)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_tv, <span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 9
+[1] 11328
+# A tibble: 5 × 3
+   anio estado_civil  horas_tv
+  &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;
+1  2000 Never married       24
+2  2000 Separated           24
+3  2002 Never married       24
+4  2006 Divorced            24
+5  2008 Divorced            24</code></pre>
+<p>Al retirar los 9 casos con <code>"No answer"</code> quedan <code>11.328</code> filas. Ordenar de mayor a menor permite detectar respuestas extremas de <strong>24 horas diarias</strong> de televisión: conviene revisarlas para comprobar si son errores de registro o casos reales muy extremos que pueden influir en la media antes de analizar.</p>
+</details>
+</section>
+<section id="practica2-mutate" class="level2">
+<h2 data-anchor-id="practica2-mutate">5. Transforma y clasifica el consumo con <code>mutate()</code> y <code>case_when()</code></h2>
+<ol type="1">
+<li>Actualiza <code>datos_tv</code> con <code>mutate()</code> para añadir <strong>dos columnas nuevas</strong>:
+<ul>
+<li><code>tv_minutos</code>: pasa <code>horas_tv</code> a minutos multiplicando por 60.</li>
+<li><code>intensidad_tv</code>: clasifica cada respuesta con <code>case_when()</code> en tres tramos: <code>"Baja (0–1 h)"</code> si <code>horas_tv &lt;= 1</code>, <code>"Media (2–3 h)"</code> si <code>horas_tv &lt;= 3</code>, y <code>"Alta (4 h o más)"</code> para el resto (<code>TRUE</code>).</li>
+</ul></li>
+<li>Comprueba <code>dim(datos_tv)</code> y muestra las tres primeras filas con <code>head(datos_tv, n = 3)</code>.</li>
+<li>Responde en una frase: si una persona ve <strong>2 horas</strong> diarias de televisión, ¿por qué basta con escribir <code>horas_tv &lt;= 3</code> sin poner <code>horas_tv &gt;= 2</code>? ¿Y en qué grupo entra quien declaró <strong>0 horas</strong>?</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Puedes crear varias columnas separadas por coma dentro del mismo <code>mutate()</code>. Recuerda que <code>case_when()</code> evalúa las condiciones de arriba abajo y asigna la primera que se cumpla.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Añade tv_minutos e intensidad_tv dentro de mutate()</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">tv_minutos =</span> horas_tv <span class="sc">*</span> <span class="dv">60</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">intensidad_tv =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>      horas_tv <span class="sc">&lt;=</span> <span class="dv">1</span> <span class="sc">~</span> <span class="st">"Baja (0–1 h)"</span>,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>      horas_tv <span class="sc">&lt;=</span> <span class="dv">3</span> <span class="sc">~</span> <span class="st">"Media (2–3 h)"</span>,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span>          <span class="sc">~</span> <span class="st">"Alta (4 h o más)"</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba las dimensiones y las tres primeras filas</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_tv)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_tv, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11328     5
+# A tibble: 3 × 5
+   anio estado_civil  horas_tv tv_minutos intensidad_tv   
+  &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           
+1  2000 Never married       24       1440 Alta (4 h o más)
+2  2000 Separated           24       1440 Alta (4 h o más)
+3  2002 Never married       24       1440 Alta (4 h o más)</code></pre>
+<p>Quien ve 2 horas diarias no cumple la primera regla (<code>horas_tv &lt;= 1</code>), así que pasa a la segunda (<code>horas_tv &lt;= 3</code>) y recibe <code>"Media (2–3 h)"</code> sin necesidad de escribir el límite inferior. Quien declaró <code>0</code> horas cumple <code>horas_tv &lt;= 1</code> y entra en <code>"Baja (0–1 h)"</code>.</p>
+</details>
+</section>
+<section id="practica2-exportar-comparar" class="level2">
+<h2 data-anchor-id="practica2-exportar-comparar">6. Exporta la tabla preparada y compara dos grupos</h2>
+<ol type="1">
+<li>Crea la carpeta <code>"outputs"</code> (si no existe) con <code>dir.create("outputs", showWarnings = FALSE)</code> y guarda <code>datos_tv</code> en <code>"outputs/encuesta_tv_estado_civil.csv"</code> con <code>write_csv()</code>.</li>
+<li>A partir de <code>datos_tv</code>, crea dos tablas filtradas:
+<ul>
+<li><code>casadas</code>: personas con <code>estado_civil == "Married"</code>.</li>
+<li><code>solteras_divorciadas</code>: personas cuyo <code>estado_civil</code> sea <code>"Never married"</code> o <code>"Divorced"</code> (usa <code>%in%</code>).</li>
+</ul></li>
+<li>Comprueba cuántas filas tiene cada tabla con <code>nrow()</code> y calcula la media redondeada de <code>tv_minutos</code> en cada una usando <code>$</code>, <code>mean()</code> y <code>round()</code>. Escribe una frase con tu conclusión.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver pista
+</summary>
+<p>Para un solo valor usa <code>==</code>, y para elegir entre dos categorías a la vez usa <code>%in% c("Never married", "Divorced")</code>. Para calcular la media redondeada escribe <code>round(mean(tabla$tv_minutos))</code>.</p>
+</details>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Exporta la tabla preparada sin sobrescribir el CSV original</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"outputs"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_csv</span>(<span class="st">"outputs/encuesta_tv_estado_civil.csv"</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtra los dos grupos que quieres comparar</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>casadas <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">==</span> <span class="st">"Married"</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>solteras_divorciadas <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>))</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba el tamaño de cada grupo y calcula la media redondeada en minutos</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(casadas)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(solteras_divorciadas)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(casadas<span class="sc">$</span>tv_minutos))</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(solteras_divorciadas<span class="sc">$</span>tv_minutos))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 5172
+[1] 4763
+[1] 159
+[1] 186</code></pre>
+<p>Las <code>5.172</code> personas casadas ven de media <strong>159 minutos diarios</strong> de televisión (unas 2,7 horas), frente a los <strong>186 minutos diarios</strong> (unas 3,1 horas) de las <code>4.763</code> personas solteras o divorciadas (<strong>27 minutos más al día</strong> en este segundo conjunto). Hizo falta <code>%in%</code> porque estábamos buscando dos categorías distintas a la vez dentro de <code>estado_civil</code>.</p>
+</details>
+</section>
+<section id="practica2-retos" class="level2">
+<h2 data-anchor-id="practica2-retos">Dos retos opcionales</h2>
+<section id="reto-1-encuentra-los-dos-errores-al-filtrar" class="level3">
+<h3 data-anchor-id="reto-1-encuentra-los-dos-errores-al-filtrar">Reto 1: encuentra los dos errores al filtrar</h3>
+<p>Alguien intentó filtrar <code>datos_tv</code> de estas dos maneras y obtuvo resultados inesperados:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Intento A</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">==</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Intento B</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="at">estado_civil =</span> <span class="st">"Married"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Explica qué falla en <strong>cada intento</strong> y escribe el código corregido para ambos.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<ul>
+<li><strong>Intento A:</strong> <code>==</code> no sirve para buscar varias categorías en <code>c(...)</code>; R va alternando fila a fila (<code>"Never married"</code> en la fila 1, <code>"Divorced"</code> en la fila 2, etc.), lanza un aviso y devuelve solo <code>2.407</code> filas en lugar de las <code>4.763</code> reales. La forma correcta usa <code>%in%</code>.</li>
+<li><strong>Intento B:</strong> un solo <code>=</code> sirve para asignar un argumento dentro de una función, no para comparar valores. <code>dplyr</code> devuelve el error <code>We detected a named input</code> y pregunta si querías escribir <code>estado_civil == "Married"</code>.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Corrección del intento A</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Never married"</span>, <span class="st">"Divorced"</span>))</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Corrección del intento B</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>datos_tv <span class="sc">|&gt;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(estado_civil <span class="sc">==</span> <span class="st">"Married"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</section>
+<section id="reto-2-compara-2000-frente-a-2014-y-ordena-los-niveles-de-intensidad" class="level3">
+<h3 data-anchor-id="reto-2-compara-2000-frente-a-2014-y-ordena-los-niveles-de-intensidad">Reto 2: compara 2000 frente a 2014 y ordena los niveles de intensidad</h3>
+<p><em>(Combina sesión 1 y sesión 2)</em></p>
+<ol type="1">
+<li>Filtra <code>datos_tv</code> para los años <code>2000</code> y <code>2014</code> por separado y calcula la media de <code>horas_tv</code> en cada año redondeada a dos decimales (<code>round(mean(...), 2)</code>). ¿Ha cambiado mucho el promedio diario?</li>
+<li>Convierte <code>datos_tv$intensidad_tv</code> en un factor primero sin indicar orden (<code>factor(datos_tv$intensidad_tv)</code>) y después como factor ordinal de menor a mayor intensidad (<code>ordered = TRUE</code>). Comprueba qué devuelve <code>levels()</code> en cada caso.</li>
+</ol>
+<details class="solucion-cuaderno">
+<summary>
+Ver solución
+</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Compara la media de horas diarias en 2000 y 2014</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>datos_2000 <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span> <span class="fu">filter</span>(anio <span class="sc">==</span> <span class="dv">2000</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>datos_2014 <span class="ot">&lt;-</span> datos_tv <span class="sc">|&gt;</span> <span class="fu">filter</span>(anio <span class="sc">==</span> <span class="dv">2014</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos_2000<span class="sc">$</span>horas_tv), <span class="dv">2</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(datos_2014<span class="sc">$</span>horas_tv), <span class="dv">2</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Compara niveles por orden alfabético frente a factor ordenado</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(<span class="fu">factor</span>(datos_tv<span class="sc">$</span>intensidad_tv))</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>intensidad_ord <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  datos_tv<span class="sc">$</span>intensidad_tv,</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Baja (0–1 h)"</span>, <span class="st">"Media (2–3 h)"</span>, <span class="st">"Alta (4 h o más)"</span>),</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ordered =</span> <span class="cn">TRUE</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(intensidad_ord)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 2.97
+[1] 2.98
+[1] "Alta (4 h o más)" "Baja (0–1 h)"     "Media (2–3 h)"   
+[1] "Baja (0–1 h)"     "Media (2–3 h)"    "Alta (4 h o más)"</code></pre>
+<p>El promedio diario apenas varía entre 2000 (<code>2,97</code> horas) y 2014 (<code>2,98</code> horas). En el factor por defecto, R ordena las categorías alfabéticamente (<code>Alta</code>, <code>Baja</code>, <code>Media</code>); al definir <code>levels</code> y <code>ordered = TRUE</code> (sesión 1) conseguimos respetar la jerarquía lógica de menor a mayor intensidad.</p>
+</details>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/laboratorio-polisociolab\.github\.io\/R-workshop\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Taller de R · Ciencias Sociales</p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://polisocio.ugr.es/investigacion/polisociolab" target="_blank" rel="noopener">PoliSocioLAB</a></p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./creditos.html">
+<p>Créditos</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
