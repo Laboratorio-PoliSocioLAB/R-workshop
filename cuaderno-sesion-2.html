@@ -160,6 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#que-es-tidyverse" id="toc-que-es-tidyverse" class="nav-link" data-scroll-target="#que-es-tidyverse">¿Qué es tidyverse y por qué lo usamos?</a></li>
   <li><a href="#practica-preparar-encuesta" id="toc-practica-preparar-encuesta" class="nav-link" data-scroll-target="#practica-preparar-encuesta">La práctica: preparar los datos de la encuesta</a></li>
   <li><a href="#operador-pipe" id="toc-operador-pipe" class="nav-link" data-scroll-target="#operador-pipe">El operador <code>|&gt;</code>: «y después»</a></li>
+  <li><a href="#paso-1-valores-ausentes" id="toc-paso-1-valores-ausentes" class="nav-link" data-scroll-target="#paso-1-valores-ausentes">Paso 1: eliminar filas con NA</a></li>
   </ul>
 </nav>
     </div>
@@ -204,6 +205,7 @@ En este cuaderno
 <li><a href="#que-es-tidyverse" class="no-external">¿Qué es tidyverse y por qué lo usamos?</a></li>
 <li><a href="#practica-preparar-encuesta" class="no-external">La práctica: preparar los datos de la encuesta</a></li>
 <li><a href="#operador-pipe" class="no-external">El operador <code>|&gt;</code>: «y después»</a></li>
+<li><a href="#paso-1-valores-ausentes" class="no-external">Paso 1: eliminar filas con NA</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -428,6 +430,38 @@ Ver el resultado
 <li><strong>Si el atajo escribe <code>%&gt;%</code> en lugar de <code>|&gt;</code>:</strong> puedes cambiarlo en <strong>Tools &gt; Global Options &gt; Code &gt; Editing</strong> activando <em>Use native pipe operator, |&gt;</em>.</li>
 <li><strong>No lo confundas con <code>|</code>:</strong> una barra vertical sola (<code>|</code>) significa «o» en comparaciones lógicas; el <em>pipe</em> lleva siempre barra y mayor que (<code>|&gt;</code>).</li>
 </ul>
+</section>
+</section>
+<section id="paso-1-valores-ausentes" class="level2">
+<h2 data-anchor-id="paso-1-valores-ausentes">Paso 1: eliminar filas con NA</h2>
+<p>La función <code>drop_na()</code> (del paquete <code>tidyr</code>) elimina las filas que contienen valores ausentes (<code>NA</code>). Antes de borrar casos, conviene comprobar <strong>cuántas filas perderíamos</strong> según qué columnas revisemos. Para eso encadenamos <code>drop_na()</code> con <code>nrow()</code>, que cuenta el número de filas.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara cuántas filas quedan según el criterio de limpieza</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(datos)                     <span class="co"># Antes de eliminar filas</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>datos <span class="sc">|&gt;</span> <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> <span class="fu">nrow</span>()    <span class="co"># Sin NA en ninguna columna</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>datos <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(age) <span class="sc">|&gt;</span> <span class="fu">nrow</span>() <span class="co"># Sin NA solo en la edad</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 21483
+[1] 11299
+[1] 21407</code></pre>
+<p>Fíjate en la diferencia: si no indicas columnas, <code>drop_na()</code> revisa toda la tabla y descarta <strong>10.184 casos</strong>; en cambio, al pedir solo <code>age</code> únicamente quedan fuera <strong>76 casos</strong>. En estas pruebas todavía no modificamos <code>datos</code> ni creamos la copia de trabajo: solo comparamos recuentos.</p>
+<p><strong>Piénsalo antes de seguir.</strong> ¿Por qué puede ser una mala idea eliminar todas las filas que tengan algún <code>NA</code> en cualquier columna?</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver respuesta
+</summary>
+<p>Porque descartarías personas por no haber respondido a preguntas que ni siquiera vas a usar en tu análisis. Además, si la falta de respuesta se concentra en determinados grupos, perder casos de forma innecesaria puede sesgar los resultados. Recuerda también que <code>NA</code> indica ausencia de dato (no equivale a <code>0</code> ni a texto vacío) y que <code>drop_na()</code> no convierte automáticamente respuestas de texto como <code>"No answer"</code> en <code>NA</code>.</p>
+</details>
+<section id="guardar-la-tabla-de-trabajo-datos_trabajo" class="level3">
+<h3 data-anchor-id="guardar-la-tabla-de-trabajo-datos_trabajo">Guardar la tabla de trabajo: <code>datos_trabajo</code></h3>
+<p>Para estudiar el tiempo de televisión según la edad necesitamos que cada persona tenga dato tanto en <code>age</code> como en <code>tvhours</code>. Indicamos esas dos columnas en <code>drop_na()</code> y guardamos el resultado en <code>datos_trabajo</code>, comprobando después sus dimensiones con <code>dim()</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conserva solo los casos con dato en age y en tvhours</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="ot">&lt;-</span> datos <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(age, tvhours)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba cuántas filas y columnas quedan</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_trabajo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11299     9</code></pre>
+<p>El primer número indica <strong>11.299 filas</strong> (personas encuestadas) y el segundo, <strong>9 columnas</strong> (variables): <code>drop_na()</code> elimina filas, pero conserva todas las columnas. En este archivo coincide con el resultado de <code>drop_na()</code> sin argumentos porque no hay <code>NA</code> en las demás variables, pero escribir <code>drop_na(age, tvhours)</code> deja explícito el criterio de la práctica.</p>
+<p>La tabla original <code>datos</code> conserva intactas sus <strong>21.483 filas</strong>. A partir de ahora aplicaremos los siguientes pasos sobre <code>datos_trabajo</code>.</p>
 
 
 </section>
