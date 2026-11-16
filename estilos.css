@@ -85,6 +85,14 @@ pre.salida-r { border-left: 3px solid var(--curso-azul); padding-left: .75rem; }
   padding-top: 24px;
   border-top: 1px solid var(--curso-linea);
 }
+main.content > section.level2[hidden="until-found"],
+#intro-cuaderno[hidden="until-found"] {
+  display: block !important;
+  content-visibility: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
 .navegacion-pasos-fila {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
