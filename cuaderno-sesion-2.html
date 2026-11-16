@@ -161,6 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#practica-preparar-encuesta" id="toc-practica-preparar-encuesta" class="nav-link" data-scroll-target="#practica-preparar-encuesta">La práctica: preparar los datos de la encuesta</a></li>
   <li><a href="#operador-pipe" id="toc-operador-pipe" class="nav-link" data-scroll-target="#operador-pipe">El operador <code>|&gt;</code>: «y después»</a></li>
   <li><a href="#paso-1-valores-ausentes" id="toc-paso-1-valores-ausentes" class="nav-link" data-scroll-target="#paso-1-valores-ausentes">Paso 1: eliminar filas con NA</a></li>
+  <li><a href="#paso-2-filas-repetidas" id="toc-paso-2-filas-repetidas" class="nav-link" data-scroll-target="#paso-2-filas-repetidas">Paso 2: comprobar filas repetidas</a></li>
   </ul>
 </nav>
     </div>
@@ -206,6 +207,7 @@ En este cuaderno
 <li><a href="#practica-preparar-encuesta" class="no-external">La práctica: preparar los datos de la encuesta</a></li>
 <li><a href="#operador-pipe" class="no-external">El operador <code>|&gt;</code>: «y después»</a></li>
 <li><a href="#paso-1-valores-ausentes" class="no-external">Paso 1: eliminar filas con NA</a></li>
+<li><a href="#paso-2-filas-repetidas" class="no-external">Paso 2: comprobar filas repetidas</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -462,9 +464,24 @@ Ver respuesta
 <pre class="text salida-r"><code>[1] 11299     9</code></pre>
 <p>El primer número indica <strong>11.299 filas</strong> (personas encuestadas) y el segundo, <strong>9 columnas</strong> (variables): <code>drop_na()</code> elimina filas, pero conserva todas las columnas. En este archivo coincide con el resultado de <code>drop_na()</code> sin argumentos porque no hay <code>NA</code> en las demás variables, pero escribir <code>drop_na(age, tvhours)</code> deja explícito el criterio de la práctica.</p>
 <p>La tabla original <code>datos</code> conserva intactas sus <strong>21.483 filas</strong>. A partir de ahora aplicaremos los siguientes pasos sobre <code>datos_trabajo</code>.</p>
-
-
 </section>
+</section>
+<section id="paso-2-filas-repetidas" class="level2">
+<h2 data-anchor-id="paso-2-filas-repetidas">Paso 2: comprobar filas repetidas</h2>
+<p>La función <code>distinct()</code> (de <code>dplyr</code>) conserva una sola copia de cada fila idéntica. Si la llamas sin indicar columnas, compara todas las variables de la tabla. Antes de decidir nada, comprobamos cuántas filas quedarían sin sobrescribir <code>datos_trabajo</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compara el total actual con el número de filas únicas en todas las variables</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(datos_trabajo)                   <span class="co"># Filas de la tabla de trabajo</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="sc">|&gt;</span> <span class="fu">distinct</span>() <span class="sc">|&gt;</span> <span class="fu">nrow</span>() <span class="co"># Filas distintas</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11299
+[1] 11249</code></pre>
+<p>La diferencia es de <strong>50 filas</strong>: hay casos que coinciden exactamente en las nueve variables.</p>
+<p><strong>¿Significa esto que hemos registrado dos veces a la misma persona?</strong> No necesariamente. Dos personas distintas pueden dar las mismas respuestas en estas nueve preguntas. Como nuestra encuesta no incluye un identificador individual que permita confirmar si son registros duplicados, <strong>mantenemos las 11.299 filas de <code>datos_trabajo</code></strong>.</p>
+<ul>
+<li><strong>Por qué comprobamos esto ahora:</strong> si antes nos quedáramos solo con <code>age</code> y <code>tvhours</code>, muchas más personas distintas coincidirían en edad y horas de televisión y sería imposible distinguir coincidencias de duplicados.</li>
+<li><strong>Cuándo resulta más útil:</strong> comprobar duplicados es clave al combinar tablas de varias fuentes. Si tuvieras una columna de identificador fiable (e.g.&nbsp;<code>id</code>), convendría revisar primero por qué se repite y, si hace falta quedarse con una sola fila por persona conservando todas sus variables, usar <code>distinct(id, .keep_all = TRUE)</code>.</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
