@@ -162,6 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#operador-pipe" id="toc-operador-pipe" class="nav-link" data-scroll-target="#operador-pipe">El operador <code>|&gt;</code>: «y después»</a></li>
   <li><a href="#paso-1-valores-ausentes" id="toc-paso-1-valores-ausentes" class="nav-link" data-scroll-target="#paso-1-valores-ausentes">Paso 1: eliminar filas con NA</a></li>
   <li><a href="#paso-2-filas-repetidas" id="toc-paso-2-filas-repetidas" class="nav-link" data-scroll-target="#paso-2-filas-repetidas">Paso 2: comprobar filas repetidas</a></li>
+  <li><a href="#paso-3-seleccionar-columnas" id="toc-paso-3-seleccionar-columnas" class="nav-link" data-scroll-target="#paso-3-seleccionar-columnas">Paso 3: seleccionar las columnas</a></li>
   </ul>
 </nav>
     </div>
@@ -208,6 +209,7 @@ En este cuaderno
 <li><a href="#operador-pipe" class="no-external">El operador <code>|&gt;</code>: «y después»</a></li>
 <li><a href="#paso-1-valores-ausentes" class="no-external">Paso 1: eliminar filas con NA</a></li>
 <li><a href="#paso-2-filas-repetidas" class="no-external">Paso 2: comprobar filas repetidas</a></li>
+<li><a href="#paso-3-seleccionar-columnas" class="no-external">Paso 3: seleccionar las columnas</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -479,6 +481,25 @@ Ver respuesta
 <ul>
 <li><strong>Por qué comprobamos esto ahora:</strong> si antes nos quedáramos solo con <code>age</code> y <code>tvhours</code>, muchas más personas distintas coincidirían en edad y horas de televisión y sería imposible distinguir coincidencias de duplicados.</li>
 <li><strong>Cuándo resulta más útil:</strong> comprobar duplicados es clave al combinar tablas de varias fuentes. Si tuvieras una columna de identificador fiable (e.g.&nbsp;<code>id</code>), convendría revisar primero por qué se repite y, si hace falta quedarse con una sola fila por persona conservando todas sus variables, usar <code>distinct(id, .keep_all = TRUE)</code>.</li>
+</ul>
+</section>
+<section id="paso-3-seleccionar-columnas" class="level2">
+<h2 data-anchor-id="paso-3-seleccionar-columnas">Paso 3: seleccionar las columnas</h2>
+<p>Para estudiar el tiempo de televisión según la edad nos bastan <strong>dos variables</strong>: <code>age</code> (edad) y <code>tvhours</code> (horas diarias de televisión). Las seleccionamos con <code>select()</code>, en el orden en que las escribimos dentro de los paréntesis, y actualizamos <code>datos_trabajo</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conserva únicamente la edad y las horas diarias de televisión</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age, tvhours)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Revisa la tabla resultante en consola</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(datos_trabajo, <span class="at">width =</span> <span class="dv">75</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>Rows: 11,299
+Columns: 2
+$ age     &lt;dbl&gt; 26, 67, 39, 25, 36, 44, 47, 53, 52, 52, 40, 44, 40, 48, 4…
+$ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,…</code></pre>
+<p>Pasamos así de 9 a <strong>2 columnas</strong>, manteniendo las <strong>11.299 filas</strong> y conservando ambas variables como numéricas (<code>&lt;dbl&gt;</code>). También puedes hacer clic sobre <code>datos_trabajo</code> en el panel <strong>Environment</strong> para abrirla en una pestaña y verla en formato tabla.</p>
+<ul>
+<li><strong><code>width = 75</code>:</strong> solo ajusta el ancho del resumen en pantalla (75 caracteres por línea) y no cambia los datos; si lo omites, R se adapta al ancho de tu consola.</li>
+<li><strong>Original intacto:</strong> el objeto <code>datos</code> sigue conservando sus 9 columnas y sus 21.483 filas.</li>
 </ul>
 
 
