@@ -166,6 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#renombrar-columnas" id="toc-renombrar-columnas" class="nav-link" data-scroll-target="#renombrar-columnas">Renombrar las columnas con <code>rename()</code></a></li>
   <li><a href="#paso-4-filtrar-ordenar" id="toc-paso-4-filtrar-ordenar" class="nav-link" data-scroll-target="#paso-4-filtrar-ordenar">Paso 4: filtrar y ordenar por edad</a></li>
   <li><a href="#paso-5-crear-variable" id="toc-paso-5-crear-variable" class="nav-link" data-scroll-target="#paso-5-crear-variable">Paso 5: crear una variable con <code>mutate()</code></a></li>
+  <li><a href="#paso-6-grupos-edad" id="toc-paso-6-grupos-edad" class="nav-link" data-scroll-target="#paso-6-grupos-edad">Paso 6: crear grupos de edad</a></li>
   </ul>
 </nav>
     </div>
@@ -216,6 +217,7 @@ En este cuaderno
 <li><a href="#renombrar-columnas" class="no-external">Renombrar las columnas con <code>rename()</code></a></li>
 <li><a href="#paso-4-filtrar-ordenar" class="no-external">Paso 4: filtrar y ordenar por edad</a></li>
 <li><a href="#paso-5-crear-variable" class="no-external">Paso 5: crear una variable con <code>mutate()</code></a></li>
+<li><a href="#paso-6-grupos-edad" class="no-external">Paso 6: crear grupos de edad</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -574,8 +576,61 @@ $ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,�
 <li><strong>No confundas <code>select()</code> en una consulta con guardar:</strong> el último bloque usa <code>select(horas_tv, tv_minutos)</code> solo para mostrar esas dos columnas en pantalla; como no hay <code>&lt;-</code>, <code>datos_trabajo</code> sigue conservando también <code>edad</code>.</li>
 <li><strong>Crear frente a modificar:</strong> dentro de <code>mutate()</code>, si pones a la izquierda de <code>=</code> un nombre nuevo, añades una columna; si pones el nombre de una columna que ya existe, la sustituyes con el nuevo cálculo. Además, un <code>0</code> en <code>horas_tv</code> sigue valiendo <code>0</code> al cambiar la unidad a minutos.</li>
 </ul>
+</section>
+<section id="paso-6-grupos-edad" class="level2">
+<h2 data-anchor-id="paso-6-grupos-edad">Paso 6: crear grupos de edad</h2>
+<p>Para comparar el tiempo de televisión entre tramos de edad, creamos una cuarta columna llamada <code>grupo_edad</code> con cuatro categorías: <strong>«18–29»</strong>, <strong>«30–44»</strong>, <strong>«45–64»</strong> y <strong>«65 o más»</strong>. Combinamos <code>mutate()</code> con <code>case_when()</code> para asignar cada etiqueta según la edad:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clasifica cada edad en su tramo y añade la columna grupo_edad</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">grupo_edad =</span> <span class="fu">case_when</span>(</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    edad <span class="sc">&lt;=</span> <span class="dv">29</span> <span class="sc">~</span> <span class="st">"18–29"</span>,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    edad <span class="sc">&lt;=</span> <span class="dv">44</span> <span class="sc">~</span> <span class="st">"30–44"</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    edad <span class="sc">&lt;=</span> <span class="dv">64</span> <span class="sc">~</span> <span class="st">"45–64"</span>,</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span>       <span class="sc">~</span> <span class="st">"65 o más"</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba las dimensiones de la tabla actualizada</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_trabajo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 11299     4</code></pre>
+<p>La tabla conserva las <strong>11.299 filas</strong> y pasa de 3 a <strong>4 columnas</strong> (<code>edad</code>, <code>horas_tv</code>, <code>tv_minutos</code> y <code>grupo_edad</code>, guardada como texto <code>&lt;chr&gt;</code>).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Edad (<code>edad</code>)</th>
+<th style="text-align: left;">Grupo asignado (<code>grupo_edad</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">26</td>
+<td style="text-align: left;"><code>18–29</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">35</td>
+<td style="text-align: left;"><code>30–44</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">52</td>
+<td style="text-align: left;"><code>45–64</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">71</td>
+<td style="text-align: left;"><code>65 o más</code></td>
+</tr>
+</tbody>
+</table>
+<section id="cómo-lee-case_when-las-condiciones" class="level3">
+<h3 data-anchor-id="cómo-lee-case_when-las-condiciones">Cómo lee <code>case_when()</code> las condiciones</h3>
+<ul>
+<li><strong>Comprueba las reglas en orden, de arriba abajo:</strong> en cuanto una persona cumple una condición, recibe su etiqueta y ya no pasa a las siguientes. Por ejemplo, una persona de <strong>35 años</strong> no cumple <code>edad &lt;= 29</code>, pero sí <code>edad &lt;= 44</code>: R le asigna <code>"30–44"</code> y se detiene ahí (aunque también cumpliera <code>edad &lt;= 64</code>).</li>
+<li><strong>El símbolo <code>~</code>:</strong> relaciona cada condición (a la izquierda) con la etiqueta de texto que se asigna si se cumple (a la derecha).</li>
+<li><strong>La regla <code>TRUE</code> al final:</strong> recoge a todas las personas que no han encajado en las condiciones anteriores —en nuestro caso, quienes tienen <strong>65 años o más</strong>—.</li>
+<li><strong>Por qué bastan estos límites:</strong> en los pasos anteriores ya eliminamos los <code>NA</code> y comprobamos que todas las edades son de 18 años o más. Si en otra base hubiera menores o valores ausentes, habría que tratarlos explícitamente antes de usar estas reglas.</li>
+</ul>
+<p><strong>Atención al guion.</strong> Las etiquetas <code>"18–29"</code>, <code>"30–44"</code> y <code>"45–64"</code> usan el mismo guion medio (<code>–</code>) que puedes copiar directamente de este bloque; más adelante, al filtrar por grupo, el texto deberá coincidir carácter por carácter.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
