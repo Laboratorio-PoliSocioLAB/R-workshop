@@ -169,6 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#paso-6-grupos-edad" id="toc-paso-6-grupos-edad" class="nav-link" data-scroll-target="#paso-6-grupos-edad">Paso 6: crear grupos de edad</a></li>
   <li><a href="#seleccionar-grupos-comparacion" id="toc-seleccionar-grupos-comparacion" class="nav-link" data-scroll-target="#seleccionar-grupos-comparacion">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
   <li><a href="#guardar-datos-csv" id="toc-guardar-datos-csv" class="nav-link" data-scroll-target="#guardar-datos-csv">Guardar el trabajo en un archivo CSV</a></li>
+  <li><a href="#primer-analisis" id="toc-primer-analisis" class="nav-link" data-scroll-target="#primer-analisis">Un primer análisis: ¿quién ve más televisión?</a></li>
   </ul>
 </nav>
     </div>
@@ -222,6 +223,7 @@ En este cuaderno
 <li><a href="#paso-6-grupos-edad" class="no-external">Paso 6: crear grupos de edad</a></li>
 <li><a href="#seleccionar-grupos-comparacion" class="no-external">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
 <li><a href="#guardar-datos-csv" class="no-external">Guardar el trabajo en un archivo CSV</a></li>
+<li><a href="#primer-analisis" class="no-external">Un primer análisis: ¿quién ve más televisión?</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -690,6 +692,28 @@ $ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,�
 <li><strong><code>write_csv()</code>:</strong> pertenece a <code>readr</code> (cargado con <code>tidyverse</code>) y guarda la tabla en formato CSV usando la ruta relativa <code>"outputs/encuesta_preparada.csv"</code>.</li>
 <li><strong>Original intacto y código guardado:</strong> el archivo <code>datos/encuesta_social.csv</code> sigue sin cambios. Recuerda que guardar el CSV exportado no sustituye a guardar tu documento Quarto (<code>.qmd</code>): conserva siempre el código para poder repetir todos los pasos si hace falta.</li>
 </ul>
+</section>
+<section id="primer-analisis" class="level2">
+<h2 data-anchor-id="primer-analisis">Un primer análisis: ¿quién ve más televisión?</h2>
+<p>Con <code>datos_trabajo</code> ya limpia y guardada, cerramos el recorrido respondiendo a la pregunta con la que empezamos la sesión. Para hacerlo combinaremos lo aprendido en ambas sesiones: <code>filter()</code> y las columnas nuevas de hoy (<code>tv_minutos</code> y <code>grupo_edad</code>), junto con <code>$</code>, <code>mean()</code> y <code>round()</code> de la sesión 1.</p>
+<ol type="1">
+<li><strong>Filtramos cada grupo por separado</strong> con <code>filter()</code> y <code>==</code> para guardar dos tablas pequeñas: <code>jovenes</code> y <code>mayores</code>.</li>
+<li><strong>Calculamos la media de minutos diarios</strong> extrayendo <code>tv_minutos</code> con <code>$</code>, calculando la media con <code>mean()</code> y redondeando con <code>round()</code>.</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Aísla los dos grupos que queremos comparar</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>jovenes <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(grupo_edad <span class="sc">==</span> <span class="st">"18–29"</span>)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>mayores <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(grupo_edad <span class="sc">==</span> <span class="st">"65 o más"</span>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Calcula y redondea la media de minutos diarios en cada grupo</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(jovenes<span class="sc">$</span>tv_minutos))</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">mean</span>(mayores<span class="sc">$</span>tv_minutos))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 167
+[1] 222</code></pre>
+<p><strong>Conclusión.</strong> Las personas de <strong>65 o más años</strong> dedican de media <strong>222 minutos diarios</strong> (unas 3,7 horas) frente a los <strong>167 minutos</strong> (unas 2,8 horas) del grupo joven (<strong>18–29 años</strong>): <strong>55 minutos más de televisión al día</strong>, casi una hora diaria de diferencia.</p>
+<p>Como ya eliminamos los <code>NA</code> en el paso 1, aquí no hace falta añadir <code>na.rm = TRUE</code> dentro de <code>mean()</code>. En la siguiente sesión darás un paso más: en lugar de filtrar cada grupo a mano, aprenderás a calcular estos resúmenes para los cuatro grupos de edad a la vez y a visualizarlos con gráficos.</p>
 
 
 </section>
