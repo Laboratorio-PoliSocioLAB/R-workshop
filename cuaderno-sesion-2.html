@@ -156,6 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#repaso-sesion-1" id="toc-repaso-sesion-1" class="nav-link active" data-scroll-target="#repaso-sesion-1">Repaso breve de la sesión 1</a></li>
   <li><a href="#empezar-cargar-datos" id="toc-empezar-cargar-datos" class="nav-link" data-scroll-target="#empezar-cargar-datos">Al iniciar RStudio y cargar la encuesta</a></li>
+  <li><a href="#herramientas-dplyr-tidyr" id="toc-herramientas-dplyr-tidyr" class="nav-link" data-scroll-target="#herramientas-dplyr-tidyr">Qué funciones vamos a usar: dplyr y tidyr</a></li>
   </ul>
 </nav>
     </div>
@@ -196,6 +197,7 @@ En este cuaderno
 <li><a href="#intro-cuaderno" class="no-external">Presentación</a></li>
 <li><a href="#repaso-sesion-1" class="no-external">Repaso breve de la sesión 1</a></li>
 <li><a href="#empezar-cargar-datos" class="no-external">Al iniciar RStudio y cargar la encuesta</a></li>
+<li><a href="#herramientas-dplyr-tidyr" class="no-external">Qué funciones vamos a usar: dplyr y tidyr</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -281,8 +283,36 @@ $ relig   &lt;chr&gt; "Protestant", "Protestant", "Protestant", "Orthodox-christ
 $ denom   &lt;chr&gt; "Southern baptist", "Baptist-dk which", "No denomination", "No…
 $ tvhours &lt;dbl&gt; 12, NA, 2, 4, 1, NA, 3, NA, 0, 3, 2, NA, 1, NA, 1, 7, NA, 3, 3…</code></pre>
 </details>
+</section>
+<section id="herramientas-dplyr-tidyr" class="level2">
+<h2 data-anchor-id="herramientas-dplyr-tidyr">Qué funciones vamos a usar: dplyr y tidyr</h2>
+<p>Estas son las funciones que usaremos hoy para preparar la encuesta. Todas pertenecen a <code>dplyr</code>, salvo <code>drop_na()</code> (<code>tidyr</code>), y quedan disponibles al ejecutar <code>library(tidyverse)</code>.</p>
+<p><strong>Sobre las filas (personas encuestadas):</strong></p>
+<ul>
+<li><code>drop_na()</code> · quitar filas con valores ausentes (<code>NA</code>).</li>
+<li><code>distinct()</code> · comprobar si hay filas idénticas.</li>
+<li><code>filter()</code> · quedarnos con quienes cumplen una condición.</li>
+<li><code>arrange()</code> · ordenar las filas (e.g.&nbsp;de menor a mayor edad).</li>
+</ul>
+<p><strong>Sobre las columnas (variables):</strong></p>
+<ul>
+<li><code>select()</code> · elegir solo las variables que necesitamos.</li>
+<li><code>rename()</code> · cambiar el nombre de las columnas.</li>
+<li><code>mutate()</code> · crear variables nuevas o transformar las existentes.</li>
+<li><code>case_when()</code> · agrupar valores por tramos dentro de <code>mutate()</code>.</li>
+</ul>
+<section id="otras-funciones-útiles-para-ampliar" class="level3">
+<h3 data-anchor-id="otras-funciones-útiles-para-ampliar">Otras funciones útiles para ampliar</h3>
+<p>No las usaremos en la práctica de esta sesión, pero conviene tenerlas localizadas al trabajar con encuestas:</p>
+<ul>
+<li><strong>Unir tablas por una variable común (<code>dplyr</code>):</strong> <code>left_join()</code>, <code>right_join()</code>, <code>inner_join()</code>, <code>full_join()</code>.</li>
+<li><strong>Juntar las filas de varias tablas (<code>dplyr</code>):</strong> <code>bind_rows()</code>.</li>
+<li><strong>Unir o separar texto de una columna (<code>tidyr</code>):</strong> <code>unite()</code>, <code>separate_wider_delim()</code>, <code>separate_longer_delim()</code>.</li>
+<li><strong>Reordenar o recodificar factores (<code>forcats</code>):</strong> consulta la <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf" target="_blank" rel="noopener">hoja de referencia de <code>forcats</code> (PDF, en inglés)</a>.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
