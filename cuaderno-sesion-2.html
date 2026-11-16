@@ -159,6 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#herramientas-dplyr-tidyr" id="toc-herramientas-dplyr-tidyr" class="nav-link" data-scroll-target="#herramientas-dplyr-tidyr">Qué funciones vamos a usar: dplyr y tidyr</a></li>
   <li><a href="#que-es-tidyverse" id="toc-que-es-tidyverse" class="nav-link" data-scroll-target="#que-es-tidyverse">¿Qué es tidyverse y por qué lo usamos?</a></li>
   <li><a href="#practica-preparar-encuesta" id="toc-practica-preparar-encuesta" class="nav-link" data-scroll-target="#practica-preparar-encuesta">La práctica: preparar los datos de la encuesta</a></li>
+  <li><a href="#operador-pipe" id="toc-operador-pipe" class="nav-link" data-scroll-target="#operador-pipe">El operador <code>|&gt;</code>: «y después»</a></li>
   </ul>
 </nav>
     </div>
@@ -202,6 +203,7 @@ En este cuaderno
 <li><a href="#herramientas-dplyr-tidyr" class="no-external">Qué funciones vamos a usar: dplyr y tidyr</a></li>
 <li><a href="#que-es-tidyverse" class="no-external">¿Qué es tidyverse y por qué lo usamos?</a></li>
 <li><a href="#practica-preparar-encuesta" class="no-external">La práctica: preparar los datos de la encuesta</a></li>
+<li><a href="#operador-pipe" class="no-external">El operador <code>|&gt;</code>: «y después»</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -387,6 +389,45 @@ Ver el resultado
 <li><strong>Crear grupos de edad.</strong> Clasificar a las personas encuestadas en cuatro tramos en la columna <code>grupo_edad</code>: «18–29», «30–44», «45–64» y «65 o más» (son grupos de edad para comparar en la práctica, no etiquetas generacionales).</li>
 </ol>
 <p>En el siguiente apartado verás cómo encadenar estos pasos de forma legible antes de ejecutar cada uno sobre la encuesta.</p>
+</section>
+</section>
+<section id="operador-pipe" class="level2">
+<h2 data-anchor-id="operador-pipe">El operador <code>|&gt;</code>: «y después»</h2>
+<p>Cuando preparamos una tabla rara vez hacemos una sola operación. Lo habitual es encadenar varias seguidas: e.g.&nbsp;primero seleccionar las columnas <code>age</code> y <code>tvhours</code>, y después mostrar sus cinco primeras filas.</p>
+<p>El operador <strong>pipe</strong> (<code>|&gt;</code>, incluido en R base) sirve precisamente para encadenar pasos en el orden en que ocurren, sin tener que ir guardando objetos intermedios ni anidar paréntesis difíciles de leer.</p>
+<section id="sin-pipe-frente-a-con-pipe" class="level3">
+<h3 data-anchor-id="sin-pipe-frente-a-con-pipe">Sin <em>pipe</em> frente a con <em>pipe</em></h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sin pipe: guardamos primero una tabla intermedia en dos_columnas</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>dos_columnas <span class="ot">&lt;-</span> <span class="fu">select</span>(datos, age, tvhours)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dos_columnas, <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Con pipe: pasamos el resultado de cada línea a la siguiente</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>datos <span class="sc">|&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age, tvhours) <span class="sc">|&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>En ambos casos R devuelve exactamente las mismas cinco filas y dos columnas, y ninguno de los dos ejemplos modifica la tabla original <code>datos</code>. La diferencia está en la claridad: con <code>|&gt;</code>, no creas <code>dos_columnas</code> solo para consultar el siguiente paso.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver el resultado
+</summary>
+<pre class="text salida-r"><code># A tibble: 5 × 2
+    age tvhours
+  &lt;dbl&gt;   &lt;dbl&gt;
+1    26      12
+2    48      NA
+3    67       2
+4    39       4
+5    25       1</code></pre>
+</details>
+</section>
+<section id="cómo-leerlo-y-escribirlo-rápido" class="level3">
+<h3 data-anchor-id="cómo-leerlo-y-escribirlo-rápido">Cómo leerlo y escribirlo rápido</h3>
+<p>Puedes leer <code>|&gt;</code> en voz alta como <strong>«y después»</strong>: <em>«Partimos de <code>datos</code>, seleccionamos <code>age</code> y <code>tvhours</code> <strong>y después</strong> mostramos las primeras cinco filas»</em>. Lo que queda a la izquierda de <code>|&gt;</code> entra automáticamente como primer argumento de la función siguiente (por eso dentro de <code>select()</code> ya no repetimos <code>datos</code>, ni dentro de <code>head()</code> repetimos el resultado de <code>select()</code>).</p>
+<ul>
+<li><strong>Atajo en RStudio:</strong> <code>Ctrl + Shift + M</code> en Windows/Linux o <code>Cmd + Shift + M</code> en Mac.</li>
+<li><strong>Si el atajo escribe <code>%&gt;%</code> en lugar de <code>|&gt;</code>:</strong> puedes cambiarlo en <strong>Tools &gt; Global Options &gt; Code &gt; Editing</strong> activando <em>Use native pipe operator, |&gt;</em>.</li>
+<li><strong>No lo confundas con <code>|</code>:</strong> una barra vertical sola (<code>|</code>) significa «o» en comparaciones lógicas; el <em>pipe</em> lleva siempre barra y mayor que (<code>|&gt;</code>).</li>
+</ul>
 
 
 </section>
