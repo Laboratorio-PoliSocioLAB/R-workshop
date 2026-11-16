@@ -147,6 +147,13 @@
     "text": "Paso 3: seleccionar las columnas\nPara estudiar el tiempo de televisión según la edad nos bastan dos variables: age (edad) y tvhours (horas diarias de televisión). Las seleccionamos con select(), en el orden en que las escribimos dentro de los paréntesis, y actualizamos datos_trabajo.\n# Conserva únicamente la edad y las horas diarias de televisión\ndatos_trabajo &lt;- datos_trabajo |&gt;\n  select(age, tvhours)\n\n# Revisa la tabla resultante en consola\nglimpse(datos_trabajo, width = 75)\nRows: 11,299\nColumns: 2\n$ age     &lt;dbl&gt; 26, 67, 39, 25, 36, 44, 47, 53, 52, 52, 40, 44, 40, 48, 4…\n$ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,…\nPasamos así de 9 a 2 columnas, manteniendo las 11.299 filas y conservando ambas variables como numéricas (&lt;dbl&gt;). También puedes hacer clic sobre datos_trabajo en el panel Environment para abrirla en una pestaña y verla en formato tabla.\n\nwidth = 75: solo ajusta el ancho del resumen en pantalla (75 caracteres por línea) y no cambia los datos; si lo omites, R se adapta al ancho de tu consola.\nOriginal intacto: el objeto datos sigue conservando sus 9 columnas y sus 21.483 filas."
   },
   {
+    "objectID": "cuaderno-sesion-2.html#renombrar-columnas",
+    "href": "cuaderno-sesion-2.html#renombrar-columnas",
+    "title": "Manipulación y análisis descriptivo de datos con tidyverse (parte I)",
+    "section": "Renombrar las columnas con rename()",
+    "text": "Renombrar las columnas con rename()\nLas dos columnas que hemos seleccionado tienen nombres en inglés (age y tvhours). Para trabajar más cómodamente, vamos a cambiarlos en datos_trabajo con rename() por edad y horas_tv.\nLa regla que sigue rename() es siempre nombre nuevo a la izquierda del = y nombre actual a la derecha (e.g. edad = age). No confundas este =, que sirve para emparejar cada nombre nuevo con el anterior dentro de la función, con &lt;-, que guarda la tabla actualizada en datos_trabajo.\n# Cambia el nombre de las dos columnas en datos_trabajo\ndatos_trabajo &lt;- datos_trabajo |&gt;\n  rename(edad = age,\n         horas_tv = tvhours)\n\n# Muestra las tres primeras filas para comprobar el cambio\nhead(datos_trabajo, n = 3)\n# A tibble: 3 × 2\n   edad horas_tv\n  &lt;dbl&gt;    &lt;dbl&gt;\n1    26       12\n2    67        2\n3    39        4\nSeguimos conservando las 11.299 filas y las 2 columnas, y horas_tv mantiene la unidad original (horas diarias de televisión). El cambio solo afecta a datos_trabajo: tanto datos como encuesta_social.csv conservan age y tvhours. A partir de aquí usaremos edad y horas_tv."
+  },
+  {
     "objectID": "sesiones.html",
     "href": "sesiones.html",
     "title": "Sesiones",
