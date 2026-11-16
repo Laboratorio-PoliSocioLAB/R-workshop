@@ -157,6 +157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#repaso-sesion-1" id="toc-repaso-sesion-1" class="nav-link active" data-scroll-target="#repaso-sesion-1">Repaso breve de la sesión 1</a></li>
   <li><a href="#empezar-cargar-datos" id="toc-empezar-cargar-datos" class="nav-link" data-scroll-target="#empezar-cargar-datos">Al iniciar RStudio y cargar la encuesta</a></li>
   <li><a href="#herramientas-dplyr-tidyr" id="toc-herramientas-dplyr-tidyr" class="nav-link" data-scroll-target="#herramientas-dplyr-tidyr">Qué funciones vamos a usar: dplyr y tidyr</a></li>
+  <li><a href="#que-es-tidyverse" id="toc-que-es-tidyverse" class="nav-link" data-scroll-target="#que-es-tidyverse">¿Qué es tidyverse y por qué lo usamos?</a></li>
   </ul>
 </nav>
     </div>
@@ -198,6 +199,7 @@ En este cuaderno
 <li><a href="#repaso-sesion-1" class="no-external">Repaso breve de la sesión 1</a></li>
 <li><a href="#empezar-cargar-datos" class="no-external">Al iniciar RStudio y cargar la encuesta</a></li>
 <li><a href="#herramientas-dplyr-tidyr" class="no-external">Qué funciones vamos a usar: dplyr y tidyr</a></li>
+<li><a href="#que-es-tidyverse" class="no-external">¿Qué es tidyverse y por qué lo usamos?</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -310,6 +312,62 @@ $ tvhours &lt;dbl&gt; 12, NA, 2, 4, 1, NA, 3, NA, 0, 3, 2, NA, 1, NA, 1, 7, NA, 
 <li><strong>Unir o separar texto de una columna (<code>tidyr</code>):</strong> <code>unite()</code>, <code>separate_wider_delim()</code>, <code>separate_longer_delim()</code>.</li>
 <li><strong>Reordenar o recodificar factores (<code>forcats</code>):</strong> consulta la <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf" target="_blank" rel="noopener">hoja de referencia de <code>forcats</code> (PDF, en inglés)</a>.</li>
 </ul>
+</section>
+</section>
+<section id="que-es-tidyverse" class="level2">
+<h2 data-anchor-id="que-es-tidyverse">¿Qué es tidyverse y por qué lo usamos?</h2>
+<section id="una-caja-de-herramientas-por-etapas" class="level3">
+<h3 data-anchor-id="una-caja-de-herramientas-por-etapas">Una caja de herramientas por etapas</h3>
+<p><code>tidyverse</code> no es un único paquete aislado, sino una colección de paquetes pensados para trabajar juntos en cada fase del análisis de datos. Al ejecutar <code>library(tidyverse)</code> los cargamos todos a la vez:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagenes/tidy-workflow.png" class="img-fluid figure-img" alt="Flujo de trabajo de tidyverse: importar con readr; ordenar y limpiar con tidyr y tibble; transformar con dplyr, lubridate, el operador pipe, forcats y stringr; programar con purrr; y visualizar con ggplot2."></p>
+<figcaption>Flujo de trabajo con los paquetes de tidyverse.</figcaption>
+</figure>
+</div>
+<p>Fuente de la figura: <a href="https://science.uct.ac.za/seec/stats-toolbox-seminars-r-packages-and-r-related-toolboxes/r-tidyverse" target="_blank" rel="noopener">SEEC, Universidad de Ciudad del Cabo</a>.</p>
+<ul>
+<li><strong>Importar (<code>readr</code>):</strong> leer y guardar archivos (e.g.&nbsp;<code>read_csv()</code>).</li>
+<li><strong>Ordenar y limpiar (<code>tidyr</code>, <code>tibble</code>):</strong> estructurar la tabla y tratar los valores ausentes (en esto nos centramos hoy).</li>
+<li><strong>Transformar (<code>dplyr</code>, <code>forcats</code>):</strong> seleccionar, filtrar, ordenar y crear variables (también lo trabajamos hoy).</li>
+<li><strong>Visualizar (<code>ggplot2</code>):</strong> construir gráficos con la tabla preparada.</li>
+<li><strong>Programar (<code>purrr</code>):</strong> automatizar tareas repetitivas.</li>
+</ul>
+</section>
+<section id="por-qué-elegimos-tidyverse-frente-a-r-base" class="level3">
+<h3 data-anchor-id="por-qué-elegimos-tidyverse-frente-a-r-base">Por qué elegimos tidyverse frente a R base</h3>
+<p>No es obligatorio usar <code>tidyverse</code>: todo lo que hacemos puede escribirse también con <strong>R base</strong>. Elegimos <code>tidyverse</code> por tres razones prácticas al empezar:</p>
+<ol type="1">
+<li><strong>Código cercano al inglés cotidiano.</strong> Verbos como <code>select()</code> (seleccionar) o <code>filter()</code> (filtrar) describen la acción que quieres pedir.</li>
+<li><strong>Sintaxis coherente.</strong> En estas funciones, dentro de los paréntesis escribimos primero la tabla con la que trabajamos y después los detalles de la operación.</li>
+<li><strong>Mensajes de error más claros y útiles.</strong> Suelen señalar dónde está el problema y aportar pistas para corregirlo.</li>
+</ol>
+<p>Para ver la diferencia, compara cómo pediríamos solo las columnas <code>age</code> y <code>tvhours</code> (con todas las filas de <code>datos</code>) en R base frente a <code>dplyr</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Con R base: dejar vacío lo que va antes de la coma conserva todas las filas</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>datos[, <span class="fu">c</span>(<span class="st">"age"</span>, <span class="st">"tvhours"</span>)]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Con dplyr (tidyverse): "de la tabla datos, selecciona age y tvhours"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(datos, age, tvhours)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Ambos ejemplos devuelven exactamente la misma tabla de 21.483 filas y 2 columnas, y <strong>ninguno modifica la tabla original <code>datos</code></strong>.</p>
+<details class="solucion-cuaderno">
+<summary>
+Ver el resultado
+</summary>
+<pre class="text salida-r"><code># A tibble: 21,483 × 2
+     age tvhours
+   &lt;dbl&gt;   &lt;dbl&gt;
+ 1    26      12
+ 2    48      NA
+ 3    67       2
+ 4    39       4
+ 5    25       1
+ 6    25      NA
+ 7    36       3
+ 8    44      NA
+ 9    44       0
+10    47       3
+# ℹ 21,473 more rows</code></pre>
+</details>
 
 
 </section>
