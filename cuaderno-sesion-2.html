@@ -114,14 +114,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En este cuaderno</h2>
-   
-  <ul class="collapse">
-  <li><a href="#apartado-inicial" id="toc-apartado-inicial" class="nav-link active" data-scroll-target="#apartado-inicial">Apartado inicial</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -147,29 +141,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div id="intro-cuaderno">
-<div class="contenido-pendiente">
-<p>Cuaderno en preparación. Iremos añadiendo aquí la presentación y los apartados de la sesión 2 parte por parte.</p>
-</div>
+<p>En la sesión anterior cargaste una encuesta real en R y aprendiste a consultar valores concretos con corchetes y con <code>$</code>. En esta segunda sesión damos el siguiente paso: preparar una base de datos completa para responder a una pregunta concreta: <strong>¿quién ve más televisión, jóvenes o mayores?</strong></p>
+<p>Partirás de la misma encuesta de la <em>General Social Survey</em> (<code>encuesta_social.csv</code>) y trabajarás sobre una copia llamada <code>datos_trabajo</code> para dejar el archivo original intacto. Con las funciones de <code>tidyverse</code> —en especial de <code>dplyr</code> y <code>tidyr</code>— y el operador <em>pipe</em> (<code>|&gt;</code>), encadenarás operaciones paso a paso para tratar los valores ausentes (<code>NA</code>), comprobar si hay filas repetidas, seleccionar y renombrar columnas (<code>edad</code> y <code>horas_tv</code>), filtrar casos, ordenar resultados y crear nuevas variables como <code>tv_minutos</code> y <code>grupo_edad</code>.</p>
+<p>Al terminar guardarás la tabla preparada en un nuevo archivo CSV (<code>outputs/encuesta_preparada.csv</code>) y calcularás una primera comparación del tiempo diario de televisión entre el grupo joven y el de mayor edad. Todo quedará documentado en tu proyecto <code>taller_R</code> para que puedas volver a ejecutar el proceso completo cuando lo necesites.</p>
+<p><strong>Cómo trabajar con el cuaderno.</strong> Sigue los apartados en orden dentro de tu proyecto de RStudio. Antes de ejecutar cada bloque de código, intenta anticipar qué devolverá R o qué cambiará en la tabla y compruébalo después con tus propios resultados.</p>
 <p><a href="https://laboratorio-polisociolab.github.io/R-workshop/taller-1/sesion-2/#/title-slide" class="btn btn-outline-secondary" target="_blank" rel="noopener">Ver las diapositivas de la sesión</a></p>
 </div>
-<details class="indice-cuaderno-movil">
-<summary>
-En este cuaderno
-</summary>
-<ul>
-<li><a href="#intro-cuaderno" class="no-external">Presentación</a></li>
-<li><a href="#apartado-inicial" class="no-external">Apartado inicial</a></li>
-</ul>
-</details>
-<!-- Añadir aquí los apartados del cuaderno parte por parte. -->
-<section id="apartado-inicial" class="level2">
-<h2 data-anchor-id="apartado-inicial">Apartado inicial</h2>
-<div class="contenido-pendiente">
-<p>Contenido en preparación. Este apartado sirve de marcador inicial para probar la navegación por pasos mientras vamos incorporando cada parte del cuaderno.</p>
-</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
