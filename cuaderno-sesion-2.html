@@ -158,6 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#empezar-cargar-datos" id="toc-empezar-cargar-datos" class="nav-link" data-scroll-target="#empezar-cargar-datos">Al iniciar RStudio y cargar la encuesta</a></li>
   <li><a href="#herramientas-dplyr-tidyr" id="toc-herramientas-dplyr-tidyr" class="nav-link" data-scroll-target="#herramientas-dplyr-tidyr">Qué funciones vamos a usar: dplyr y tidyr</a></li>
   <li><a href="#que-es-tidyverse" id="toc-que-es-tidyverse" class="nav-link" data-scroll-target="#que-es-tidyverse">¿Qué es tidyverse y por qué lo usamos?</a></li>
+  <li><a href="#practica-preparar-encuesta" id="toc-practica-preparar-encuesta" class="nav-link" data-scroll-target="#practica-preparar-encuesta">La práctica: preparar los datos de la encuesta</a></li>
   </ul>
 </nav>
     </div>
@@ -200,6 +201,7 @@ En este cuaderno
 <li><a href="#empezar-cargar-datos" class="no-external">Al iniciar RStudio y cargar la encuesta</a></li>
 <li><a href="#herramientas-dplyr-tidyr" class="no-external">Qué funciones vamos a usar: dplyr y tidyr</a></li>
 <li><a href="#que-es-tidyverse" class="no-external">¿Qué es tidyverse y por qué lo usamos?</a></li>
+<li><a href="#practica-preparar-encuesta" class="no-external">La práctica: preparar los datos de la encuesta</a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -368,6 +370,23 @@ Ver el resultado
 10    47       3
 # ℹ 21,473 more rows</code></pre>
 </details>
+</section>
+</section>
+<section id="practica-preparar-encuesta" class="level2">
+<h2 data-anchor-id="practica-preparar-encuesta">La práctica: preparar los datos de la encuesta</h2>
+<p>Imagina que formamos parte de un <strong>equipo de investigación</strong> que quiere estudiar <strong>cuánto tiempo se dedica a ver la televisión según la edad</strong>. Ya tenemos la encuesta cargada en <code>datos</code>, pero antes de calcular medias o comparar grupos necesitamos preparar una tabla limpia y adecuada para nuestra pregunta.</p>
+<p>Para no alterar nunca ni el archivo original (<code>encuesta_social.csv</code>) ni la tabla inicial (<code>datos</code>), trabajaremos sobre una copia llamada <code>datos_trabajo</code>. Qué decisiones tomamos al limpiar depende siempre de la pregunta de investigación: aquí nos centraremos solo en la edad y en las horas diarias de televisión.</p>
+<section id="nuestra-hoja-de-ruta-en-seis-pasos" class="level3">
+<h3 data-anchor-id="nuestra-hoja-de-ruta-en-seis-pasos">Nuestra hoja de ruta en seis pasos</h3>
+<ol type="1">
+<li><strong>Revisar los valores ausentes.</strong> Excluir de <code>datos_trabajo</code> los casos sin edad (<code>age</code>) o sin horas diarias de televisión (<code>tvhours</code>). No es una regla universal para toda encuesta, sino una decisión acotada a las dos variables que necesitamos en esta práctica.</li>
+<li><strong>Comprobar si hay filas idénticas.</strong> Revisar si existen registros repetidos antes de reducir columnas, porque dos personas distintas pueden compartir las mismas respuestas en unas pocas variables y la tabla no incluye un identificador individual.</li>
+<li><strong>Seleccionar dos columnas.</strong> Quedarnos únicamente con la edad (<code>age</code>) y las horas diarias de televisión (<code>tvhours</code>), y darles nombres claros en castellano (<code>edad</code> y <code>horas_tv</code>).</li>
+<li><strong>Filtrar y ordenar por edad.</strong> Asegurar que trabajamos con personas de 18 años o más, comprobar si el filtro excluye algún caso y ordenar la tabla de menor a mayor edad.</li>
+<li><strong>Crear una variable.</strong> Calcular <code>tv_minutos</code>, pasando las horas diarias de televisión a minutos al multiplicarlas por 60.</li>
+<li><strong>Crear grupos de edad.</strong> Clasificar a las personas encuestadas en cuatro tramos en la columna <code>grupo_edad</code>: «18–29», «30–44», «45–64» y «65 o más» (son grupos de edad para comparar en la práctica, no etiquetas generacionales).</li>
+</ol>
+<p>En el siguiente apartado verás cómo encadenar estos pasos de forma legible antes de ejecutar cada uno sobre la encuesta.</p>
 
 
 </section>
