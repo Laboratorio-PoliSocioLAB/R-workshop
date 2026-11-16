@@ -167,6 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#paso-4-filtrar-ordenar" id="toc-paso-4-filtrar-ordenar" class="nav-link" data-scroll-target="#paso-4-filtrar-ordenar">Paso 4: filtrar y ordenar por edad</a></li>
   <li><a href="#paso-5-crear-variable" id="toc-paso-5-crear-variable" class="nav-link" data-scroll-target="#paso-5-crear-variable">Paso 5: crear una variable con <code>mutate()</code></a></li>
   <li><a href="#paso-6-grupos-edad" id="toc-paso-6-grupos-edad" class="nav-link" data-scroll-target="#paso-6-grupos-edad">Paso 6: crear grupos de edad</a></li>
+  <li><a href="#seleccionar-grupos-comparacion" id="toc-seleccionar-grupos-comparacion" class="nav-link" data-scroll-target="#seleccionar-grupos-comparacion">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
   </ul>
 </nav>
     </div>
@@ -218,6 +219,7 @@ En este cuaderno
 <li><a href="#paso-4-filtrar-ordenar" class="no-external">Paso 4: filtrar y ordenar por edad</a></li>
 <li><a href="#paso-5-crear-variable" class="no-external">Paso 5: crear una variable con <code>mutate()</code></a></li>
 <li><a href="#paso-6-grupos-edad" class="no-external">Paso 6: crear grupos de edad</a></li>
+<li><a href="#seleccionar-grupos-comparacion" class="no-external">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></a></li>
 </ul>
 </details>
 <section id="repaso-sesion-1" class="level2">
@@ -628,6 +630,47 @@ $ tvhours &lt;dbl&gt; 12, 2, 4, 1, 3, 0, 3, 2, 1, 1, 7, 3, 3, 1, 2, 2, 1, 3, 4,�
 <li><strong>Por qué bastan estos límites:</strong> en los pasos anteriores ya eliminamos los <code>NA</code> y comprobamos que todas las edades son de 18 años o más. Si en otra base hubiera menores o valores ausentes, habría que tratarlos explícitamente antes de usar estas reglas.</li>
 </ul>
 <p><strong>Atención al guion.</strong> Las etiquetas <code>"18–29"</code>, <code>"30–44"</code> y <code>"45–64"</code> usan el mismo guion medio (<code>–</code>) que puedes copiar directamente de este bloque; más adelante, al filtrar por grupo, el texto deberá coincidir carácter por carácter.</p>
+</section>
+</section>
+<section id="seleccionar-grupos-comparacion" class="level2">
+<h2 data-anchor-id="seleccionar-grupos-comparacion">Seleccionar dos grupos para compararlos: <code>==</code> frente a <code>%in%</code></h2>
+<p>Ya tenemos los cuatro grupos de edad en <code>datos_trabajo</code>. Ahora queremos aislar los dos extremos —<strong>«18–29»</strong> y <strong>«65 o más»</strong>— en una tabla aparte para compararlos. Para hacerlo bien conviene distinguir entre <code>==</code> y <code>%in%</code>.</p>
+<section id="para-qué-sirve-comparar-con-un-único-valor" class="level3">
+<h3 data-anchor-id="para-qué-sirve-comparar-con-un-único-valor">Para qué sirve <code>==</code>: comparar con un único valor</h3>
+<p>El operador <code>==</code> pregunta si el valor de cada fila es <strong>exactamente igual a un único valor</strong>. Para cada fila devuelve <code>TRUE</code> si coincide y <code>FALSE</code> si no; al usarlo dentro de <code>filter()</code>, R conserva solo las filas que dieron <code>TRUE</code>.</p>
+<ul>
+<li>Se escribe con <strong>dos signos iguales (<code>==</code>)</strong>, nunca con uno solo (<code>=</code>), porque un <code>=</code> simple se reserva en R para asignar argumentos dentro de las funciones (e.g.&nbsp;<code>rename(edad = age)</code> o <code>na.rm = TRUE</code>).</li>
+<li>Sirve cuando buscas <strong>una sola categoría</strong>, por ejemplo quedarte únicamente con el grupo más joven: <code>filter(grupo_edad == "18–29")</code>.</li>
+<li><strong>Por qué no sirve para varias categorías con <code>c(...)</code>:</strong> <code>==</code> compara fila a fila frente a un único valor. Si escribieras por error <code>grupo_edad == c("18–29", "65 o más")</code>, R iría alternando (fila 1 con <code>"18–29"</code>, fila 2 con <code>"65 o más"</code>, fila 3 con <code>"18–29"</code>…) y perderías aproximadamente la mitad de los casos de cada grupo.</li>
+</ul>
+</section>
+<section id="en-qué-consiste-in-comprobar-si-está-en-una-lista" class="level3">
+<h3 data-anchor-id="en-qué-consiste-in-comprobar-si-está-en-una-lista">En qué consiste <code>%in%</code>: comprobar si está en una lista</h3>
+<p>Cuando quieres quedarte con <strong>dos o más categorías a la vez</strong>, necesitas el operador <strong><code>%in%</code></strong> seguido de un vector <code>c(...)</code> con los valores buscados:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>grupo_edad <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"18–29"</span>, <span class="st">"65 o más"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Léelo en lenguaje cotidiano como <strong>«<code>grupo_edad</code> está dentro de esta lista: <code>"18–29"</code> o <code>"65 o más"</code>»</strong>. Para cada fila, R comprueba si su grupo aparece en algún lugar de ese vector <code>c(...)</code>: si está, devuelve <code>TRUE</code>; si no está, devuelve <code>FALSE</code>.</p>
+<p>De hecho, <code>filter(grupo_edad %in% c("18–29", "65 o más"))</code> equivale exactamente a escribir <code>filter(grupo_edad == "18–29" | grupo_edad == "65 o más")</code> (donde <code>|</code> significa «o», distinto del <em>pipe</em> <code>|&gt;</code>), pero con <code>%in%</code> evitas repetir el nombre de la columna y el operador <code>==</code> cuando buscas varias categorías.</p>
+</section>
+<section id="aplicarlo-a-nuestra-encuesta" class="level3">
+<h3 data-anchor-id="aplicarlo-a-nuestra-encuesta">Aplicarlo a nuestra encuesta</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Con ==: solo las personas del grupo joven (sin guardar la tabla)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(grupo_edad <span class="sc">==</span> <span class="st">"18–29"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Con %in%: reúne ambos extremos en una nueva tabla datos_comparacion</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>datos_comparacion <span class="ot">&lt;-</span> datos_trabajo <span class="sc">|&gt;</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(grupo_edad <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"18–29"</span>, <span class="st">"65 o más"</span>))</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprueba cuántas filas y columnas tiene la tabla de comparación</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(datos_comparacion)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="text salida-r"><code>[1] 2026
+[1] 4100    4</code></pre>
+<ul>
+<li><strong>Qué contiene <code>datos_comparacion</code>:</strong> reúne a las <strong>4.100 personas</strong> de los dos extremos (2.026 de «18–29» y 2.074 de «65 o más») y conserva las <strong>4 columnas</strong> (<code>edad</code>, <code>horas_tv</code>, <code>tv_minutos</code> y <code>grupo_edad</code>) listas para calcular su consumo de televisión.</li>
+<li><strong><code>datos_trabajo</code> sigue intacto:</strong> como guardamos esta selección en <code>datos_comparacion</code>, nuestra tabla principal <code>datos_trabajo</code> conserva las 11.299 personas de los cuatro grupos de edad.</li>
+<li><strong>Comillas y guion exactos:</strong> los textos dentro de <code>c("18–29", "65 o más")</code> deben coincidir carácter por carácter con los de <code>case_when()</code>, incluido el guion medio (<code>–</code>) de <code>18–29</code>. Si no coincide alguna letra o el guion, R no devolverá error, pero tampoco encontrará ese grupo.</li>
+</ul>
 
 
 </section>
