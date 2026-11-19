@@ -1,0 +1,11196 @@
+persona,partido,puntuacion
+1,PSOE,0
+1,PP,8
+1,Vox,0
+1,Frente Amplio,1
+1,Podemos,0
+1,Se Acabó la Fiesta,0
+2,PSOE,2
+2,PP,3
+2,Vox,4
+2,Frente Amplio,0
+2,Se Acabó la Fiesta,6
+3,PSOE,6
+3,PP,0
+3,Vox,0
+3,Frente Amplio,5
+3,Se Acabó la Fiesta,0
+4,PSOE,9
+4,PP,0
+4,Vox,1
+4,Se Acabó la Fiesta,4
+4,Compromís: Front Valencià,5
+5,PSOE,9
+5,PP,0
+5,Vox,0
+5,Frente Amplio,7
+5,Se Acabó la Fiesta,0
+6,PSOE,0
+6,PP,8
+6,Vox,8
+6,Se Acabó la Fiesta,0
+6,Compromís: Front Valencià,0
+7,PSOE,10
+7,PP,0
+7,Vox,0
+7,Frente Amplio,7
+7,Podemos,3
+7,Se Acabó la Fiesta,0
+8,PSOE,0
+8,PP,10
+8,Vox,8
+8,Frente Amplio,0
+8,Podemos,0
+8,Se Acabó la Fiesta,0
+9,PSOE,0
+9,PP,1
+9,Vox,10
+9,Frente Amplio,0
+9,Podemos,0
+9,Se Acabó la Fiesta,0
+10,PSOE,0
+10,PP,10
+10,Vox,9
+10,Frente Amplio,0
+10,Podemos,0
+10,Se Acabó la Fiesta,0
+11,PSOE,2
+11,PP,2
+11,Vox,10
+11,Se Acabó la Fiesta,2
+11,Compromís: Front Valencià,1
+12,PSOE,0
+12,PP,0
+12,Vox,0
+12,Frente Amplio,0
+12,Podemos,0
+12,Se Acabó la Fiesta,0
+13,PSOE,10
+13,PP,0
+13,Vox,0
+13,Se Acabó la Fiesta,0
+13,Compromís: Front Valencià,9
+14,PSOE,9
+14,PP,0
+14,Vox,0
+14,Frente Amplio,9
+14,Podemos,8
+14,Se Acabó la Fiesta,0
+15,PSOE,0
+15,PP,10
+15,Vox,5
+15,Frente Amplio,0
+15,Se Acabó la Fiesta,0
+16,PSOE,0
+16,PP,7
+16,Vox,10
+16,Frente Amplio,0
+16,Podemos,0
+16,Se Acabó la Fiesta,6
+17,PSOE,0
+17,PP,0
+17,Vox,0
+17,Frente Amplio,0
+17,Podemos,0
+17,Se Acabó la Fiesta,0
+18,PSOE,99
+18,PP,0
+18,Vox,0
+18,Frente Amplio,0
+18,Se Acabó la Fiesta,0
+19,PSOE,0
+19,PP,9
+19,Vox,10
+19,Frente Amplio,0
+19,Se Acabó la Fiesta,99
+20,PSOE,10
+20,PP,0
+20,Vox,0
+20,Se Acabó la Fiesta,0
+20,Unidad del Pueblo Canario,4
+21,PSOE,2
+21,PP,2
+21,Vox,2
+21,Frente Amplio,2
+21,Se Acabó la Fiesta,2
+22,PSOE,0
+22,PP,9
+22,Vox,7
+22,Frente Amplio,0
+22,Podemos,0
+22,Se Acabó la Fiesta,9
+23,PSOE,0
+23,PP,10
+23,Vox,8
+23,Frente Amplio,0
+23,Se Acabó la Fiesta,0
+24,PSOE,5
+24,PP,7
+24,Vox,3
+24,Frente Amplio,0
+24,Podemos,0
+24,Se Acabó la Fiesta,0
+25,PSOE,10
+25,PP,1
+25,Vox,0
+25,Frente Amplio,3
+25,Podemos,1
+25,Se Acabó la Fiesta,3
+26,PSOE,10
+26,PP,0
+26,Vox,6
+26,Frente Amplio,2
+26,Podemos,0
+26,Se Acabó la Fiesta,1
+27,PSOE,0
+27,PP,10
+27,Vox,2
+27,Frente Amplio,0
+27,Podemos,0
+27,Se Acabó la Fiesta,1
+28,PSOE,0
+28,PP,6
+28,Vox,9
+28,Frente Amplio,0
+28,Podemos,0
+28,Se Acabó la Fiesta,4
+29,PSOE,1
+29,PP,0
+29,Vox,0
+29,Frente Amplio,9
+29,Podemos,5
+29,Se Acabó la Fiesta,0
+30,PSOE,10
+30,PP,0
+30,Vox,0
+30,Frente Amplio,1
+30,Podemos,1
+30,Se Acabó la Fiesta,0
+31,PSOE,10
+31,PP,5
+31,Vox,0
+31,Frente Amplio,2
+31,Podemos,3
+31,Se Acabó la Fiesta,4
+32,PSOE,0
+32,PP,3
+32,Vox,6
+32,Frente Amplio,5
+32,Podemos,0
+32,Se Acabó la Fiesta,0
+33,PSOE,10
+33,PP,0
+33,Vox,0
+33,Frente Amplio,8
+33,Podemos,0
+33,Se Acabó la Fiesta,0
+34,PSOE,10
+34,PP,0
+34,Vox,0
+34,Frente Amplio,6
+34,Podemos,6
+34,Se Acabó la Fiesta,0
+35,PSOE,1
+35,PP,5
+35,Vox,8
+35,Frente Amplio,2
+35,Podemos,0
+35,Se Acabó la Fiesta,3
+36,PSOE,10
+36,PP,0
+36,Vox,0
+36,Frente Amplio,0
+36,Podemos,0
+36,Se Acabó la Fiesta,0
+37,PSOE,10
+37,PP,0
+37,Vox,0
+37,Frente Amplio,0
+37,Podemos,0
+38,PSOE,0
+38,PP,9
+38,Vox,6
+38,Frente Amplio,5
+38,Se Acabó la Fiesta,2
+39,PSOE,10
+39,PP,1
+39,Vox,0
+39,Frente Amplio,0
+39,Podemos,3
+39,Se Acabó la Fiesta,0
+40,PSOE,9
+40,PP,6
+40,Vox,0
+40,Frente Amplio,3
+40,Podemos,8
+40,Se Acabó la Fiesta,1
+41,PSOE,8
+41,PP,0
+41,Vox,0
+41,Frente Amplio,8
+41,Podemos,2
+41,Se Acabó la Fiesta,0
+42,PSOE,0
+42,PP,0
+42,Vox,10
+42,Se Acabó la Fiesta,0
+42,Compromís: Front Valencià,0
+43,PSOE,9
+43,PP,0
+43,Vox,0
+43,Frente Amplio,9
+43,Podemos,9
+44,PSOE,7
+44,PP,1
+44,Vox,0
+44,Frente Amplio,5
+44,Podemos,6
+44,Se Acabó la Fiesta,0
+45,PSOE,1
+45,Vox,0
+45,Frente Amplio,0
+45,Podemos,0
+45,Se Acabó la Fiesta,0
+45,UPN-PP,0
+46,PSOE,6
+46,PP,7
+46,Vox,0
+46,Frente Amplio,4
+46,Podemos,1
+46,Se Acabó la Fiesta,5
+47,PSOE,0
+47,PP,10
+47,Vox,1
+47,Frente Amplio,0
+47,Podemos,0
+47,Se Acabó la Fiesta,1
+48,PSOE,0
+48,PP,0
+48,Vox,10
+48,Se Acabó la Fiesta,8
+48,Compromís: Front Valencià,0
+49,PSOE,10
+49,PP,3
+49,Vox,0
+49,Frente Amplio,8
+49,Podemos,6
+50,PSOE,10
+50,PP,5
+50,Vox,0
+50,Frente Amplio,5
+50,Podemos,0
+50,Se Acabó la Fiesta,0
+51,PSOE,5
+51,PP,0
+51,Vox,0
+51,Frente Amplio,7
+51,Podemos,4
+51,Se Acabó la Fiesta,0
+52,PSOE,0
+52,PP,10
+52,Vox,5
+52,Frente Amplio,0
+52,Podemos,0
+52,Se Acabó la Fiesta,0
+53,PSOE,3
+53,PP,3
+53,Vox,10
+53,Frente Amplio,1
+53,Se Acabó la Fiesta,4
+54,PSOE,0
+54,PP,4
+54,Vox,8
+54,Se Acabó la Fiesta,0
+54,Compromís: Front Valencià,0
+55,PSOE,9
+55,PP,0
+55,Vox,0
+55,Frente Amplio,5
+55,Podemos,5
+55,Se Acabó la Fiesta,3
+56,PSOE,0
+56,PP,6
+56,Vox,0
+56,Frente Amplio,0
+56,Podemos,0
+56,Se Acabó la Fiesta,0
+57,PSOE,0
+57,PP,7
+57,Vox,10
+57,Frente Amplio,0
+57,Podemos,0
+57,Se Acabó la Fiesta,7
+58,PSOE,8
+58,PP,0
+58,Vox,0
+58,Frente Amplio,8
+58,Podemos,10
+58,Se Acabó la Fiesta,0
+59,PSOE,0
+59,PP,10
+59,Vox,6
+59,Frente Amplio,0
+59,Podemos,0
+59,Se Acabó la Fiesta,0
+60,PSOE,9
+60,PP,0
+60,Vox,0
+60,Frente Amplio,5
+60,Se Acabó la Fiesta,0
+61,PSOE,7
+61,PP,0
+61,Vox,0
+61,Frente Amplio,9
+61,Se Acabó la Fiesta,0
+62,PSOE,2
+62,Vox,2
+62,Frente Amplio,2
+62,Podemos,2
+62,Se Acabó la Fiesta,2
+62,UPN-PP,2
+63,PSOE,10
+63,PP,0
+63,Vox,0
+63,Frente Amplio,9
+63,Podemos,9
+63,Se Acabó la Fiesta,0
+64,PSOE,0
+64,PP,0
+64,Vox,0
+64,Frente Amplio,0
+64,Podemos,0
+64,Se Acabó la Fiesta,0
+65,PSOE,0
+65,PP,9
+65,Vox,5
+65,Frente Amplio,0
+65,Podemos,0
+65,Se Acabó la Fiesta,0
+66,PSOE,9
+66,PP,0
+66,Vox,0
+66,Frente Amplio,6
+66,Podemos,0
+66,Se Acabó la Fiesta,0
+67,PSOE,0
+67,PP,0
+67,Vox,0
+67,Frente Amplio,0
+67,Podemos,0
+67,Se Acabó la Fiesta,0
+68,PSOE,10
+68,PP,0
+68,Vox,0
+68,Frente Amplio,8
+68,Se Acabó la Fiesta,0
+69,PSOE,0
+69,PP,10
+69,Vox,5
+69,Frente Amplio,0
+69,Podemos,0
+69,Se Acabó la Fiesta,0
+70,PSOE,0
+70,PP,8
+70,Vox,10
+70,Se Acabó la Fiesta,8
+70,Unidad del Pueblo Canario,0
+71,PSOE,0
+71,PP,0
+71,Vox,10
+71,Frente Amplio,0
+71,Podemos,0
+71,Se Acabó la Fiesta,0
+72,PSOE,10
+72,PP,0
+72,Vox,0
+72,Frente Amplio,0
+72,Podemos,0
+72,Se Acabó la Fiesta,0
+73,PSOE,9
+73,PP,1
+73,Vox,0
+73,Se Acabó la Fiesta,0
+73,Compromís: Front Valencià,6
+74,PSOE,10
+74,PP,5
+74,Vox,0
+74,Frente Amplio,2
+74,Podemos,0
+74,Se Acabó la Fiesta,0
+75,PSOE,9
+75,PP,0
+75,Vox,0
+75,Se Acabó la Fiesta,0
+75,Compromís: Front Valencià,5
+76,PSOE,10
+76,PP,1
+76,Vox,0
+76,Frente Amplio,6
+76,Podemos,7
+76,Se Acabó la Fiesta,0
+77,PSOE,10
+77,PP,0
+77,Vox,0
+77,Se Acabó la Fiesta,2
+77,Compromís: Front Valencià,6
+78,PSOE,6
+78,PP,6
+78,Vox,6
+78,Se Acabó la Fiesta,5
+78,Ara Més – Front Ampli,99
+79,PSOE,0
+79,PP,10
+79,Vox,5
+79,Frente Amplio,0
+79,Podemos,0
+79,Se Acabó la Fiesta,0
+80,PSOE,4
+80,PP,8
+80,Vox,7
+80,Frente Amplio,5
+80,Podemos,6
+80,Se Acabó la Fiesta,0
+81,PSOE,10
+81,PP,0
+81,Vox,0
+81,Frente Amplio,6
+81,Se Acabó la Fiesta,0
+82,PSOE,0
+82,PP,0
+82,Vox,0
+82,Frente Amplio,0
+82,Se Acabó la Fiesta,0
+83,PSOE,10
+83,PP,0
+83,Vox,0
+83,Frente Amplio,0
+83,Podemos,0
+83,Se Acabó la Fiesta,0
+84,PSOE,5
+84,PP,0
+84,Vox,0
+84,Frente Amplio,6
+84,Se Acabó la Fiesta,1
+85,PSOE,10
+85,PP,0
+85,Vox,0
+85,Se Acabó la Fiesta,0
+85,Compromís: Front Valencià,7
+86,PSOE,0
+86,PP,8
+86,Vox,9
+86,Frente Amplio,0
+86,Podemos,0
+86,Se Acabó la Fiesta,3
+87,PSOE,6
+87,PP,5
+87,Vox,0
+87,Frente Amplio,2
+87,Podemos,2
+87,Se Acabó la Fiesta,0
+88,PSOE,10
+88,PP,0
+88,Vox,0
+88,Frente Amplio,0
+88,Podemos,3
+88,Se Acabó la Fiesta,0
+89,PSOE,4
+89,PP,0
+89,Vox,0
+89,Frente Amplio,4
+89,Podemos,3
+89,Se Acabó la Fiesta,0
+90,PSOE,5
+90,PP,9
+90,Vox,8
+90,Frente Amplio,3
+90,Podemos,0
+90,Se Acabó la Fiesta,9
+91,PSOE,8
+91,PP,5
+91,Vox,0
+91,Frente Amplio,9
+91,Podemos,6
+91,Se Acabó la Fiesta,0
+92,PSOE,3
+92,PP,2
+92,Vox,0
+92,Frente Amplio,9
+92,Se Acabó la Fiesta,6
+93,PSOE,0
+93,PP,7
+93,Vox,9
+93,Frente Amplio,0
+93,Podemos,0
+93,Se Acabó la Fiesta,5
+94,PSOE,99
+94,PP,0
+94,Vox,0
+94,Frente Amplio,0
+94,Podemos,0
+94,Se Acabó la Fiesta,0
+95,PSOE,0
+95,PP,0
+95,Vox,7
+95,Frente Amplio,99
+95,Se Acabó la Fiesta,99
+96,PSOE,10
+96,PP,6
+96,Vox,0
+96,Frente Amplio,5
+96,Podemos,5
+96,Se Acabó la Fiesta,4
+97,PSOE,10
+97,PP,0
+97,Vox,0
+97,Frente Amplio,9
+97,Podemos,6
+97,Se Acabó la Fiesta,0
+98,PSOE,0
+98,PP,2
+98,Vox,10
+98,Frente Amplio,0
+98,Podemos,0
+98,Se Acabó la Fiesta,2
+99,PSOE,3
+99,PP,5
+99,Vox,0
+99,Frente Amplio,0
+99,Podemos,0
+99,Se Acabó la Fiesta,0
+100,PSOE,0
+100,PP,10
+100,Vox,7
+100,Se Acabó la Fiesta,0
+100,Compromís: Front Valencià,0
+101,PSOE,0
+101,PP,0
+101,Vox,10
+101,Frente Amplio,0
+101,Se Acabó la Fiesta,0
+102,PSOE,0
+102,PP,10
+102,Vox,8
+102,Se Acabó la Fiesta,5
+102,Compromís: Front Valencià,0
+103,PSOE,7
+103,PP,5
+103,Vox,2
+103,Se Acabó la Fiesta,0
+103,Compromís: Front Valencià,4
+104,PSOE,10
+104,PP,0
+104,Vox,0
+104,Se Acabó la Fiesta,0
+104,Compromís: Front Valencià,10
+105,PSOE,0
+105,PP,0
+105,Vox,0
+105,Se Acabó la Fiesta,0
+105,Unidad del Pueblo Canario,0
+106,PSOE,8
+106,PP,0
+106,Vox,0
+106,Frente Amplio,0
+106,Se Acabó la Fiesta,2
+107,PSOE,2
+107,PP,6
+107,Vox,3
+107,Frente Amplio,6
+107,Se Acabó la Fiesta,3
+108,PSOE,0
+108,PP,8
+108,Vox,7
+108,Frente Amplio,1
+108,Podemos,0
+108,Se Acabó la Fiesta,1
+109,PSOE,10
+109,PP,0
+109,Vox,0
+109,Frente Amplio,0
+109,Podemos,5
+109,Se Acabó la Fiesta,5
+110,PSOE,2
+110,PP,10
+110,Vox,4
+110,Frente Amplio,0
+110,Se Acabó la Fiesta,0
+111,PSOE,0
+111,PP,9
+111,Vox,10
+111,Frente Amplio,0
+111,Se Acabó la Fiesta,0
+112,PSOE,0
+112,PP,0
+112,Vox,0
+112,Frente Amplio,0
+112,Podemos,0
+112,Se Acabó la Fiesta,0
+113,PSOE,6
+113,PP,1
+113,Vox,0
+113,Frente Amplio,7
+113,Podemos,6
+113,Se Acabó la Fiesta,0
+114,PSOE,9
+114,PP,0
+114,Vox,0
+114,Frente Amplio,9
+114,Podemos,2
+115,PSOE,8
+115,PP,4
+115,Vox,1
+115,Frente Amplio,1
+115,Podemos,2
+115,Se Acabó la Fiesta,0
+116,PSOE,4
+116,PP,1
+116,Vox,0
+116,Frente Amplio,0
+116,Se Acabó la Fiesta,0
+117,PSOE,7
+117,PP,0
+117,Vox,0
+117,Se Acabó la Fiesta,0
+117,Ara Més – Front Ampli,8
+118,PSOE,0
+118,PP,10
+118,Vox,0
+118,Se Acabó la Fiesta,0
+118,Compromís: Front Valencià,0
+119,PSOE,9
+119,PP,1
+119,Vox,0
+119,Frente Amplio,8
+119,Podemos,7
+119,Se Acabó la Fiesta,0
+120,PSOE,0
+120,PP,10
+120,Vox,0
+120,Frente Amplio,0
+120,Podemos,0
+120,Se Acabó la Fiesta,5
+121,PSOE,0
+121,PP,0
+121,Vox,0
+121,Frente Amplio,0
+121,Se Acabó la Fiesta,0
+122,PSOE,0
+122,PP,0
+122,Vox,10
+122,Frente Amplio,0
+122,Podemos,0
+122,Se Acabó la Fiesta,10
+123,PSOE,0
+123,PP,5
+123,Vox,0
+123,Frente Amplio,0
+123,Podemos,0
+123,Se Acabó la Fiesta,0
+124,PSOE,0
+124,PP,8
+124,Vox,10
+124,Se Acabó la Fiesta,0
+124,Unidad del Pueblo Canario,0
+125,PSOE,5
+125,PP,8
+125,Vox,5
+125,Frente Amplio,0
+125,Podemos,0
+125,Se Acabó la Fiesta,0
+126,PSOE,0
+126,PP,6
+126,Vox,10
+126,Frente Amplio,0
+126,Se Acabó la Fiesta,0
+127,PSOE,0
+127,PP,10
+127,Vox,6
+127,Frente Amplio,0
+127,Podemos,0
+127,Se Acabó la Fiesta,5
+128,PSOE,6
+128,PP,0
+128,Vox,0
+128,Frente Amplio,5
+128,Podemos,3
+128,Se Acabó la Fiesta,0
+129,PSOE,0
+129,PP,9
+129,Vox,7
+129,Frente Amplio,0
+129,Se Acabó la Fiesta,0
+130,PSOE,7
+130,PP,0
+130,Vox,0
+130,Frente Amplio,5
+130,Se Acabó la Fiesta,0
+131,PSOE,9
+131,PP,0
+131,Vox,0
+131,Se Acabó la Fiesta,0
+131,Unidad del Pueblo Canario,0
+132,PSOE,7
+132,PP,0
+132,Vox,0
+132,Frente Amplio,9
+132,Se Acabó la Fiesta,0
+133,PSOE,9
+133,PP,0
+133,Vox,0
+133,Frente Amplio,9
+133,Podemos,8
+133,Se Acabó la Fiesta,0
+134,PSOE,0
+134,PP,10
+134,Vox,8
+134,Se Acabó la Fiesta,0
+134,Compromís: Front Valencià,0
+135,PSOE,0
+135,PP,8
+135,Vox,10
+135,Se Acabó la Fiesta,4
+135,Compromís: Front Valencià,0
+136,PSOE,10
+136,PP,2
+136,Vox,2
+136,Frente Amplio,2
+136,Se Acabó la Fiesta,2
+137,PSOE,5
+137,PP,5
+137,Vox,5
+137,Frente Amplio,5
+137,Se Acabó la Fiesta,5
+138,PSOE,5
+138,PP,0
+138,Vox,0
+138,Frente Amplio,9
+138,Podemos,3
+138,Se Acabó la Fiesta,0
+139,PSOE,0
+139,PP,10
+139,Vox,9
+139,Se Acabó la Fiesta,8
+139,Compromís: Front Valencià,0
+140,PSOE,4
+140,PP,4
+140,Vox,0
+140,Se Acabó la Fiesta,3
+140,Compromís: Front Valencià,4
+141,PSOE,5
+141,PP,0
+141,Vox,0
+141,Frente Amplio,5
+141,Podemos,10
+141,Se Acabó la Fiesta,0
+142,PSOE,10
+142,PP,0
+142,Vox,0
+142,Frente Amplio,8
+142,Se Acabó la Fiesta,0
+143,PSOE,10
+143,PP,0
+143,Vox,0
+143,Frente Amplio,5
+143,Se Acabó la Fiesta,0
+144,PSOE,8
+144,PP,0
+144,Vox,0
+144,Frente Amplio,7
+144,Podemos,6
+144,Se Acabó la Fiesta,0
+145,PSOE,0
+145,PP,10
+145,Vox,6
+145,Frente Amplio,0
+145,Podemos,0
+145,Se Acabó la Fiesta,0
+146,PSOE,1
+146,PP,9
+146,Vox,5
+146,Frente Amplio,1
+146,Podemos,0
+146,Se Acabó la Fiesta,0
+147,PSOE,0
+147,PP,7
+147,Vox,10
+147,Frente Amplio,0
+147,Podemos,0
+147,Se Acabó la Fiesta,1
+148,PSOE,0
+148,PP,9
+148,Vox,10
+148,Frente Amplio,0
+148,Podemos,0
+148,Se Acabó la Fiesta,0
+149,PSOE,0
+149,PP,10
+149,Vox,0
+149,Frente Amplio,0
+149,Podemos,0
+149,Se Acabó la Fiesta,0
+150,PSOE,10
+150,PP,1
+150,Vox,0
+150,Frente Amplio,0
+150,Podemos,99
+150,Se Acabó la Fiesta,0
+151,PSOE,10
+151,PP,0
+151,Vox,0
+151,Se Acabó la Fiesta,0
+151,Compromís: Front Valencià,9
+152,PSOE,0
+152,PP,10
+152,Vox,6
+152,Frente Amplio,0
+152,Podemos,0
+152,Se Acabó la Fiesta,0
+153,PSOE,0
+153,PP,8
+153,Vox,3
+153,Frente Amplio,0
+153,Podemos,0
+153,Se Acabó la Fiesta,2
+154,PSOE,0
+154,PP,10
+154,Vox,6
+154,Frente Amplio,0
+154,Podemos,0
+154,Se Acabó la Fiesta,0
+155,PSOE,10
+155,PP,0
+155,Vox,0
+155,Frente Amplio,4
+155,Podemos,5
+155,Se Acabó la Fiesta,0
+156,PSOE,5
+156,PP,7
+156,Vox,9
+156,Frente Amplio,2
+156,Podemos,2
+156,Se Acabó la Fiesta,8
+157,PSOE,8
+157,PP,0
+157,Vox,0
+157,Frente Amplio,5
+157,Podemos,0
+157,Se Acabó la Fiesta,0
+158,PSOE,6
+158,PP,9
+158,Vox,8
+158,Frente Amplio,1
+158,Podemos,2
+158,Se Acabó la Fiesta,6
+159,PSOE,4
+159,PP,5
+159,Vox,3
+159,Frente Amplio,3
+159,Podemos,1
+160,PSOE,0
+160,PP,10
+160,Vox,3
+160,Frente Amplio,0
+160,Podemos,0
+160,Se Acabó la Fiesta,0
+161,PSOE,0
+161,PP,8
+161,Vox,10
+161,Frente Amplio,0
+161,Se Acabó la Fiesta,7
+162,PSOE,1
+162,PP,0
+162,Vox,0
+162,Frente Amplio,1
+162,Se Acabó la Fiesta,0
+163,PSOE,3
+163,PP,9
+163,Vox,1
+163,Frente Amplio,1
+163,Podemos,1
+163,Se Acabó la Fiesta,1
+164,PSOE,0
+164,PP,0
+164,Vox,0
+164,Frente Amplio,0
+164,Podemos,0
+164,Se Acabó la Fiesta,0
+165,PSOE,3
+165,PP,0
+165,Vox,0
+165,Se Acabó la Fiesta,0
+165,Compromís: Front Valencià,3
+166,PSOE,8
+166,PP,0
+166,Vox,0
+166,Frente Amplio,0
+166,Podemos,5
+167,PSOE,0
+167,PP,8
+167,Vox,6
+167,Frente Amplio,0
+167,Podemos,0
+167,Se Acabó la Fiesta,1
+168,PSOE,10
+168,PP,0
+168,Vox,0
+168,Se Acabó la Fiesta,0
+168,Compromís: Front Valencià,5
+169,PSOE,0
+169,PP,10
+169,Vox,0
+169,Frente Amplio,0
+169,Podemos,0
+169,Se Acabó la Fiesta,0
+170,PSOE,0
+170,PP,0
+170,Vox,10
+170,Frente Amplio,0
+170,Podemos,0
+170,Se Acabó la Fiesta,0
+171,PSOE,2
+171,PP,0
+171,Vox,0
+171,Frente Amplio,1
+171,Podemos,1
+171,Se Acabó la Fiesta,0
+172,PSOE,8
+172,PP,2
+172,Vox,0
+172,Se Acabó la Fiesta,0
+172,Compromís: Front Valencià,4
+173,PSOE,9
+173,PP,3
+173,Vox,0
+173,Frente Amplio,0
+173,Podemos,0
+173,Se Acabó la Fiesta,0
+174,PSOE,10
+174,PP,0
+174,Vox,0
+174,Frente Amplio,9
+174,Podemos,6
+174,Se Acabó la Fiesta,0
+175,PSOE,7
+175,PP,2
+175,Vox,5
+175,Frente Amplio,6
+175,Podemos,0
+175,Se Acabó la Fiesta,1
+176,PSOE,0
+176,PP,8
+176,Vox,8
+176,Frente Amplio,0
+176,Podemos,10
+176,Se Acabó la Fiesta,10
+177,PSOE,3
+177,PP,9
+177,Vox,0
+177,Frente Amplio,3
+177,Podemos,0
+177,Se Acabó la Fiesta,0
+178,PSOE,1
+178,PP,4
+178,Vox,10
+178,Frente Amplio,3
+178,Podemos,2
+178,Se Acabó la Fiesta,4
+179,PSOE,0
+179,PP,0
+179,Vox,0
+179,Frente Amplio,0
+179,Se Acabó la Fiesta,0
+180,PSOE,10
+180,PP,0
+180,Vox,0
+180,Frente Amplio,7
+180,Podemos,4
+180,Se Acabó la Fiesta,5
+181,PSOE,5
+181,PP,0
+181,Vox,0
+181,Frente Amplio,5
+181,Podemos,5
+181,Se Acabó la Fiesta,0
+182,PSOE,6
+182,PP,5
+182,Vox,5
+182,Frente Amplio,2
+182,Podemos,2
+182,Se Acabó la Fiesta,2
+183,PSOE,9
+183,PP,3
+183,Vox,3
+183,Frente Amplio,3
+183,Podemos,3
+183,Se Acabó la Fiesta,3
+184,PSOE,0
+184,PP,7
+184,Vox,10
+184,Frente Amplio,0
+184,Podemos,0
+184,Se Acabó la Fiesta,4
+185,PSOE,0
+185,PP,8
+185,Vox,3
+185,Frente Amplio,0
+185,Podemos,0
+185,Se Acabó la Fiesta,0
+186,PSOE,3
+186,PP,1
+186,Vox,0
+186,Frente Amplio,4
+186,Podemos,10
+186,Se Acabó la Fiesta,0
+187,PSOE,0
+187,PP,9
+187,Vox,5
+187,Frente Amplio,0
+187,Podemos,0
+187,Se Acabó la Fiesta,0
+188,PSOE,0
+188,PP,5
+188,Vox,9
+188,Frente Amplio,0
+189,PSOE,1
+189,PP,9
+189,Vox,5
+189,Frente Amplio,1
+189,Podemos,1
+189,Se Acabó la Fiesta,4
+190,PSOE,0
+190,PP,6
+190,Vox,0
+190,Se Acabó la Fiesta,0
+190,Unidad del Pueblo Canario,4
+191,PSOE,0
+191,PP,10
+191,Vox,3
+191,Frente Amplio,5
+191,Podemos,0
+191,Se Acabó la Fiesta,5
+192,PSOE,5
+192,PP,5
+192,Vox,5
+192,Frente Amplio,5
+192,Podemos,8
+192,Se Acabó la Fiesta,5
+193,PSOE,5
+193,PP,5
+193,Vox,5
+193,Frente Amplio,5
+193,Podemos,5
+193,Se Acabó la Fiesta,5
+194,PSOE,9
+194,PP,0
+194,Vox,0
+194,Se Acabó la Fiesta,0
+194,Ara Més – Front Ampli,8
+195,PSOE,10
+195,PP,0
+195,Vox,0
+195,Se Acabó la Fiesta,0
+195,Compromís: Front Valencià,4
+196,PSOE,10
+196,PP,0
+196,Vox,0
+196,Frente Amplio,0
+196,Podemos,0
+196,Se Acabó la Fiesta,0
+197,PSOE,9
+197,PP,5
+197,Vox,0
+197,Frente Amplio,3
+197,Podemos,5
+197,Se Acabó la Fiesta,0
+198,PSOE,5
+198,PP,9
+198,Vox,9
+198,Frente Amplio,6
+198,Podemos,6
+198,Se Acabó la Fiesta,6
+199,PSOE,5
+199,PP,5
+199,Vox,0
+199,Se Acabó la Fiesta,0
+199,Compromís: Front Valencià,8
+200,PSOE,0
+200,PP,10
+200,Vox,5
+200,Frente Amplio,0
+200,Podemos,0
+200,Se Acabó la Fiesta,0
+201,PSOE,8
+201,Vox,5
+201,Frente Amplio,5
+201,Podemos,5
+201,Se Acabó la Fiesta,2
+201,UPN-PP,2
+202,PSOE,0
+202,PP,10
+202,Vox,0
+202,Frente Amplio,0
+202,Podemos,0
+202,Se Acabó la Fiesta,0
+203,PSOE,0
+203,PP,10
+203,Vox,3
+203,Frente Amplio,0
+203,Se Acabó la Fiesta,5
+204,PSOE,10
+204,PP,0
+204,Vox,0
+204,Frente Amplio,10
+204,Podemos,5
+204,Se Acabó la Fiesta,0
+205,PSOE,3
+205,PP,10
+205,Vox,8
+205,Frente Amplio,0
+205,Podemos,0
+205,Se Acabó la Fiesta,9
+206,PSOE,5
+206,PP,0
+206,Vox,0
+206,Frente Amplio,3
+206,Se Acabó la Fiesta,0
+207,PSOE,99
+207,PP,99
+207,Vox,99
+207,Frente Amplio,99
+208,PSOE,9
+208,Vox,0
+208,Frente Amplio,99
+208,Podemos,5
+208,Se Acabó la Fiesta,99
+208,UPN-PP,1
+209,PSOE,0
+209,PP,5
+209,Vox,10
+209,Frente Amplio,8
+209,Se Acabó la Fiesta,6
+210,PSOE,8
+210,PP,0
+210,Vox,0
+210,Frente Amplio,5
+210,Podemos,4
+210,Se Acabó la Fiesta,2
+211,PSOE,10
+211,PP,0
+211,Vox,0
+211,Se Acabó la Fiesta,0
+211,Compromís: Front Valencià,0
+212,PSOE,3
+212,PP,6
+212,Vox,4
+212,Frente Amplio,5
+212,Podemos,5
+212,Se Acabó la Fiesta,4
+213,PSOE,0
+213,Vox,5
+213,Frente Amplio,0
+213,Podemos,0
+213,Se Acabó la Fiesta,0
+213,UPN-PP,8
+214,PSOE,6
+214,PP,5
+214,Vox,5
+214,Frente Amplio,6
+214,Podemos,4
+214,Se Acabó la Fiesta,5
+215,PSOE,0
+215,PP,0
+215,Vox,4
+215,Frente Amplio,0
+215,Podemos,5
+215,Se Acabó la Fiesta,0
+216,PSOE,0
+216,PP,10
+216,Vox,4
+216,Frente Amplio,0
+216,Podemos,0
+216,Se Acabó la Fiesta,0
+217,PSOE,3
+217,PP,3
+217,Vox,10
+217,Frente Amplio,2
+217,Podemos,2
+218,PSOE,0
+218,PP,0
+218,Vox,5
+218,Frente Amplio,0
+218,Se Acabó la Fiesta,10
+219,PSOE,7
+219,PP,3
+219,Vox,10
+219,Frente Amplio,0
+219,Podemos,4
+219,Se Acabó la Fiesta,0
+220,PSOE,0
+220,PP,7
+220,Vox,8
+220,Frente Amplio,0
+220,Podemos,0
+220,Se Acabó la Fiesta,1
+221,PSOE,10
+221,PP,0
+221,Vox,0
+221,Frente Amplio,0
+221,Podemos,0
+221,Se Acabó la Fiesta,0
+222,PSOE,10
+222,PP,0
+222,Vox,0
+222,Frente Amplio,3
+222,Podemos,3
+222,Se Acabó la Fiesta,0
+223,PSOE,5
+223,PP,5
+223,Vox,0
+223,Frente Amplio,0
+223,Se Acabó la Fiesta,0
+224,PSOE,0
+224,PP,9
+224,Vox,9
+224,Frente Amplio,0
+224,Podemos,0
+224,Se Acabó la Fiesta,0
+225,PSOE,10
+225,PP,0
+225,Vox,0
+225,Frente Amplio,10
+225,Podemos,10
+225,Se Acabó la Fiesta,0
+226,PSOE,8
+226,PP,5
+226,Vox,2
+226,Frente Amplio,2
+226,Se Acabó la Fiesta,2
+227,PSOE,1
+227,PP,10
+227,Vox,7
+227,Frente Amplio,0
+227,Podemos,0
+227,Se Acabó la Fiesta,2
+228,PSOE,0
+228,PP,6
+228,Vox,8
+228,Frente Amplio,0
+228,Podemos,0
+228,Se Acabó la Fiesta,4
+229,PSOE,0
+229,PP,0
+229,Vox,0
+229,Frente Amplio,0
+229,Se Acabó la Fiesta,0
+230,PSOE,2
+230,PP,3
+230,Vox,3
+230,Frente Amplio,5
+230,Podemos,3
+230,Se Acabó la Fiesta,10
+231,PSOE,9
+231,PP,0
+231,Vox,0
+231,Frente Amplio,0
+231,Podemos,0
+231,Se Acabó la Fiesta,0
+232,PSOE,0
+232,PP,0
+232,Vox,0
+232,Frente Amplio,0
+232,Se Acabó la Fiesta,0
+233,PSOE,8
+233,PP,5
+233,Vox,7
+233,Frente Amplio,5
+233,Podemos,5
+233,Se Acabó la Fiesta,3
+234,PSOE,10
+234,PP,0
+234,Vox,0
+234,Frente Amplio,5
+234,Se Acabó la Fiesta,0
+235,PSOE,10
+235,PP,0
+235,Vox,0
+235,Frente Amplio,8
+235,Podemos,5
+235,Se Acabó la Fiesta,0
+236,PSOE,7
+236,PP,0
+236,Vox,0
+236,Frente Amplio,8
+236,Podemos,3
+236,Se Acabó la Fiesta,99
+237,PSOE,0
+237,PP,3
+237,Vox,10
+237,Frente Amplio,0
+237,Podemos,0
+237,Se Acabó la Fiesta,8
+238,PSOE,10
+238,PP,0
+238,Vox,0
+238,Se Acabó la Fiesta,0
+238,Unidad del Pueblo Canario,0
+239,PSOE,10
+239,PP,0
+239,Vox,0
+239,Frente Amplio,5
+239,Podemos,0
+239,Se Acabó la Fiesta,0
+240,PSOE,0
+240,PP,10
+240,Vox,10
+240,Frente Amplio,99
+240,Podemos,99
+240,Se Acabó la Fiesta,99
+241,PSOE,99
+241,PP,99
+241,Vox,99
+241,Frente Amplio,99
+241,Podemos,99
+241,Se Acabó la Fiesta,99
+242,PSOE,0
+242,PP,0
+242,Vox,0
+242,Frente Amplio,0
+242,Se Acabó la Fiesta,5
+243,PSOE,10
+243,PP,0
+243,Vox,5
+243,Frente Amplio,9
+243,Podemos,8
+243,Se Acabó la Fiesta,0
+244,PSOE,0
+244,PP,10
+244,Vox,0
+244,Frente Amplio,0
+244,Podemos,0
+244,Se Acabó la Fiesta,0
+245,PSOE,99
+245,PP,99
+245,Vox,0
+245,Frente Amplio,99
+245,Podemos,99
+245,Se Acabó la Fiesta,0
+246,PSOE,0
+246,PP,0
+246,Vox,8
+246,Frente Amplio,0
+246,Podemos,0
+246,Se Acabó la Fiesta,10
+247,PSOE,4
+247,PP,5
+247,Vox,0
+247,Frente Amplio,3
+247,Podemos,3
+247,Se Acabó la Fiesta,0
+248,PSOE,0
+248,PP,0
+248,Vox,8
+248,Se Acabó la Fiesta,10
+248,Unidad del Pueblo Canario,6
+249,PSOE,7
+249,PP,6
+249,Vox,5
+249,Frente Amplio,2
+249,Podemos,9
+249,Se Acabó la Fiesta,5
+250,PSOE,0
+250,PP,10
+250,Vox,7
+250,Frente Amplio,0
+250,Podemos,0
+250,Se Acabó la Fiesta,0
+251,PSOE,7
+251,PP,6
+251,Vox,6
+251,Frente Amplio,8
+251,Podemos,6
+251,Se Acabó la Fiesta,6
+252,PSOE,8
+252,PP,0
+252,Vox,0
+252,Se Acabó la Fiesta,0
+252,Compromís: Front Valencià,10
+253,PSOE,5
+253,PP,3
+253,Vox,0
+253,Frente Amplio,7
+253,Podemos,4
+254,PSOE,8
+254,PP,0
+254,Vox,0
+254,Frente Amplio,0
+255,PSOE,0
+255,PP,8
+255,Vox,8
+255,Frente Amplio,0
+256,PSOE,0
+256,PP,10
+256,Vox,0
+256,Se Acabó la Fiesta,0
+256,Compromís: Front Valencià,0
+257,PSOE,10
+257,PP,0
+257,Vox,0
+257,Frente Amplio,0
+257,Podemos,0
+257,Se Acabó la Fiesta,0
+258,PSOE,10
+258,PP,0
+258,Vox,0
+258,Frente Amplio,0
+258,Podemos,7
+258,Se Acabó la Fiesta,0
+259,PSOE,1
+259,PP,4
+259,Vox,9
+259,Frente Amplio,1
+259,Podemos,1
+259,Se Acabó la Fiesta,8
+260,PSOE,0
+260,PP,9
+260,Vox,10
+260,Frente Amplio,5
+260,Podemos,0
+260,Se Acabó la Fiesta,9
+261,PSOE,10
+261,PP,0
+261,Vox,0
+261,Frente Amplio,10
+261,Podemos,8
+261,Se Acabó la Fiesta,0
+262,PSOE,3
+262,PP,3
+262,Vox,1
+262,Frente Amplio,6
+262,Podemos,5
+262,Se Acabó la Fiesta,7
+263,PSOE,0
+263,PP,10
+263,Vox,0
+263,Frente Amplio,0
+263,Podemos,0
+263,Se Acabó la Fiesta,0
+264,PSOE,0
+264,PP,10
+264,Vox,3
+264,Frente Amplio,0
+264,Podemos,0
+264,Se Acabó la Fiesta,0
+265,PSOE,9
+265,PP,1
+265,Vox,0
+265,Frente Amplio,7
+265,Podemos,6
+265,Se Acabó la Fiesta,1
+266,PSOE,2
+266,PP,6
+266,Vox,8
+266,Frente Amplio,0
+266,Podemos,5
+266,Se Acabó la Fiesta,0
+267,PSOE,5
+267,PP,5
+267,Vox,5
+267,Se Acabó la Fiesta,5
+267,Compromís: Front Valencià,5
+268,PSOE,5
+268,PP,0
+268,Vox,0
+268,Frente Amplio,0
+268,Podemos,2
+268,Se Acabó la Fiesta,1
+269,PSOE,10
+269,PP,0
+269,Vox,0
+269,Frente Amplio,0
+269,Se Acabó la Fiesta,0
+270,PSOE,0
+270,PP,0
+270,Vox,0
+270,Frente Amplio,0
+270,Podemos,0
+270,Se Acabó la Fiesta,0
+271,PSOE,8
+271,PP,5
+271,Vox,1
+271,Frente Amplio,2
+271,Podemos,3
+271,Se Acabó la Fiesta,3
+272,PSOE,10
+272,PP,0
+272,Vox,0
+272,Frente Amplio,6
+272,Podemos,5
+272,Se Acabó la Fiesta,3
+273,PSOE,7
+273,PP,0
+273,Vox,0
+273,Frente Amplio,1
+273,Podemos,0
+273,Se Acabó la Fiesta,2
+274,PSOE,0
+274,PP,5
+274,Vox,10
+274,Frente Amplio,0
+274,Podemos,0
+274,Se Acabó la Fiesta,10
+275,PSOE,0
+275,PP,9
+275,Vox,8
+275,Frente Amplio,0
+275,Podemos,0
+275,Se Acabó la Fiesta,0
+276,PSOE,10
+276,PP,0
+276,Vox,0
+276,Frente Amplio,7
+276,Se Acabó la Fiesta,0
+277,PSOE,6
+277,PP,4
+277,Vox,0
+277,Frente Amplio,1
+277,Podemos,0
+277,Se Acabó la Fiesta,0
+278,PSOE,1
+278,PP,8
+278,Vox,6
+278,Frente Amplio,3
+278,Podemos,2
+278,Se Acabó la Fiesta,4
+279,PSOE,0
+279,PP,7
+279,Vox,6
+279,Se Acabó la Fiesta,0
+279,Compromís: Front Valencià,9
+280,PSOE,10
+280,PP,0
+280,Vox,0
+280,Frente Amplio,8
+280,Podemos,5
+280,Se Acabó la Fiesta,0
+281,PSOE,0
+281,PP,9
+281,Vox,7
+281,Frente Amplio,0
+281,Podemos,0
+281,Se Acabó la Fiesta,10
+282,PSOE,0
+282,PP,8
+282,Vox,0
+282,Frente Amplio,0
+282,Podemos,0
+282,Se Acabó la Fiesta,0
+283,PSOE,0
+283,PP,10
+283,Vox,5
+283,Se Acabó la Fiesta,0
+283,Compromís: Front Valencià,0
+284,PSOE,0
+284,PP,5
+284,Vox,0
+284,Frente Amplio,0
+284,Podemos,0
+284,Se Acabó la Fiesta,2
+285,PSOE,5
+285,PP,4
+285,Vox,5
+285,Se Acabó la Fiesta,0
+285,Unidad del Pueblo Canario,6
+286,PSOE,3
+286,PP,7
+286,Vox,10
+286,Frente Amplio,0
+286,Podemos,0
+286,Se Acabó la Fiesta,3
+287,PSOE,10
+287,PP,0
+287,Vox,0
+287,Frente Amplio,1
+287,Podemos,1
+287,Se Acabó la Fiesta,0
+288,PSOE,0
+288,PP,8
+288,Vox,6
+288,Frente Amplio,0
+288,Podemos,1
+288,Se Acabó la Fiesta,0
+289,PSOE,9
+289,PP,1
+289,Vox,0
+289,Se Acabó la Fiesta,1
+289,Unidad del Pueblo Canario,1
+290,PSOE,10
+290,PP,0
+290,Vox,0
+290,Frente Amplio,10
+291,PSOE,0
+291,PP,0
+291,Vox,0
+291,Frente Amplio,0
+291,Podemos,0
+292,PSOE,5
+292,PP,1
+292,Vox,9
+292,Frente Amplio,1
+292,Podemos,0
+292,Se Acabó la Fiesta,7
+293,PSOE,0
+293,PP,10
+293,Vox,0
+293,Frente Amplio,0
+293,Podemos,0
+293,Se Acabó la Fiesta,0
+294,PSOE,99
+294,PP,99
+294,Vox,99
+294,Se Acabó la Fiesta,99
+294,Compromís: Front Valencià,99
+295,PSOE,10
+295,PP,0
+295,Vox,0
+295,Frente Amplio,0
+295,Podemos,7
+295,Se Acabó la Fiesta,2
+296,PSOE,0
+296,PP,0
+296,Vox,10
+296,Se Acabó la Fiesta,0
+296,Compromís: Front Valencià,0
+297,PSOE,10
+297,PP,0
+297,Vox,0
+297,Frente Amplio,0
+297,Podemos,0
+297,Se Acabó la Fiesta,0
+298,PSOE,5
+298,PP,1
+298,Vox,0
+298,Frente Amplio,0
+298,Podemos,1
+298,Se Acabó la Fiesta,0
+299,PSOE,1
+299,PP,10
+299,Vox,2
+299,Se Acabó la Fiesta,0
+299,Compromís: Front Valencià,2
+300,PSOE,99
+300,PP,99
+300,Vox,99
+300,Frente Amplio,99
+300,Podemos,99
+300,Se Acabó la Fiesta,99
+301,PSOE,0
+301,PP,2
+301,Vox,0
+301,Frente Amplio,0
+301,Podemos,2
+301,Se Acabó la Fiesta,0
+302,PSOE,4
+302,PP,10
+302,Vox,0
+302,Frente Amplio,0
+302,Podemos,0
+302,Se Acabó la Fiesta,0
+303,PSOE,2
+303,PP,2
+303,Vox,0
+303,Frente Amplio,99
+303,Podemos,99
+303,Se Acabó la Fiesta,99
+304,PSOE,10
+304,PP,0
+304,Vox,0
+304,Frente Amplio,0
+304,Podemos,0
+304,Se Acabó la Fiesta,0
+305,PSOE,3
+305,PP,7
+305,Vox,3
+305,Frente Amplio,0
+305,Podemos,1
+305,Se Acabó la Fiesta,3
+306,PSOE,4
+306,PP,2
+306,Vox,1
+306,Frente Amplio,6
+306,Podemos,4
+306,Se Acabó la Fiesta,1
+307,PSOE,5
+307,PP,3
+307,Vox,1
+307,Frente Amplio,8
+307,Podemos,4
+307,Se Acabó la Fiesta,2
+308,PSOE,0
+308,PP,9
+308,Vox,5
+308,Frente Amplio,0
+308,Podemos,0
+308,Se Acabó la Fiesta,2
+309,PSOE,5
+309,PP,9
+309,Vox,8
+309,Frente Amplio,0
+309,Podemos,0
+309,Se Acabó la Fiesta,0
+310,PSOE,1
+310,PP,2
+310,Vox,1
+310,Frente Amplio,0
+310,Podemos,3
+310,Se Acabó la Fiesta,1
+311,PSOE,3
+311,PP,2
+311,Vox,10
+311,Frente Amplio,3
+312,PSOE,99
+312,PP,99
+312,Vox,99
+312,Frente Amplio,99
+312,Podemos,99
+312,Se Acabó la Fiesta,99
+313,PSOE,5
+313,PP,7
+313,Vox,7
+313,Frente Amplio,99
+313,Podemos,99
+313,Se Acabó la Fiesta,99
+314,PSOE,5
+314,PP,2
+314,Vox,0
+314,Frente Amplio,5
+314,Se Acabó la Fiesta,0
+315,PSOE,9
+315,PP,1
+315,Vox,0
+315,Frente Amplio,6
+315,Podemos,5
+315,Se Acabó la Fiesta,6
+316,PSOE,9
+316,PP,1
+316,Vox,1
+316,Frente Amplio,1
+316,Podemos,1
+316,Se Acabó la Fiesta,1
+317,PSOE,5
+317,PP,1
+317,Vox,1
+317,Frente Amplio,7
+317,Podemos,5
+317,Se Acabó la Fiesta,1
+318,PSOE,5
+318,PP,2
+318,Vox,1
+318,Frente Amplio,3
+318,Podemos,4
+318,Se Acabó la Fiesta,4
+319,PSOE,9
+319,PP,0
+319,Vox,0
+319,Frente Amplio,1
+319,Podemos,1
+319,Se Acabó la Fiesta,0
+320,PSOE,1
+320,PP,5
+320,Vox,7
+320,Se Acabó la Fiesta,0
+320,Ara Més – Front Ampli,0
+321,PSOE,7
+321,PP,4
+321,Vox,0
+321,Frente Amplio,0
+321,Podemos,1
+321,Se Acabó la Fiesta,0
+322,PSOE,0
+322,PP,0
+322,Vox,0
+322,Frente Amplio,7
+323,PSOE,10
+323,PP,0
+323,Vox,0
+323,Frente Amplio,0
+323,Se Acabó la Fiesta,0
+324,PSOE,3
+324,PP,8
+324,Vox,10
+324,Frente Amplio,2
+324,Podemos,0
+324,Se Acabó la Fiesta,0
+325,PSOE,9
+325,PP,0
+325,Vox,0
+325,Frente Amplio,6
+325,Podemos,5
+325,Se Acabó la Fiesta,0
+326,PSOE,1
+326,PP,6
+326,Vox,8
+326,Frente Amplio,4
+326,Podemos,4
+326,Se Acabó la Fiesta,6
+327,PSOE,0
+327,PP,7
+327,Vox,4
+327,Frente Amplio,1
+327,Podemos,0
+327,Se Acabó la Fiesta,4
+328,PSOE,0
+328,PP,8
+328,Vox,7
+328,Frente Amplio,3
+328,Podemos,4
+328,Se Acabó la Fiesta,4
+329,PSOE,0
+329,PP,7
+329,Vox,8
+329,Frente Amplio,0
+329,Podemos,0
+329,Se Acabó la Fiesta,8
+330,PSOE,8
+330,PP,0
+330,Vox,0
+330,Frente Amplio,4
+330,Podemos,3
+330,Se Acabó la Fiesta,0
+331,PSOE,9
+331,PP,5
+331,Vox,0
+331,Frente Amplio,4
+331,Podemos,4
+331,Se Acabó la Fiesta,0
+332,PSOE,0
+332,PP,8
+332,Vox,0
+332,Frente Amplio,0
+332,Podemos,0
+332,Se Acabó la Fiesta,0
+333,PSOE,9
+333,PP,5
+333,Vox,3
+333,Frente Amplio,7
+333,Podemos,7
+333,Se Acabó la Fiesta,5
+334,PSOE,5
+334,PP,0
+334,Vox,0
+334,Frente Amplio,9
+334,Se Acabó la Fiesta,0
+335,PSOE,5
+335,PP,10
+335,Vox,0
+335,Frente Amplio,0
+335,Podemos,0
+335,Se Acabó la Fiesta,0
+336,PSOE,0
+336,PP,8
+336,Vox,8
+336,Frente Amplio,0
+336,Se Acabó la Fiesta,0
+337,PSOE,7
+337,PP,0
+337,Vox,0
+337,Frente Amplio,5
+337,Podemos,5
+337,Se Acabó la Fiesta,0
+338,PSOE,0
+338,PP,10
+338,Vox,0
+338,Frente Amplio,0
+338,Podemos,0
+338,Se Acabó la Fiesta,0
+339,PSOE,10
+339,PP,0
+339,Vox,0
+339,Frente Amplio,0
+339,Podemos,4
+340,PSOE,10
+340,PP,2
+340,Vox,0
+340,Frente Amplio,3
+340,Podemos,5
+340,Se Acabó la Fiesta,4
+341,PSOE,0
+341,PP,9
+341,Vox,6
+341,Frente Amplio,0
+341,Podemos,0
+342,PSOE,4
+342,PP,1
+342,Vox,0
+342,Frente Amplio,2
+342,Se Acabó la Fiesta,2
+343,PSOE,10
+343,PP,0
+343,Vox,0
+343,Frente Amplio,1
+343,Podemos,0
+343,Se Acabó la Fiesta,0
+344,PSOE,1
+344,PP,0
+344,Vox,0
+344,Frente Amplio,6
+344,Podemos,6
+344,Se Acabó la Fiesta,0
+345,PSOE,0
+345,PP,8
+345,Vox,4
+345,Frente Amplio,0
+345,Podemos,0
+345,Se Acabó la Fiesta,4
+346,PSOE,2
+346,PP,7
+346,Vox,0
+346,Frente Amplio,0
+346,Podemos,0
+346,Se Acabó la Fiesta,0
+347,PSOE,0
+347,PP,1
+347,Vox,10
+347,Frente Amplio,0
+347,Podemos,0
+347,Se Acabó la Fiesta,0
+348,PSOE,6
+348,PP,0
+348,Vox,0
+348,Se Acabó la Fiesta,3
+348,Compromís: Front Valencià,10
+349,PSOE,2
+349,PP,3
+349,Vox,2
+349,Frente Amplio,2
+349,Podemos,9
+349,Se Acabó la Fiesta,2
+350,PSOE,10
+350,PP,0
+350,Vox,0
+350,Frente Amplio,4
+350,Podemos,0
+350,Se Acabó la Fiesta,5
+351,PSOE,5
+351,PP,0
+351,Vox,0
+351,Frente Amplio,6
+351,Se Acabó la Fiesta,0
+352,PSOE,1
+352,PP,6
+352,Vox,0
+352,Frente Amplio,1
+352,Podemos,0
+352,Se Acabó la Fiesta,0
+353,PSOE,4
+353,PP,6
+353,Vox,0
+353,Se Acabó la Fiesta,0
+353,Unidad del Pueblo Canario,0
+354,PSOE,9
+354,PP,0
+354,Vox,0
+354,Frente Amplio,9
+354,Podemos,8
+354,Se Acabó la Fiesta,0
+355,PSOE,0
+355,PP,7
+355,Vox,7
+355,Frente Amplio,0
+355,Podemos,0
+355,Se Acabó la Fiesta,5
+356,PSOE,0
+356,PP,8
+356,Vox,6
+356,Frente Amplio,0
+356,Podemos,1
+356,Se Acabó la Fiesta,3
+357,PSOE,7
+357,PP,4
+357,Vox,0
+357,Frente Amplio,6
+357,Podemos,2
+357,Se Acabó la Fiesta,1
+358,PSOE,0
+358,PP,8
+358,Vox,4
+358,Frente Amplio,1
+358,Podemos,0
+358,Se Acabó la Fiesta,0
+359,PSOE,9
+359,PP,4
+359,Vox,0
+359,Frente Amplio,7
+359,Podemos,7
+359,Se Acabó la Fiesta,3
+360,PSOE,0
+360,PP,0
+360,Vox,10
+360,Se Acabó la Fiesta,99
+360,Compromís: Front Valencià,99
+361,PSOE,5
+361,PP,10
+361,Vox,2
+361,Frente Amplio,3
+361,Se Acabó la Fiesta,3
+362,PSOE,10
+362,PP,0
+362,Vox,0
+362,Frente Amplio,5
+362,Podemos,5
+362,Se Acabó la Fiesta,0
+363,PSOE,1
+363,PP,99
+363,Vox,99
+363,Frente Amplio,99
+363,Podemos,99
+363,Se Acabó la Fiesta,1
+364,PSOE,5
+364,PP,2
+364,Vox,2
+364,Se Acabó la Fiesta,0
+364,Compromís: Front Valencià,8
+365,PSOE,0
+365,PP,0
+365,Vox,1
+365,Frente Amplio,0
+365,Podemos,0
+365,Se Acabó la Fiesta,2
+366,PSOE,5
+366,PP,99
+366,Vox,2
+366,Se Acabó la Fiesta,0
+366,Compromís: Front Valencià,1
+367,PSOE,0
+367,PP,7
+367,Vox,9
+367,Frente Amplio,3
+367,Podemos,1
+367,Se Acabó la Fiesta,0
+368,PSOE,0
+368,PP,7
+368,Vox,2
+368,Se Acabó la Fiesta,99
+368,Compromís: Front Valencià,99
+369,PSOE,10
+369,PP,0
+369,Vox,0
+369,Frente Amplio,7
+369,Podemos,5
+369,Se Acabó la Fiesta,0
+370,PSOE,0
+370,PP,0
+370,Vox,0
+370,Frente Amplio,0
+370,Podemos,0
+370,Se Acabó la Fiesta,0
+371,PSOE,6
+371,PP,10
+371,Vox,3
+371,Frente Amplio,1
+371,Podemos,0
+371,Se Acabó la Fiesta,0
+372,PSOE,1
+372,PP,5
+372,Vox,5
+372,Se Acabó la Fiesta,5
+372,Compromís: Front Valencià,5
+373,PSOE,4
+373,PP,4
+373,Vox,0
+373,Se Acabó la Fiesta,4
+373,Ara Més – Front Ampli,3
+374,PSOE,4
+374,PP,4
+374,Vox,7
+374,Se Acabó la Fiesta,3
+374,Compromís: Front Valencià,9
+375,PSOE,3
+375,PP,9
+375,Vox,7
+375,Frente Amplio,3
+376,PSOE,8
+376,PP,10
+376,Vox,4
+376,Frente Amplio,6
+376,Se Acabó la Fiesta,9
+377,PSOE,3
+377,PP,4
+377,Vox,7
+377,Frente Amplio,2
+377,Podemos,4
+377,Se Acabó la Fiesta,2
+378,PSOE,8
+378,PP,0
+378,Vox,0
+378,Frente Amplio,2
+378,Podemos,5
+378,Se Acabó la Fiesta,2
+379,PSOE,0
+379,PP,99
+379,Vox,10
+379,Frente Amplio,1
+379,Podemos,99
+379,Se Acabó la Fiesta,0
+380,PSOE,0
+380,PP,0
+380,Vox,0
+380,Frente Amplio,2
+380,Podemos,2
+380,Se Acabó la Fiesta,0
+381,PSOE,8
+381,PP,2
+381,Vox,0
+381,Frente Amplio,5
+381,Podemos,5
+381,Se Acabó la Fiesta,0
+382,PSOE,8
+382,PP,2
+382,Vox,0
+382,Frente Amplio,5
+382,Se Acabó la Fiesta,4
+383,PSOE,8
+383,PP,0
+383,Vox,0
+383,Frente Amplio,0
+383,Podemos,4
+383,Se Acabó la Fiesta,0
+384,PSOE,0
+384,PP,10
+384,Vox,5
+384,Se Acabó la Fiesta,0
+384,Compromís: Front Valencià,0
+385,PSOE,1
+385,PP,9
+385,Vox,8
+385,Frente Amplio,2
+385,Podemos,3
+385,Se Acabó la Fiesta,99
+386,PSOE,0
+386,PP,9
+386,Vox,10
+386,Frente Amplio,0
+386,Podemos,0
+386,Se Acabó la Fiesta,6
+387,PSOE,9
+387,PP,0
+387,Vox,0
+387,Frente Amplio,7
+387,Se Acabó la Fiesta,0
+388,PSOE,10
+388,PP,2
+388,Vox,0
+388,Frente Amplio,2
+388,Se Acabó la Fiesta,2
+389,PSOE,0
+389,PP,9
+389,Vox,10
+389,Frente Amplio,0
+389,Podemos,0
+389,Se Acabó la Fiesta,5
+390,PSOE,0
+390,PP,0
+390,Vox,0
+390,Frente Amplio,0
+390,Podemos,0
+391,PSOE,0
+391,PP,9
+391,Vox,8
+391,Frente Amplio,0
+391,Podemos,0
+391,Se Acabó la Fiesta,0
+392,PSOE,9
+392,PP,2
+392,Vox,3
+392,Se Acabó la Fiesta,3
+392,Compromís: Front Valencià,3
+393,PSOE,5
+393,PP,0
+393,Vox,0
+393,Se Acabó la Fiesta,0
+393,Compromís: Front Valencià,6
+394,PSOE,1
+394,PP,0
+394,Vox,0
+394,Frente Amplio,0
+394,Podemos,0
+394,Se Acabó la Fiesta,0
+395,PSOE,8
+395,PP,0
+395,Vox,0
+395,Se Acabó la Fiesta,0
+395,Compromís: Front Valencià,7
+396,PSOE,0
+396,PP,7
+396,Vox,6
+396,Frente Amplio,0
+396,Se Acabó la Fiesta,5
+397,PSOE,10
+397,PP,0
+397,Vox,0
+397,Frente Amplio,0
+397,Podemos,0
+398,PSOE,99
+398,Vox,99
+398,Frente Amplio,99
+398,Podemos,99
+398,Se Acabó la Fiesta,99
+398,UPN-PP,99
+399,PSOE,9
+399,PP,3
+399,Vox,1
+399,Frente Amplio,2
+399,Se Acabó la Fiesta,5
+400,PSOE,9
+400,Vox,0
+400,Frente Amplio,3
+400,Podemos,4
+400,Se Acabó la Fiesta,0
+400,UPN-PP,0
+401,PSOE,99
+401,PP,99
+401,Vox,99
+401,Frente Amplio,99
+401,Se Acabó la Fiesta,99
+402,PSOE,0
+402,PP,5
+402,Vox,10
+402,Frente Amplio,0
+402,Podemos,1
+402,Se Acabó la Fiesta,5
+403,PSOE,1
+403,PP,10
+403,Vox,9
+403,Frente Amplio,2
+403,Podemos,1
+403,Se Acabó la Fiesta,7
+404,PSOE,3
+404,PP,7
+404,Vox,5
+404,Frente Amplio,5
+404,Podemos,4
+404,Se Acabó la Fiesta,6
+405,PSOE,0
+405,PP,5
+405,Vox,3
+405,Frente Amplio,0
+405,Podemos,0
+405,Se Acabó la Fiesta,0
+406,PSOE,0
+406,PP,0
+406,Vox,0
+406,Se Acabó la Fiesta,0
+406,Ara Més – Front Ampli,0
+407,PSOE,8
+407,PP,0
+407,Vox,0
+407,Frente Amplio,0
+407,Podemos,1
+407,Se Acabó la Fiesta,0
+408,PSOE,10
+408,PP,0
+408,Vox,0
+408,Frente Amplio,0
+408,Podemos,9
+408,Se Acabó la Fiesta,0
+409,PSOE,4
+409,PP,4
+409,Vox,0
+409,Frente Amplio,2
+409,Podemos,2
+409,Se Acabó la Fiesta,0
+410,PSOE,10
+410,PP,0
+410,Vox,0
+410,Frente Amplio,0
+410,Podemos,7
+410,Se Acabó la Fiesta,0
+411,PSOE,0
+411,PP,1
+411,Vox,10
+411,Se Acabó la Fiesta,2
+411,Compromís: Front Valencià,1
+412,PSOE,0
+412,PP,10
+412,Vox,7
+412,Se Acabó la Fiesta,6
+412,Compromís: Front Valencià,0
+413,PSOE,3
+413,PP,10
+413,Vox,6
+413,Frente Amplio,0
+413,Podemos,0
+413,Se Acabó la Fiesta,3
+414,PSOE,10
+414,PP,0
+414,Vox,0
+414,Frente Amplio,7
+414,Podemos,5
+414,Se Acabó la Fiesta,0
+415,PSOE,8
+415,PP,0
+415,Vox,0
+415,Se Acabó la Fiesta,0
+415,Compromís: Front Valencià,7
+416,PSOE,8
+416,PP,0
+416,Vox,0
+416,Se Acabó la Fiesta,0
+416,Unidad del Pueblo Canario,0
+417,PSOE,0
+417,PP,10
+417,Vox,1
+417,Frente Amplio,0
+417,Se Acabó la Fiesta,0
+418,PSOE,0
+418,PP,10
+418,Vox,5
+418,Frente Amplio,0
+418,Podemos,0
+418,Se Acabó la Fiesta,0
+419,PSOE,10
+419,PP,0
+419,Vox,0
+419,Frente Amplio,0
+419,Se Acabó la Fiesta,0
+420,PSOE,0
+420,PP,0
+420,Vox,0
+420,Frente Amplio,1
+420,Podemos,0
+420,Se Acabó la Fiesta,7
+421,PSOE,0
+421,PP,3
+421,Vox,3
+421,Frente Amplio,0
+421,Se Acabó la Fiesta,0
+422,PSOE,0
+422,PP,10
+422,Vox,10
+422,Se Acabó la Fiesta,0
+422,Unidad del Pueblo Canario,0
+423,PSOE,9
+423,PP,2
+423,Vox,7
+423,Se Acabó la Fiesta,2
+423,Unidad del Pueblo Canario,5
+424,PSOE,9
+424,PP,0
+424,Vox,0
+424,Se Acabó la Fiesta,0
+424,Compromís: Front Valencià,8
+425,PSOE,10
+425,PP,5
+425,Vox,8
+425,Frente Amplio,9
+425,Podemos,5
+425,Se Acabó la Fiesta,8
+426,PSOE,10
+426,PP,0
+426,Vox,0
+426,Se Acabó la Fiesta,99
+426,Ara Més – Front Ampli,5
+427,PSOE,0
+427,PP,10
+427,Vox,8
+427,Frente Amplio,0
+427,Podemos,0
+428,PSOE,0
+428,PP,0
+428,Vox,0
+428,Frente Amplio,0
+428,Podemos,0
+429,PSOE,9
+429,PP,3
+429,Vox,0
+429,Frente Amplio,1
+429,Podemos,2
+430,PSOE,4
+430,PP,0
+430,Vox,0
+430,Se Acabó la Fiesta,0
+430,Ara Més – Front Ampli,0
+431,PSOE,9
+431,PP,0
+431,Vox,0
+431,Frente Amplio,0
+431,Podemos,0
+431,Se Acabó la Fiesta,99
+432,PSOE,0
+432,PP,10
+432,Vox,8
+432,Frente Amplio,0
+432,Podemos,0
+433,PSOE,3
+433,PP,7
+433,Vox,3
+433,Frente Amplio,0
+433,Podemos,0
+433,Se Acabó la Fiesta,3
+434,PSOE,10
+434,PP,0
+434,Vox,0
+434,Se Acabó la Fiesta,0
+434,Ara Més – Front Ampli,8
+435,PSOE,0
+435,PP,10
+435,Vox,10
+435,Se Acabó la Fiesta,0
+435,Ara Més – Front Ampli,0
+436,PSOE,7
+436,PP,2
+436,Vox,0
+436,Se Acabó la Fiesta,0
+436,Ara Més – Front Ampli,4
+437,PSOE,1
+437,PP,5
+437,Vox,0
+437,Se Acabó la Fiesta,0
+437,Ara Més – Front Ampli,0
+438,PSOE,3
+438,PP,5
+438,Vox,0
+438,Se Acabó la Fiesta,0
+438,Ara Més – Front Ampli,5
+439,PSOE,9
+439,PP,2
+439,Vox,0
+439,Se Acabó la Fiesta,3
+439,Compromís: Front Valencià,3
+440,PSOE,1
+440,PP,0
+440,Vox,0
+440,Frente Amplio,1
+440,Se Acabó la Fiesta,0
+441,PSOE,5
+441,PP,0
+441,Vox,0
+441,Frente Amplio,10
+441,Se Acabó la Fiesta,0
+442,PSOE,0
+442,PP,9
+442,Vox,10
+442,Frente Amplio,0
+442,Podemos,0
+442,Se Acabó la Fiesta,0
+443,PSOE,99
+443,PP,99
+443,Vox,99
+443,Frente Amplio,99
+443,Se Acabó la Fiesta,99
+444,PSOE,1
+444,PP,9
+444,Vox,7
+444,Frente Amplio,1
+444,Podemos,1
+444,Se Acabó la Fiesta,2
+445,PSOE,10
+445,PP,0
+445,Vox,0
+445,Se Acabó la Fiesta,0
+445,Compromís: Front Valencià,9
+446,PSOE,0
+446,PP,10
+446,Vox,0
+446,Se Acabó la Fiesta,0
+446,Compromís: Front Valencià,0
+447,PSOE,5
+447,PP,7
+447,Vox,4
+447,Frente Amplio,3
+447,Podemos,0
+447,Se Acabó la Fiesta,2
+448,PSOE,8
+448,PP,0
+448,Vox,0
+448,Frente Amplio,0
+448,Se Acabó la Fiesta,0
+449,PSOE,7
+449,PP,0
+449,Vox,0
+449,Frente Amplio,7
+449,Podemos,9
+449,Se Acabó la Fiesta,0
+450,PSOE,8
+450,PP,8
+450,Vox,7
+450,Se Acabó la Fiesta,8
+450,Unidad del Pueblo Canario,6
+451,PSOE,99
+451,PP,99
+451,Vox,0
+451,Frente Amplio,99
+451,Podemos,99
+452,PSOE,10
+452,PP,0
+452,Vox,0
+452,Se Acabó la Fiesta,0
+452,Compromís: Front Valencià,9
+453,PSOE,0
+453,PP,10
+453,Vox,7
+453,Se Acabó la Fiesta,0
+453,Compromís: Front Valencià,0
+454,PSOE,10
+454,PP,6
+454,Vox,7
+454,Frente Amplio,7
+454,Podemos,7
+454,Se Acabó la Fiesta,3
+455,PSOE,0
+455,PP,10
+455,Vox,9
+455,Frente Amplio,0
+455,Podemos,0
+455,Se Acabó la Fiesta,5
+456,PSOE,0
+456,PP,7
+456,Vox,8
+456,Frente Amplio,0
+456,Podemos,0
+456,Se Acabó la Fiesta,5
+457,PSOE,0
+457,PP,0
+457,Vox,0
+457,Frente Amplio,0
+457,Podemos,0
+457,Se Acabó la Fiesta,0
+458,PSOE,1
+458,PP,7
+458,Vox,8
+458,Se Acabó la Fiesta,6
+458,Compromís: Front Valencià,8
+459,PSOE,0
+459,PP,10
+459,Vox,5
+459,Se Acabó la Fiesta,0
+459,Compromís: Front Valencià,0
+460,PSOE,7
+460,PP,8
+460,Vox,8
+460,Frente Amplio,10
+460,Podemos,0
+460,Se Acabó la Fiesta,9
+461,PSOE,0
+461,PP,7
+461,Vox,0
+461,Frente Amplio,2
+462,PSOE,0
+462,PP,0
+462,Vox,10
+462,Se Acabó la Fiesta,0
+462,Unidad del Pueblo Canario,0
+463,PSOE,10
+463,PP,0
+463,Vox,0
+463,Frente Amplio,8
+463,Podemos,8
+463,Se Acabó la Fiesta,0
+464,PSOE,0
+464,PP,8
+464,Vox,8
+464,Frente Amplio,0
+464,Podemos,0
+464,Se Acabó la Fiesta,9
+465,PSOE,0
+465,PP,0
+465,Vox,0
+465,Frente Amplio,9
+465,Podemos,8
+465,Se Acabó la Fiesta,0
+466,PSOE,0
+466,PP,5
+466,Vox,0
+466,Frente Amplio,1
+466,Podemos,0
+466,Se Acabó la Fiesta,0
+467,PSOE,10
+467,PP,2
+467,Vox,0
+467,Se Acabó la Fiesta,0
+467,Unidad del Pueblo Canario,1
+468,PSOE,0
+468,PP,10
+468,Vox,9
+468,Se Acabó la Fiesta,8
+468,Ara Més – Front Ampli,1
+469,PSOE,0
+469,PP,10
+469,Vox,7
+469,Frente Amplio,0
+469,Podemos,0
+469,Se Acabó la Fiesta,0
+470,PSOE,1
+470,PP,0
+470,Vox,0
+470,Frente Amplio,0
+471,PSOE,4
+471,PP,7
+471,Vox,7
+471,Se Acabó la Fiesta,7
+471,Compromís: Front Valencià,4
+472,PSOE,10
+472,PP,0
+472,Vox,0
+472,Se Acabó la Fiesta,0
+472,Compromís: Front Valencià,0
+473,PSOE,0
+473,PP,7
+473,Vox,10
+473,Frente Amplio,0
+473,Podemos,0
+473,Se Acabó la Fiesta,10
+474,PSOE,0
+474,PP,0
+474,Vox,0
+474,Frente Amplio,0
+474,Podemos,0
+474,Se Acabó la Fiesta,0
+475,PSOE,1
+475,PP,9
+475,Vox,8
+475,Frente Amplio,1
+475,Podemos,1
+475,Se Acabó la Fiesta,5
+476,PSOE,0
+476,PP,9
+476,Vox,8
+476,Frente Amplio,0
+476,Podemos,0
+476,Se Acabó la Fiesta,7
+477,PSOE,5
+477,PP,0
+477,Vox,0
+477,Frente Amplio,6
+477,Se Acabó la Fiesta,0
+478,PSOE,6
+478,PP,5
+478,Vox,5
+478,Frente Amplio,3
+478,Podemos,3
+478,Se Acabó la Fiesta,4
+479,PSOE,0
+479,PP,99
+479,Vox,0
+479,Frente Amplio,0
+479,Podemos,0
+479,Se Acabó la Fiesta,0
+480,PSOE,0
+480,PP,5
+480,Vox,0
+480,Se Acabó la Fiesta,5
+480,Compromís: Front Valencià,99
+481,PSOE,99
+481,PP,99
+481,Vox,99
+481,Frente Amplio,99
+481,Podemos,99
+481,Se Acabó la Fiesta,99
+482,PSOE,10
+482,PP,0
+482,Vox,0
+482,Frente Amplio,8
+482,Podemos,0
+482,Se Acabó la Fiesta,0
+483,PSOE,9
+483,PP,0
+483,Vox,0
+483,Frente Amplio,5
+483,Podemos,5
+483,Se Acabó la Fiesta,0
+484,PSOE,3
+484,PP,1
+484,Vox,0
+484,Frente Amplio,3
+484,Podemos,4
+484,Se Acabó la Fiesta,2
+485,PSOE,0
+485,PP,0
+485,Vox,0
+485,Frente Amplio,0
+485,Podemos,0
+485,Se Acabó la Fiesta,0
+486,PSOE,99
+486,PP,99
+486,Vox,99
+486,Se Acabó la Fiesta,99
+486,Compromís: Front Valencià,99
+487,PSOE,9
+487,PP,3
+487,Vox,2
+487,Frente Amplio,2
+487,Podemos,4
+487,Se Acabó la Fiesta,2
+488,PSOE,7
+488,PP,0
+488,Vox,0
+488,Frente Amplio,7
+488,Podemos,5
+488,Se Acabó la Fiesta,0
+489,PSOE,10
+489,PP,0
+489,Vox,0
+489,Frente Amplio,0
+489,Podemos,0
+489,Se Acabó la Fiesta,0
+490,PSOE,0
+490,PP,9
+490,Vox,10
+490,Se Acabó la Fiesta,5
+490,Compromís: Front Valencià,0
+491,PSOE,7
+491,PP,1
+491,Vox,0
+491,Frente Amplio,5
+492,PSOE,9
+492,PP,0
+492,Vox,0
+492,Frente Amplio,7
+492,Podemos,0
+492,Se Acabó la Fiesta,0
+493,PSOE,0
+493,PP,5
+493,Vox,10
+493,Se Acabó la Fiesta,8
+493,Unidad del Pueblo Canario,0
+494,PSOE,8
+494,PP,2
+494,Vox,0
+494,Frente Amplio,6
+494,Podemos,4
+494,Se Acabó la Fiesta,5
+495,PSOE,0
+495,PP,10
+495,Vox,6
+495,Frente Amplio,0
+495,Podemos,0
+495,Se Acabó la Fiesta,0
+496,PSOE,10
+496,PP,0
+496,Vox,0
+496,Frente Amplio,8
+496,Podemos,0
+496,Se Acabó la Fiesta,0
+497,PSOE,9
+497,PP,0
+497,Vox,0
+497,Se Acabó la Fiesta,8
+497,Unidad del Pueblo Canario,0
+498,PSOE,0
+498,PP,0
+498,Vox,0
+498,Frente Amplio,0
+498,Se Acabó la Fiesta,0
+499,PSOE,4
+499,PP,0
+499,Vox,0
+499,Frente Amplio,5
+499,Se Acabó la Fiesta,0
+500,PSOE,0
+500,PP,0
+500,Vox,10
+500,Frente Amplio,0
+500,Podemos,0
+500,Se Acabó la Fiesta,0
+501,PSOE,10
+501,PP,0
+501,Vox,0
+501,Frente Amplio,9
+502,PSOE,0
+502,PP,0
+502,Vox,10
+502,Frente Amplio,0
+502,Podemos,0
+502,Se Acabó la Fiesta,0
+503,PSOE,0
+503,PP,10
+503,Vox,7
+503,Se Acabó la Fiesta,0
+503,Compromís: Front Valencià,0
+504,PSOE,1
+504,PP,4
+504,Vox,3
+504,Se Acabó la Fiesta,2
+504,Compromís: Front Valencià,1
+505,PSOE,1
+505,PP,6
+505,Vox,1
+505,Frente Amplio,0
+505,Podemos,0
+505,Se Acabó la Fiesta,0
+506,PSOE,4
+506,PP,10
+506,Vox,8
+506,Frente Amplio,6
+506,Podemos,0
+506,Se Acabó la Fiesta,0
+507,PSOE,0
+507,PP,10
+507,Vox,0
+507,Frente Amplio,0
+507,Podemos,0
+507,Se Acabó la Fiesta,0
+508,PSOE,0
+508,PP,9
+508,Vox,5
+508,Frente Amplio,1
+508,Podemos,1
+508,Se Acabó la Fiesta,1
+509,PSOE,0
+509,PP,9
+509,Vox,4
+509,Frente Amplio,0
+509,Podemos,0
+509,Se Acabó la Fiesta,0
+510,PSOE,9
+510,PP,0
+510,Vox,1
+510,Frente Amplio,6
+510,Podemos,7
+510,Se Acabó la Fiesta,2
+511,PSOE,0
+511,PP,9
+511,Vox,8
+511,Frente Amplio,1
+511,Podemos,0
+511,Se Acabó la Fiesta,2
+512,PSOE,0
+512,PP,6
+512,Vox,10
+512,Frente Amplio,0
+512,Podemos,0
+512,Se Acabó la Fiesta,0
+513,PSOE,9
+513,PP,0
+513,Vox,0
+513,Frente Amplio,9
+513,Podemos,9
+513,Se Acabó la Fiesta,0
+514,PSOE,10
+514,PP,0
+514,Vox,0
+514,Frente Amplio,5
+514,Se Acabó la Fiesta,0
+515,PSOE,10
+515,PP,0
+515,Vox,0
+515,Frente Amplio,2
+515,Podemos,1
+515,Se Acabó la Fiesta,0
+516,PSOE,0
+516,PP,9
+516,Vox,8
+516,Frente Amplio,0
+516,Podemos,0
+516,Se Acabó la Fiesta,0
+517,PSOE,0
+517,PP,10
+517,Vox,5
+517,Frente Amplio,1
+517,Podemos,1
+517,Se Acabó la Fiesta,1
+518,PSOE,3
+518,PP,10
+518,Vox,10
+518,Se Acabó la Fiesta,0
+518,Compromís: Front Valencià,0
+519,PSOE,1
+519,PP,6
+519,Vox,7
+519,Frente Amplio,1
+519,Podemos,1
+519,Se Acabó la Fiesta,5
+520,PSOE,0
+520,PP,9
+520,Vox,8
+520,Frente Amplio,0
+520,Se Acabó la Fiesta,0
+521,PSOE,1
+521,PP,5
+521,Vox,8
+521,Frente Amplio,0
+521,Podemos,0
+521,Se Acabó la Fiesta,4
+522,PSOE,4
+522,PP,4
+522,Vox,4
+522,Frente Amplio,6
+522,Podemos,4
+522,Se Acabó la Fiesta,10
+523,PSOE,5
+523,PP,5
+523,Vox,0
+523,Frente Amplio,0
+523,Podemos,0
+523,Se Acabó la Fiesta,0
+524,PSOE,0
+524,PP,8
+524,Vox,10
+524,Frente Amplio,0
+524,Podemos,0
+524,Se Acabó la Fiesta,2
+525,PSOE,0
+525,PP,9
+525,Vox,7
+525,Frente Amplio,0
+525,Se Acabó la Fiesta,4
+526,PSOE,5
+526,PP,0
+526,Vox,0
+526,Frente Amplio,4
+526,Se Acabó la Fiesta,0
+527,PSOE,7
+527,PP,0
+527,Vox,0
+527,Frente Amplio,4
+527,Podemos,4
+528,PSOE,8
+528,PP,0
+528,Vox,0
+528,Frente Amplio,7
+528,Se Acabó la Fiesta,0
+529,PSOE,1
+529,PP,7
+529,Vox,9
+529,Se Acabó la Fiesta,1
+529,Compromís: Front Valencià,0
+530,PSOE,0
+530,PP,6
+530,Vox,8
+530,Frente Amplio,0
+530,Se Acabó la Fiesta,7
+531,PSOE,0
+531,PP,6
+531,Vox,8
+531,Frente Amplio,4
+531,Podemos,0
+531,Se Acabó la Fiesta,5
+532,PSOE,6
+532,PP,10
+532,Vox,8
+532,Frente Amplio,0
+532,Podemos,0
+533,PSOE,0
+533,PP,0
+533,Vox,0
+533,Frente Amplio,3
+533,Podemos,3
+533,Se Acabó la Fiesta,0
+534,PSOE,10
+534,PP,3
+534,Vox,5
+534,Frente Amplio,0
+534,Podemos,1
+534,Se Acabó la Fiesta,1
+535,PSOE,7
+535,PP,6
+535,Vox,0
+535,Frente Amplio,3
+535,Podemos,5
+535,Se Acabó la Fiesta,2
+536,PSOE,7
+536,PP,0
+536,Vox,0
+536,Frente Amplio,6
+536,Podemos,3
+536,Se Acabó la Fiesta,0
+537,PSOE,7
+537,PP,3
+537,Vox,2
+537,Frente Amplio,3
+537,Podemos,3
+537,Se Acabó la Fiesta,0
+538,PSOE,0
+538,PP,7
+538,Vox,10
+538,Se Acabó la Fiesta,0
+538,Compromís: Front Valencià,0
+539,PSOE,9
+539,PP,0
+539,Vox,0
+539,Se Acabó la Fiesta,0
+539,Ara Més – Front Ampli,0
+540,PSOE,0
+540,PP,9
+540,Vox,0
+540,Se Acabó la Fiesta,0
+540,Unidad del Pueblo Canario,0
+541,PSOE,8
+541,PP,0
+541,Vox,0
+541,Frente Amplio,9
+541,Podemos,2
+541,Se Acabó la Fiesta,0
+542,PSOE,3
+542,PP,9
+542,Vox,10
+542,Frente Amplio,0
+542,Se Acabó la Fiesta,9
+543,PSOE,0
+543,PP,7
+543,Vox,8
+543,Frente Amplio,0
+543,Podemos,0
+543,Se Acabó la Fiesta,2
+544,PSOE,9
+544,PP,0
+544,Vox,0
+544,Frente Amplio,8
+544,Podemos,8
+544,Se Acabó la Fiesta,0
+545,PSOE,0
+545,PP,8
+545,Vox,10
+545,Se Acabó la Fiesta,8
+545,Unidad del Pueblo Canario,0
+546,PSOE,7
+546,PP,3
+546,Vox,0
+546,Frente Amplio,0
+546,Se Acabó la Fiesta,0
+547,PSOE,0
+547,PP,0
+547,Vox,0
+547,Frente Amplio,4
+547,Podemos,0
+547,Se Acabó la Fiesta,0
+548,PSOE,10
+548,PP,0
+548,Vox,0
+548,Frente Amplio,5
+548,Podemos,0
+548,Se Acabó la Fiesta,0
+549,PSOE,8
+549,PP,0
+549,Vox,0
+549,Frente Amplio,7
+549,Se Acabó la Fiesta,0
+550,PSOE,8
+550,PP,2
+550,Vox,0
+550,Frente Amplio,99
+550,Podemos,0
+550,Se Acabó la Fiesta,0
+551,PSOE,6
+551,PP,0
+551,Vox,0
+551,Se Acabó la Fiesta,10
+551,Compromís: Front Valencià,6
+552,PSOE,0
+552,PP,8
+552,Vox,10
+552,Frente Amplio,0
+552,Podemos,0
+552,Se Acabó la Fiesta,9
+553,PSOE,10
+553,PP,0
+553,Vox,0
+553,Frente Amplio,6
+553,Podemos,6
+553,Se Acabó la Fiesta,3
+554,PSOE,0
+554,PP,2
+554,Vox,10
+554,Frente Amplio,0
+554,Podemos,0
+554,Se Acabó la Fiesta,2
+555,PSOE,0
+555,PP,10
+555,Vox,5
+555,Frente Amplio,0
+555,Podemos,0
+555,Se Acabó la Fiesta,0
+556,PSOE,10
+556,PP,0
+556,Vox,0
+556,Frente Amplio,6
+556,Podemos,3
+556,Se Acabó la Fiesta,0
+557,PSOE,10
+557,PP,0
+557,Vox,0
+557,Frente Amplio,7
+557,Se Acabó la Fiesta,0
+558,PSOE,10
+558,PP,0
+558,Vox,0
+558,Frente Amplio,10
+558,Podemos,10
+558,Se Acabó la Fiesta,0
+559,PSOE,10
+559,PP,0
+559,Vox,0
+559,Frente Amplio,5
+559,Podemos,5
+559,Se Acabó la Fiesta,0
+560,PSOE,0
+560,PP,10
+560,Vox,0
+560,Frente Amplio,0
+560,Podemos,0
+560,Se Acabó la Fiesta,0
+561,PSOE,5
+561,PP,9
+561,Vox,10
+561,Frente Amplio,4
+561,Podemos,0
+561,Se Acabó la Fiesta,8
+562,PSOE,0
+562,PP,3
+562,Vox,3
+562,Frente Amplio,0
+562,Podemos,0
+562,Se Acabó la Fiesta,3
+563,PSOE,10
+563,PP,0
+563,Vox,0
+563,Frente Amplio,6
+563,Se Acabó la Fiesta,0
+564,PSOE,0
+564,PP,9
+564,Vox,10
+564,Frente Amplio,0
+564,Podemos,0
+564,Se Acabó la Fiesta,0
+565,PSOE,0
+565,PP,0
+565,Vox,0
+565,Frente Amplio,6
+566,PSOE,3
+566,PP,8
+566,Vox,4
+566,Frente Amplio,0
+566,Podemos,0
+566,Se Acabó la Fiesta,3
+567,PSOE,0
+567,PP,6
+567,Vox,8
+567,Frente Amplio,0
+567,Podemos,0
+567,Se Acabó la Fiesta,2
+568,PSOE,1
+568,PP,2
+568,Vox,1
+568,Frente Amplio,9
+568,Podemos,2
+568,Se Acabó la Fiesta,1
+569,PSOE,0
+569,PP,6
+569,Vox,10
+569,Frente Amplio,2
+569,Se Acabó la Fiesta,5
+570,PSOE,1
+570,PP,10
+570,Vox,2
+570,Frente Amplio,0
+570,Podemos,0
+570,Se Acabó la Fiesta,0
+571,PSOE,10
+571,PP,0
+571,Vox,0
+571,Frente Amplio,9
+571,Podemos,8
+571,Se Acabó la Fiesta,0
+572,PSOE,0
+572,PP,0
+572,Vox,0
+572,Frente Amplio,0
+572,Podemos,0
+572,Se Acabó la Fiesta,0
+573,PSOE,8
+573,PP,5
+573,Vox,1
+573,Frente Amplio,9
+573,Podemos,3
+573,Se Acabó la Fiesta,2
+574,PSOE,1
+574,PP,9
+574,Vox,6
+574,Frente Amplio,0
+574,Podemos,0
+574,Se Acabó la Fiesta,2
+575,PSOE,3
+575,Vox,0
+575,Frente Amplio,1
+575,Podemos,0
+575,Se Acabó la Fiesta,0
+575,UPN-PP,3
+576,PSOE,0
+576,PP,10
+576,Vox,6
+576,Frente Amplio,0
+576,Podemos,0
+576,Se Acabó la Fiesta,0
+577,PSOE,0
+577,PP,10
+577,Vox,5
+577,Frente Amplio,0
+577,Podemos,0
+577,Se Acabó la Fiesta,0
+578,PSOE,10
+578,PP,0
+578,Vox,0
+578,Se Acabó la Fiesta,0
+578,Compromís: Front Valencià,7
+579,PSOE,10
+579,PP,0
+579,Vox,0
+579,Frente Amplio,5
+579,Podemos,5
+579,Se Acabó la Fiesta,0
+580,PSOE,0
+580,PP,10
+580,Vox,8
+580,Frente Amplio,0
+580,Podemos,0
+580,Se Acabó la Fiesta,0
+581,PSOE,0
+581,PP,8
+581,Vox,10
+581,Frente Amplio,0
+581,Podemos,0
+581,Se Acabó la Fiesta,0
+582,PSOE,1
+582,PP,4
+582,Vox,1
+582,Frente Amplio,3
+582,Se Acabó la Fiesta,2
+583,PSOE,10
+583,PP,0
+583,Vox,0
+583,Frente Amplio,6
+583,Podemos,6
+583,Se Acabó la Fiesta,0
+584,PSOE,10
+584,PP,0
+584,Vox,0
+584,Frente Amplio,5
+584,Podemos,0
+584,Se Acabó la Fiesta,0
+585,PSOE,10
+585,PP,0
+585,Vox,0
+585,Frente Amplio,0
+585,Podemos,0
+586,PSOE,0
+586,PP,0
+586,Vox,0
+586,Frente Amplio,0
+586,Se Acabó la Fiesta,0
+587,PSOE,0
+587,PP,9
+587,Vox,10
+587,Frente Amplio,0
+587,Podemos,0
+587,Se Acabó la Fiesta,5
+588,PSOE,0
+588,PP,9
+588,Vox,10
+588,Frente Amplio,0
+588,Podemos,0
+588,Se Acabó la Fiesta,0
+589,PSOE,3
+589,PP,0
+589,Vox,0
+589,Frente Amplio,0
+589,Se Acabó la Fiesta,0
+590,PSOE,0
+590,PP,8
+590,Vox,5
+590,Frente Amplio,0
+590,Podemos,0
+590,Se Acabó la Fiesta,0
+591,PSOE,3
+591,PP,0
+591,Vox,0
+591,Frente Amplio,10
+591,Podemos,8
+591,Se Acabó la Fiesta,0
+592,PSOE,2
+592,PP,10
+592,Vox,5
+592,Frente Amplio,0
+592,Se Acabó la Fiesta,0
+593,PSOE,0
+593,PP,0
+593,Vox,10
+593,Se Acabó la Fiesta,8
+593,Compromís: Front Valencià,1
+594,PSOE,1
+594,PP,8
+594,Vox,1
+594,Frente Amplio,1
+594,Podemos,0
+594,Se Acabó la Fiesta,1
+595,PSOE,6
+595,PP,3
+595,Vox,0
+595,Frente Amplio,8
+595,Se Acabó la Fiesta,1
+596,PSOE,0
+596,PP,8
+596,Vox,10
+596,Se Acabó la Fiesta,8
+596,Compromís: Front Valencià,0
+597,PSOE,0
+597,PP,6
+597,Vox,10
+597,Se Acabó la Fiesta,6
+597,Unidad del Pueblo Canario,0
+598,PSOE,9
+598,PP,4
+598,Vox,0
+598,Frente Amplio,7
+598,Podemos,4
+598,Se Acabó la Fiesta,0
+599,PSOE,0
+599,PP,6
+599,Vox,10
+599,Frente Amplio,0
+599,Podemos,0
+599,Se Acabó la Fiesta,3
+600,PSOE,6
+600,PP,2
+600,Vox,0
+600,Frente Amplio,6
+600,Podemos,0
+600,Se Acabó la Fiesta,0
+601,PSOE,0
+601,PP,10
+601,Vox,6
+601,Frente Amplio,0
+601,Podemos,0
+601,Se Acabó la Fiesta,0
+602,PSOE,6
+602,PP,0
+602,Vox,0
+602,Frente Amplio,7
+602,Podemos,9
+602,Se Acabó la Fiesta,0
+603,PSOE,99
+603,PP,99
+603,Vox,99
+603,Frente Amplio,99
+603,Se Acabó la Fiesta,0
+604,PSOE,10
+604,PP,0
+604,Vox,0
+604,Frente Amplio,2
+604,Podemos,1
+604,Se Acabó la Fiesta,0
+605,PSOE,5
+605,PP,0
+605,Vox,0
+605,Se Acabó la Fiesta,0
+605,Ara Més – Front Ampli,8
+606,PSOE,1
+606,PP,8
+606,Vox,9
+606,Frente Amplio,1
+606,Podemos,0
+606,Se Acabó la Fiesta,0
+607,PSOE,0
+607,PP,0
+607,Vox,0
+607,Frente Amplio,0
+607,Podemos,0
+607,Se Acabó la Fiesta,0
+608,PSOE,0
+608,PP,10
+608,Vox,6
+608,Frente Amplio,0
+608,Podemos,0
+608,Se Acabó la Fiesta,0
+609,PSOE,8
+609,PP,0
+609,Vox,0
+609,Frente Amplio,0
+609,Podemos,2
+609,Se Acabó la Fiesta,0
+610,PSOE,2
+610,PP,9
+610,Vox,1
+610,Frente Amplio,1
+610,Podemos,2
+610,Se Acabó la Fiesta,2
+611,PSOE,0
+611,PP,9
+611,Vox,3
+611,Frente Amplio,0
+611,Podemos,0
+611,Se Acabó la Fiesta,0
+612,PSOE,10
+612,PP,0
+612,Vox,0
+612,Frente Amplio,7
+612,Podemos,6
+612,Se Acabó la Fiesta,0
+613,PSOE,10
+613,PP,0
+613,Vox,0
+613,Frente Amplio,10
+613,Podemos,5
+613,Se Acabó la Fiesta,0
+614,PSOE,10
+614,PP,0
+614,Vox,0
+614,Frente Amplio,8
+614,Se Acabó la Fiesta,0
+615,PSOE,0
+615,PP,9
+615,Vox,5
+615,Frente Amplio,0
+615,Podemos,0
+615,Se Acabó la Fiesta,1
+616,PSOE,5
+616,PP,9
+616,Vox,0
+616,Frente Amplio,5
+616,Podemos,4
+616,Se Acabó la Fiesta,0
+617,PSOE,0
+617,PP,9
+617,Vox,5
+617,Frente Amplio,3
+617,Podemos,1
+617,Se Acabó la Fiesta,4
+618,PSOE,0
+618,PP,2
+618,Vox,10
+618,Frente Amplio,0
+618,Podemos,0
+618,Se Acabó la Fiesta,2
+619,PSOE,3
+619,PP,6
+619,Vox,0
+619,Frente Amplio,0
+619,Podemos,0
+619,Se Acabó la Fiesta,0
+620,PSOE,5
+620,PP,0
+620,Vox,0
+620,Frente Amplio,1
+620,Se Acabó la Fiesta,1
+621,PSOE,0
+621,PP,0
+621,Vox,0
+621,Frente Amplio,0
+621,Se Acabó la Fiesta,0
+622,PSOE,0
+622,PP,0
+622,Vox,10
+622,Frente Amplio,0
+622,Se Acabó la Fiesta,0
+623,PSOE,0
+623,PP,10
+623,Vox,6
+623,Frente Amplio,0
+623,Podemos,0
+623,Se Acabó la Fiesta,0
+624,PSOE,99
+624,PP,0
+624,Vox,0
+624,Frente Amplio,99
+624,Podemos,0
+624,Se Acabó la Fiesta,99
+625,PSOE,5
+625,PP,7
+625,Vox,4
+625,Frente Amplio,5
+625,Podemos,3
+625,Se Acabó la Fiesta,0
+626,PSOE,5
+626,PP,10
+626,Vox,8
+626,Frente Amplio,0
+626,Podemos,0
+626,Se Acabó la Fiesta,0
+627,PSOE,0
+627,PP,10
+627,Vox,5
+627,Frente Amplio,0
+627,Podemos,0
+627,Se Acabó la Fiesta,0
+628,PSOE,0
+628,PP,10
+628,Vox,3
+628,Frente Amplio,0
+628,Podemos,0
+628,Se Acabó la Fiesta,0
+629,PSOE,0
+629,PP,10
+629,Vox,0
+629,Frente Amplio,0
+629,Podemos,0
+629,Se Acabó la Fiesta,6
+630,PSOE,8
+630,PP,0
+630,Vox,0
+630,Se Acabó la Fiesta,0
+630,Unidad del Pueblo Canario,7
+631,PSOE,10
+631,PP,0
+631,Vox,0
+631,Se Acabó la Fiesta,0
+631,Compromís: Front Valencià,7
+632,PSOE,10
+632,PP,0
+632,Vox,0
+632,Frente Amplio,9
+632,Se Acabó la Fiesta,0
+633,PSOE,5
+633,PP,1
+633,Vox,0
+633,Frente Amplio,7
+633,Podemos,6
+633,Se Acabó la Fiesta,0
+634,PSOE,0
+634,PP,10
+634,Vox,4
+634,Frente Amplio,0
+634,Podemos,0
+634,Se Acabó la Fiesta,0
+635,PSOE,6
+635,PP,99
+635,Vox,0
+635,Se Acabó la Fiesta,3
+635,Compromís: Front Valencià,9
+636,PSOE,8
+636,PP,0
+636,Vox,0
+636,Frente Amplio,1
+636,Podemos,0
+636,Se Acabó la Fiesta,0
+637,PSOE,0
+637,Vox,0
+637,Frente Amplio,10
+637,Podemos,0
+637,Se Acabó la Fiesta,0
+637,UPN-PP,0
+638,PSOE,0
+638,PP,10
+638,Vox,9
+638,Frente Amplio,0
+638,Podemos,0
+638,Se Acabó la Fiesta,0
+639,PSOE,1
+639,PP,2
+639,Vox,0
+639,Frente Amplio,1
+639,Podemos,1
+639,Se Acabó la Fiesta,0
+640,PSOE,6
+640,PP,8
+640,Vox,7
+640,Frente Amplio,2
+640,Podemos,2
+640,Se Acabó la Fiesta,0
+641,PSOE,5
+641,PP,9
+641,Vox,6
+641,Frente Amplio,0
+641,Se Acabó la Fiesta,0
+642,PSOE,0
+642,PP,9
+642,Vox,2
+642,Frente Amplio,0
+642,Podemos,0
+642,Se Acabó la Fiesta,0
+643,PSOE,0
+643,PP,10
+643,Vox,3
+643,Se Acabó la Fiesta,0
+643,Ara Més – Front Ampli,1
+644,PSOE,0
+644,PP,10
+644,Vox,5
+644,Frente Amplio,0
+644,Podemos,0
+644,Se Acabó la Fiesta,5
+645,PSOE,1
+645,PP,8
+645,Vox,5
+645,Frente Amplio,2
+645,Podemos,0
+645,Se Acabó la Fiesta,0
+646,PSOE,0
+646,PP,0
+646,Vox,5
+646,Se Acabó la Fiesta,0
+646,Compromís: Front Valencià,0
+647,PSOE,0
+647,PP,8
+647,Vox,7
+647,Frente Amplio,0
+647,Podemos,0
+647,Se Acabó la Fiesta,0
+648,PSOE,10
+648,PP,0
+648,Vox,0
+648,Frente Amplio,9
+648,Podemos,9
+648,Se Acabó la Fiesta,0
+649,PSOE,0
+649,PP,0
+649,Vox,0
+649,Frente Amplio,0
+649,Podemos,0
+650,PSOE,0
+650,PP,9
+650,Vox,5
+650,Frente Amplio,0
+650,Podemos,0
+650,Se Acabó la Fiesta,0
+651,PSOE,10
+651,PP,0
+651,Vox,0
+651,Se Acabó la Fiesta,3
+651,Ara Més – Front Ampli,5
+652,PSOE,7
+652,PP,2
+652,Vox,0
+652,Frente Amplio,6
+652,Podemos,1
+653,PSOE,4
+653,PP,9
+653,Vox,6
+653,Frente Amplio,1
+653,Podemos,1
+653,Se Acabó la Fiesta,0
+654,PSOE,10
+654,PP,0
+654,Vox,0
+654,Frente Amplio,0
+654,Podemos,1
+654,Se Acabó la Fiesta,0
+655,PSOE,4
+655,PP,5
+655,Vox,0
+655,Frente Amplio,1
+655,Se Acabó la Fiesta,1
+656,PSOE,0
+656,PP,10
+656,Vox,0
+656,Se Acabó la Fiesta,0
+656,Compromís: Front Valencià,0
+657,PSOE,1
+657,PP,10
+657,Vox,8
+657,Frente Amplio,1
+657,Podemos,0
+657,Se Acabó la Fiesta,6
+658,PSOE,9
+658,PP,0
+658,Vox,0
+658,Frente Amplio,7
+658,Podemos,6
+658,Se Acabó la Fiesta,0
+659,PSOE,5
+659,PP,5
+659,Vox,10
+659,Frente Amplio,0
+659,Se Acabó la Fiesta,0
+660,PSOE,0
+660,PP,6
+660,Vox,9
+660,Se Acabó la Fiesta,0
+660,Unidad del Pueblo Canario,0
+661,PSOE,5
+661,PP,2
+661,Vox,1
+661,Frente Amplio,5
+662,PSOE,8
+662,PP,0
+662,Vox,0
+662,Frente Amplio,2
+662,Se Acabó la Fiesta,2
+663,PSOE,10
+663,PP,0
+663,Vox,0
+663,Se Acabó la Fiesta,0
+663,Compromís: Front Valencià,0
+664,PSOE,1
+664,PP,10
+664,Vox,1
+664,Frente Amplio,1
+664,Podemos,0
+664,Se Acabó la Fiesta,0
+665,PSOE,2
+665,Vox,4
+665,Frente Amplio,2
+665,Podemos,2
+665,Se Acabó la Fiesta,2
+665,UPN-PP,2
+666,PSOE,2
+666,PP,3
+666,Vox,0
+666,Frente Amplio,2
+666,Podemos,2
+666,Se Acabó la Fiesta,2
+667,PSOE,0
+667,PP,5
+667,Vox,5
+667,Frente Amplio,1
+667,Podemos,0
+667,Se Acabó la Fiesta,0
+668,PSOE,0
+668,PP,0
+668,Vox,0
+668,Frente Amplio,0
+668,Podemos,0
+668,Se Acabó la Fiesta,0
+669,PSOE,0
+669,PP,10
+669,Vox,10
+669,Se Acabó la Fiesta,0
+669,Compromís: Front Valencià,0
+670,PSOE,0
+670,PP,8
+670,Vox,10
+670,Frente Amplio,2
+670,Se Acabó la Fiesta,1
+671,PSOE,8
+671,PP,0
+671,Vox,0
+671,Frente Amplio,1
+671,Podemos,1
+671,Se Acabó la Fiesta,7
+672,PSOE,0
+672,PP,6
+672,Vox,4
+672,Frente Amplio,0
+672,Podemos,0
+672,Se Acabó la Fiesta,0
+673,PSOE,0
+673,PP,0
+673,Vox,0
+673,Se Acabó la Fiesta,0
+673,Compromís: Front Valencià,0
+674,PSOE,10
+674,PP,0
+674,Vox,0
+674,Frente Amplio,3
+674,Podemos,7
+674,Se Acabó la Fiesta,1
+675,PSOE,5
+675,PP,8
+675,Vox,7
+675,Frente Amplio,0
+675,Podemos,2
+675,Se Acabó la Fiesta,5
+676,PSOE,10
+676,PP,0
+676,Vox,0
+676,Frente Amplio,6
+676,Podemos,5
+676,Se Acabó la Fiesta,0
+677,PSOE,0
+677,PP,9
+677,Vox,5
+677,Frente Amplio,2
+677,Podemos,2
+677,Se Acabó la Fiesta,3
+678,PSOE,0
+678,PP,5
+678,Vox,4
+678,Frente Amplio,0
+678,Podemos,0
+678,Se Acabó la Fiesta,4
+679,PSOE,0
+679,PP,9
+679,Vox,10
+679,Frente Amplio,0
+679,Se Acabó la Fiesta,8
+680,PSOE,0
+680,PP,5
+680,Vox,10
+680,Frente Amplio,0
+680,Podemos,0
+680,Se Acabó la Fiesta,0
+681,PSOE,4
+681,PP,8
+681,Vox,9
+681,Frente Amplio,2
+681,Podemos,1
+681,Se Acabó la Fiesta,3
+682,PSOE,10
+682,PP,0
+682,Vox,0
+682,Se Acabó la Fiesta,0
+682,Compromís: Front Valencià,0
+683,PSOE,0
+683,PP,10
+683,Vox,10
+683,Frente Amplio,0
+683,Podemos,0
+683,Se Acabó la Fiesta,0
+684,PSOE,1
+684,PP,5
+684,Vox,1
+684,Frente Amplio,1
+684,Podemos,1
+684,Se Acabó la Fiesta,1
+685,PSOE,9
+685,PP,1
+685,Vox,0
+685,Frente Amplio,8
+685,Podemos,7
+685,Se Acabó la Fiesta,0
+686,PSOE,0
+686,PP,1
+686,Vox,8
+686,Frente Amplio,0
+686,Podemos,0
+686,Se Acabó la Fiesta,7
+687,PSOE,0
+687,PP,10
+687,Vox,10
+687,Frente Amplio,0
+687,Podemos,0
+687,Se Acabó la Fiesta,3
+688,PSOE,4
+688,PP,1
+688,Vox,0
+688,Frente Amplio,0
+688,Podemos,0
+688,Se Acabó la Fiesta,4
+689,PSOE,10
+689,PP,0
+689,Vox,0
+689,Se Acabó la Fiesta,0
+689,Compromís: Front Valencià,9
+690,PSOE,3
+690,PP,8
+690,Vox,6
+690,Frente Amplio,1
+690,Podemos,2
+690,Se Acabó la Fiesta,1
+691,PSOE,3
+691,PP,6
+691,Vox,4
+691,Se Acabó la Fiesta,3
+691,Ara Més – Front Ampli,2
+692,PSOE,10
+692,PP,5
+692,Vox,0
+692,Frente Amplio,4
+692,Podemos,5
+692,Se Acabó la Fiesta,5
+693,PSOE,3
+693,PP,9
+693,Vox,4
+693,Frente Amplio,0
+693,Podemos,0
+693,Se Acabó la Fiesta,0
+694,PSOE,0
+694,PP,0
+694,Vox,0
+694,Frente Amplio,0
+694,Se Acabó la Fiesta,0
+695,PSOE,1
+695,PP,0
+695,Vox,7
+695,Frente Amplio,0
+695,Podemos,2
+695,Se Acabó la Fiesta,1
+696,PSOE,6
+696,PP,5
+696,Vox,4
+696,Frente Amplio,1
+696,Podemos,1
+696,Se Acabó la Fiesta,2
+697,PSOE,0
+697,PP,10
+697,Vox,5
+697,Frente Amplio,0
+697,Podemos,0
+697,Se Acabó la Fiesta,0
+698,PSOE,4
+698,PP,5
+698,Vox,6
+698,Frente Amplio,6
+698,Podemos,7
+698,Se Acabó la Fiesta,8
+699,PSOE,3
+699,PP,4
+699,Vox,3
+699,Frente Amplio,2
+699,Podemos,1
+700,PSOE,10
+700,PP,0
+700,Vox,0
+700,Frente Amplio,10
+700,Podemos,9
+700,Se Acabó la Fiesta,0
+701,PSOE,0
+701,PP,9
+701,Vox,1
+701,Frente Amplio,0
+701,Podemos,0
+701,Se Acabó la Fiesta,0
+702,PSOE,0
+702,PP,10
+702,Vox,6
+702,Frente Amplio,0
+702,Podemos,0
+702,Se Acabó la Fiesta,0
+703,PSOE,10
+703,PP,0
+703,Vox,0
+703,Frente Amplio,10
+703,Podemos,10
+703,Se Acabó la Fiesta,0
+704,PSOE,5
+704,PP,4
+704,Vox,0
+704,Frente Amplio,1
+704,Podemos,0
+705,PSOE,0
+705,PP,9
+705,Vox,6
+705,Frente Amplio,0
+705,Podemos,6
+705,Se Acabó la Fiesta,4
+706,PSOE,2
+706,PP,6
+706,Vox,3
+706,Frente Amplio,1
+706,Podemos,0
+706,Se Acabó la Fiesta,2
+707,PSOE,0
+707,PP,0
+707,Vox,0
+707,Frente Amplio,0
+707,Podemos,0
+707,Se Acabó la Fiesta,0
+708,PSOE,0
+708,PP,0
+708,Vox,0
+708,Frente Amplio,2
+708,Podemos,2
+708,Se Acabó la Fiesta,0
+709,PSOE,0
+709,PP,1
+709,Vox,10
+709,Frente Amplio,5
+709,Podemos,0
+709,Se Acabó la Fiesta,5
+710,PSOE,7
+710,PP,0
+710,Vox,0
+710,Frente Amplio,7
+710,Podemos,6
+710,Se Acabó la Fiesta,0
+711,PSOE,3
+711,PP,6
+711,Vox,1
+711,Frente Amplio,1
+711,Podemos,3
+711,Se Acabó la Fiesta,10
+712,PSOE,0
+712,PP,0
+712,Vox,0
+712,Frente Amplio,0
+712,Se Acabó la Fiesta,0
+713,PSOE,10
+713,PP,0
+713,Vox,0
+713,Frente Amplio,7
+713,Podemos,6
+713,Se Acabó la Fiesta,99
+714,PSOE,6
+714,PP,7
+714,Vox,5
+714,Frente Amplio,4
+714,Podemos,4
+714,Se Acabó la Fiesta,4
+715,PSOE,5
+715,PP,7
+715,Vox,6
+715,Frente Amplio,4
+715,Podemos,5
+715,Se Acabó la Fiesta,2
+716,PSOE,10
+716,PP,1
+716,Vox,0
+716,Frente Amplio,3
+716,Podemos,0
+716,Se Acabó la Fiesta,0
+717,PSOE,0
+717,PP,9
+717,Vox,8
+717,Frente Amplio,1
+717,Podemos,0
+717,Se Acabó la Fiesta,3
+718,PSOE,5
+718,PP,0
+718,Vox,0
+718,Frente Amplio,9
+718,Podemos,2
+718,Se Acabó la Fiesta,0
+719,PSOE,8
+719,PP,5
+719,Vox,0
+719,Frente Amplio,8
+719,Podemos,1
+719,Se Acabó la Fiesta,1
+720,PSOE,0
+720,PP,0
+720,Vox,0
+720,Frente Amplio,0
+720,Podemos,0
+720,Se Acabó la Fiesta,0
+721,PSOE,0
+721,PP,10
+721,Vox,6
+721,Frente Amplio,0
+721,Podemos,0
+721,Se Acabó la Fiesta,0
+722,PSOE,8
+722,PP,4
+722,Vox,1
+722,Frente Amplio,99
+723,PSOE,5
+723,PP,4
+723,Vox,0
+723,Frente Amplio,7
+723,Se Acabó la Fiesta,1
+724,PSOE,8
+724,PP,3
+724,Vox,0
+724,Frente Amplio,7
+724,Podemos,7
+724,Se Acabó la Fiesta,1
+725,PSOE,8
+725,PP,7
+725,Vox,0
+725,Frente Amplio,6
+725,Se Acabó la Fiesta,4
+726,PSOE,4
+726,PP,1
+726,Vox,0
+726,Se Acabó la Fiesta,0
+726,Compromís: Front Valencià,4
+727,PSOE,0
+727,PP,5
+727,Vox,10
+727,Se Acabó la Fiesta,0
+727,Unidad del Pueblo Canario,0
+728,PSOE,0
+728,PP,8
+728,Vox,0
+728,Frente Amplio,0
+728,Podemos,0
+728,Se Acabó la Fiesta,0
+729,PSOE,8
+729,PP,0
+729,Vox,0
+729,Se Acabó la Fiesta,0
+729,Compromís: Front Valencià,10
+730,PSOE,9
+730,PP,3
+730,Vox,0
+730,Frente Amplio,3
+730,Podemos,0
+730,Se Acabó la Fiesta,0
+731,PSOE,99
+731,PP,99
+731,Vox,99
+731,Frente Amplio,99
+731,Podemos,99
+731,Se Acabó la Fiesta,99
+732,PSOE,10
+732,PP,0
+732,Vox,0
+732,Frente Amplio,9
+732,Podemos,8
+732,Se Acabó la Fiesta,7
+733,PSOE,5
+733,PP,0
+733,Vox,0
+733,Frente Amplio,5
+733,Se Acabó la Fiesta,0
+734,PSOE,0
+734,PP,0
+734,Vox,0
+734,Se Acabó la Fiesta,0
+734,Ara Més – Front Ampli,0
+735,PSOE,0
+735,PP,5
+735,Vox,10
+735,Se Acabó la Fiesta,0
+735,Compromís: Front Valencià,0
+736,PSOE,0
+736,PP,10
+736,Vox,7
+736,Frente Amplio,0
+736,Podemos,0
+736,Se Acabó la Fiesta,0
+737,PSOE,7
+737,PP,3
+737,Vox,0
+737,Frente Amplio,5
+737,Se Acabó la Fiesta,5
+738,PSOE,1
+738,PP,0
+738,Vox,0
+738,Frente Amplio,0
+738,Podemos,0
+738,Se Acabó la Fiesta,0
+739,PSOE,10
+739,PP,1
+739,Vox,1
+739,Frente Amplio,1
+739,Podemos,1
+739,Se Acabó la Fiesta,1
+740,PSOE,4
+740,PP,1
+740,Vox,0
+740,Se Acabó la Fiesta,0
+740,Ara Més – Front Ampli,5
+741,PSOE,9
+741,PP,0
+741,Vox,0
+741,Frente Amplio,0
+741,Podemos,0
+741,Se Acabó la Fiesta,0
+742,PSOE,10
+742,PP,5
+742,Vox,2
+742,Frente Amplio,8
+742,Podemos,3
+742,Se Acabó la Fiesta,0
+743,PSOE,0
+743,PP,6
+743,Vox,8
+743,Se Acabó la Fiesta,7
+743,Ara Més – Front Ampli,2
+744,PSOE,3
+744,PP,3
+744,Vox,0
+744,Se Acabó la Fiesta,0
+744,Compromís: Front Valencià,0
+745,PSOE,7
+745,PP,0
+745,Vox,0
+745,Frente Amplio,7
+745,Podemos,2
+745,Se Acabó la Fiesta,0
+746,PSOE,6
+746,PP,0
+746,Vox,0
+746,Frente Amplio,4
+746,Podemos,3
+746,Se Acabó la Fiesta,0
+747,PSOE,0
+747,PP,10
+747,Vox,10
+747,Frente Amplio,5
+747,Podemos,0
+747,Se Acabó la Fiesta,5
+748,PSOE,1
+748,PP,0
+748,Vox,0
+748,Frente Amplio,1
+748,Podemos,1
+748,Se Acabó la Fiesta,0
+749,PSOE,0
+749,PP,7
+749,Vox,10
+749,Se Acabó la Fiesta,6
+749,Ara Més – Front Ampli,0
+750,PSOE,0
+750,PP,6
+750,Vox,10
+750,Frente Amplio,0
+750,Podemos,0
+751,PSOE,0
+751,PP,10
+751,Vox,6
+751,Frente Amplio,0
+751,Podemos,0
+751,Se Acabó la Fiesta,0
+752,PSOE,0
+752,PP,0
+752,Vox,0
+752,Frente Amplio,0
+752,Podemos,0
+752,Se Acabó la Fiesta,0
+753,PSOE,3
+753,PP,1
+753,Vox,0
+753,Frente Amplio,4
+753,Podemos,10
+753,Se Acabó la Fiesta,0
+754,PSOE,0
+754,PP,8
+754,Vox,5
+754,Frente Amplio,0
+754,Podemos,0
+754,Se Acabó la Fiesta,0
+755,PSOE,4
+755,PP,9
+755,Vox,9
+755,Se Acabó la Fiesta,1
+755,Ara Més – Front Ampli,0
+756,PSOE,10
+756,PP,0
+756,Vox,0
+756,Frente Amplio,8
+756,Podemos,7
+756,Se Acabó la Fiesta,0
+757,PSOE,3
+757,PP,99
+757,Vox,4
+757,Frente Amplio,7
+757,Podemos,3
+757,Se Acabó la Fiesta,7
+758,PSOE,10
+758,PP,0
+758,Vox,0
+758,Se Acabó la Fiesta,0
+758,Unidad del Pueblo Canario,0
+759,PSOE,10
+759,PP,4
+759,Vox,0
+759,Se Acabó la Fiesta,0
+759,Ara Més – Front Ampli,0
+760,PSOE,3
+760,PP,1
+760,Vox,9
+760,Frente Amplio,0
+760,Podemos,0
+760,Se Acabó la Fiesta,8
+761,PSOE,10
+761,PP,3
+761,Vox,0
+761,Frente Amplio,8
+761,Se Acabó la Fiesta,0
+762,PSOE,9
+762,PP,6
+762,Vox,4
+762,Se Acabó la Fiesta,6
+762,Ara Més – Front Ampli,8
+763,PSOE,10
+763,PP,0
+763,Vox,0
+763,Frente Amplio,0
+763,Podemos,0
+763,Se Acabó la Fiesta,0
+764,PSOE,99
+764,PP,99
+764,Vox,99
+764,Frente Amplio,99
+764,Se Acabó la Fiesta,99
+765,PSOE,10
+765,PP,1
+765,Vox,0
+765,Frente Amplio,2
+765,Podemos,2
+765,Se Acabó la Fiesta,0
+766,PSOE,0
+766,PP,10
+766,Vox,10
+766,Frente Amplio,0
+766,Se Acabó la Fiesta,99
+767,PSOE,10
+767,PP,0
+767,Vox,0
+767,Frente Amplio,10
+767,Podemos,10
+767,Se Acabó la Fiesta,0
+768,PSOE,5
+768,PP,3
+768,Vox,1
+768,Frente Amplio,8
+768,Se Acabó la Fiesta,0
+769,PSOE,0
+769,PP,10
+769,Vox,4
+769,Frente Amplio,0
+769,Podemos,0
+769,Se Acabó la Fiesta,0
+770,PSOE,0
+770,PP,9
+770,Vox,10
+770,Se Acabó la Fiesta,0
+770,Ara Més – Front Ampli,0
+771,PSOE,10
+771,PP,0
+771,Vox,0
+771,Frente Amplio,0
+771,Podemos,5
+771,Se Acabó la Fiesta,2
+772,PSOE,2
+772,PP,6
+772,Vox,5
+772,Frente Amplio,5
+772,Podemos,0
+772,Se Acabó la Fiesta,1
+773,PSOE,0
+773,PP,9
+773,Vox,8
+773,Se Acabó la Fiesta,0
+773,Compromís: Front Valencià,0
+774,PSOE,0
+774,PP,0
+774,Vox,10
+774,Frente Amplio,0
+775,PSOE,0
+775,PP,8
+775,Vox,8
+775,Se Acabó la Fiesta,0
+775,Compromís: Front Valencià,5
+776,PSOE,2
+776,PP,4
+776,Vox,5
+776,Frente Amplio,3
+776,Podemos,4
+776,Se Acabó la Fiesta,0
+777,PSOE,0
+777,PP,0
+777,Vox,6
+777,Frente Amplio,99
+777,Se Acabó la Fiesta,99
+778,PSOE,5
+778,PP,3
+778,Vox,0
+778,Frente Amplio,9
+778,Podemos,1
+778,Se Acabó la Fiesta,0
+779,PSOE,8
+779,PP,0
+779,Vox,0
+779,Frente Amplio,0
+779,Se Acabó la Fiesta,0
+780,PSOE,9
+780,PP,7
+780,Vox,4
+780,Frente Amplio,99
+780,Podemos,4
+780,Se Acabó la Fiesta,7
+781,PSOE,7
+781,PP,0
+781,Vox,0
+781,Frente Amplio,4
+781,Podemos,3
+781,Se Acabó la Fiesta,0
+782,PSOE,7
+782,PP,0
+782,Vox,0
+782,Frente Amplio,0
+782,Podemos,0
+782,Se Acabó la Fiesta,0
+783,PSOE,10
+783,PP,0
+783,Vox,0
+783,Frente Amplio,9
+783,Podemos,7
+783,Se Acabó la Fiesta,0
+784,PSOE,0
+784,PP,10
+784,Vox,0
+784,Frente Amplio,0
+784,Podemos,0
+784,Se Acabó la Fiesta,0
+785,PSOE,8
+785,PP,8
+785,Vox,6
+785,Frente Amplio,5
+785,Podemos,6
+785,Se Acabó la Fiesta,0
+786,PSOE,2
+786,PP,0
+786,Vox,0
+786,Frente Amplio,0
+786,Podemos,1
+786,Se Acabó la Fiesta,0
+787,PSOE,0
+787,PP,0
+787,Vox,10
+787,Se Acabó la Fiesta,0
+787,Unidad del Pueblo Canario,0
+788,PSOE,0
+788,PP,0
+788,Vox,9
+788,Frente Amplio,8
+788,Podemos,0
+789,PSOE,0
+789,PP,6
+789,Vox,6
+789,Frente Amplio,0
+789,Podemos,0
+789,Se Acabó la Fiesta,9
+790,PSOE,6
+790,PP,5
+790,Vox,10
+790,Frente Amplio,7
+790,Podemos,7
+790,Se Acabó la Fiesta,6
+791,PSOE,4
+791,PP,10
+791,Vox,8
+791,Frente Amplio,4
+791,Podemos,3
+791,Se Acabó la Fiesta,5
+792,PSOE,6
+792,PP,4
+792,Vox,6
+792,Frente Amplio,1
+792,Podemos,2
+792,Se Acabó la Fiesta,1
+793,PSOE,0
+793,PP,10
+793,Vox,0
+793,Frente Amplio,0
+793,Podemos,0
+793,Se Acabó la Fiesta,0
+794,PSOE,1
+794,PP,1
+794,Vox,1
+794,Frente Amplio,1
+794,Podemos,1
+795,PSOE,0
+795,PP,1
+795,Vox,0
+795,Frente Amplio,4
+795,Podemos,0
+796,PSOE,0
+796,PP,10
+796,Vox,9
+796,Se Acabó la Fiesta,9
+796,Compromís: Front Valencià,0
+797,PSOE,8
+797,PP,6
+797,Vox,0
+797,Frente Amplio,5
+797,Se Acabó la Fiesta,4
+798,PSOE,9
+798,PP,0
+798,Vox,0
+798,Se Acabó la Fiesta,0
+798,Compromís: Front Valencià,8
+799,PSOE,4
+799,PP,0
+799,Vox,0
+799,Frente Amplio,8
+799,Podemos,5
+799,Se Acabó la Fiesta,0
+800,PSOE,0
+800,PP,8
+800,Vox,10
+800,Frente Amplio,0
+800,Podemos,0
+800,Se Acabó la Fiesta,0
+801,PSOE,10
+801,PP,0
+801,Vox,0
+801,Frente Amplio,9
+801,Podemos,8
+801,Se Acabó la Fiesta,0
+802,PSOE,0
+802,PP,10
+802,Vox,0
+802,Se Acabó la Fiesta,0
+802,Compromís: Front Valencià,0
+803,PSOE,0
+803,PP,0
+803,Vox,10
+803,Frente Amplio,0
+803,Podemos,0
+804,PSOE,2
+804,PP,0
+804,Vox,0
+804,Frente Amplio,2
+804,Se Acabó la Fiesta,0
+805,PSOE,0
+805,PP,0
+805,Vox,0
+805,Frente Amplio,0
+805,Se Acabó la Fiesta,0
+806,PSOE,0
+806,PP,7
+806,Vox,10
+806,Frente Amplio,0
+806,Podemos,0
+806,Se Acabó la Fiesta,5
+807,PSOE,7
+807,PP,0
+807,Vox,0
+807,Se Acabó la Fiesta,0
+807,Compromís: Front Valencià,10
+808,PSOE,99
+808,PP,99
+808,Vox,99
+808,Frente Amplio,99
+808,Podemos,99
+808,Se Acabó la Fiesta,99
+809,PSOE,6
+809,PP,0
+809,Vox,0
+809,Frente Amplio,6
+809,Se Acabó la Fiesta,6
+810,PSOE,0
+810,PP,8
+810,Vox,10
+810,Frente Amplio,0
+810,Podemos,0
+810,Se Acabó la Fiesta,5
+811,PSOE,2
+811,PP,8
+811,Vox,7
+811,Frente Amplio,0
+811,Podemos,0
+811,Se Acabó la Fiesta,5
+812,PSOE,9
+812,PP,2
+812,Vox,0
+812,Frente Amplio,0
+812,Podemos,0
+812,Se Acabó la Fiesta,0
+813,PSOE,7
+813,PP,3
+813,Vox,1
+813,Frente Amplio,5
+813,Se Acabó la Fiesta,3
+814,PSOE,10
+814,PP,0
+814,Vox,0
+814,Frente Amplio,9
+814,Podemos,8
+814,Se Acabó la Fiesta,0
+815,PSOE,5
+815,PP,3
+815,Vox,8
+815,Frente Amplio,5
+815,Podemos,6
+815,Se Acabó la Fiesta,4
+816,PSOE,6
+816,PP,4
+816,Vox,10
+816,Frente Amplio,1
+816,Podemos,4
+816,Se Acabó la Fiesta,0
+817,PSOE,7
+817,PP,2
+817,Vox,1
+817,Frente Amplio,7
+817,Podemos,3
+817,Se Acabó la Fiesta,2
+818,PSOE,6
+818,PP,6
+818,Vox,6
+818,Frente Amplio,6
+818,Podemos,6
+819,PSOE,1
+819,PP,10
+819,Vox,9
+819,Frente Amplio,1
+819,Podemos,1
+819,Se Acabó la Fiesta,7
+820,PSOE,5
+820,PP,4
+820,Vox,0
+820,Frente Amplio,7
+820,Podemos,4
+820,Se Acabó la Fiesta,0
+821,PSOE,1
+821,PP,8
+821,Vox,7
+821,Frente Amplio,99
+821,Podemos,99
+821,Se Acabó la Fiesta,3
+822,PSOE,2
+822,PP,7
+822,Vox,7
+822,Frente Amplio,3
+822,Podemos,2
+822,Se Acabó la Fiesta,2
+823,PSOE,0
+823,PP,9
+823,Vox,9
+823,Frente Amplio,0
+823,Podemos,0
+823,Se Acabó la Fiesta,5
+824,PSOE,5
+824,PP,2
+824,Vox,4
+824,Frente Amplio,4
+824,Podemos,2
+824,Se Acabó la Fiesta,1
+825,PSOE,0
+825,PP,7
+825,Vox,6
+825,Se Acabó la Fiesta,1
+825,Unidad del Pueblo Canario,0
+826,PSOE,6
+826,PP,4
+826,Vox,0
+826,Frente Amplio,1
+826,Podemos,0
+826,Se Acabó la Fiesta,0
+827,PSOE,5
+827,PP,2
+827,Vox,9
+827,Frente Amplio,1
+827,Se Acabó la Fiesta,1
+828,PSOE,0
+828,PP,10
+828,Vox,8
+828,Frente Amplio,0
+828,Se Acabó la Fiesta,0
+829,PSOE,9
+829,PP,3
+829,Vox,0
+829,Frente Amplio,6
+829,Podemos,5
+830,PSOE,6
+830,PP,4
+830,Vox,1
+830,Frente Amplio,3
+830,Podemos,4
+830,Se Acabó la Fiesta,3
+831,PSOE,4
+831,PP,1
+831,Vox,5
+831,Frente Amplio,6
+831,Podemos,0
+831,Se Acabó la Fiesta,10
+832,PSOE,10
+832,PP,0
+832,Vox,0
+832,Frente Amplio,2
+832,Podemos,2
+832,Se Acabó la Fiesta,1
+833,PSOE,99
+833,PP,99
+833,Vox,99
+833,Frente Amplio,99
+833,Podemos,99
+833,Se Acabó la Fiesta,99
+834,PSOE,1
+834,PP,1
+834,Vox,9
+834,Frente Amplio,4
+834,Podemos,2
+834,Se Acabó la Fiesta,7
+835,PSOE,10
+835,PP,1
+835,Vox,0
+835,Se Acabó la Fiesta,5
+835,Compromís: Front Valencià,2
+836,PSOE,9
+836,PP,0
+836,Vox,0
+836,Se Acabó la Fiesta,0
+836,Compromís: Front Valencià,0
+837,PSOE,9
+837,PP,6
+837,Vox,2
+837,Frente Amplio,99
+837,Podemos,99
+837,Se Acabó la Fiesta,99
+838,PSOE,2
+838,PP,10
+838,Vox,8
+838,Frente Amplio,8
+838,Podemos,7
+839,PSOE,0
+839,PP,5
+839,Vox,0
+839,Frente Amplio,0
+839,Podemos,0
+839,Se Acabó la Fiesta,0
+840,PSOE,4
+840,PP,9
+840,Vox,1
+840,Frente Amplio,0
+840,Podemos,0
+840,Se Acabó la Fiesta,2
+841,PSOE,0
+841,PP,8
+841,Vox,9
+841,Se Acabó la Fiesta,8
+841,Unidad del Pueblo Canario,0
+842,PSOE,5
+842,PP,5
+842,Vox,6
+842,Frente Amplio,2
+842,Podemos,5
+842,Se Acabó la Fiesta,6
+843,PSOE,10
+843,PP,5
+843,Vox,0
+843,Frente Amplio,5
+843,Podemos,5
+843,Se Acabó la Fiesta,5
+844,PSOE,8
+844,PP,99
+844,Vox,7
+844,Frente Amplio,99
+844,Podemos,99
+844,Se Acabó la Fiesta,9
+845,PSOE,6
+845,PP,0
+845,Vox,0
+845,Frente Amplio,0
+845,Podemos,4
+846,PSOE,0
+846,PP,10
+846,Vox,7
+846,Frente Amplio,0
+847,PSOE,6
+847,PP,8
+847,Vox,0
+847,Frente Amplio,0
+847,Se Acabó la Fiesta,0
+848,PSOE,0
+848,PP,10
+848,Vox,6
+848,Frente Amplio,1
+848,Podemos,0
+848,Se Acabó la Fiesta,7
+849,PSOE,0
+849,PP,8
+849,Vox,6
+849,Frente Amplio,0
+849,Podemos,0
+849,Se Acabó la Fiesta,1
+850,PSOE,0
+850,PP,5
+850,Vox,10
+850,Frente Amplio,0
+850,Se Acabó la Fiesta,5
+851,PSOE,0
+851,PP,0
+851,Vox,0
+851,Frente Amplio,0
+851,Se Acabó la Fiesta,5
+852,PSOE,99
+852,PP,99
+852,Vox,99
+852,Se Acabó la Fiesta,99
+852,Compromís: Front Valencià,99
+853,PSOE,0
+853,PP,0
+853,Vox,6
+853,Frente Amplio,99
+854,PSOE,0
+854,PP,0
+854,Vox,0
+854,Frente Amplio,0
+854,Podemos,0
+854,Se Acabó la Fiesta,0
+855,PSOE,0
+855,PP,10
+855,Vox,5
+855,Se Acabó la Fiesta,0
+855,Compromís: Front Valencià,0
+856,PSOE,10
+856,PP,0
+856,Vox,0
+856,Frente Amplio,0
+856,Podemos,0
+856,Se Acabó la Fiesta,0
+857,PSOE,4
+857,PP,0
+857,Vox,0
+857,Frente Amplio,5
+857,Podemos,6
+858,PSOE,4
+858,PP,3
+858,Vox,6
+858,Frente Amplio,6
+858,Podemos,5
+858,Se Acabó la Fiesta,2
+859,PSOE,10
+859,PP,2
+859,Vox,0
+859,Frente Amplio,0
+859,Podemos,0
+859,Se Acabó la Fiesta,0
+860,PSOE,5
+860,Vox,0
+860,Frente Amplio,9
+860,Podemos,5
+860,Se Acabó la Fiesta,0
+860,UPN-PP,0
+861,PSOE,7
+861,PP,8
+861,Vox,5
+861,Frente Amplio,5
+861,Podemos,5
+861,Se Acabó la Fiesta,5
+862,PSOE,0
+862,PP,9
+862,Vox,5
+862,Frente Amplio,0
+862,Podemos,0
+862,Se Acabó la Fiesta,0
+863,PSOE,0
+863,PP,7
+863,Vox,10
+863,Frente Amplio,0
+863,Podemos,0
+863,Se Acabó la Fiesta,8
+864,PSOE,5
+864,PP,2
+864,Vox,0
+864,Frente Amplio,4
+864,Podemos,2
+864,Se Acabó la Fiesta,0
+865,PSOE,10
+865,PP,0
+865,Vox,0
+865,Frente Amplio,4
+865,Podemos,0
+865,Se Acabó la Fiesta,0
+866,PSOE,1
+866,PP,8
+866,Vox,4
+866,Frente Amplio,2
+866,Podemos,1
+866,Se Acabó la Fiesta,1
+867,PSOE,4
+867,PP,1
+867,Vox,0
+867,Frente Amplio,5
+867,Podemos,2
+867,Se Acabó la Fiesta,0
+868,PSOE,0
+868,PP,0
+868,Vox,0
+868,Frente Amplio,0
+868,Se Acabó la Fiesta,0
+869,PSOE,0
+869,PP,10
+869,Vox,10
+869,Frente Amplio,0
+869,Podemos,0
+869,Se Acabó la Fiesta,8
+870,PSOE,0
+870,PP,0
+870,Vox,10
+870,Frente Amplio,0
+870,Podemos,0
+870,Se Acabó la Fiesta,5
+871,PSOE,6
+871,PP,0
+871,Vox,0
+871,Frente Amplio,3
+871,Podemos,5
+871,Se Acabó la Fiesta,0
+872,PSOE,1
+872,PP,9
+872,Vox,9
+872,Frente Amplio,5
+872,Podemos,0
+872,Se Acabó la Fiesta,4
+873,PSOE,99
+873,PP,99
+873,Vox,99
+873,Frente Amplio,0
+873,Podemos,0
+873,Se Acabó la Fiesta,99
+874,PSOE,9
+874,PP,0
+874,Vox,0
+874,Frente Amplio,6
+874,Podemos,2
+874,Se Acabó la Fiesta,0
+875,PSOE,10
+875,Vox,0
+875,Frente Amplio,7
+875,Podemos,8
+875,Se Acabó la Fiesta,0
+875,UPN-PP,0
+876,PSOE,9
+876,PP,0
+876,Vox,0
+876,Frente Amplio,10
+876,Podemos,8
+876,Se Acabó la Fiesta,0
+877,PSOE,0
+877,PP,0
+877,Vox,1
+877,Frente Amplio,0
+877,Podemos,0
+877,Se Acabó la Fiesta,2
+878,PSOE,10
+878,PP,0
+878,Vox,0
+878,Frente Amplio,8
+878,Podemos,7
+878,Se Acabó la Fiesta,0
+879,PSOE,10
+879,PP,0
+879,Vox,0
+879,Frente Amplio,0
+879,Podemos,0
+879,Se Acabó la Fiesta,0
+880,PSOE,9
+880,PP,2
+880,Vox,2
+880,Frente Amplio,3
+880,Podemos,1
+880,Se Acabó la Fiesta,1
+881,PSOE,0
+881,PP,10
+881,Vox,8
+881,Frente Amplio,0
+881,Podemos,0
+881,Se Acabó la Fiesta,5
+882,PSOE,2
+882,PP,7
+882,Vox,7
+882,Frente Amplio,0
+882,Podemos,0
+882,Se Acabó la Fiesta,7
+883,PSOE,0
+883,PP,0
+883,Vox,10
+883,Frente Amplio,0
+883,Podemos,0
+883,Se Acabó la Fiesta,0
+884,PSOE,5
+884,PP,3
+884,Vox,0
+884,Frente Amplio,8
+884,Podemos,7
+884,Se Acabó la Fiesta,0
+885,PSOE,99
+885,PP,0
+885,Vox,0
+885,Frente Amplio,7
+885,Podemos,0
+885,Se Acabó la Fiesta,0
+886,PSOE,10
+886,PP,0
+886,Vox,0
+886,Frente Amplio,5
+886,Podemos,5
+886,Se Acabó la Fiesta,0
+887,PSOE,0
+887,PP,10
+887,Vox,8
+887,Frente Amplio,0
+887,Podemos,0
+887,Se Acabó la Fiesta,0
+888,PSOE,0
+888,PP,5
+888,Vox,10
+888,Frente Amplio,0
+888,Podemos,0
+888,Se Acabó la Fiesta,0
+889,PSOE,0
+889,PP,10
+889,Vox,3
+889,Frente Amplio,0
+889,Podemos,0
+889,Se Acabó la Fiesta,0
+890,PSOE,2
+890,PP,4
+890,Vox,5
+890,Frente Amplio,3
+890,Podemos,0
+890,Se Acabó la Fiesta,4
+891,PSOE,8
+891,PP,0
+891,Vox,0
+891,Frente Amplio,9
+891,Podemos,4
+891,Se Acabó la Fiesta,0
+892,PSOE,5
+892,PP,3
+892,Vox,10
+892,Frente Amplio,3
+893,PSOE,7
+893,PP,3
+893,Vox,3
+893,Frente Amplio,4
+893,Podemos,2
+893,Se Acabó la Fiesta,1
+894,PSOE,10
+894,PP,0
+894,Vox,0
+894,Frente Amplio,0
+894,Podemos,0
+894,Se Acabó la Fiesta,0
+895,PSOE,0
+895,PP,0
+895,Vox,10
+895,Frente Amplio,0
+895,Podemos,0
+895,Se Acabó la Fiesta,0
+896,PSOE,0
+896,PP,0
+896,Vox,0
+896,Frente Amplio,0
+896,Podemos,0
+896,Se Acabó la Fiesta,0
+897,PSOE,10
+897,PP,0
+897,Vox,0
+897,Frente Amplio,0
+897,Podemos,7
+897,Se Acabó la Fiesta,0
+898,PSOE,0
+898,PP,0
+898,Vox,0
+898,Frente Amplio,0
+898,Podemos,0
+898,Se Acabó la Fiesta,0
+899,PSOE,10
+899,PP,0
+899,Vox,0
+899,Frente Amplio,4
+899,Podemos,4
+899,Se Acabó la Fiesta,3
+900,PSOE,6
+900,PP,10
+900,Vox,9
+900,Frente Amplio,0
+900,Podemos,0
+900,Se Acabó la Fiesta,0
+901,PSOE,10
+901,PP,0
+901,Vox,0
+901,Frente Amplio,9
+901,Podemos,8
+901,Se Acabó la Fiesta,5
+902,PSOE,5
+902,PP,3
+902,Vox,0
+902,Frente Amplio,0
+902,Podemos,2
+902,Se Acabó la Fiesta,0
+903,PSOE,4
+903,PP,1
+903,Vox,0
+903,Frente Amplio,99
+903,Podemos,99
+903,Se Acabó la Fiesta,0
+904,PSOE,0
+904,PP,10
+904,Vox,8
+904,Frente Amplio,0
+904,Podemos,0
+904,Se Acabó la Fiesta,6
+905,PSOE,9
+905,PP,0
+905,Vox,0
+905,Frente Amplio,8
+905,Podemos,7
+905,Se Acabó la Fiesta,0
+906,PSOE,7
+906,PP,0
+906,Vox,1
+906,Frente Amplio,1
+906,Podemos,4
+906,Se Acabó la Fiesta,1
+907,PSOE,0
+907,PP,6
+907,Vox,0
+907,Frente Amplio,0
+907,Podemos,0
+907,Se Acabó la Fiesta,0
+908,PSOE,10
+908,Vox,0
+908,Frente Amplio,0
+908,Podemos,0
+908,Se Acabó la Fiesta,0
+908,UPN-PP,0
+909,PSOE,0
+909,Vox,10
+909,Frente Amplio,1
+909,Podemos,0
+909,Se Acabó la Fiesta,6
+909,UPN-PP,3
+910,PSOE,7
+910,PP,7
+910,Vox,3
+910,Frente Amplio,4
+910,Podemos,9
+910,Se Acabó la Fiesta,3
+911,PSOE,0
+911,PP,7
+911,Vox,10
+911,Frente Amplio,0
+911,Podemos,0
+911,Se Acabó la Fiesta,6
+912,PSOE,0
+912,PP,4
+912,Vox,10
+912,Frente Amplio,0
+912,Podemos,0
+912,Se Acabó la Fiesta,6
+913,PSOE,7
+913,PP,0
+913,Vox,0
+913,Frente Amplio,0
+913,Se Acabó la Fiesta,1
+914,PSOE,7
+914,PP,3
+914,Vox,7
+914,Frente Amplio,3
+914,Podemos,1
+914,Se Acabó la Fiesta,7
+915,PSOE,0
+915,PP,9
+915,Vox,10
+915,Frente Amplio,0
+915,Podemos,0
+915,Se Acabó la Fiesta,9
+916,PSOE,10
+916,PP,0
+916,Vox,0
+916,Frente Amplio,0
+916,Podemos,3
+916,Se Acabó la Fiesta,0
+917,PSOE,0
+917,PP,10
+917,Vox,7
+917,Frente Amplio,0
+917,Podemos,0
+917,Se Acabó la Fiesta,0
+918,PSOE,8
+918,PP,0
+918,Vox,0
+918,Frente Amplio,8
+918,Podemos,0
+918,Se Acabó la Fiesta,0
+919,PSOE,0
+919,PP,10
+919,Vox,9
+919,Frente Amplio,0
+919,Podemos,0
+919,Se Acabó la Fiesta,0
+920,PSOE,0
+920,PP,7
+920,Vox,10
+920,Frente Amplio,0
+920,Podemos,0
+920,Se Acabó la Fiesta,0
+921,PSOE,0
+921,PP,0
+921,Vox,0
+921,Frente Amplio,1
+921,Podemos,0
+921,Se Acabó la Fiesta,7
+922,PSOE,0
+922,PP,9
+922,Vox,0
+922,Frente Amplio,0
+922,Podemos,0
+922,Se Acabó la Fiesta,0
+923,PSOE,0
+923,PP,7
+923,Vox,10
+923,Frente Amplio,0
+923,Podemos,0
+923,Se Acabó la Fiesta,9
+924,PSOE,8
+924,PP,1
+924,Vox,1
+924,Frente Amplio,6
+924,Podemos,7
+924,Se Acabó la Fiesta,2
+925,PSOE,10
+925,PP,0
+925,Vox,0
+925,Frente Amplio,0
+925,Podemos,1
+925,Se Acabó la Fiesta,0
+926,PSOE,9
+926,PP,0
+926,Vox,0
+926,Frente Amplio,9
+926,Podemos,9
+926,Se Acabó la Fiesta,0
+927,PSOE,5
+927,PP,0
+927,Vox,0
+927,Se Acabó la Fiesta,0
+927,Compromís: Front Valencià,10
+928,PSOE,1
+928,PP,5
+928,Vox,10
+928,Frente Amplio,2
+928,Se Acabó la Fiesta,5
+929,PSOE,0
+929,PP,9
+929,Vox,0
+929,Frente Amplio,0
+929,Se Acabó la Fiesta,0
+930,PSOE,10
+930,PP,0
+930,Vox,0
+930,Frente Amplio,4
+930,Se Acabó la Fiesta,0
+931,PSOE,0
+931,PP,8
+931,Vox,0
+931,Frente Amplio,0
+931,Podemos,0
+931,Se Acabó la Fiesta,0
+932,PSOE,5
+932,PP,5
+932,Vox,0
+932,Frente Amplio,0
+932,Podemos,0
+932,Se Acabó la Fiesta,0
+933,PSOE,0
+933,PP,0
+933,Vox,9
+933,Frente Amplio,0
+933,Se Acabó la Fiesta,5
+934,PSOE,4
+934,PP,3
+934,Vox,0
+934,Frente Amplio,2
+934,Se Acabó la Fiesta,0
+935,PSOE,99
+935,PP,99
+935,Vox,8
+935,Frente Amplio,99
+935,Se Acabó la Fiesta,99
+936,PSOE,2
+936,PP,0
+936,Vox,0
+936,Frente Amplio,8
+937,PSOE,1
+937,PP,1
+937,Vox,9
+937,Se Acabó la Fiesta,5
+937,Compromís: Front Valencià,8
+938,PSOE,10
+938,PP,0
+938,Vox,0
+938,Frente Amplio,0
+938,Podemos,0
+938,Se Acabó la Fiesta,0
+939,PSOE,99
+939,PP,99
+939,Vox,99
+939,Frente Amplio,99
+940,PSOE,4
+940,PP,8
+940,Vox,3
+940,Frente Amplio,1
+940,Podemos,0
+940,Se Acabó la Fiesta,5
+941,PSOE,10
+941,PP,3
+941,Vox,0
+941,Se Acabó la Fiesta,0
+941,Compromís: Front Valencià,4
+942,PSOE,1
+942,PP,9
+942,Vox,2
+942,Frente Amplio,1
+943,PSOE,0
+943,PP,10
+943,Vox,6
+943,Frente Amplio,0
+943,Podemos,0
+943,Se Acabó la Fiesta,0
+944,PSOE,0
+944,PP,8
+944,Vox,10
+944,Se Acabó la Fiesta,4
+944,Compromís: Front Valencià,4
+945,PSOE,8
+945,PP,0
+945,Vox,0
+945,Se Acabó la Fiesta,0
+945,Compromís: Front Valencià,6
+946,PSOE,3
+946,PP,5
+946,Vox,7
+946,Se Acabó la Fiesta,5
+946,Unidad del Pueblo Canario,3
+947,PSOE,99
+947,PP,99
+947,Vox,7
+947,Se Acabó la Fiesta,99
+947,Unidad del Pueblo Canario,99
+948,PSOE,0
+948,PP,10
+948,Vox,0
+948,Frente Amplio,0
+948,Podemos,0
+948,Se Acabó la Fiesta,0
+949,PSOE,0
+949,PP,0
+949,Vox,0
+949,Frente Amplio,0
+949,Podemos,10
+950,PSOE,10
+950,PP,3
+950,Vox,0
+950,Frente Amplio,4
+950,Podemos,3
+950,Se Acabó la Fiesta,0
+951,PSOE,2
+951,PP,0
+951,Vox,0
+951,Frente Amplio,0
+951,Podemos,0
+952,PSOE,10
+952,PP,0
+952,Vox,0
+952,Se Acabó la Fiesta,0
+952,Compromís: Front Valencià,5
+953,PSOE,0
+953,PP,5
+953,Vox,10
+953,Frente Amplio,0
+953,Se Acabó la Fiesta,0
+954,PSOE,0
+954,PP,0
+954,Vox,0
+954,Frente Amplio,0
+954,Se Acabó la Fiesta,0
+955,PSOE,10
+955,PP,0
+955,Vox,0
+955,Se Acabó la Fiesta,99
+955,Compromís: Front Valencià,99
+956,PSOE,9
+956,PP,0
+956,Vox,0
+956,Frente Amplio,10
+956,Se Acabó la Fiesta,99
+957,PSOE,3
+957,PP,9
+957,Vox,2
+957,Se Acabó la Fiesta,0
+957,Unidad del Pueblo Canario,1
+958,PSOE,8
+958,PP,4
+958,Vox,7
+958,Se Acabó la Fiesta,8
+958,Unidad del Pueblo Canario,5
+959,PSOE,0
+959,PP,0
+959,Vox,0
+959,Se Acabó la Fiesta,0
+959,Compromís: Front Valencià,0
+960,PSOE,9
+960,PP,5
+960,Vox,3
+960,Se Acabó la Fiesta,0
+960,Unidad del Pueblo Canario,0
+961,PSOE,1
+961,PP,8
+961,Vox,6
+961,Se Acabó la Fiesta,6
+961,Compromís: Front Valencià,1
+962,PSOE,2
+962,PP,7
+962,Vox,4
+962,Frente Amplio,6
+962,Podemos,6
+962,Se Acabó la Fiesta,8
+963,PSOE,10
+963,PP,0
+963,Vox,0
+963,Frente Amplio,6
+963,Podemos,5
+963,Se Acabó la Fiesta,0
+964,PSOE,0
+964,PP,9
+964,Vox,10
+964,Frente Amplio,0
+964,Podemos,0
+964,Se Acabó la Fiesta,0
+965,PSOE,0
+965,PP,9
+965,Vox,10
+965,Frente Amplio,0
+965,Podemos,0
+965,Se Acabó la Fiesta,0
+966,PSOE,0
+966,PP,0
+966,Vox,6
+966,Frente Amplio,0
+966,Podemos,0
+966,Se Acabó la Fiesta,5
+967,PSOE,0
+967,PP,10
+967,Vox,0
+967,Se Acabó la Fiesta,0
+967,Compromís: Front Valencià,0
+968,PSOE,4
+968,PP,0
+968,Vox,0
+968,Frente Amplio,5
+968,Se Acabó la Fiesta,0
+969,PSOE,0
+969,PP,8
+969,Vox,6
+969,Frente Amplio,0
+969,Podemos,0
+969,Se Acabó la Fiesta,2
+970,PSOE,8
+970,PP,0
+970,Vox,0
+970,Se Acabó la Fiesta,0
+970,Unidad del Pueblo Canario,8
+971,PSOE,6
+971,PP,0
+971,Vox,0
+971,Frente Amplio,5
+971,Podemos,7
+971,Se Acabó la Fiesta,0
+972,PSOE,1
+972,PP,10
+972,Vox,8
+972,Se Acabó la Fiesta,8
+972,Compromís: Front Valencià,0
+973,PSOE,10
+973,PP,1
+973,Vox,2
+973,Se Acabó la Fiesta,2
+973,Unidad del Pueblo Canario,2
+974,PSOE,0
+974,PP,0
+974,Vox,0
+974,Frente Amplio,0
+974,Podemos,0
+974,Se Acabó la Fiesta,0
+975,PSOE,5
+975,PP,0
+975,Vox,0
+975,Frente Amplio,10
+975,Podemos,7
+975,Se Acabó la Fiesta,0
+976,PSOE,0
+976,PP,0
+976,Vox,9
+976,Se Acabó la Fiesta,0
+976,Unidad del Pueblo Canario,0
+977,PSOE,99
+977,PP,99
+977,Vox,99
+977,Frente Amplio,99
+977,Podemos,99
+977,Se Acabó la Fiesta,99
+978,PSOE,3
+978,PP,8
+978,Vox,2
+978,Frente Amplio,1
+978,Se Acabó la Fiesta,0
+979,PSOE,5
+979,PP,0
+979,Vox,0
+979,Frente Amplio,0
+980,PSOE,99
+980,PP,99
+980,Vox,99
+980,Frente Amplio,99
+980,Podemos,99
+980,Se Acabó la Fiesta,99
+981,PSOE,2
+981,PP,4
+981,Vox,8
+981,Frente Amplio,1
+981,Podemos,1
+981,Se Acabó la Fiesta,6
+982,PSOE,10
+982,PP,0
+982,Vox,0
+982,Se Acabó la Fiesta,0
+982,Unidad del Pueblo Canario,0
+983,PSOE,5
+983,PP,0
+983,Vox,0
+983,Frente Amplio,7
+983,Podemos,6
+983,Se Acabó la Fiesta,0
+984,PSOE,6
+984,PP,6
+984,Vox,1
+984,Frente Amplio,6
+984,Podemos,5
+984,Se Acabó la Fiesta,0
+985,PSOE,0
+985,PP,10
+985,Vox,8
+985,Se Acabó la Fiesta,8
+985,Unidad del Pueblo Canario,0
+986,PSOE,0
+986,PP,0
+986,Vox,0
+986,Se Acabó la Fiesta,10
+986,Unidad del Pueblo Canario,0
+987,PSOE,5
+987,PP,1
+987,Vox,0
+987,Frente Amplio,9
+987,Podemos,8
+987,Se Acabó la Fiesta,0
+988,PSOE,8
+988,PP,0
+988,Vox,0
+988,Frente Amplio,8
+988,Podemos,10
+988,Se Acabó la Fiesta,99
+989,PSOE,8
+989,PP,99
+989,Vox,0
+989,Frente Amplio,99
+989,Podemos,99
+989,Se Acabó la Fiesta,99
+990,PSOE,0
+990,PP,9
+990,Vox,7
+990,Frente Amplio,4
+990,Podemos,5
+990,Se Acabó la Fiesta,2
+991,PSOE,99
+991,PP,99
+991,Vox,99
+991,Frente Amplio,99
+991,Se Acabó la Fiesta,0
+992,PSOE,3
+992,PP,0
+992,Vox,2
+992,Se Acabó la Fiesta,0
+992,Compromís: Front Valencià,2
+993,PSOE,0
+993,PP,0
+993,Vox,0
+993,Frente Amplio,0
+993,Podemos,1
+993,Se Acabó la Fiesta,0
+994,PSOE,7
+994,PP,2
+994,Vox,2
+994,Frente Amplio,2
+994,Se Acabó la Fiesta,3
+995,PSOE,2
+995,PP,7
+995,Vox,5
+995,Frente Amplio,1
+995,Se Acabó la Fiesta,3
+996,PSOE,0
+996,PP,0
+996,Vox,3
+996,Frente Amplio,0
+996,Podemos,0
+996,Se Acabó la Fiesta,0
+997,PSOE,5
+997,PP,2
+997,Vox,0
+997,Frente Amplio,2
+997,Se Acabó la Fiesta,2
+998,PSOE,9
+998,PP,1
+998,Vox,0
+998,Frente Amplio,8
+998,Podemos,4
+998,Se Acabó la Fiesta,0
+999,PSOE,0
+999,PP,0
+999,Vox,10
+999,Frente Amplio,0
+999,Podemos,0
+1000,PSOE,0
+1000,PP,2
+1000,Vox,3
+1000,Frente Amplio,0
+1000,Podemos,0
+1000,Se Acabó la Fiesta,0
+1001,PSOE,0
+1001,PP,9
+1001,Vox,9
+1001,Frente Amplio,4
+1001,Podemos,0
+1001,Se Acabó la Fiesta,9
+1002,PSOE,8
+1002,PP,0
+1002,Vox,0
+1002,Frente Amplio,5
+1002,Se Acabó la Fiesta,0
+1003,PSOE,0
+1003,PP,0
+1003,Vox,10
+1003,Se Acabó la Fiesta,8
+1003,Compromís: Front Valencià,0
+1004,PSOE,10
+1004,PP,1
+1004,Vox,0
+1004,Frente Amplio,0
+1004,Podemos,1
+1004,Se Acabó la Fiesta,0
+1005,PSOE,0
+1005,PP,0
+1005,Vox,0
+1005,Frente Amplio,0
+1005,Se Acabó la Fiesta,0
+1006,PSOE,0
+1006,PP,0
+1006,Vox,10
+1006,Se Acabó la Fiesta,0
+1006,Compromís: Front Valencià,0
+1007,PSOE,4
+1007,PP,4
+1007,Vox,0
+1007,Frente Amplio,2
+1007,Se Acabó la Fiesta,3
+1008,PSOE,0
+1008,PP,99
+1008,Vox,8
+1008,Frente Amplio,5
+1008,Podemos,5
+1008,Se Acabó la Fiesta,3
+1009,PSOE,10
+1009,PP,0
+1009,Vox,0
+1009,Frente Amplio,0
+1009,Podemos,0
+1009,Se Acabó la Fiesta,0
+1010,PSOE,9
+1010,PP,0
+1010,Vox,0
+1010,Frente Amplio,6
+1010,Podemos,5
+1010,Se Acabó la Fiesta,0
+1011,PSOE,5
+1011,PP,5
+1011,Vox,0
+1011,Frente Amplio,1
+1011,Podemos,1
+1011,Se Acabó la Fiesta,0
+1012,PSOE,9
+1012,PP,0
+1012,Vox,0
+1012,Frente Amplio,3
+1012,Podemos,0
+1012,Se Acabó la Fiesta,0
+1013,PSOE,8
+1013,PP,1
+1013,Vox,0
+1013,Frente Amplio,7
+1013,Se Acabó la Fiesta,0
+1014,PSOE,0
+1014,PP,8
+1014,Vox,10
+1014,Frente Amplio,0
+1014,Podemos,0
+1014,Se Acabó la Fiesta,6
+1015,PSOE,0
+1015,PP,7
+1015,Vox,10
+1015,Frente Amplio,0
+1015,Se Acabó la Fiesta,0
+1016,PSOE,0
+1016,PP,9
+1016,Vox,10
+1016,Frente Amplio,0
+1016,Podemos,0
+1016,Se Acabó la Fiesta,99
+1017,PSOE,10
+1017,PP,0
+1017,Vox,0
+1017,Frente Amplio,0
+1017,Podemos,0
+1017,Se Acabó la Fiesta,0
+1018,PSOE,0
+1018,PP,8
+1018,Vox,9
+1018,Se Acabó la Fiesta,8
+1018,Unidad del Pueblo Canario,0
+1019,PSOE,0
+1019,PP,10
+1019,Vox,6
+1019,Frente Amplio,0
+1019,Podemos,0
+1019,Se Acabó la Fiesta,0
+1020,PSOE,1
+1020,PP,5
+1020,Vox,9
+1020,Frente Amplio,0
+1020,Podemos,0
+1020,Se Acabó la Fiesta,7
+1021,PSOE,6
+1021,PP,6
+1021,Vox,3
+1021,Frente Amplio,0
+1021,Podemos,0
+1021,Se Acabó la Fiesta,5
+1022,PSOE,9
+1022,PP,1
+1022,Vox,1
+1022,Se Acabó la Fiesta,3
+1022,Compromís: Front Valencià,3
+1023,PSOE,0
+1023,PP,9
+1023,Vox,9
+1023,Se Acabó la Fiesta,0
+1023,Compromís: Front Valencià,5
+1024,PSOE,0
+1024,PP,8
+1024,Vox,9
+1024,Frente Amplio,0
+1024,Se Acabó la Fiesta,1
+1025,PSOE,4
+1025,PP,8
+1025,Vox,3
+1025,Frente Amplio,5
+1025,Podemos,6
+1025,Se Acabó la Fiesta,3
+1026,PSOE,0
+1026,PP,7
+1026,Vox,10
+1026,Frente Amplio,0
+1026,Podemos,0
+1026,Se Acabó la Fiesta,6
+1027,PSOE,99
+1027,PP,99
+1027,Vox,99
+1027,Frente Amplio,99
+1027,Podemos,99
+1027,Se Acabó la Fiesta,99
+1028,PSOE,10
+1028,PP,0
+1028,Vox,0
+1028,Frente Amplio,6
+1028,Se Acabó la Fiesta,8
+1029,PSOE,5
+1029,PP,0
+1029,Vox,0
+1029,Frente Amplio,6
+1029,Se Acabó la Fiesta,0
+1030,PSOE,0
+1030,PP,9
+1030,Vox,1
+1030,Frente Amplio,0
+1030,Podemos,0
+1030,Se Acabó la Fiesta,0
+1031,PSOE,3
+1031,PP,10
+1031,Vox,8
+1031,Frente Amplio,1
+1031,Podemos,0
+1031,Se Acabó la Fiesta,0
+1032,PSOE,9
+1032,PP,0
+1032,Vox,0
+1032,Frente Amplio,6
+1032,Podemos,3
+1032,Se Acabó la Fiesta,0
+1033,PSOE,0
+1033,PP,8
+1033,Vox,0
+1033,Frente Amplio,0
+1033,Podemos,0
+1033,Se Acabó la Fiesta,0
+1034,PSOE,5
+1034,PP,0
+1034,Vox,0
+1034,Se Acabó la Fiesta,0
+1034,Unidad del Pueblo Canario,5
+1035,PSOE,0
+1035,PP,9
+1035,Vox,5
+1035,Frente Amplio,0
+1035,Podemos,0
+1035,Se Acabó la Fiesta,0
+1036,PSOE,10
+1036,PP,0
+1036,Vox,0
+1036,Frente Amplio,7
+1036,Podemos,5
+1036,Se Acabó la Fiesta,0
+1037,PSOE,0
+1037,PP,10
+1037,Vox,8
+1037,Se Acabó la Fiesta,7
+1037,Compromís: Front Valencià,2
+1038,PSOE,0
+1038,PP,2
+1038,Vox,9
+1038,Frente Amplio,6
+1038,Podemos,3
+1039,PSOE,10
+1039,PP,5
+1039,Vox,5
+1039,Frente Amplio,5
+1039,Podemos,5
+1039,Se Acabó la Fiesta,5
+1040,PSOE,10
+1040,PP,0
+1040,Vox,0
+1040,Frente Amplio,0
+1040,Se Acabó la Fiesta,0
+1041,PSOE,2
+1041,PP,5
+1041,Vox,8
+1041,Frente Amplio,6
+1041,Podemos,8
+1041,Se Acabó la Fiesta,5
+1042,PSOE,10
+1042,PP,0
+1042,Vox,0
+1042,Frente Amplio,5
+1042,Podemos,5
+1042,Se Acabó la Fiesta,0
+1043,PSOE,0
+1043,PP,8
+1043,Vox,10
+1043,Frente Amplio,0
+1043,Podemos,0
+1043,Se Acabó la Fiesta,5
+1044,PSOE,1
+1044,PP,5
+1044,Vox,0
+1044,Frente Amplio,8
+1044,Podemos,5
+1044,Se Acabó la Fiesta,2
+1045,PSOE,8
+1045,PP,0
+1045,Vox,0
+1045,Frente Amplio,7
+1045,Se Acabó la Fiesta,0
+1046,PSOE,10
+1046,PP,0
+1046,Vox,0
+1046,Se Acabó la Fiesta,4
+1046,Compromís: Front Valencià,7
+1047,PSOE,7
+1047,PP,0
+1047,Vox,0
+1047,Frente Amplio,6
+1047,Podemos,5
+1047,Se Acabó la Fiesta,5
+1048,PSOE,10
+1048,PP,0
+1048,Vox,0
+1048,Frente Amplio,0
+1048,Podemos,3
+1048,Se Acabó la Fiesta,0
+1049,PSOE,0
+1049,PP,10
+1049,Vox,0
+1049,Se Acabó la Fiesta,0
+1049,Unidad del Pueblo Canario,0
+1050,PSOE,10
+1050,PP,0
+1050,Vox,0
+1050,Frente Amplio,0
+1050,Se Acabó la Fiesta,0
+1051,PSOE,7
+1051,PP,0
+1051,Vox,0
+1051,Frente Amplio,7
+1051,Podemos,6
+1051,Se Acabó la Fiesta,0
+1052,PSOE,5
+1052,PP,0
+1052,Vox,0
+1052,Frente Amplio,5
+1052,Podemos,10
+1052,Se Acabó la Fiesta,0
+1053,PSOE,5
+1053,PP,0
+1053,Vox,0
+1053,Frente Amplio,8
+1053,Podemos,9
+1053,Se Acabó la Fiesta,0
+1054,PSOE,6
+1054,PP,0
+1054,Vox,0
+1054,Frente Amplio,7
+1054,Podemos,3
+1054,Se Acabó la Fiesta,0
+1055,PSOE,8
+1055,PP,4
+1055,Vox,5
+1055,Se Acabó la Fiesta,0
+1055,Unidad del Pueblo Canario,6
+1056,PSOE,7
+1056,PP,7
+1056,Vox,1
+1056,Frente Amplio,1
+1056,Podemos,1
+1056,Se Acabó la Fiesta,0
+1057,PSOE,0
+1057,PP,0
+1057,Vox,10
+1057,Frente Amplio,0
+1057,Podemos,0
+1057,Se Acabó la Fiesta,0
+1058,PSOE,6
+1058,PP,5
+1058,Vox,6
+1058,Frente Amplio,9
+1058,Podemos,6
+1058,Se Acabó la Fiesta,6
+1059,PSOE,99
+1059,PP,99
+1059,Vox,99
+1059,Frente Amplio,99
+1059,Podemos,99
+1059,Se Acabó la Fiesta,99
+1060,PSOE,0
+1060,PP,0
+1060,Vox,0
+1060,Frente Amplio,0
+1060,Podemos,0
+1061,PSOE,5
+1061,PP,3
+1061,Vox,1
+1061,Frente Amplio,5
+1061,Podemos,0
+1061,Se Acabó la Fiesta,0
+1062,PSOE,10
+1062,PP,0
+1062,Vox,0
+1062,Se Acabó la Fiesta,0
+1062,Compromís: Front Valencià,6
+1063,PSOE,3
+1063,PP,8
+1063,Vox,7
+1063,Frente Amplio,1
+1063,Podemos,0
+1063,Se Acabó la Fiesta,8
+1064,PSOE,99
+1064,PP,99
+1064,Vox,99
+1064,Frente Amplio,99
+1064,Podemos,99
+1064,Se Acabó la Fiesta,99
+1065,PSOE,9
+1065,PP,1
+1065,Vox,0
+1065,Se Acabó la Fiesta,0
+1065,Compromís: Front Valencià,5
+1066,PSOE,0
+1066,PP,0
+1066,Vox,1
+1066,Frente Amplio,3
+1066,Se Acabó la Fiesta,2
+1067,PSOE,0
+1067,PP,10
+1067,Vox,5
+1067,Frente Amplio,1
+1067,Podemos,0
+1067,Se Acabó la Fiesta,1
+1068,PSOE,9
+1068,PP,0
+1068,Vox,0
+1068,Frente Amplio,8
+1068,Podemos,7
+1068,Se Acabó la Fiesta,0
+1069,PSOE,0
+1069,PP,9
+1069,Vox,8
+1069,Frente Amplio,0
+1069,Podemos,0
+1069,Se Acabó la Fiesta,6
+1070,PSOE,0
+1070,PP,0
+1070,Vox,0
+1070,Frente Amplio,0
+1070,Se Acabó la Fiesta,0
+1071,PSOE,99
+1071,PP,99
+1071,Vox,99
+1071,Frente Amplio,99
+1071,Podemos,99
+1071,Se Acabó la Fiesta,99
+1072,PSOE,8
+1072,PP,5
+1072,Vox,1
+1072,Frente Amplio,7
+1072,Podemos,4
+1072,Se Acabó la Fiesta,1
+1073,PSOE,10
+1073,PP,0
+1073,Vox,0
+1073,Se Acabó la Fiesta,0
+1073,Unidad del Pueblo Canario,0
+1074,PSOE,0
+1074,PP,2
+1074,Vox,10
+1074,Frente Amplio,0
+1074,Podemos,0
+1074,Se Acabó la Fiesta,0
+1075,PSOE,7
+1075,PP,5
+1075,Vox,0
+1075,Frente Amplio,6
+1075,Podemos,3
+1075,Se Acabó la Fiesta,0
+1076,PSOE,10
+1076,PP,0
+1076,Vox,0
+1076,Frente Amplio,0
+1076,Podemos,0
+1076,Se Acabó la Fiesta,0
+1077,PSOE,1
+1077,PP,2
+1077,Vox,3
+1077,Frente Amplio,1
+1077,Podemos,1
+1077,Se Acabó la Fiesta,2
+1078,PSOE,0
+1078,PP,10
+1078,Vox,0
+1078,Se Acabó la Fiesta,0
+1078,Compromís: Front Valencià,0
+1079,PSOE,5
+1079,PP,2
+1079,Vox,7
+1079,Frente Amplio,5
+1079,Se Acabó la Fiesta,4
+1080,PSOE,0
+1080,PP,8
+1080,Vox,8
+1080,Se Acabó la Fiesta,4
+1080,Unidad del Pueblo Canario,0
+1081,PSOE,0
+1081,PP,0
+1081,Vox,0
+1081,Frente Amplio,0
+1081,Se Acabó la Fiesta,0
+1082,PSOE,6
+1082,PP,0
+1082,Vox,0
+1082,Se Acabó la Fiesta,0
+1082,Ara Més – Front Ampli,8
+1083,PSOE,7
+1083,PP,0
+1083,Vox,0
+1083,Se Acabó la Fiesta,0
+1083,Compromís: Front Valencià,6
+1084,PSOE,6
+1084,PP,1
+1084,Vox,0
+1084,Frente Amplio,7
+1084,Podemos,6
+1084,Se Acabó la Fiesta,0
+1085,PSOE,10
+1085,PP,0
+1085,Vox,0
+1085,Frente Amplio,9
+1085,Podemos,9
+1085,Se Acabó la Fiesta,5
+1086,PSOE,10
+1086,PP,0
+1086,Vox,0
+1086,Frente Amplio,5
+1086,Podemos,5
+1086,Se Acabó la Fiesta,0
+1087,PSOE,0
+1087,PP,10
+1087,Vox,8
+1087,Se Acabó la Fiesta,6
+1087,Compromís: Front Valencià,0
+1088,PSOE,3
+1088,PP,8
+1088,Vox,8
+1088,Frente Amplio,5
+1088,Podemos,0
+1088,Se Acabó la Fiesta,6
+1089,PSOE,9
+1089,PP,0
+1089,Vox,0
+1089,Frente Amplio,4
+1089,Podemos,4
+1089,Se Acabó la Fiesta,8
+1090,PSOE,0
+1090,PP,10
+1090,Vox,9
+1090,Se Acabó la Fiesta,8
+1090,Compromís: Front Valencià,0
+1091,PSOE,0
+1091,PP,10
+1091,Vox,9
+1091,Frente Amplio,0
+1091,Podemos,0
+1091,Se Acabó la Fiesta,0
+1092,PSOE,0
+1092,PP,0
+1092,Vox,0
+1092,Se Acabó la Fiesta,0
+1092,Unidad del Pueblo Canario,0
+1093,PSOE,3
+1093,PP,0
+1093,Vox,0
+1093,Se Acabó la Fiesta,0
+1093,Unidad del Pueblo Canario,0
+1094,PSOE,99
+1094,PP,99
+1094,Vox,99
+1094,Frente Amplio,0
+1094,Podemos,99
+1094,Se Acabó la Fiesta,0
+1095,PSOE,3
+1095,PP,8
+1095,Vox,9
+1095,Frente Amplio,2
+1095,Podemos,1
+1095,Se Acabó la Fiesta,1
+1096,PSOE,6
+1096,PP,1
+1096,Vox,0
+1096,Frente Amplio,5
+1097,PSOE,5
+1097,PP,4
+1097,Vox,5
+1097,Frente Amplio,10
+1097,Podemos,10
+1097,Se Acabó la Fiesta,5
+1098,PSOE,0
+1098,PP,4
+1098,Vox,9
+1098,Frente Amplio,0
+1098,Se Acabó la Fiesta,9
+1099,PSOE,1
+1099,PP,2
+1099,Vox,0
+1099,Frente Amplio,4
+1099,Se Acabó la Fiesta,1
+1100,PSOE,0
+1100,PP,0
+1100,Vox,0
+1100,Frente Amplio,8
+1100,Podemos,9
+1100,Se Acabó la Fiesta,0
+1101,PSOE,0
+1101,PP,0
+1101,Vox,5
+1101,Frente Amplio,0
+1101,Podemos,0
+1102,PSOE,2
+1102,PP,9
+1102,Vox,0
+1102,Frente Amplio,0
+1102,Podemos,0
+1102,Se Acabó la Fiesta,0
+1103,PSOE,6
+1103,PP,4
+1103,Vox,0
+1103,Frente Amplio,4
+1103,Se Acabó la Fiesta,0
+1104,PSOE,5
+1104,PP,4
+1104,Vox,2
+1104,Frente Amplio,3
+1104,Se Acabó la Fiesta,3
+1105,PSOE,0
+1105,PP,8
+1105,Vox,7
+1105,Frente Amplio,0
+1105,Se Acabó la Fiesta,7
+1106,PSOE,5
+1106,PP,0
+1106,Vox,2
+1106,Frente Amplio,5
+1106,Se Acabó la Fiesta,5
+1107,PSOE,7
+1107,PP,3
+1107,Vox,0
+1107,Frente Amplio,6
+1107,Podemos,4
+1107,Se Acabó la Fiesta,1
+1108,PSOE,7
+1108,PP,4
+1108,Vox,3
+1108,Frente Amplio,6
+1109,PSOE,0
+1109,PP,4
+1109,Vox,10
+1109,Frente Amplio,0
+1109,Podemos,0
+1110,PSOE,3
+1110,PP,10
+1110,Vox,2
+1110,Frente Amplio,0
+1110,Se Acabó la Fiesta,0
+1111,PSOE,3
+1111,PP,0
+1111,Vox,0
+1111,Frente Amplio,7
+1111,Podemos,1
+1111,Se Acabó la Fiesta,2
+1112,PSOE,9
+1112,Vox,0
+1112,Frente Amplio,8
+1112,Podemos,8
+1112,Se Acabó la Fiesta,0
+1112,UPN-PP,1
+1113,PSOE,3
+1113,PP,9
+1113,Vox,7
+1113,Podemos,2
+1113,Se Acabó la Fiesta,1
+1114,PSOE,0
+1114,PP,6
+1114,Vox,10
+1114,Frente Amplio,0
+1114,Se Acabó la Fiesta,8
+1115,PSOE,7
+1115,PP,0
+1115,Vox,0
+1115,Frente Amplio,5
+1115,Podemos,6
+1115,Se Acabó la Fiesta,0
+1116,PSOE,9
+1116,PP,7
+1116,Vox,1
+1116,Frente Amplio,5
+1116,Podemos,5
+1116,Se Acabó la Fiesta,2
+1117,PSOE,10
+1117,PP,0
+1117,Vox,0
+1117,Frente Amplio,0
+1117,Podemos,3
+1117,Se Acabó la Fiesta,0
+1118,PSOE,10
+1118,PP,0
+1118,Vox,0
+1118,Frente Amplio,0
+1118,Podemos,0
+1118,Se Acabó la Fiesta,0
+1119,PSOE,1
+1119,PP,10
+1119,Vox,8
+1119,Frente Amplio,1
+1119,Podemos,1
+1119,Se Acabó la Fiesta,1
+1120,PSOE,1
+1120,PP,8
+1120,Vox,8
+1120,Frente Amplio,2
+1120,Podemos,1
+1120,Se Acabó la Fiesta,6
+1121,PSOE,0
+1121,PP,0
+1121,Vox,1
+1121,Frente Amplio,0
+1121,Podemos,0
+1121,Se Acabó la Fiesta,2
+1122,PSOE,4
+1122,PP,10
+1122,Vox,3
+1122,Se Acabó la Fiesta,5
+1122,Compromís: Front Valencià,7
+1123,PSOE,0
+1123,PP,10
+1123,Vox,7
+1123,Frente Amplio,0
+1123,Podemos,0
+1123,Se Acabó la Fiesta,0
+1124,PSOE,9
+1124,PP,5
+1124,Vox,0
+1124,Frente Amplio,7
+1124,Podemos,6
+1125,PSOE,7
+1125,PP,3
+1125,Vox,0
+1125,Frente Amplio,7
+1125,Podemos,7
+1125,Se Acabó la Fiesta,0
+1126,PSOE,7
+1126,PP,4
+1126,Vox,2
+1126,Frente Amplio,5
+1126,Podemos,3
+1126,Se Acabó la Fiesta,4
+1127,PSOE,4
+1127,PP,3
+1127,Vox,3
+1127,Frente Amplio,2
+1127,Podemos,2
+1127,Se Acabó la Fiesta,2
+1128,PSOE,0
+1128,PP,10
+1128,Vox,0
+1128,Frente Amplio,0
+1128,Podemos,0
+1128,Se Acabó la Fiesta,0
+1129,PSOE,6
+1129,PP,6
+1129,Vox,0
+1129,Se Acabó la Fiesta,0
+1129,Unidad del Pueblo Canario,0
+1130,PSOE,4
+1130,PP,4
+1130,Vox,0
+1130,Frente Amplio,4
+1130,Podemos,1
+1130,Se Acabó la Fiesta,3
+1131,PSOE,0
+1131,PP,0
+1131,Vox,0
+1131,Podemos,0
+1131,Se Acabó la Fiesta,0
+1132,PSOE,5
+1132,PP,9
+1132,Vox,5
+1132,Frente Amplio,1
+1132,Podemos,0
+1132,Se Acabó la Fiesta,0
+1133,PSOE,5
+1133,PP,0
+1133,Vox,0
+1133,Frente Amplio,10
+1133,Podemos,8
+1133,Se Acabó la Fiesta,0
+1134,PSOE,4
+1134,PP,2
+1134,Vox,0
+1134,Frente Amplio,99
+1134,Podemos,0
+1134,Se Acabó la Fiesta,1
+1135,PSOE,10
+1135,PP,0
+1135,Vox,0
+1135,Frente Amplio,10
+1136,PSOE,10
+1136,PP,6
+1136,Vox,0
+1136,Se Acabó la Fiesta,0
+1136,Ara Més – Front Ampli,8
+1137,PSOE,6
+1137,PP,8
+1137,Vox,4
+1137,Se Acabó la Fiesta,0
+1137,Ara Més – Front Ampli,0
+1138,PSOE,5
+1138,PP,8
+1138,Vox,8
+1138,Frente Amplio,5
+1138,Podemos,2
+1138,Se Acabó la Fiesta,4
+1139,PSOE,0
+1139,PP,9
+1139,Vox,10
+1139,Frente Amplio,0
+1139,Podemos,0
+1140,PSOE,0
+1140,PP,0
+1140,Vox,0
+1140,Frente Amplio,0
+1140,Podemos,0
+1140,Se Acabó la Fiesta,0
+1141,PSOE,2
+1141,PP,99
+1141,Vox,99
+1141,Se Acabó la Fiesta,99
+1141,Unidad del Pueblo Canario,99
+1142,PSOE,1
+1142,PP,8
+1142,Vox,5
+1142,Frente Amplio,5
+1142,Podemos,4
+1142,Se Acabó la Fiesta,1
+1143,PSOE,6
+1143,PP,7
+1143,Vox,0
+1143,Frente Amplio,0
+1143,Podemos,3
+1144,PSOE,9
+1144,PP,3
+1144,Vox,3
+1144,Frente Amplio,2
+1144,Se Acabó la Fiesta,1
+1145,PSOE,0
+1145,PP,9
+1145,Vox,6
+1145,Frente Amplio,0
+1145,Podemos,0
+1145,Se Acabó la Fiesta,2
+1146,PSOE,9
+1146,PP,4
+1146,Vox,0
+1146,Frente Amplio,0
+1146,Podemos,0
+1146,Se Acabó la Fiesta,0
+1147,PSOE,0
+1147,PP,0
+1147,Vox,6
+1147,Frente Amplio,0
+1147,Se Acabó la Fiesta,1
+1148,PSOE,10
+1148,PP,3
+1148,Vox,2
+1148,Frente Amplio,7
+1148,Se Acabó la Fiesta,5
+1149,PSOE,99
+1149,PP,99
+1149,Vox,99
+1149,Se Acabó la Fiesta,99
+1149,Ara Més – Front Ampli,99
+1150,PSOE,7
+1150,PP,1
+1150,Vox,0
+1150,Frente Amplio,6
+1150,Podemos,6
+1150,Se Acabó la Fiesta,4
+1151,PSOE,0
+1151,PP,0
+1151,Vox,10
+1151,Frente Amplio,0
+1151,Podemos,0
+1152,PSOE,8
+1152,PP,5
+1152,Vox,3
+1152,Se Acabó la Fiesta,5
+1152,Unidad del Pueblo Canario,5
+1153,PSOE,5
+1153,PP,0
+1153,Vox,0
+1153,Frente Amplio,5
+1153,Podemos,5
+1153,Se Acabó la Fiesta,0
+1154,PSOE,0
+1154,PP,10
+1154,Vox,0
+1154,Frente Amplio,0
+1154,Podemos,0
+1154,Se Acabó la Fiesta,4
+1155,PSOE,10
+1155,PP,0
+1155,Vox,0
+1155,Frente Amplio,10
+1155,Podemos,6
+1155,Se Acabó la Fiesta,0
+1156,PSOE,0
+1156,PP,0
+1156,Vox,10
+1156,Frente Amplio,0
+1156,Podemos,0
+1156,Se Acabó la Fiesta,2
+1157,PSOE,7
+1157,PP,99
+1157,Vox,0
+1157,Frente Amplio,0
+1157,Podemos,99
+1157,Se Acabó la Fiesta,1
+1158,PSOE,2
+1158,PP,2
+1158,Vox,0
+1158,Frente Amplio,3
+1158,Podemos,2
+1158,Se Acabó la Fiesta,5
+1159,PSOE,10
+1159,PP,0
+1159,Vox,0
+1159,Frente Amplio,5
+1159,Podemos,4
+1159,Se Acabó la Fiesta,5
+1160,PSOE,0
+1160,PP,10
+1160,Vox,9
+1160,Se Acabó la Fiesta,0
+1160,Ara Més – Front Ampli,0
+1161,PSOE,5
+1161,PP,5
+1161,Vox,7
+1161,Frente Amplio,1
+1161,Podemos,4
+1161,Se Acabó la Fiesta,2
+1162,PSOE,1
+1162,PP,8
+1162,Vox,10
+1162,Frente Amplio,0
+1162,Podemos,0
+1162,Se Acabó la Fiesta,0
+1163,PSOE,0
+1163,PP,10
+1163,Vox,9
+1163,Frente Amplio,0
+1163,Podemos,1
+1163,Se Acabó la Fiesta,1
+1164,PSOE,10
+1164,PP,0
+1164,Vox,0
+1164,Frente Amplio,0
+1164,Podemos,0
+1164,Se Acabó la Fiesta,0
+1165,PSOE,10
+1165,PP,0
+1165,Vox,0
+1165,Frente Amplio,6
+1165,Podemos,0
+1165,Se Acabó la Fiesta,0
+1166,PSOE,0
+1166,PP,8
+1166,Vox,6
+1166,Frente Amplio,0
+1166,Podemos,0
+1166,Se Acabó la Fiesta,4
+1167,PSOE,0
+1167,PP,9
+1167,Vox,10
+1167,Podemos,0
+1167,Se Acabó la Fiesta,6
+1168,PSOE,10
+1168,PP,0
+1168,Vox,0
+1168,Se Acabó la Fiesta,0
+1168,Compromís: Front Valencià,7
+1169,PSOE,10
+1169,PP,0
+1169,Vox,0
+1169,Frente Amplio,5
+1169,Podemos,4
+1169,Se Acabó la Fiesta,0
+1170,PSOE,8
+1170,PP,0
+1170,Vox,0
+1170,Frente Amplio,9
+1170,Podemos,8
+1170,Se Acabó la Fiesta,0
+1171,PSOE,10
+1171,PP,0
+1171,Vox,0
+1171,Se Acabó la Fiesta,0
+1171,Compromís: Front Valencià,0
+1172,PSOE,0
+1172,PP,10
+1172,Vox,0
+1172,Se Acabó la Fiesta,0
+1172,Compromís: Front Valencià,0
+1173,PSOE,10
+1173,PP,0
+1173,Vox,0
+1173,Frente Amplio,0
+1173,Podemos,0
+1173,Se Acabó la Fiesta,0
+1174,PSOE,6
+1174,PP,5
+1174,Vox,6
+1174,Se Acabó la Fiesta,1
+1174,Unidad del Pueblo Canario,4
+1175,PSOE,0
+1175,PP,10
+1175,Vox,10
+1175,Frente Amplio,0
+1175,Podemos,0
+1175,Se Acabó la Fiesta,0
+1176,PSOE,1
+1176,PP,0
+1176,Vox,0
+1176,Frente Amplio,5
+1177,PSOE,10
+1177,PP,3
+1177,Vox,0
+1177,Frente Amplio,6
+1177,Podemos,5
+1177,Se Acabó la Fiesta,0
+1178,PSOE,10
+1178,PP,2
+1178,Vox,2
+1178,Frente Amplio,3
+1178,Podemos,6
+1178,Se Acabó la Fiesta,2
+1179,PSOE,3
+1179,PP,4
+1179,Vox,6
+1179,Frente Amplio,7
+1179,Podemos,5
+1179,Se Acabó la Fiesta,6
+1180,PSOE,0
+1180,PP,0
+1180,Vox,10
+1180,Frente Amplio,0
+1180,Podemos,0
+1180,Se Acabó la Fiesta,0
+1181,PSOE,0
+1181,PP,0
+1181,Vox,0
+1181,Frente Amplio,0
+1181,Podemos,0
+1181,Se Acabó la Fiesta,0
+1182,PSOE,10
+1182,PP,1
+1182,Vox,0
+1182,Frente Amplio,6
+1182,Podemos,8
+1182,Se Acabó la Fiesta,1
+1183,PSOE,0
+1183,PP,0
+1183,Vox,0
+1183,Se Acabó la Fiesta,0
+1183,Compromís: Front Valencià,0
+1184,PSOE,0
+1184,PP,5
+1184,Vox,5
+1184,Frente Amplio,0
+1184,Podemos,0
+1184,Se Acabó la Fiesta,0
+1185,PSOE,2
+1185,PP,4
+1185,Vox,7
+1185,Se Acabó la Fiesta,3
+1185,Unidad del Pueblo Canario,3
+1186,PSOE,0
+1186,PP,2
+1186,Vox,8
+1186,Frente Amplio,0
+1186,Podemos,0
+1186,Se Acabó la Fiesta,2
+1187,PSOE,9
+1187,PP,1
+1187,Vox,0
+1187,Frente Amplio,4
+1187,Podemos,2
+1187,Se Acabó la Fiesta,4
+1188,PSOE,5
+1188,PP,9
+1188,Vox,8
+1188,Frente Amplio,6
+1188,Podemos,6
+1188,Se Acabó la Fiesta,6
+1189,PSOE,10
+1189,PP,0
+1189,Vox,0
+1189,Frente Amplio,8
+1189,Podemos,7
+1189,Se Acabó la Fiesta,0
+1190,PSOE,10
+1190,PP,0
+1190,Vox,0
+1190,Frente Amplio,8
+1191,PSOE,5
+1191,PP,0
+1191,Vox,0
+1191,Frente Amplio,7
+1191,Podemos,8
+1191,Se Acabó la Fiesta,0
+1192,PSOE,10
+1192,PP,0
+1192,Vox,0
+1192,Frente Amplio,3
+1192,Podemos,3
+1192,Se Acabó la Fiesta,0
+1193,PSOE,9
+1193,PP,1
+1193,Vox,0
+1193,Frente Amplio,8
+1193,Podemos,5
+1193,Se Acabó la Fiesta,0
+1194,PSOE,1
+1194,PP,1
+1194,Vox,0
+1194,Frente Amplio,1
+1194,Se Acabó la Fiesta,1
+1195,PSOE,0
+1195,PP,6
+1195,Vox,10
+1195,Se Acabó la Fiesta,10
+1195,Unidad del Pueblo Canario,0
+1196,PSOE,0
+1196,PP,8
+1196,Vox,10
+1196,Frente Amplio,0
+1196,Podemos,0
+1196,Se Acabó la Fiesta,2
+1197,PSOE,8
+1197,PP,5
+1197,Vox,4
+1197,Frente Amplio,1
+1197,Podemos,3
+1197,Se Acabó la Fiesta,4
+1198,PSOE,0
+1198,PP,2
+1198,Vox,8
+1198,Frente Amplio,1
+1198,Podemos,0
+1198,Se Acabó la Fiesta,8
+1199,PSOE,10
+1199,PP,0
+1199,Vox,0
+1199,Frente Amplio,6
+1199,Podemos,10
+1199,Se Acabó la Fiesta,0
+1200,PSOE,1
+1200,PP,9
+1200,Vox,5
+1200,Frente Amplio,0
+1200,Podemos,0
+1200,Se Acabó la Fiesta,0
+1201,PSOE,1
+1201,PP,8
+1201,Vox,3
+1201,Frente Amplio,2
+1201,Podemos,2
+1201,Se Acabó la Fiesta,1
+1202,PSOE,0
+1202,PP,9
+1202,Vox,3
+1202,Frente Amplio,0
+1202,Podemos,0
+1202,Se Acabó la Fiesta,0
+1203,PSOE,0
+1203,PP,2
+1203,Vox,10
+1203,Frente Amplio,0
+1203,Podemos,0
+1203,Se Acabó la Fiesta,2
+1204,PSOE,5
+1204,PP,0
+1204,Vox,0
+1204,Frente Amplio,7
+1204,Se Acabó la Fiesta,0
+1205,PSOE,3
+1205,PP,0
+1205,Vox,0
+1205,Frente Amplio,1
+1205,Podemos,2
+1205,Se Acabó la Fiesta,0
+1206,PSOE,0
+1206,PP,6
+1206,Vox,10
+1206,Frente Amplio,0
+1206,Se Acabó la Fiesta,0
+1207,PSOE,2
+1207,PP,10
+1207,Vox,10
+1207,Se Acabó la Fiesta,4
+1207,Compromís: Front Valencià,0
+1208,PSOE,0
+1208,Vox,0
+1208,Frente Amplio,0
+1208,Podemos,0
+1208,Se Acabó la Fiesta,0
+1208,UPN-PP,10
+1209,PSOE,0
+1209,PP,8
+1209,Vox,10
+1209,Frente Amplio,0
+1209,Podemos,0
+1209,Se Acabó la Fiesta,9
+1210,PSOE,0
+1210,PP,0
+1210,Vox,0
+1210,Frente Amplio,2
+1210,Podemos,0
+1210,Se Acabó la Fiesta,0
+1211,PSOE,6
+1211,PP,10
+1211,Vox,5
+1211,Frente Amplio,5
+1211,Podemos,5
+1211,Se Acabó la Fiesta,2
+1212,PSOE,2
+1212,PP,7
+1212,Vox,1
+1212,Frente Amplio,0
+1212,Podemos,0
+1213,PSOE,10
+1213,PP,0
+1213,Vox,0
+1213,Frente Amplio,6
+1213,Podemos,5
+1213,Se Acabó la Fiesta,0
+1214,PSOE,10
+1214,PP,0
+1214,Vox,7
+1214,Frente Amplio,1
+1214,Podemos,9
+1214,Se Acabó la Fiesta,6
+1215,PSOE,9
+1215,PP,0
+1215,Vox,0
+1215,Frente Amplio,6
+1215,Podemos,5
+1215,Se Acabó la Fiesta,0
+1216,PSOE,10
+1216,PP,5
+1216,Vox,0
+1216,Frente Amplio,5
+1216,Podemos,2
+1216,Se Acabó la Fiesta,0
+1217,PSOE,0
+1217,PP,8
+1217,Vox,10
+1217,Frente Amplio,2
+1217,Podemos,0
+1217,Se Acabó la Fiesta,0
+1218,PSOE,2
+1218,PP,1
+1218,Vox,1
+1218,Frente Amplio,2
+1218,Podemos,2
+1218,Se Acabó la Fiesta,0
+1219,PSOE,0
+1219,PP,0
+1219,Vox,0
+1219,Frente Amplio,10
+1219,Se Acabó la Fiesta,1
+1220,PSOE,6
+1220,PP,5
+1220,Vox,5
+1220,Frente Amplio,2
+1220,Podemos,2
+1220,Se Acabó la Fiesta,2
+1221,PSOE,9
+1221,PP,2
+1221,Vox,0
+1221,Se Acabó la Fiesta,4
+1221,Ara Més – Front Ampli,3
+1222,PSOE,8
+1222,PP,0
+1222,Vox,0
+1222,Frente Amplio,0
+1222,Se Acabó la Fiesta,0
+1223,PSOE,0
+1223,PP,9
+1223,Vox,3
+1223,Frente Amplio,0
+1223,Podemos,0
+1223,Se Acabó la Fiesta,0
+1224,PSOE,0
+1224,PP,10
+1224,Vox,9
+1224,Se Acabó la Fiesta,0
+1224,Compromís: Front Valencià,0
+1225,PSOE,9
+1225,PP,1
+1225,Vox,0
+1225,Frente Amplio,7
+1225,Podemos,6
+1225,Se Acabó la Fiesta,99
+1226,PSOE,7
+1226,PP,3
+1226,Vox,10
+1226,Frente Amplio,3
+1226,Podemos,3
+1226,Se Acabó la Fiesta,8
+1227,PSOE,4
+1227,Vox,0
+1227,Frente Amplio,10
+1227,Podemos,0
+1227,Se Acabó la Fiesta,0
+1227,UPN-PP,0
+1228,PSOE,8
+1228,PP,0
+1228,Vox,0
+1228,Se Acabó la Fiesta,0
+1228,Compromís: Front Valencià,0
+1229,PSOE,0
+1229,PP,5
+1229,Vox,10
+1229,Frente Amplio,0
+1229,Podemos,0
+1229,Se Acabó la Fiesta,5
+1230,PSOE,0
+1230,PP,8
+1230,Vox,10
+1230,Frente Amplio,0
+1230,Podemos,0
+1230,Se Acabó la Fiesta,6
+1231,PSOE,9
+1231,PP,4
+1231,Vox,0
+1231,Se Acabó la Fiesta,0
+1231,Ara Més – Front Ampli,0
+1232,PSOE,3
+1232,PP,8
+1232,Vox,4
+1232,Frente Amplio,0
+1232,Podemos,0
+1232,Se Acabó la Fiesta,0
+1233,PSOE,5
+1233,PP,6
+1233,Vox,7
+1233,Se Acabó la Fiesta,0
+1233,Ara Més – Front Ampli,5
+1234,PSOE,4
+1234,PP,0
+1234,Vox,0
+1234,Frente Amplio,3
+1234,Se Acabó la Fiesta,0
+1235,PSOE,2
+1235,PP,0
+1235,Vox,0
+1235,Frente Amplio,2
+1235,Podemos,1
+1235,Se Acabó la Fiesta,0
+1236,PSOE,2
+1236,PP,0
+1236,Vox,0
+1236,Frente Amplio,0
+1236,Se Acabó la Fiesta,0
+1237,PSOE,7
+1237,PP,0
+1237,Vox,0
+1237,Se Acabó la Fiesta,7
+1237,Ara Més – Front Ampli,7
+1238,PSOE,5
+1238,PP,8
+1238,Vox,1
+1238,Frente Amplio,1
+1238,Podemos,2
+1238,Se Acabó la Fiesta,1
+1239,PSOE,1
+1239,PP,10
+1239,Vox,6
+1239,Frente Amplio,3
+1239,Podemos,1
+1239,Se Acabó la Fiesta,2
+1240,PSOE,1
+1240,PP,8
+1240,Vox,10
+1240,Frente Amplio,0
+1240,Podemos,0
+1240,Se Acabó la Fiesta,0
+1241,PSOE,7
+1241,PP,4
+1241,Vox,1
+1241,Frente Amplio,3
+1241,Podemos,5
+1241,Se Acabó la Fiesta,3
+1242,PSOE,9
+1242,PP,6
+1242,Vox,8
+1242,Se Acabó la Fiesta,1
+1242,Unidad del Pueblo Canario,5
+1243,PSOE,0
+1243,PP,0
+1243,Vox,0
+1243,Frente Amplio,0
+1243,Podemos,0
+1244,PSOE,6
+1244,PP,0
+1244,Vox,0
+1244,Frente Amplio,10
+1244,Podemos,3
+1244,Se Acabó la Fiesta,0
+1245,PSOE,10
+1245,PP,0
+1245,Vox,0
+1245,Frente Amplio,2
+1245,Podemos,2
+1245,Se Acabó la Fiesta,0
+1246,PSOE,0
+1246,PP,10
+1246,Vox,0
+1246,Se Acabó la Fiesta,0
+1246,Compromís: Front Valencià,0
+1247,PSOE,0
+1247,PP,0
+1247,Vox,5
+1247,Frente Amplio,0
+1247,Podemos,0
+1247,Se Acabó la Fiesta,0
+1248,PSOE,0
+1248,PP,10
+1248,Vox,10
+1248,Frente Amplio,0
+1248,Podemos,0
+1248,Se Acabó la Fiesta,0
+1249,PSOE,7
+1249,PP,9
+1249,Vox,9
+1249,Frente Amplio,6
+1249,Podemos,6
+1249,Se Acabó la Fiesta,7
+1250,PSOE,10
+1250,PP,0
+1250,Vox,0
+1250,Frente Amplio,5
+1250,Podemos,6
+1250,Se Acabó la Fiesta,3
+1251,PSOE,0
+1251,PP,10
+1251,Vox,8
+1251,Se Acabó la Fiesta,0
+1251,Compromís: Front Valencià,0
+1252,PSOE,7
+1252,PP,0
+1252,Vox,0
+1252,Se Acabó la Fiesta,4
+1252,Unidad del Pueblo Canario,6
+1253,PSOE,10
+1253,PP,0
+1253,Vox,0
+1253,Se Acabó la Fiesta,2
+1253,Unidad del Pueblo Canario,0
+1254,PSOE,10
+1254,PP,0
+1254,Vox,0
+1254,Se Acabó la Fiesta,0
+1254,Compromís: Front Valencià,7
+1255,PSOE,10
+1255,PP,8
+1255,Vox,0
+1255,Frente Amplio,3
+1256,PSOE,0
+1256,PP,0
+1256,Vox,10
+1256,Frente Amplio,0
+1256,Podemos,0
+1256,Se Acabó la Fiesta,0
+1257,PSOE,0
+1257,PP,10
+1257,Vox,6
+1257,Frente Amplio,0
+1257,Podemos,0
+1257,Se Acabó la Fiesta,0
+1258,PSOE,10
+1258,PP,0
+1258,Vox,0
+1258,Se Acabó la Fiesta,0
+1258,Unidad del Pueblo Canario,0
+1259,PSOE,0
+1259,PP,0
+1259,Vox,0
+1259,Frente Amplio,0
+1259,Se Acabó la Fiesta,0
+1260,PSOE,0
+1260,PP,10
+1260,Vox,5
+1260,Frente Amplio,0
+1260,Podemos,0
+1260,Se Acabó la Fiesta,0
+1261,PSOE,0
+1261,PP,10
+1261,Vox,0
+1261,Frente Amplio,0
+1261,Podemos,0
+1261,Se Acabó la Fiesta,0
+1262,PSOE,7
+1262,PP,0
+1262,Vox,0
+1262,Se Acabó la Fiesta,0
+1262,Unidad del Pueblo Canario,0
+1263,PSOE,5
+1263,PP,0
+1263,Vox,0
+1263,Frente Amplio,8
+1263,Podemos,4
+1263,Se Acabó la Fiesta,0
+1264,PSOE,6
+1264,PP,5
+1264,Vox,4
+1264,Frente Amplio,3
+1264,Se Acabó la Fiesta,3
+1265,PSOE,7
+1265,PP,0
+1265,Vox,2
+1265,Frente Amplio,5
+1265,Podemos,2
+1265,Se Acabó la Fiesta,0
+1266,PSOE,0
+1266,PP,9
+1266,Vox,10
+1266,Se Acabó la Fiesta,2
+1266,Unidad del Pueblo Canario,0
+1267,PSOE,10
+1267,PP,0
+1267,Vox,0
+1267,Frente Amplio,6
+1267,Podemos,3
+1267,Se Acabó la Fiesta,0
+1268,PSOE,0
+1268,PP,5
+1268,Vox,0
+1268,Se Acabó la Fiesta,3
+1268,Compromís: Front Valencià,5
+1269,PSOE,8
+1269,PP,0
+1269,Vox,0
+1269,Frente Amplio,7
+1269,Podemos,9
+1269,Se Acabó la Fiesta,0
+1270,PSOE,1
+1270,PP,9
+1270,Vox,6
+1270,Frente Amplio,0
+1270,Podemos,0
+1270,Se Acabó la Fiesta,0
+1271,PSOE,3
+1271,PP,9
+1271,Vox,3
+1271,Frente Amplio,0
+1271,Podemos,2
+1271,Se Acabó la Fiesta,0
+1272,PSOE,5
+1272,PP,5
+1272,Vox,0
+1272,Frente Amplio,0
+1272,Podemos,0
+1272,Se Acabó la Fiesta,0
+1273,PSOE,8
+1273,PP,0
+1273,Vox,0
+1273,Frente Amplio,5
+1273,Podemos,0
+1273,Se Acabó la Fiesta,0
+1274,PSOE,0
+1274,PP,9
+1274,Vox,10
+1274,Frente Amplio,0
+1274,Podemos,0
+1274,Se Acabó la Fiesta,5
+1275,PSOE,10
+1275,PP,1
+1275,Vox,0
+1275,Se Acabó la Fiesta,0
+1275,Unidad del Pueblo Canario,5
+1276,PSOE,10
+1276,PP,0
+1276,Vox,0
+1276,Frente Amplio,9
+1276,Se Acabó la Fiesta,0
+1277,PSOE,0
+1277,PP,8
+1277,Vox,3
+1277,Frente Amplio,1
+1277,Podemos,0
+1277,Se Acabó la Fiesta,1
+1278,PSOE,10
+1278,PP,0
+1278,Vox,0
+1278,Se Acabó la Fiesta,0
+1278,Compromís: Front Valencià,6
+1279,PSOE,2
+1279,PP,6
+1279,Vox,7
+1279,Se Acabó la Fiesta,4
+1279,Compromís: Front Valencià,1
+1280,PSOE,5
+1280,PP,4
+1280,Vox,0
+1280,Se Acabó la Fiesta,0
+1280,Unidad del Pueblo Canario,10
+1281,PSOE,99
+1281,PP,99
+1281,Vox,99
+1281,Frente Amplio,99
+1281,Podemos,99
+1281,Se Acabó la Fiesta,99
+1282,PSOE,0
+1282,PP,10
+1282,Vox,4
+1282,Frente Amplio,0
+1282,Podemos,0
+1282,Se Acabó la Fiesta,0
+1283,PSOE,5
+1283,PP,1
+1283,Vox,0
+1283,Frente Amplio,0
+1283,Podemos,0
+1283,Se Acabó la Fiesta,0
+1284,PSOE,9
+1284,PP,2
+1284,Vox,0
+1284,Frente Amplio,5
+1284,Podemos,0
+1284,Se Acabó la Fiesta,0
+1285,PSOE,5
+1285,PP,0
+1285,Vox,0
+1285,Frente Amplio,6
+1285,Se Acabó la Fiesta,0
+1286,PSOE,2
+1286,PP,2
+1286,Vox,4
+1286,Se Acabó la Fiesta,9
+1286,Unidad del Pueblo Canario,2
+1287,PSOE,10
+1287,PP,0
+1287,Vox,1
+1287,Frente Amplio,5
+1287,Podemos,0
+1288,PSOE,6
+1288,PP,0
+1288,Vox,0
+1288,Frente Amplio,1
+1288,Se Acabó la Fiesta,0
+1289,PSOE,8
+1289,PP,5
+1289,Vox,8
+1289,Se Acabó la Fiesta,3
+1289,Unidad del Pueblo Canario,6
+1290,PSOE,0
+1290,PP,7
+1290,Vox,9
+1290,Frente Amplio,0
+1290,Podemos,0
+1290,Se Acabó la Fiesta,0
+1291,PSOE,9
+1291,PP,8
+1291,Vox,8
+1291,Frente Amplio,8
+1291,Podemos,6
+1291,Se Acabó la Fiesta,6
+1292,PSOE,0
+1292,PP,5
+1292,Vox,5
+1292,Frente Amplio,0
+1292,Podemos,0
+1292,Se Acabó la Fiesta,0
+1293,PSOE,0
+1293,PP,9
+1293,Vox,0
+1293,Frente Amplio,0
+1293,Podemos,0
+1293,Se Acabó la Fiesta,0
+1294,PSOE,10
+1294,PP,0
+1294,Vox,0
+1294,Frente Amplio,8
+1294,Podemos,1
+1294,Se Acabó la Fiesta,0
+1295,PSOE,6
+1295,PP,5
+1295,Vox,0
+1295,Frente Amplio,3
+1295,Podemos,2
+1295,Se Acabó la Fiesta,0
+1296,PSOE,0
+1296,PP,10
+1296,Vox,8
+1296,Frente Amplio,0
+1296,Podemos,0
+1296,Se Acabó la Fiesta,8
+1297,PSOE,0
+1297,PP,5
+1297,Vox,0
+1297,Frente Amplio,1
+1297,Podemos,1
+1297,Se Acabó la Fiesta,0
+1298,PSOE,99
+1298,PP,99
+1298,Vox,99
+1298,Se Acabó la Fiesta,99
+1298,Compromís: Front Valencià,99
+1299,PSOE,10
+1299,PP,0
+1299,Vox,0
+1299,Frente Amplio,6
+1299,Se Acabó la Fiesta,0
+1300,PSOE,8
+1300,PP,2
+1300,Vox,0
+1300,Se Acabó la Fiesta,0
+1300,Compromís: Front Valencià,7
+1301,PSOE,10
+1301,PP,0
+1301,Vox,0
+1301,Frente Amplio,8
+1301,Podemos,8
+1301,Se Acabó la Fiesta,0
+1302,PSOE,0
+1302,PP,4
+1302,Vox,0
+1302,Frente Amplio,2
+1302,Podemos,0
+1302,Se Acabó la Fiesta,0
+1303,PSOE,10
+1303,PP,0
+1303,Vox,0
+1303,Frente Amplio,5
+1303,Podemos,2
+1303,Se Acabó la Fiesta,0
+1304,PSOE,0
+1304,PP,0
+1304,Vox,10
+1304,Frente Amplio,0
+1304,Podemos,0
+1304,Se Acabó la Fiesta,0
+1305,PSOE,5
+1305,PP,9
+1305,Vox,0
+1305,Frente Amplio,0
+1305,Podemos,0
+1305,Se Acabó la Fiesta,2
+1306,PSOE,9
+1306,PP,0
+1306,Vox,0
+1306,Se Acabó la Fiesta,0
+1306,Compromís: Front Valencià,9
+1307,PSOE,8
+1307,PP,3
+1307,Vox,1
+1307,Frente Amplio,5
+1307,Podemos,4
+1307,Se Acabó la Fiesta,0
+1308,PSOE,2
+1308,PP,9
+1308,Vox,1
+1308,Frente Amplio,1
+1308,Podemos,2
+1308,Se Acabó la Fiesta,2
+1309,PSOE,0
+1309,PP,0
+1309,Vox,0
+1309,Frente Amplio,0
+1309,Se Acabó la Fiesta,0
+1310,PSOE,3
+1310,PP,10
+1310,Vox,5
+1310,Frente Amplio,0
+1310,Podemos,0
+1310,Se Acabó la Fiesta,3
+1311,PSOE,0
+1311,PP,8
+1311,Vox,8
+1311,Frente Amplio,0
+1311,Podemos,0
+1311,Se Acabó la Fiesta,4
+1312,PSOE,0
+1312,PP,8
+1312,Vox,10
+1312,Se Acabó la Fiesta,5
+1312,Ara Més – Front Ampli,0
+1313,PSOE,2
+1313,PP,0
+1313,Vox,0
+1313,Frente Amplio,6
+1313,Se Acabó la Fiesta,0
+1314,PSOE,0
+1314,PP,8
+1314,Vox,0
+1314,Frente Amplio,0
+1314,Podemos,0
+1314,Se Acabó la Fiesta,0
+1315,PSOE,10
+1315,PP,0
+1315,Vox,0
+1315,Frente Amplio,8
+1315,Se Acabó la Fiesta,0
+1316,PSOE,6
+1316,PP,4
+1316,Vox,1
+1316,Frente Amplio,2
+1316,Se Acabó la Fiesta,0
+1317,PSOE,1
+1317,PP,0
+1317,Vox,0
+1317,Frente Amplio,1
+1317,Podemos,1
+1317,Se Acabó la Fiesta,0
+1318,PSOE,10
+1318,PP,0
+1318,Vox,0
+1318,Frente Amplio,9
+1318,Podemos,4
+1318,Se Acabó la Fiesta,0
+1319,PSOE,0
+1319,PP,8
+1319,Vox,7
+1319,Se Acabó la Fiesta,3
+1319,Compromís: Front Valencià,1
+1320,PSOE,1
+1320,PP,8
+1320,Vox,6
+1320,Se Acabó la Fiesta,1
+1320,Compromís: Front Valencià,1
+1321,PSOE,7
+1321,PP,0
+1321,Vox,0
+1321,Frente Amplio,10
+1321,Podemos,6
+1321,Se Acabó la Fiesta,3
+1322,PSOE,10
+1322,PP,0
+1322,Vox,0
+1322,Se Acabó la Fiesta,0
+1322,Compromís: Front Valencià,0
+1323,PSOE,9
+1323,PP,0
+1323,Vox,0
+1323,Frente Amplio,6
+1323,Podemos,5
+1323,Se Acabó la Fiesta,0
+1324,PSOE,6
+1324,PP,8
+1324,Vox,0
+1324,Se Acabó la Fiesta,0
+1324,Ara Més – Front Ampli,6
+1325,PSOE,6
+1325,PP,0
+1325,Vox,0
+1325,Frente Amplio,4
+1325,Podemos,3
+1325,Se Acabó la Fiesta,0
+1326,PSOE,0
+1326,PP,0
+1326,Vox,10
+1326,Frente Amplio,0
+1326,Se Acabó la Fiesta,0
+1327,PSOE,6
+1327,PP,1
+1327,Vox,1
+1327,Frente Amplio,5
+1327,Podemos,5
+1327,Se Acabó la Fiesta,5
+1328,PSOE,0
+1328,PP,0
+1328,Vox,0
+1328,Frente Amplio,0
+1328,Podemos,0
+1328,Se Acabó la Fiesta,0
+1329,PSOE,0
+1329,PP,8
+1329,Vox,7
+1329,Frente Amplio,0
+1329,Podemos,0
+1329,Se Acabó la Fiesta,0
+1330,PSOE,10
+1330,PP,0
+1330,Vox,0
+1330,Frente Amplio,0
+1330,Podemos,0
+1330,Se Acabó la Fiesta,0
+1331,PSOE,10
+1331,PP,0
+1331,Vox,0
+1331,Frente Amplio,0
+1331,Podemos,10
+1332,PSOE,1
+1332,PP,5
+1332,Vox,5
+1332,Frente Amplio,7
+1332,Podemos,2
+1332,Se Acabó la Fiesta,1
+1333,PSOE,2
+1333,PP,7
+1333,Vox,0
+1333,Se Acabó la Fiesta,0
+1333,Ara Més – Front Ampli,0
+1334,PSOE,0
+1334,PP,0
+1334,Vox,10
+1334,Frente Amplio,0
+1334,Podemos,0
+1334,Se Acabó la Fiesta,0
+1335,PSOE,1
+1335,PP,9
+1335,Vox,1
+1335,Frente Amplio,5
+1335,Podemos,1
+1335,Se Acabó la Fiesta,4
+1336,PSOE,0
+1336,PP,7
+1336,Vox,3
+1336,Frente Amplio,0
+1336,Se Acabó la Fiesta,4
+1337,PSOE,99
+1337,PP,99
+1337,Vox,99
+1337,Frente Amplio,99
+1337,Podemos,99
+1337,Se Acabó la Fiesta,99
+1338,PSOE,9
+1338,PP,0
+1338,Vox,0
+1338,Se Acabó la Fiesta,0
+1338,Compromís: Front Valencià,5
+1339,PSOE,10
+1339,PP,5
+1339,Vox,0
+1339,Frente Amplio,4
+1339,Podemos,5
+1339,Se Acabó la Fiesta,4
+1340,PSOE,10
+1340,PP,1
+1340,Vox,0
+1340,Frente Amplio,1
+1340,Podemos,0
+1340,Se Acabó la Fiesta,0
+1341,PSOE,10
+1341,PP,1
+1341,Vox,0
+1341,Frente Amplio,9
+1341,Podemos,2
+1341,Se Acabó la Fiesta,2
+1342,PSOE,10
+1342,PP,3
+1342,Vox,0
+1342,Frente Amplio,8
+1342,Podemos,5
+1342,Se Acabó la Fiesta,0
+1343,PSOE,4
+1343,PP,3
+1343,Vox,2
+1343,Se Acabó la Fiesta,2
+1343,Compromís: Front Valencià,3
+1344,PSOE,0
+1344,PP,8
+1344,Vox,4
+1344,Frente Amplio,0
+1344,Podemos,0
+1344,Se Acabó la Fiesta,0
+1345,PSOE,0
+1345,PP,2
+1345,Vox,0
+1345,Frente Amplio,3
+1345,Podemos,0
+1345,Se Acabó la Fiesta,5
+1346,PSOE,9
+1346,PP,0
+1346,Vox,0
+1346,Frente Amplio,9
+1346,Podemos,6
+1346,Se Acabó la Fiesta,0
+1347,PSOE,0
+1347,PP,10
+1347,Vox,5
+1347,Frente Amplio,0
+1347,Podemos,0
+1347,Se Acabó la Fiesta,0
+1348,PSOE,8
+1348,PP,5
+1348,Vox,1
+1348,Frente Amplio,6
+1348,Podemos,1
+1348,Se Acabó la Fiesta,0
+1349,PSOE,8
+1349,PP,99
+1349,Vox,99
+1349,Frente Amplio,99
+1349,Podemos,99
+1349,Se Acabó la Fiesta,99
+1350,PSOE,0
+1350,PP,6
+1350,Vox,8
+1350,Frente Amplio,1
+1350,Podemos,0
+1350,Se Acabó la Fiesta,3
+1351,PSOE,8
+1351,PP,0
+1351,Vox,0
+1351,Frente Amplio,8
+1351,Se Acabó la Fiesta,0
+1352,PSOE,0
+1352,PP,8
+1352,Vox,7
+1352,Frente Amplio,0
+1352,Podemos,0
+1352,Se Acabó la Fiesta,7
+1353,PSOE,8
+1353,PP,0
+1353,Vox,0
+1353,Frente Amplio,4
+1353,Podemos,8
+1353,Se Acabó la Fiesta,0
+1354,PSOE,10
+1354,PP,0
+1354,Vox,0
+1354,Se Acabó la Fiesta,0
+1354,Compromís: Front Valencià,0
+1355,PSOE,0
+1355,PP,6
+1355,Vox,10
+1355,Frente Amplio,0
+1355,Se Acabó la Fiesta,0
+1356,PSOE,10
+1356,PP,4
+1356,Vox,0
+1356,Frente Amplio,9
+1356,Podemos,8
+1356,Se Acabó la Fiesta,3
+1357,PSOE,5
+1357,PP,0
+1357,Vox,0
+1357,Frente Amplio,5
+1357,Se Acabó la Fiesta,0
+1358,PSOE,9
+1358,PP,0
+1358,Vox,0
+1358,Frente Amplio,9
+1358,Podemos,9
+1358,Se Acabó la Fiesta,0
+1359,PSOE,0
+1359,PP,10
+1359,Vox,5
+1359,Frente Amplio,0
+1359,Podemos,0
+1359,Se Acabó la Fiesta,0
+1360,PSOE,2
+1360,PP,0
+1360,Vox,0
+1360,Frente Amplio,1
+1360,Podemos,3
+1360,Se Acabó la Fiesta,0
+1361,PSOE,5
+1361,PP,9
+1361,Vox,5
+1361,Frente Amplio,5
+1361,Podemos,5
+1361,Se Acabó la Fiesta,5
+1362,PSOE,3
+1362,PP,4
+1362,Vox,1
+1362,Frente Amplio,3
+1362,Podemos,1
+1363,PSOE,10
+1363,PP,3
+1363,Vox,0
+1363,Frente Amplio,4
+1363,Podemos,5
+1363,Se Acabó la Fiesta,3
+1364,PSOE,0
+1364,PP,0
+1364,Vox,10
+1364,Frente Amplio,0
+1364,Se Acabó la Fiesta,0
+1365,PSOE,0
+1365,PP,5
+1365,Vox,6
+1365,Frente Amplio,0
+1365,Podemos,0
+1365,Se Acabó la Fiesta,6
+1366,PSOE,1
+1366,PP,8
+1366,Vox,9
+1366,Frente Amplio,0
+1366,Podemos,0
+1366,Se Acabó la Fiesta,0
+1367,PSOE,0
+1367,PP,0
+1367,Vox,0
+1367,Frente Amplio,0
+1367,Podemos,0
+1367,Se Acabó la Fiesta,0
+1368,PSOE,0
+1368,PP,9
+1368,Vox,9
+1368,Frente Amplio,0
+1368,Se Acabó la Fiesta,0
+1369,PSOE,5
+1369,PP,0
+1369,Vox,0
+1369,Frente Amplio,0
+1369,Se Acabó la Fiesta,0
+1370,PSOE,7
+1370,PP,0
+1370,Vox,0
+1370,Frente Amplio,7
+1370,Se Acabó la Fiesta,0
+1371,PSOE,0
+1371,PP,0
+1371,Vox,10
+1371,Frente Amplio,0
+1371,Podemos,0
+1372,PSOE,10
+1372,PP,5
+1372,Vox,0
+1372,Frente Amplio,4
+1373,PSOE,7
+1373,PP,0
+1373,Vox,1
+1373,Frente Amplio,2
+1373,Podemos,3
+1373,Se Acabó la Fiesta,0
+1374,PSOE,8
+1374,PP,0
+1374,Vox,0
+1374,Se Acabó la Fiesta,8
+1374,Compromís: Front Valencià,10
+1375,PSOE,0
+1375,PP,0
+1375,Vox,0
+1375,Frente Amplio,0
+1375,Podemos,0
+1375,Se Acabó la Fiesta,0
+1376,PSOE,0
+1376,PP,4
+1376,Vox,4
+1376,Frente Amplio,0
+1376,Podemos,0
+1376,Se Acabó la Fiesta,0
+1377,PSOE,5
+1377,PP,0
+1377,Vox,0
+1377,Se Acabó la Fiesta,3
+1377,Compromís: Front Valencià,10
+1378,PSOE,10
+1378,PP,0
+1378,Vox,0
+1378,Se Acabó la Fiesta,0
+1378,Compromís: Front Valencià,1
+1379,PSOE,10
+1379,PP,0
+1379,Vox,0
+1379,Frente Amplio,10
+1379,Se Acabó la Fiesta,0
+1380,PSOE,0
+1380,PP,10
+1380,Vox,0
+1380,Frente Amplio,0
+1380,Podemos,0
+1380,Se Acabó la Fiesta,0
+1381,PSOE,99
+1381,PP,99
+1381,Vox,99
+1381,Frente Amplio,99
+1381,Se Acabó la Fiesta,99
+1382,PSOE,10
+1382,PP,0
+1382,Vox,0
+1382,Frente Amplio,9
+1382,Podemos,8
+1382,Se Acabó la Fiesta,0
+1383,PSOE,0
+1383,PP,8
+1383,Vox,7
+1383,Frente Amplio,0
+1383,Podemos,0
+1383,Se Acabó la Fiesta,5
+1384,PSOE,0
+1384,PP,0
+1384,Vox,5
+1384,Frente Amplio,0
+1384,Podemos,0
+1385,PSOE,6
+1385,PP,0
+1385,Vox,0
+1385,Frente Amplio,7
+1385,Podemos,7
+1385,Se Acabó la Fiesta,0
+1386,PSOE,5
+1386,PP,2
+1386,Vox,2
+1386,Frente Amplio,1
+1386,Podemos,2
+1386,Se Acabó la Fiesta,2
+1387,PSOE,2
+1387,PP,8
+1387,Vox,0
+1387,Frente Amplio,0
+1387,Podemos,0
+1387,Se Acabó la Fiesta,0
+1388,PSOE,0
+1388,PP,6
+1388,Vox,0
+1388,Frente Amplio,0
+1388,Podemos,0
+1388,Se Acabó la Fiesta,0
+1389,PSOE,1
+1389,PP,9
+1389,Vox,10
+1389,Frente Amplio,0
+1389,Podemos,0
+1389,Se Acabó la Fiesta,0
+1390,PSOE,0
+1390,PP,10
+1390,Vox,0
+1390,Frente Amplio,0
+1390,Podemos,0
+1390,Se Acabó la Fiesta,0
+1391,PSOE,0
+1391,PP,5
+1391,Vox,10
+1391,Frente Amplio,5
+1391,Podemos,0
+1391,Se Acabó la Fiesta,9
+1392,PSOE,0
+1392,PP,10
+1392,Vox,6
+1392,Frente Amplio,6
+1392,Podemos,0
+1392,Se Acabó la Fiesta,0
+1393,PSOE,9
+1393,PP,0
+1393,Vox,0
+1393,Frente Amplio,6
+1393,Podemos,7
+1393,Se Acabó la Fiesta,2
+1394,PSOE,0
+1394,PP,8
+1394,Vox,3
+1394,Frente Amplio,0
+1394,Podemos,0
+1394,Se Acabó la Fiesta,0
+1395,PSOE,0
+1395,PP,4
+1395,Vox,8
+1395,Frente Amplio,0
+1395,Podemos,0
+1395,Se Acabó la Fiesta,6
+1396,PSOE,0
+1396,PP,10
+1396,Vox,9
+1396,Frente Amplio,0
+1396,Podemos,0
+1396,Se Acabó la Fiesta,0
+1397,PSOE,0
+1397,PP,0
+1397,Vox,0
+1397,Frente Amplio,1
+1397,Podemos,0
+1397,Se Acabó la Fiesta,6
+1398,PSOE,1
+1398,PP,10
+1398,Vox,9
+1398,Frente Amplio,0
+1398,Podemos,0
+1399,PSOE,9
+1399,PP,1
+1399,Vox,0
+1399,Frente Amplio,8
+1399,Podemos,6
+1399,Se Acabó la Fiesta,0
+1400,PSOE,1
+1400,PP,0
+1400,Vox,0
+1400,Frente Amplio,0
+1400,Podemos,5
+1400,Se Acabó la Fiesta,0
+1401,PSOE,4
+1401,PP,0
+1401,Vox,0
+1401,Frente Amplio,5
+1401,Se Acabó la Fiesta,0
+1402,PSOE,0
+1402,PP,5
+1402,Vox,10
+1402,Frente Amplio,0
+1402,Podemos,0
+1402,Se Acabó la Fiesta,5
+1403,PSOE,0
+1403,PP,10
+1403,Vox,5
+1403,Frente Amplio,0
+1403,Podemos,0
+1403,Se Acabó la Fiesta,0
+1404,PSOE,4
+1404,PP,4
+1404,Vox,0
+1404,Frente Amplio,0
+1405,PSOE,0
+1405,PP,6
+1405,Vox,2
+1405,Frente Amplio,0
+1405,Podemos,0
+1405,Se Acabó la Fiesta,3
+1406,PSOE,8
+1406,PP,1
+1406,Vox,9
+1406,Se Acabó la Fiesta,9
+1406,Compromís: Front Valencià,8
+1407,PSOE,3
+1407,PP,9
+1407,Vox,8
+1407,Frente Amplio,4
+1407,Se Acabó la Fiesta,4
+1408,PSOE,0
+1408,PP,10
+1408,Vox,2
+1408,Frente Amplio,0
+1408,Podemos,0
+1408,Se Acabó la Fiesta,2
+1409,PSOE,1
+1409,PP,10
+1409,Vox,6
+1409,Frente Amplio,0
+1409,Podemos,0
+1409,Se Acabó la Fiesta,0
+1410,PSOE,99
+1410,PP,99
+1410,Vox,99
+1410,Se Acabó la Fiesta,99
+1410,Compromís: Front Valencià,99
+1411,PSOE,7
+1411,PP,0
+1411,Vox,0
+1411,Frente Amplio,0
+1411,Podemos,10
+1411,Se Acabó la Fiesta,6
+1412,PSOE,10
+1412,PP,0
+1412,Vox,0
+1412,Se Acabó la Fiesta,0
+1412,Compromís: Front Valencià,1
+1413,PSOE,8
+1413,PP,2
+1413,Vox,0
+1413,Se Acabó la Fiesta,3
+1413,Compromís: Front Valencià,4
+1414,PSOE,0
+1414,PP,10
+1414,Vox,0
+1414,Frente Amplio,0
+1414,Podemos,0
+1414,Se Acabó la Fiesta,0
+1415,PSOE,8
+1415,PP,0
+1415,Vox,0
+1415,Se Acabó la Fiesta,0
+1415,Compromís: Front Valencià,6
+1416,PSOE,0
+1416,PP,10
+1416,Vox,8
+1416,Se Acabó la Fiesta,0
+1416,Compromís: Front Valencià,0
+1417,PSOE,1
+1417,PP,9
+1417,Vox,10
+1417,Frente Amplio,7
+1418,PSOE,10
+1418,PP,0
+1418,Vox,0
+1418,Frente Amplio,4
+1418,Podemos,8
+1419,PSOE,0
+1419,PP,10
+1419,Vox,9
+1419,Frente Amplio,0
+1419,Podemos,0
+1419,Se Acabó la Fiesta,0
+1420,PSOE,99
+1420,PP,99
+1420,Vox,99
+1420,Frente Amplio,99
+1420,Podemos,99
+1420,Se Acabó la Fiesta,99
+1421,PSOE,3
+1421,PP,0
+1421,Vox,0
+1421,Frente Amplio,3
+1421,Podemos,1
+1421,Se Acabó la Fiesta,0
+1422,PSOE,0
+1422,PP,0
+1422,Vox,0
+1422,Frente Amplio,0
+1422,Se Acabó la Fiesta,0
+1423,PSOE,0
+1423,PP,7
+1423,Vox,10
+1423,Se Acabó la Fiesta,5
+1423,Compromís: Front Valencià,0
+1424,PSOE,10
+1424,PP,0
+1424,Vox,0
+1424,Frente Amplio,4
+1424,Podemos,6
+1425,PSOE,7
+1425,PP,1
+1425,Vox,0
+1425,Se Acabó la Fiesta,2
+1425,Compromís: Front Valencià,7
+1426,PSOE,9
+1426,PP,3
+1426,Vox,1
+1426,Se Acabó la Fiesta,5
+1426,Compromís: Front Valencià,6
+1427,PSOE,3
+1427,PP,1
+1427,Vox,0
+1427,Frente Amplio,8
+1427,Se Acabó la Fiesta,0
+1428,PSOE,0
+1428,PP,8
+1428,Vox,10
+1428,Frente Amplio,0
+1428,Podemos,0
+1428,Se Acabó la Fiesta,9
+1429,PSOE,99
+1429,PP,99
+1429,Vox,99
+1429,Frente Amplio,99
+1429,Podemos,99
+1429,Se Acabó la Fiesta,99
+1430,PSOE,4
+1430,PP,4
+1430,Vox,8
+1430,Frente Amplio,4
+1430,Podemos,4
+1430,Se Acabó la Fiesta,4
+1431,PSOE,0
+1431,PP,6
+1431,Vox,10
+1431,Frente Amplio,0
+1431,Podemos,0
+1431,Se Acabó la Fiesta,6
+1432,PSOE,0
+1432,PP,10
+1432,Vox,3
+1432,Frente Amplio,0
+1432,Podemos,0
+1432,Se Acabó la Fiesta,4
+1433,PSOE,10
+1433,PP,0
+1433,Vox,0
+1433,Frente Amplio,4
+1433,Podemos,3
+1433,Se Acabó la Fiesta,3
+1434,PSOE,0
+1434,PP,9
+1434,Vox,10
+1434,Frente Amplio,0
+1434,Se Acabó la Fiesta,5
+1435,PSOE,0
+1435,PP,0
+1435,Vox,0
+1435,Frente Amplio,0
+1435,Se Acabó la Fiesta,0
+1436,PSOE,0
+1436,PP,0
+1436,Vox,0
+1436,Frente Amplio,0
+1436,Se Acabó la Fiesta,0
+1437,PSOE,8
+1437,PP,0
+1437,Vox,0
+1437,Frente Amplio,6
+1437,Podemos,1
+1437,Se Acabó la Fiesta,5
+1438,PSOE,0
+1438,PP,8
+1438,Vox,9
+1438,Frente Amplio,0
+1438,Podemos,0
+1438,Se Acabó la Fiesta,2
+1439,PSOE,0
+1439,PP,0
+1439,Vox,9
+1439,Frente Amplio,1
+1439,Podemos,0
+1439,Se Acabó la Fiesta,10
+1440,PSOE,8
+1440,PP,0
+1440,Vox,0
+1440,Frente Amplio,8
+1440,Podemos,8
+1440,Se Acabó la Fiesta,5
+1441,PSOE,7
+1441,PP,7
+1441,Vox,2
+1441,Se Acabó la Fiesta,4
+1441,Compromís: Front Valencià,4
+1442,PSOE,10
+1442,PP,0
+1442,Vox,0
+1442,Se Acabó la Fiesta,0
+1442,Compromís: Front Valencià,9
+1443,PSOE,9
+1443,PP,0
+1443,Vox,0
+1443,Frente Amplio,4
+1443,Se Acabó la Fiesta,0
+1444,PSOE,4
+1444,PP,0
+1444,Vox,0
+1444,Frente Amplio,4
+1444,Se Acabó la Fiesta,0
+1445,PSOE,8
+1445,PP,0
+1445,Vox,0
+1445,Frente Amplio,7
+1445,Podemos,5
+1445,Se Acabó la Fiesta,0
+1446,PSOE,0
+1446,PP,0
+1446,Vox,0
+1446,Frente Amplio,0
+1446,Podemos,0
+1446,Se Acabó la Fiesta,0
+1447,PSOE,9
+1447,PP,8
+1447,Vox,0
+1447,Frente Amplio,7
+1447,Se Acabó la Fiesta,9
+1448,PSOE,7
+1448,PP,6
+1448,Vox,3
+1448,Frente Amplio,6
+1448,Podemos,8
+1448,Se Acabó la Fiesta,6
+1449,PSOE,7
+1449,PP,0
+1449,Vox,0
+1449,Se Acabó la Fiesta,0
+1449,Compromís: Front Valencià,10
+1450,PSOE,5
+1450,PP,6
+1450,Vox,0
+1450,Frente Amplio,2
+1450,Podemos,1
+1450,Se Acabó la Fiesta,0
+1451,PSOE,0
+1451,PP,10
+1451,Vox,10
+1451,Frente Amplio,6
+1451,Podemos,6
+1451,Se Acabó la Fiesta,10
+1452,PSOE,2
+1452,PP,8
+1452,Vox,5
+1452,Frente Amplio,0
+1452,Podemos,1
+1452,Se Acabó la Fiesta,2
+1453,PSOE,9
+1453,PP,0
+1453,Vox,0
+1453,Frente Amplio,8
+1453,Podemos,8
+1453,Se Acabó la Fiesta,0
+1454,PSOE,99
+1454,PP,0
+1454,Vox,0
+1454,Frente Amplio,0
+1454,Se Acabó la Fiesta,0
+1455,PSOE,0
+1455,PP,10
+1455,Vox,9
+1455,Frente Amplio,7
+1456,PSOE,8
+1456,PP,3
+1456,Vox,0
+1456,Frente Amplio,10
+1456,Podemos,1
+1456,Se Acabó la Fiesta,1
+1457,PSOE,10
+1457,PP,0
+1457,Vox,0
+1457,Frente Amplio,7
+1457,Podemos,5
+1457,Se Acabó la Fiesta,0
+1458,PSOE,0
+1458,PP,5
+1458,Vox,10
+1458,Se Acabó la Fiesta,0
+1458,Compromís: Front Valencià,0
+1459,PSOE,6
+1459,PP,0
+1459,Vox,0
+1459,Frente Amplio,6
+1459,Se Acabó la Fiesta,0
+1460,PSOE,0
+1460,PP,5
+1460,Vox,10
+1460,Frente Amplio,0
+1460,Podemos,0
+1460,Se Acabó la Fiesta,5
+1461,PSOE,8
+1461,PP,7
+1461,Vox,5
+1461,Frente Amplio,0
+1461,Podemos,0
+1461,Se Acabó la Fiesta,6
+1462,PSOE,5
+1462,PP,6
+1462,Vox,0
+1462,Frente Amplio,5
+1462,Podemos,0
+1462,Se Acabó la Fiesta,0
+1463,PSOE,0
+1463,PP,3
+1463,Vox,8
+1463,Frente Amplio,0
+1463,Podemos,0
+1463,Se Acabó la Fiesta,4
+1464,PSOE,0
+1464,PP,8
+1464,Vox,6
+1464,Se Acabó la Fiesta,6
+1464,Compromís: Front Valencià,1
+1465,PSOE,7
+1465,PP,0
+1465,Vox,0
+1465,Frente Amplio,0
+1465,Podemos,0
+1465,Se Acabó la Fiesta,0
+1466,PSOE,7
+1466,PP,5
+1466,Vox,0
+1466,Frente Amplio,7
+1467,PSOE,6
+1467,PP,0
+1467,Vox,0
+1467,Frente Amplio,5
+1467,Podemos,0
+1467,Se Acabó la Fiesta,0
+1468,PSOE,8
+1468,PP,3
+1468,Vox,0
+1468,Frente Amplio,7
+1468,Podemos,7
+1468,Se Acabó la Fiesta,4
+1469,PSOE,8
+1469,PP,99
+1469,Vox,0
+1469,Frente Amplio,3
+1469,Podemos,2
+1469,Se Acabó la Fiesta,0
+1470,PSOE,10
+1470,PP,0
+1470,Vox,0
+1470,Frente Amplio,0
+1470,Podemos,0
+1470,Se Acabó la Fiesta,0
+1471,PSOE,5
+1471,PP,9
+1471,Vox,0
+1471,Frente Amplio,0
+1471,Se Acabó la Fiesta,0
+1472,PSOE,0
+1472,PP,1
+1472,Vox,1
+1472,Frente Amplio,0
+1472,Podemos,0
+1472,Se Acabó la Fiesta,10
+1473,PSOE,8
+1473,PP,7
+1473,Vox,0
+1473,Frente Amplio,5
+1473,Podemos,6
+1473,Se Acabó la Fiesta,2
+1474,PSOE,0
+1474,PP,5
+1474,Vox,10
+1474,Frente Amplio,0
+1474,Podemos,2
+1474,Se Acabó la Fiesta,3
+1475,PSOE,1
+1475,PP,1
+1475,Vox,8
+1475,Frente Amplio,99
+1475,Se Acabó la Fiesta,99
+1476,PSOE,0
+1476,PP,9
+1476,Vox,1
+1476,Frente Amplio,0
+1476,Podemos,0
+1476,Se Acabó la Fiesta,0
+1477,PSOE,0
+1477,PP,0
+1477,Vox,10
+1477,Frente Amplio,0
+1477,Podemos,0
+1477,Se Acabó la Fiesta,10
+1478,PSOE,0
+1478,PP,0
+1478,Vox,0
+1478,Frente Amplio,0
+1478,Podemos,0
+1478,Se Acabó la Fiesta,0
+1479,PSOE,99
+1479,PP,6
+1479,Vox,99
+1479,Frente Amplio,99
+1479,Podemos,99
+1479,Se Acabó la Fiesta,99
+1480,PSOE,0
+1480,PP,6
+1480,Vox,5
+1480,Frente Amplio,5
+1480,Podemos,5
+1481,PSOE,1
+1481,PP,4
+1481,Vox,2
+1481,Frente Amplio,4
+1481,Podemos,0
+1481,Se Acabó la Fiesta,2
+1482,PSOE,9
+1482,PP,0
+1482,Vox,0
+1482,Frente Amplio,9
+1482,Podemos,9
+1482,Se Acabó la Fiesta,0
+1483,PSOE,9
+1483,PP,3
+1483,Vox,0
+1483,Frente Amplio,5
+1483,Podemos,4
+1483,Se Acabó la Fiesta,5
+1484,PSOE,10
+1484,PP,0
+1484,Vox,0
+1484,Frente Amplio,5
+1484,Podemos,4
+1484,Se Acabó la Fiesta,0
+1485,PSOE,10
+1485,PP,0
+1485,Vox,0
+1485,Frente Amplio,0
+1485,Podemos,0
+1485,Se Acabó la Fiesta,0
+1486,PSOE,10
+1486,PP,0
+1486,Vox,0
+1486,Se Acabó la Fiesta,0
+1486,Compromís: Front Valencià,5
+1487,PSOE,10
+1487,PP,0
+1487,Vox,0
+1487,Frente Amplio,2
+1487,Podemos,2
+1487,Se Acabó la Fiesta,0
+1488,PSOE,0
+1488,PP,6
+1488,Vox,8
+1488,Frente Amplio,0
+1488,Podemos,0
+1488,Se Acabó la Fiesta,8
+1489,PSOE,0
+1489,PP,8
+1489,Vox,10
+1489,Frente Amplio,0
+1489,Se Acabó la Fiesta,0
+1490,PSOE,99
+1490,PP,99
+1490,Vox,99
+1490,Frente Amplio,99
+1490,Podemos,99
+1490,Se Acabó la Fiesta,99
+1491,PSOE,5
+1491,PP,7
+1491,Vox,0
+1491,Se Acabó la Fiesta,0
+1491,Compromís: Front Valencià,3
+1492,PSOE,3
+1492,PP,7
+1492,Vox,5
+1492,Frente Amplio,0
+1492,Podemos,0
+1492,Se Acabó la Fiesta,0
+1493,PSOE,0
+1493,PP,10
+1493,Vox,1
+1493,Frente Amplio,0
+1493,Podemos,0
+1493,Se Acabó la Fiesta,0
+1494,PSOE,8
+1494,PP,0
+1494,Vox,0
+1494,Se Acabó la Fiesta,5
+1494,Compromís: Front Valencià,5
+1495,PSOE,99
+1495,PP,99
+1495,Vox,99
+1495,Frente Amplio,99
+1495,Podemos,99
+1495,Se Acabó la Fiesta,99
+1496,PSOE,6
+1496,PP,4
+1496,Vox,5
+1496,Frente Amplio,5
+1496,Podemos,5
+1496,Se Acabó la Fiesta,5
+1497,PSOE,6
+1497,Vox,0
+1497,Frente Amplio,1
+1497,Podemos,4
+1497,Se Acabó la Fiesta,4
+1497,UPN-PP,0
+1498,PSOE,0
+1498,Vox,0
+1498,Frente Amplio,0
+1498,Podemos,0
+1498,Se Acabó la Fiesta,0
+1498,UPN-PP,0
+1499,PSOE,0
+1499,PP,5
+1499,Vox,0
+1499,Frente Amplio,0
+1499,Se Acabó la Fiesta,0
+1500,PSOE,10
+1500,PP,0
+1500,Vox,0
+1500,Frente Amplio,7
+1500,Podemos,0
+1500,Se Acabó la Fiesta,0
+1501,PSOE,0
+1501,PP,5
+1501,Vox,6
+1501,Frente Amplio,0
+1501,Podemos,0
+1501,Se Acabó la Fiesta,2
+1502,PSOE,10
+1502,PP,0
+1502,Vox,0
+1502,Frente Amplio,7
+1502,Podemos,5
+1502,Se Acabó la Fiesta,0
+1503,PSOE,0
+1503,PP,5
+1503,Vox,10
+1503,Frente Amplio,0
+1503,Podemos,0
+1503,Se Acabó la Fiesta,5
+1504,PSOE,4
+1504,PP,4
+1504,Vox,7
+1504,Frente Amplio,4
+1504,Podemos,5
+1504,Se Acabó la Fiesta,5
+1505,PSOE,10
+1505,PP,0
+1505,Vox,0
+1505,Frente Amplio,3
+1505,Podemos,2
+1505,Se Acabó la Fiesta,0
+1506,PSOE,8
+1506,Vox,0
+1506,Frente Amplio,6
+1506,Podemos,7
+1506,Se Acabó la Fiesta,0
+1506,UPN-PP,0
+1507,PSOE,0
+1507,PP,99
+1507,Vox,0
+1507,Frente Amplio,0
+1508,PSOE,5
+1508,PP,5
+1508,Vox,3
+1508,Frente Amplio,0
+1508,Podemos,0
+1508,Se Acabó la Fiesta,99
+1509,PSOE,3
+1509,PP,10
+1509,Vox,8
+1509,Frente Amplio,2
+1509,Podemos,1
+1509,Se Acabó la Fiesta,0
+1510,PSOE,0
+1510,PP,8
+1510,Vox,9
+1510,Se Acabó la Fiesta,8
+1510,Unidad del Pueblo Canario,0
+1511,PSOE,5
+1511,PP,7
+1511,Vox,0
+1511,Frente Amplio,0
+1511,Podemos,0
+1511,Se Acabó la Fiesta,5
+1512,PSOE,0
+1512,PP,6
+1512,Vox,10
+1512,Se Acabó la Fiesta,7
+1512,Compromís: Front Valencià,0
+1513,PSOE,0
+1513,PP,8
+1513,Vox,9
+1513,Frente Amplio,0
+1513,Podemos,0
+1513,Se Acabó la Fiesta,3
+1514,PSOE,4
+1514,PP,6
+1514,Vox,10
+1514,Se Acabó la Fiesta,0
+1514,Compromís: Front Valencià,0
+1515,PSOE,99
+1515,PP,99
+1515,Vox,99
+1515,Se Acabó la Fiesta,99
+1515,Compromís: Front Valencià,99
+1516,PSOE,5
+1516,PP,8
+1516,Vox,10
+1516,Se Acabó la Fiesta,0
+1516,Compromís: Front Valencià,0
+1517,PSOE,6
+1517,PP,0
+1517,Vox,0
+1517,Frente Amplio,10
+1517,Se Acabó la Fiesta,0
+1518,PSOE,6
+1518,PP,7
+1518,Vox,1
+1518,Frente Amplio,6
+1518,Podemos,6
+1518,Se Acabó la Fiesta,1
+1519,PSOE,5
+1519,PP,9
+1519,Vox,6
+1519,Frente Amplio,0
+1519,Se Acabó la Fiesta,0
+1520,PSOE,99
+1520,PP,99
+1520,Vox,99
+1520,Frente Amplio,99
+1520,Podemos,99
+1520,Se Acabó la Fiesta,99
+1521,PSOE,10
+1521,PP,0
+1521,Vox,0
+1521,Se Acabó la Fiesta,0
+1521,Unidad del Pueblo Canario,1
+1522,PSOE,2
+1522,PP,7
+1522,Vox,4
+1522,Frente Amplio,2
+1522,Podemos,0
+1522,Se Acabó la Fiesta,0
+1523,PSOE,10
+1523,PP,0
+1523,Vox,0
+1523,Frente Amplio,5
+1523,Podemos,6
+1523,Se Acabó la Fiesta,0
+1524,PSOE,9
+1524,PP,0
+1524,Vox,0
+1524,Frente Amplio,9
+1524,Podemos,8
+1524,Se Acabó la Fiesta,0
+1525,PSOE,10
+1525,PP,2
+1525,Vox,0
+1525,Frente Amplio,0
+1525,Podemos,5
+1525,Se Acabó la Fiesta,5
+1526,PSOE,6
+1526,PP,0
+1526,Vox,0
+1526,Frente Amplio,8
+1526,Podemos,6
+1526,Se Acabó la Fiesta,0
+1527,PSOE,9
+1527,PP,0
+1527,Vox,0
+1527,Frente Amplio,6
+1527,Se Acabó la Fiesta,0
+1528,PSOE,2
+1528,PP,6
+1528,Vox,9
+1528,Frente Amplio,0
+1528,Podemos,0
+1528,Se Acabó la Fiesta,0
+1529,PSOE,8
+1529,PP,4
+1529,Vox,0
+1529,Frente Amplio,3
+1529,Podemos,4
+1529,Se Acabó la Fiesta,0
+1530,PSOE,2
+1530,PP,7
+1530,Vox,9
+1530,Frente Amplio,2
+1530,Se Acabó la Fiesta,6
+1531,PSOE,0
+1531,PP,3
+1531,Vox,8
+1531,Frente Amplio,0
+1531,Podemos,0
+1531,Se Acabó la Fiesta,5
+1532,PSOE,1
+1532,PP,8
+1532,Vox,3
+1532,Frente Amplio,2
+1532,Podemos,1
+1532,Se Acabó la Fiesta,3
+1533,PSOE,6
+1533,PP,2
+1533,Vox,0
+1533,Frente Amplio,8
+1533,Se Acabó la Fiesta,0
+1534,PSOE,0
+1534,PP,4
+1534,Vox,10
+1534,Se Acabó la Fiesta,4
+1534,Unidad del Pueblo Canario,0
+1535,PSOE,10
+1535,PP,0
+1535,Vox,0
+1535,Frente Amplio,4
+1535,Podemos,3
+1535,Se Acabó la Fiesta,2
+1536,PSOE,0
+1536,PP,8
+1536,Vox,0
+1536,Se Acabó la Fiesta,0
+1536,Unidad del Pueblo Canario,0
+1537,PSOE,10
+1537,PP,0
+1537,Vox,0
+1537,Frente Amplio,5
+1537,Podemos,5
+1537,Se Acabó la Fiesta,0
+1538,PSOE,10
+1538,PP,0
+1538,Vox,0
+1538,Frente Amplio,5
+1538,Podemos,5
+1538,Se Acabó la Fiesta,0
+1539,PSOE,9
+1539,PP,0
+1539,Vox,0
+1539,Frente Amplio,0
+1539,Podemos,0
+1539,Se Acabó la Fiesta,0
+1540,PSOE,3
+1540,PP,10
+1540,Vox,3
+1540,Frente Amplio,2
+1540,Podemos,0
+1540,Se Acabó la Fiesta,0
+1541,PSOE,99
+1541,PP,10
+1541,Vox,0
+1541,Frente Amplio,6
+1541,Podemos,2
+1541,Se Acabó la Fiesta,4
+1542,PSOE,10
+1542,PP,0
+1542,Vox,0
+1542,Frente Amplio,3
+1542,Podemos,0
+1542,Se Acabó la Fiesta,0
+1543,PSOE,0
+1543,PP,7
+1543,Vox,9
+1543,Frente Amplio,0
+1543,Se Acabó la Fiesta,4
+1544,PSOE,0
+1544,PP,8
+1544,Vox,9
+1544,Se Acabó la Fiesta,0
+1544,Compromís: Front Valencià,0
+1545,PSOE,9
+1545,PP,5
+1545,Vox,0
+1545,Se Acabó la Fiesta,5
+1545,Unidad del Pueblo Canario,6
+1546,PSOE,10
+1546,PP,0
+1546,Vox,0
+1546,Frente Amplio,1
+1546,Podemos,4
+1546,Se Acabó la Fiesta,0
+1547,PSOE,0
+1547,PP,0
+1547,Vox,0
+1547,Frente Amplio,0
+1547,Se Acabó la Fiesta,0
+1548,PSOE,0
+1548,PP,10
+1548,Vox,9
+1548,Frente Amplio,5
+1548,Se Acabó la Fiesta,8
+1549,PSOE,9
+1549,PP,0
+1549,Vox,0
+1549,Frente Amplio,6
+1549,Podemos,5
+1549,Se Acabó la Fiesta,0
+1550,PSOE,9
+1550,PP,0
+1550,Vox,0
+1550,Frente Amplio,6
+1550,Podemos,6
+1550,Se Acabó la Fiesta,0
+1551,PSOE,8
+1551,PP,1
+1551,Vox,0
+1551,Frente Amplio,6
+1551,Podemos,2
+1551,Se Acabó la Fiesta,0
+1552,PSOE,8
+1552,PP,3
+1552,Vox,1
+1552,Se Acabó la Fiesta,0
+1552,Compromís: Front Valencià,7
+1553,PSOE,9
+1553,PP,6
+1553,Vox,3
+1553,Frente Amplio,6
+1553,Podemos,4
+1553,Se Acabó la Fiesta,7
+1554,PSOE,3
+1554,PP,0
+1554,Vox,0
+1554,Frente Amplio,0
+1554,Se Acabó la Fiesta,0
+1555,PSOE,99
+1555,PP,99
+1555,Vox,99
+1555,Frente Amplio,0
+1555,Se Acabó la Fiesta,0
+1556,PSOE,0
+1556,PP,10
+1556,Vox,9
+1556,Frente Amplio,0
+1556,Podemos,0
+1556,Se Acabó la Fiesta,0
+1557,PSOE,10
+1557,PP,5
+1557,Vox,0
+1557,Frente Amplio,8
+1557,Podemos,6
+1558,PSOE,6
+1558,PP,0
+1558,Vox,0
+1558,Frente Amplio,4
+1558,Podemos,2
+1558,Se Acabó la Fiesta,2
+1559,PSOE,0
+1559,PP,10
+1559,Vox,9
+1559,Se Acabó la Fiesta,8
+1559,Compromís: Front Valencià,0
+1560,PSOE,0
+1560,PP,5
+1560,Vox,10
+1560,Frente Amplio,0
+1560,Podemos,0
+1560,Se Acabó la Fiesta,0
+1561,PSOE,1
+1561,PP,6
+1561,Vox,4
+1561,Frente Amplio,0
+1561,Podemos,0
+1561,Se Acabó la Fiesta,2
+1562,PSOE,0
+1562,PP,10
+1562,Vox,6
+1562,Frente Amplio,0
+1562,Podemos,0
+1562,Se Acabó la Fiesta,0
+1563,PSOE,0
+1563,PP,0
+1563,Vox,0
+1563,Frente Amplio,0
+1563,Podemos,0
+1564,PSOE,0
+1564,PP,8
+1564,Vox,10
+1564,Frente Amplio,0
+1564,Se Acabó la Fiesta,7
+1565,PSOE,0
+1565,PP,9
+1565,Vox,0
+1565,Frente Amplio,0
+1565,Podemos,0
+1565,Se Acabó la Fiesta,0
+1566,PSOE,4
+1566,PP,0
+1566,Vox,0
+1566,Se Acabó la Fiesta,0
+1566,Compromís: Front Valencià,6
+1567,PSOE,3
+1567,PP,10
+1567,Vox,4
+1567,Se Acabó la Fiesta,2
+1567,Compromís: Front Valencià,2
+1568,PSOE,10
+1568,PP,0
+1568,Vox,0
+1568,Frente Amplio,8
+1568,Podemos,5
+1568,Se Acabó la Fiesta,0
+1569,PSOE,1
+1569,PP,0
+1569,Vox,0
+1569,Frente Amplio,0
+1569,Se Acabó la Fiesta,0
+1570,PSOE,0
+1570,PP,7
+1570,Vox,3
+1570,Frente Amplio,0
+1570,Podemos,0
+1570,Se Acabó la Fiesta,3
+1571,PSOE,4
+1571,PP,10
+1571,Vox,0
+1571,Frente Amplio,2
+1571,Podemos,0
+1571,Se Acabó la Fiesta,0
+1572,PSOE,1
+1572,PP,8
+1572,Vox,9
+1572,Frente Amplio,1
+1572,Podemos,1
+1572,Se Acabó la Fiesta,1
+1573,PSOE,10
+1573,PP,5
+1573,Vox,0
+1573,Se Acabó la Fiesta,0
+1573,Compromís: Front Valencià,0
+1574,PSOE,0
+1574,PP,99
+1574,Vox,10
+1574,Frente Amplio,0
+1574,Podemos,0
+1574,Se Acabó la Fiesta,0
+1575,PSOE,5
+1575,PP,3
+1575,Vox,0
+1575,Frente Amplio,5
+1575,Se Acabó la Fiesta,0
+1576,PSOE,8
+1576,PP,0
+1576,Vox,0
+1576,Frente Amplio,8
+1576,Podemos,10
+1576,Se Acabó la Fiesta,0
+1577,PSOE,8
+1577,PP,0
+1577,Vox,0
+1577,Frente Amplio,5
+1577,Podemos,2
+1577,Se Acabó la Fiesta,0
+1578,PSOE,2
+1578,PP,8
+1578,Vox,0
+1578,Frente Amplio,0
+1578,Podemos,0
+1578,Se Acabó la Fiesta,0
+1579,PSOE,6
+1579,PP,8
+1579,Vox,7
+1579,Frente Amplio,3
+1579,Podemos,1
+1579,Se Acabó la Fiesta,4
+1580,PSOE,10
+1580,PP,1
+1580,Vox,0
+1580,Frente Amplio,8
+1580,Podemos,5
+1580,Se Acabó la Fiesta,1
+1581,PSOE,0
+1581,PP,10
+1581,Vox,5
+1581,Frente Amplio,0
+1581,Podemos,0
+1581,Se Acabó la Fiesta,0
+1582,PSOE,6
+1582,PP,5
+1582,Vox,5
+1582,Frente Amplio,2
+1582,Podemos,2
+1582,Se Acabó la Fiesta,2
+1583,PSOE,9
+1583,PP,2
+1583,Vox,0
+1583,Frente Amplio,4
+1583,Podemos,2
+1583,Se Acabó la Fiesta,2
+1584,PSOE,0
+1584,PP,5
+1584,Vox,10
+1584,Frente Amplio,0
+1584,Se Acabó la Fiesta,5
+1585,PSOE,3
+1585,PP,1
+1585,Vox,0
+1585,Frente Amplio,3
+1585,Podemos,2
+1585,Se Acabó la Fiesta,2
+1586,PSOE,9
+1586,PP,0
+1586,Vox,0
+1586,Se Acabó la Fiesta,1
+1586,Unidad del Pueblo Canario,0
+1587,PSOE,10
+1587,PP,0
+1587,Vox,0
+1587,Frente Amplio,9
+1587,Podemos,0
+1587,Se Acabó la Fiesta,0
+1588,PSOE,0
+1588,PP,8
+1588,Vox,8
+1588,Se Acabó la Fiesta,0
+1588,Compromís: Front Valencià,5
+1589,PSOE,10
+1589,PP,0
+1589,Vox,0
+1589,Frente Amplio,0
+1589,Podemos,0
+1589,Se Acabó la Fiesta,0
+1590,PSOE,1
+1590,PP,0
+1590,Vox,0
+1590,Frente Amplio,5
+1590,Podemos,5
+1590,Se Acabó la Fiesta,0
+1591,PSOE,99
+1591,PP,99
+1591,Vox,99
+1591,Frente Amplio,99
+1591,Podemos,99
+1591,Se Acabó la Fiesta,99
+1592,PSOE,0
+1592,PP,0
+1592,Vox,0
+1592,Frente Amplio,0
+1592,Se Acabó la Fiesta,0
+1593,PSOE,0
+1593,PP,5
+1593,Vox,0
+1593,Frente Amplio,0
+1593,Podemos,0
+1593,Se Acabó la Fiesta,0
+1594,PSOE,10
+1594,PP,0
+1594,Vox,0
+1594,Frente Amplio,0
+1594,Podemos,0
+1594,Se Acabó la Fiesta,0
+1595,PSOE,10
+1595,PP,0
+1595,Vox,0
+1595,Frente Amplio,0
+1595,Se Acabó la Fiesta,0
+1596,PSOE,0
+1596,PP,10
+1596,Vox,0
+1596,Se Acabó la Fiesta,0
+1596,Compromís: Front Valencià,0
+1597,PSOE,4
+1597,PP,0
+1597,Vox,0
+1597,Frente Amplio,5
+1597,Podemos,3
+1597,Se Acabó la Fiesta,0
+1598,PSOE,0
+1598,PP,8
+1598,Vox,0
+1598,Frente Amplio,0
+1598,Podemos,0
+1598,Se Acabó la Fiesta,0
+1599,PSOE,6
+1599,PP,4
+1599,Vox,4
+1599,Frente Amplio,5
+1599,Se Acabó la Fiesta,4
+1600,PSOE,9
+1600,PP,0
+1600,Vox,0
+1600,Frente Amplio,4
+1600,Podemos,3
+1600,Se Acabó la Fiesta,0
+1601,PSOE,0
+1601,PP,10
+1601,Vox,9
+1601,Frente Amplio,0
+1601,Podemos,0
+1601,Se Acabó la Fiesta,0
+1602,PSOE,5
+1602,PP,0
+1602,Vox,0
+1602,Frente Amplio,10
+1602,Podemos,5
+1602,Se Acabó la Fiesta,0
+1603,PSOE,8
+1603,PP,2
+1603,Vox,0
+1603,Frente Amplio,7
+1603,Podemos,7
+1603,Se Acabó la Fiesta,2
+1604,PSOE,0
+1604,PP,0
+1604,Vox,0
+1604,Frente Amplio,0
+1604,Podemos,0
+1604,Se Acabó la Fiesta,0
+1605,PSOE,0
+1605,PP,0
+1605,Vox,0
+1605,Frente Amplio,0
+1605,Se Acabó la Fiesta,0
+1606,PSOE,7
+1606,PP,3
+1606,Vox,0
+1606,Frente Amplio,0
+1606,Podemos,0
+1606,Se Acabó la Fiesta,0
+1607,PSOE,0
+1607,PP,10
+1607,Vox,10
+1607,Se Acabó la Fiesta,0
+1607,Unidad del Pueblo Canario,0
+1608,PSOE,5
+1608,Vox,0
+1608,Frente Amplio,9
+1608,Podemos,5
+1608,Se Acabó la Fiesta,4
+1608,UPN-PP,4
+1609,PSOE,5
+1609,PP,3
+1609,Vox,4
+1609,Frente Amplio,2
+1609,Podemos,2
+1609,Se Acabó la Fiesta,1
+1610,PSOE,0
+1610,PP,10
+1610,Vox,0
+1610,Frente Amplio,0
+1610,Podemos,0
+1610,Se Acabó la Fiesta,0
+1611,PSOE,10
+1611,PP,0
+1611,Vox,0
+1611,Frente Amplio,5
+1611,Podemos,0
+1611,Se Acabó la Fiesta,0
+1612,PSOE,10
+1612,PP,0
+1612,Vox,0
+1612,Frente Amplio,7
+1612,Podemos,3
+1612,Se Acabó la Fiesta,0
+1613,PSOE,3
+1613,PP,6
+1613,Vox,0
+1613,Frente Amplio,5
+1613,Podemos,3
+1613,Se Acabó la Fiesta,7
+1614,PSOE,0
+1614,PP,1
+1614,Vox,7
+1614,Podemos,0
+1614,Se Acabó la Fiesta,7
+1615,PSOE,1
+1615,PP,8
+1615,Vox,0
+1615,Frente Amplio,7
+1615,Se Acabó la Fiesta,0
+1616,PSOE,0
+1616,PP,10
+1616,Vox,0
+1616,Se Acabó la Fiesta,0
+1616,Compromís: Front Valencià,0
+1617,PSOE,0
+1617,PP,6
+1617,Vox,10
+1617,Frente Amplio,0
+1617,Podemos,0
+1617,Se Acabó la Fiesta,0
+1618,PSOE,1
+1618,PP,6
+1618,Vox,8
+1618,Frente Amplio,0
+1618,Podemos,0
+1618,Se Acabó la Fiesta,3
+1619,PSOE,7
+1619,PP,6
+1619,Vox,9
+1619,Se Acabó la Fiesta,3
+1619,Compromís: Front Valencià,3
+1620,PSOE,5
+1620,PP,4
+1620,Vox,2
+1620,Frente Amplio,3
+1620,Podemos,5
+1621,PSOE,0
+1621,PP,8
+1621,Vox,7
+1621,Frente Amplio,0
+1621,Podemos,0
+1621,Se Acabó la Fiesta,0
+1622,PSOE,10
+1622,PP,0
+1622,Vox,0
+1622,Frente Amplio,9
+1622,Podemos,7
+1622,Se Acabó la Fiesta,0
+1623,PSOE,2
+1623,PP,6
+1623,Vox,8
+1623,Frente Amplio,0
+1623,Podemos,0
+1623,Se Acabó la Fiesta,0
+1624,PSOE,0
+1624,PP,0
+1624,Vox,10
+1624,Frente Amplio,0
+1624,Podemos,0
+1625,PSOE,10
+1625,PP,0
+1625,Vox,0
+1625,Frente Amplio,9
+1625,Podemos,9
+1625,Se Acabó la Fiesta,0
+1626,PSOE,10
+1626,PP,0
+1626,Vox,0
+1626,Se Acabó la Fiesta,0
+1626,Unidad del Pueblo Canario,0
+1627,PSOE,4
+1627,PP,5
+1627,Vox,10
+1627,Frente Amplio,0
+1627,Se Acabó la Fiesta,0
+1628,PSOE,0
+1628,PP,10
+1628,Vox,6
+1628,Frente Amplio,0
+1628,Podemos,0
+1628,Se Acabó la Fiesta,1
+1629,PSOE,0
+1629,PP,8
+1629,Vox,9
+1629,Frente Amplio,0
+1629,Podemos,0
+1629,Se Acabó la Fiesta,4
+1630,PSOE,4
+1630,PP,7
+1630,Vox,5
+1630,Frente Amplio,5
+1630,Podemos,4
+1630,Se Acabó la Fiesta,5
+1631,PSOE,0
+1631,PP,9
+1631,Vox,10
+1631,Frente Amplio,0
+1631,Podemos,0
+1631,Se Acabó la Fiesta,0
+1632,PSOE,0
+1632,PP,8
+1632,Vox,10
+1632,Frente Amplio,4
+1632,Se Acabó la Fiesta,7
+1633,PSOE,0
+1633,PP,10
+1633,Vox,9
+1633,Se Acabó la Fiesta,8
+1633,Compromís: Front Valencià,0
+1634,PSOE,9
+1634,PP,0
+1634,Vox,0
+1634,Frente Amplio,7
+1634,Se Acabó la Fiesta,0
+1635,PSOE,9
+1635,PP,6
+1635,Vox,7
+1635,Frente Amplio,2
+1635,Podemos,2
+1635,Se Acabó la Fiesta,2
+1636,PSOE,7
+1636,PP,0
+1636,Vox,0
+1636,Frente Amplio,9
+1636,Podemos,3
+1636,Se Acabó la Fiesta,0
+1637,PSOE,9
+1637,PP,0
+1637,Vox,0
+1637,Se Acabó la Fiesta,0
+1637,Unidad del Pueblo Canario,7
+1638,PSOE,0
+1638,PP,10
+1638,Vox,6
+1638,Frente Amplio,0
+1638,Podemos,0
+1638,Se Acabó la Fiesta,0
+1639,PSOE,7
+1639,PP,5
+1639,Vox,2
+1639,Frente Amplio,2
+1639,Podemos,3
+1639,Se Acabó la Fiesta,4
+1640,PSOE,0
+1640,PP,7
+1640,Vox,10
+1640,Frente Amplio,0
+1640,Se Acabó la Fiesta,0
+1641,PSOE,8
+1641,PP,0
+1641,Vox,0
+1641,Frente Amplio,1
+1641,Podemos,0
+1641,Se Acabó la Fiesta,0
+1642,PSOE,6
+1642,PP,7
+1642,Vox,4
+1642,Frente Amplio,1
+1642,Podemos,5
+1642,Se Acabó la Fiesta,1
+1643,PSOE,10
+1643,PP,0
+1643,Vox,0
+1643,Frente Amplio,7
+1643,Podemos,0
+1643,Se Acabó la Fiesta,0
+1644,PSOE,10
+1644,PP,0
+1644,Vox,0
+1644,Se Acabó la Fiesta,0
+1644,Compromís: Front Valencià,5
+1645,PSOE,0
+1645,PP,10
+1645,Vox,5
+1645,Frente Amplio,5
+1645,Podemos,0
+1645,Se Acabó la Fiesta,0
+1646,PSOE,0
+1646,PP,10
+1646,Vox,8
+1646,Frente Amplio,0
+1646,Podemos,0
+1646,Se Acabó la Fiesta,0
+1647,PSOE,0
+1647,PP,10
+1647,Vox,8
+1647,Frente Amplio,0
+1647,Podemos,0
+1647,Se Acabó la Fiesta,0
+1648,PSOE,0
+1648,PP,0
+1648,Vox,0
+1648,Frente Amplio,0
+1648,Se Acabó la Fiesta,0
+1649,PSOE,9
+1649,PP,1
+1649,Vox,0
+1649,Se Acabó la Fiesta,0
+1649,Compromís: Front Valencià,7
+1650,PSOE,10
+1650,PP,0
+1650,Vox,0
+1650,Frente Amplio,0
+1650,Podemos,0
+1650,Se Acabó la Fiesta,0
+1651,PSOE,10
+1651,PP,0
+1651,Vox,0
+1651,Frente Amplio,1
+1651,Podemos,1
+1651,Se Acabó la Fiesta,0
+1652,PSOE,0
+1652,PP,0
+1652,Vox,0
+1652,Frente Amplio,0
+1652,Podemos,0
+1652,Se Acabó la Fiesta,0
+1653,PSOE,0
+1653,PP,10
+1653,Vox,10
+1653,Frente Amplio,0
+1653,Podemos,0
+1653,Se Acabó la Fiesta,0
+1654,PSOE,1
+1654,PP,0
+1654,Vox,0
+1654,Frente Amplio,1
+1654,Podemos,0
+1654,Se Acabó la Fiesta,0
+1655,PSOE,8
+1655,PP,0
+1655,Vox,0
+1655,Frente Amplio,8
+1655,Se Acabó la Fiesta,0
+1656,PSOE,6
+1656,PP,0
+1656,Vox,0
+1656,Frente Amplio,6
+1656,Podemos,5
+1656,Se Acabó la Fiesta,0
+1657,PSOE,1
+1657,PP,4
+1657,Vox,0
+1657,Frente Amplio,3
+1657,Podemos,2
+1658,PSOE,4
+1658,PP,4
+1658,Vox,0
+1658,Se Acabó la Fiesta,4
+1658,Compromís: Front Valencià,6
+1659,PSOE,10
+1659,PP,5
+1659,Vox,0
+1659,Frente Amplio,7
+1659,Se Acabó la Fiesta,0
+1660,PSOE,3
+1660,PP,2
+1660,Vox,0
+1660,Frente Amplio,0
+1660,Se Acabó la Fiesta,1
+1661,PSOE,1
+1661,PP,99
+1661,Vox,3
+1661,Se Acabó la Fiesta,6
+1661,Compromís: Front Valencià,4
+1662,PSOE,8
+1662,PP,4
+1662,Vox,2
+1662,Frente Amplio,5
+1663,PSOE,0
+1663,PP,8
+1663,Vox,3
+1663,Frente Amplio,0
+1663,Podemos,0
+1663,Se Acabó la Fiesta,0
+1664,PSOE,3
+1664,PP,7
+1664,Vox,2
+1664,Frente Amplio,0
+1664,Podemos,0
+1664,Se Acabó la Fiesta,0
+1665,PSOE,0
+1665,PP,0
+1665,Vox,0
+1665,Frente Amplio,0
+1665,Podemos,10
+1665,Se Acabó la Fiesta,0
+1666,PSOE,0
+1666,PP,8
+1666,Vox,5
+1666,Frente Amplio,0
+1666,Podemos,0
+1666,Se Acabó la Fiesta,0
+1667,PSOE,5
+1667,PP,0
+1667,Vox,0
+1667,Se Acabó la Fiesta,3
+1667,Compromís: Front Valencià,4
+1668,PSOE,0
+1668,PP,0
+1668,Vox,6
+1668,Frente Amplio,0
+1668,Se Acabó la Fiesta,10
+1669,PSOE,0
+1669,PP,1
+1669,Vox,0
+1669,Frente Amplio,0
+1669,Podemos,1
+1669,Se Acabó la Fiesta,0
+1670,PSOE,0
+1670,PP,10
+1670,Vox,9
+1670,Frente Amplio,0
+1670,Podemos,0
+1670,Se Acabó la Fiesta,0
+1671,PSOE,0
+1671,PP,6
+1671,Vox,5
+1671,Frente Amplio,0
+1671,Podemos,0
+1671,Se Acabó la Fiesta,10
+1672,PSOE,8
+1672,PP,0
+1672,Vox,0
+1672,Frente Amplio,0
+1672,Podemos,1
+1672,Se Acabó la Fiesta,0
+1673,PSOE,99
+1673,PP,99
+1673,Vox,3
+1673,Se Acabó la Fiesta,99
+1673,Compromís: Front Valencià,99
+1674,PSOE,9
+1674,PP,1
+1674,Vox,0
+1674,Frente Amplio,8
+1674,Podemos,2
+1674,Se Acabó la Fiesta,0
+1675,PSOE,0
+1675,PP,0
+1675,Vox,10
+1675,Frente Amplio,0
+1675,Podemos,0
+1676,PSOE,0
+1676,PP,5
+1676,Vox,6
+1676,Frente Amplio,0
+1676,Podemos,0
+1676,Se Acabó la Fiesta,6
+1677,PSOE,8
+1677,PP,0
+1677,Vox,0
+1677,Frente Amplio,10
+1677,Se Acabó la Fiesta,0
+1678,PSOE,0
+1678,PP,10
+1678,Vox,6
+1678,Frente Amplio,0
+1678,Podemos,0
+1678,Se Acabó la Fiesta,1
+1679,PSOE,3
+1679,PP,8
+1679,Vox,4
+1679,Frente Amplio,0
+1679,Podemos,0
+1679,Se Acabó la Fiesta,0
+1680,PSOE,3
+1680,PP,9
+1680,Vox,4
+1680,Frente Amplio,2
+1680,Podemos,3
+1680,Se Acabó la Fiesta,1
+1681,PSOE,0
+1681,PP,6
+1681,Vox,7
+1681,Frente Amplio,0
+1681,Podemos,0
+1681,Se Acabó la Fiesta,6
+1682,PSOE,0
+1682,PP,9
+1682,Vox,10
+1682,Se Acabó la Fiesta,8
+1682,Compromís: Front Valencià,0
+1683,PSOE,0
+1683,PP,5
+1683,Vox,10
+1683,Frente Amplio,0
+1683,Podemos,0
+1683,Se Acabó la Fiesta,5
+1684,PSOE,10
+1684,PP,0
+1684,Vox,0
+1684,Frente Amplio,5
+1684,Podemos,5
+1684,Se Acabó la Fiesta,0
+1685,PSOE,0
+1685,PP,7
+1685,Vox,7
+1685,Frente Amplio,4
+1685,Se Acabó la Fiesta,4
+1686,PSOE,6
+1686,PP,0
+1686,Vox,0
+1686,Se Acabó la Fiesta,0
+1686,Ara Més – Front Ampli,8
+1687,PSOE,2
+1687,PP,7
+1687,Vox,5
+1687,Frente Amplio,0
+1687,Podemos,0
+1687,Se Acabó la Fiesta,2
+1688,PSOE,0
+1688,PP,5
+1688,Vox,10
+1688,Frente Amplio,0
+1688,Podemos,0
+1688,Se Acabó la Fiesta,0
+1689,PSOE,8
+1689,PP,0
+1689,Vox,0
+1689,Frente Amplio,9
+1689,Podemos,10
+1689,Se Acabó la Fiesta,0
+1690,PSOE,0
+1690,PP,1
+1690,Vox,1
+1690,Se Acabó la Fiesta,99
+1690,Ara Més – Front Ampli,0
+1691,PSOE,9
+1691,PP,0
+1691,Vox,0
+1691,Se Acabó la Fiesta,0
+1691,Unidad del Pueblo Canario,5
+1692,PSOE,0
+1692,PP,0
+1692,Vox,0
+1692,Frente Amplio,0
+1692,Podemos,0
+1692,Se Acabó la Fiesta,0
+1693,PSOE,0
+1693,PP,10
+1693,Vox,5
+1693,Frente Amplio,0
+1693,Podemos,0
+1693,Se Acabó la Fiesta,0
+1694,PSOE,10
+1694,PP,0
+1694,Vox,0
+1694,Frente Amplio,6
+1694,Se Acabó la Fiesta,0
+1695,PSOE,9
+1695,PP,4
+1695,Vox,2
+1695,Frente Amplio,7
+1695,Podemos,3
+1695,Se Acabó la Fiesta,0
+1696,PSOE,2
+1696,PP,0
+1696,Vox,0
+1696,Frente Amplio,0
+1696,Se Acabó la Fiesta,0
+1697,PSOE,6
+1697,PP,2
+1697,Vox,10
+1697,Frente Amplio,0
+1697,Podemos,0
+1697,Se Acabó la Fiesta,0
+1698,PSOE,0
+1698,PP,6
+1698,Vox,7
+1698,Se Acabó la Fiesta,3
+1698,Unidad del Pueblo Canario,2
+1699,PSOE,0
+1699,PP,1
+1699,Vox,1
+1699,Frente Amplio,0
+1699,Podemos,1
+1699,Se Acabó la Fiesta,10
+1700,PSOE,10
+1700,PP,5
+1700,Vox,0
+1700,Frente Amplio,0
+1700,Podemos,0
+1701,PSOE,0
+1701,PP,8
+1701,Vox,10
+1701,Frente Amplio,0
+1701,Podemos,0
+1701,Se Acabó la Fiesta,0
+1702,PSOE,0
+1702,PP,0
+1702,Vox,0
+1702,Frente Amplio,10
+1702,Podemos,0
+1702,Se Acabó la Fiesta,99
+1703,PSOE,9
+1703,PP,0
+1703,Vox,0
+1703,Frente Amplio,7
+1703,Podemos,4
+1703,Se Acabó la Fiesta,0
+1704,PSOE,9
+1704,PP,0
+1704,Vox,0
+1704,Frente Amplio,6
+1704,Se Acabó la Fiesta,0
+1705,PSOE,9
+1705,PP,0
+1705,Vox,0
+1705,Frente Amplio,7
+1705,Podemos,3
+1705,Se Acabó la Fiesta,0
+1706,PSOE,99
+1706,PP,99
+1706,Vox,99
+1706,Frente Amplio,99
+1706,Podemos,99
+1706,Se Acabó la Fiesta,99
+1707,PSOE,0
+1707,PP,9
+1707,Vox,7
+1707,Frente Amplio,0
+1707,Podemos,0
+1707,Se Acabó la Fiesta,0
+1708,PSOE,10
+1708,PP,0
+1708,Vox,0
+1708,Frente Amplio,8
+1708,Podemos,5
+1709,PSOE,8
+1709,PP,2
+1709,Vox,0
+1709,Se Acabó la Fiesta,4
+1709,Compromís: Front Valencià,2
+1710,PSOE,0
+1710,PP,0
+1710,Vox,10
+1710,Se Acabó la Fiesta,0
+1710,Unidad del Pueblo Canario,0
+1711,PSOE,7
+1711,PP,3
+1711,Vox,0
+1711,Frente Amplio,5
+1711,Podemos,4
+1711,Se Acabó la Fiesta,0
+1712,PSOE,0
+1712,PP,10
+1712,Vox,5
+1712,Frente Amplio,0
+1712,Podemos,0
+1712,Se Acabó la Fiesta,0
+1713,PSOE,0
+1713,PP,6
+1713,Vox,10
+1713,Frente Amplio,0
+1713,Podemos,0
+1713,Se Acabó la Fiesta,9
+1714,PSOE,0
+1714,PP,6
+1714,Vox,8
+1714,Frente Amplio,0
+1714,Podemos,0
+1714,Se Acabó la Fiesta,4
+1715,PSOE,1
+1715,PP,9
+1715,Vox,8
+1715,Frente Amplio,5
+1715,Podemos,1
+1715,Se Acabó la Fiesta,1
+1716,PSOE,0
+1716,PP,5
+1716,Vox,0
+1716,Frente Amplio,0
+1716,Podemos,0
+1716,Se Acabó la Fiesta,0
+1717,PSOE,1
+1717,PP,0
+1717,Vox,0
+1717,Frente Amplio,1
+1717,Podemos,1
+1717,Se Acabó la Fiesta,0
+1718,PSOE,1
+1718,PP,5
+1718,Vox,9
+1718,Frente Amplio,0
+1718,Podemos,3
+1718,Se Acabó la Fiesta,2
+1719,PSOE,0
+1719,PP,10
+1719,Vox,9
+1719,Frente Amplio,0
+1719,Podemos,0
+1719,Se Acabó la Fiesta,0
+1720,PSOE,8
+1720,PP,0
+1720,Vox,0
+1720,Frente Amplio,5
+1720,Podemos,3
+1720,Se Acabó la Fiesta,0
+1721,PSOE,0
+1721,PP,8
+1721,Vox,4
+1721,Frente Amplio,0
+1721,Podemos,0
+1721,Se Acabó la Fiesta,2
+1722,PSOE,0
+1722,PP,10
+1722,Vox,9
+1722,Frente Amplio,0
+1722,Se Acabó la Fiesta,0
+1723,PSOE,10
+1723,PP,0
+1723,Vox,0
+1723,Frente Amplio,0
+1723,Podemos,1
+1723,Se Acabó la Fiesta,0
+1724,PSOE,2
+1724,PP,3
+1724,Vox,2
+1724,Frente Amplio,1
+1724,Podemos,1
+1724,Se Acabó la Fiesta,10
+1725,PSOE,1
+1725,PP,8
+1725,Vox,1
+1725,Frente Amplio,0
+1725,Podemos,0
+1726,PSOE,5
+1726,PP,0
+1726,Vox,0
+1726,Se Acabó la Fiesta,0
+1726,Compromís: Front Valencià,10
+1727,PSOE,3
+1727,PP,4
+1727,Vox,10
+1727,Se Acabó la Fiesta,8
+1727,Unidad del Pueblo Canario,1
+1728,PSOE,0
+1728,PP,9
+1728,Vox,10
+1728,Frente Amplio,0
+1728,Podemos,0
+1728,Se Acabó la Fiesta,8
+1729,PSOE,0
+1729,PP,0
+1729,Vox,0
+1729,Frente Amplio,1
+1729,Podemos,0
+1729,Se Acabó la Fiesta,0
+1730,PSOE,4
+1730,PP,6
+1730,Vox,6
+1730,Se Acabó la Fiesta,4
+1730,Ara Més – Front Ampli,6
+1731,PSOE,9
+1731,PP,0
+1731,Vox,0
+1731,Frente Amplio,5
+1731,Se Acabó la Fiesta,0
+1732,PSOE,0
+1732,PP,6
+1732,Vox,0
+1732,Frente Amplio,0
+1732,Podemos,0
+1732,Se Acabó la Fiesta,0
+1733,PSOE,7
+1733,PP,0
+1733,Vox,0
+1733,Frente Amplio,0
+1734,PSOE,99
+1734,PP,99
+1734,Vox,99
+1734,Frente Amplio,99
+1734,Se Acabó la Fiesta,99
+1735,PSOE,10
+1735,PP,0
+1735,Vox,0
+1735,Frente Amplio,10
+1735,Podemos,0
+1735,Se Acabó la Fiesta,0
+1736,PSOE,10
+1736,PP,0
+1736,Vox,0
+1736,Frente Amplio,8
+1736,Se Acabó la Fiesta,0
+1737,PSOE,0
+1737,PP,10
+1737,Vox,7
+1737,Frente Amplio,0
+1737,Podemos,0
+1737,Se Acabó la Fiesta,0
+1738,PSOE,0
+1738,PP,0
+1738,Vox,0
+1738,Frente Amplio,0
+1738,Podemos,0
+1738,Se Acabó la Fiesta,0
+1739,PSOE,9
+1739,PP,0
+1739,Vox,0
+1739,Se Acabó la Fiesta,0
+1739,Compromís: Front Valencià,7
+1740,PSOE,6
+1740,PP,0
+1740,Vox,0
+1740,Frente Amplio,10
+1740,Se Acabó la Fiesta,0
+1741,PSOE,3
+1741,PP,4
+1741,Vox,0
+1741,Frente Amplio,2
+1741,Podemos,2
+1741,Se Acabó la Fiesta,0
+1742,PSOE,1
+1742,PP,6
+1742,Vox,0
+1742,Frente Amplio,0
+1742,Podemos,0
+1742,Se Acabó la Fiesta,0
+1743,PSOE,1
+1743,PP,9
+1743,Vox,9
+1743,Frente Amplio,0
+1743,Podemos,0
+1743,Se Acabó la Fiesta,0
+1744,PSOE,0
+1744,PP,1
+1744,Vox,10
+1744,Se Acabó la Fiesta,5
+1744,Compromís: Front Valencià,0
+1745,PSOE,4
+1745,PP,0
+1745,Vox,4
+1745,Frente Amplio,5
+1745,Podemos,1
+1745,Se Acabó la Fiesta,7
+1746,PSOE,2
+1746,PP,4
+1746,Vox,9
+1746,Frente Amplio,5
+1746,Se Acabó la Fiesta,9
+1747,PSOE,9
+1747,PP,0
+1747,Vox,0
+1747,Frente Amplio,8
+1747,Se Acabó la Fiesta,0
+1748,PSOE,10
+1748,PP,0
+1748,Vox,0
+1748,Se Acabó la Fiesta,0
+1748,Unidad del Pueblo Canario,0
+1749,PSOE,10
+1749,PP,0
+1749,Vox,0
+1749,Se Acabó la Fiesta,0
+1749,Compromís: Front Valencià,7
+1750,PSOE,0
+1750,PP,10
+1750,Vox,10
+1750,Frente Amplio,4
+1751,PSOE,8
+1751,PP,0
+1751,Vox,0
+1751,Frente Amplio,0
+1751,Podemos,0
+1751,Se Acabó la Fiesta,0
+1752,PSOE,0
+1752,PP,6
+1752,Vox,9
+1752,Frente Amplio,0
+1752,Podemos,0
+1752,Se Acabó la Fiesta,0
+1753,PSOE,0
+1753,PP,10
+1753,Vox,5
+1753,Frente Amplio,0
+1753,Podemos,0
+1753,Se Acabó la Fiesta,0
+1754,PSOE,1
+1754,PP,8
+1754,Vox,4
+1754,Frente Amplio,0
+1754,Podemos,0
+1754,Se Acabó la Fiesta,0
+1755,PSOE,10
+1755,PP,4
+1755,Vox,1
+1755,Frente Amplio,2
+1755,Podemos,1
+1755,Se Acabó la Fiesta,1
+1756,PSOE,99
+1756,PP,99
+1756,Vox,99
+1756,Se Acabó la Fiesta,99
+1756,Compromís: Front Valencià,99
+1757,PSOE,2
+1757,PP,10
+1757,Vox,8
+1757,Frente Amplio,3
+1757,Se Acabó la Fiesta,5
+1758,PSOE,6
+1758,PP,7
+1758,Vox,7
+1758,Frente Amplio,7
+1758,Podemos,5
+1758,Se Acabó la Fiesta,6
+1759,PSOE,3
+1759,PP,7
+1759,Vox,0
+1759,Se Acabó la Fiesta,0
+1759,Compromís: Front Valencià,9
+1760,PSOE,4
+1760,PP,10
+1760,Vox,3
+1760,Frente Amplio,1
+1760,Se Acabó la Fiesta,0
+1761,PSOE,10
+1761,PP,0
+1761,Vox,0
+1761,Frente Amplio,6
+1761,Podemos,6
+1761,Se Acabó la Fiesta,0
+1762,PSOE,10
+1762,PP,0
+1762,Vox,0
+1762,Frente Amplio,6
+1762,Podemos,0
+1763,PSOE,2
+1763,PP,7
+1763,Vox,9
+1763,Se Acabó la Fiesta,1
+1763,Unidad del Pueblo Canario,0
+1764,PSOE,0
+1764,PP,5
+1764,Vox,5
+1764,Frente Amplio,0
+1764,Podemos,0
+1764,Se Acabó la Fiesta,0
+1765,PSOE,0
+1765,PP,8
+1765,Vox,10
+1765,Frente Amplio,0
+1765,Podemos,0
+1765,Se Acabó la Fiesta,0
+1766,PSOE,10
+1766,PP,0
+1766,Vox,0
+1766,Frente Amplio,6
+1766,Podemos,6
+1766,Se Acabó la Fiesta,0
+1767,PSOE,10
+1767,PP,0
+1767,Vox,0
+1767,Frente Amplio,9
+1767,Podemos,8
+1767,Se Acabó la Fiesta,0
+1768,PSOE,4
+1768,PP,8
+1768,Vox,8
+1768,Frente Amplio,3
+1768,Podemos,2
+1768,Se Acabó la Fiesta,7
+1769,PSOE,10
+1769,PP,0
+1769,Vox,0
+1769,Frente Amplio,0
+1769,Se Acabó la Fiesta,0
+1770,PSOE,1
+1770,PP,5
+1770,Vox,4
+1770,Frente Amplio,1
+1770,Podemos,1
+1770,Se Acabó la Fiesta,1
+1771,PSOE,0
+1771,PP,9
+1771,Vox,5
+1771,Frente Amplio,0
+1771,Podemos,0
+1771,Se Acabó la Fiesta,0
+1772,PSOE,0
+1772,PP,0
+1772,Vox,0
+1772,Frente Amplio,0
+1772,Podemos,0
+1772,Se Acabó la Fiesta,0
+1773,PSOE,0
+1773,PP,10
+1773,Vox,5
+1773,Frente Amplio,0
+1773,Podemos,0
+1773,Se Acabó la Fiesta,0
+1774,PSOE,0
+1774,PP,7
+1774,Vox,9
+1774,Se Acabó la Fiesta,8
+1774,Ara Més – Front Ampli,0
+1775,PSOE,10
+1775,PP,0
+1775,Vox,0
+1775,Frente Amplio,0
+1775,Podemos,0
+1775,Se Acabó la Fiesta,0
+1776,PSOE,10
+1776,PP,0
+1776,Vox,0
+1776,Frente Amplio,0
+1776,Podemos,0
+1776,Se Acabó la Fiesta,6
+1777,PSOE,10
+1777,PP,3
+1777,Vox,0
+1777,Frente Amplio,2
+1777,Podemos,4
+1777,Se Acabó la Fiesta,3
+1778,PSOE,99
+1778,PP,99
+1778,Vox,99
+1778,Frente Amplio,99
+1778,Se Acabó la Fiesta,99
+1779,PSOE,0
+1779,PP,10
+1779,Vox,10
+1779,Frente Amplio,0
+1779,Podemos,0
+1779,Se Acabó la Fiesta,0
+1780,PSOE,10
+1780,PP,0
+1780,Vox,0
+1780,Frente Amplio,3
+1780,Podemos,0
+1780,Se Acabó la Fiesta,0
+1781,PSOE,6
+1781,PP,6
+1781,Vox,0
+1781,Frente Amplio,4
+1781,Se Acabó la Fiesta,4
+1782,PSOE,0
+1782,PP,1
+1782,Vox,10
+1782,Frente Amplio,0
+1782,Podemos,0
+1782,Se Acabó la Fiesta,0
+1783,PSOE,10
+1783,PP,0
+1783,Vox,0
+1783,Frente Amplio,7
+1783,Se Acabó la Fiesta,0
+1784,PSOE,10
+1784,PP,0
+1784,Vox,0
+1784,Frente Amplio,6
+1784,Podemos,7
+1784,Se Acabó la Fiesta,0
+1785,PSOE,0
+1785,PP,5
+1785,Vox,10
+1785,Frente Amplio,0
+1785,Podemos,0
+1785,Se Acabó la Fiesta,5
+1786,PSOE,8
+1786,PP,4
+1786,Vox,2
+1786,Frente Amplio,7
+1786,Podemos,4
+1786,Se Acabó la Fiesta,4
+1787,PSOE,4
+1787,PP,0
+1787,Vox,0
+1787,Se Acabó la Fiesta,10
+1787,Compromís: Front Valencià,5
+1788,PSOE,5
+1788,PP,5
+1788,Vox,0
+1788,Frente Amplio,0
+1788,Podemos,0
+1788,Se Acabó la Fiesta,0
+1789,PSOE,0
+1789,PP,10
+1789,Vox,8
+1789,Se Acabó la Fiesta,6
+1789,Compromís: Front Valencià,3
+1790,PSOE,10
+1790,PP,0
+1790,Vox,0
+1790,Frente Amplio,0
+1790,Podemos,10
+1791,PSOE,0
+1791,PP,10
+1791,Vox,0
+1791,Frente Amplio,0
+1791,Podemos,0
+1791,Se Acabó la Fiesta,0
+1792,PSOE,0
+1792,PP,10
+1792,Vox,6
+1792,Frente Amplio,0
+1792,Podemos,0
+1792,Se Acabó la Fiesta,0
+1793,PSOE,10
+1793,PP,0
+1793,Vox,0
+1793,Se Acabó la Fiesta,0
+1793,Unidad del Pueblo Canario,0
+1794,PSOE,0
+1794,PP,5
+1794,Vox,0
+1794,Frente Amplio,0
+1794,Podemos,0
+1794,Se Acabó la Fiesta,1
+1795,PSOE,10
+1795,PP,0
+1795,Vox,0
+1795,Frente Amplio,0
+1795,Podemos,0
+1795,Se Acabó la Fiesta,0
+1796,PSOE,10
+1796,PP,0
+1796,Vox,0
+1796,Frente Amplio,0
+1796,Podemos,0
+1796,Se Acabó la Fiesta,0
+1797,PSOE,5
+1797,PP,5
+1797,Vox,9
+1797,Frente Amplio,5
+1797,Se Acabó la Fiesta,5
+1798,PSOE,8
+1798,PP,5
+1798,Vox,0
+1798,Frente Amplio,2
+1798,Podemos,5
+1798,Se Acabó la Fiesta,0
+1799,PSOE,10
+1799,PP,0
+1799,Vox,0
+1799,Frente Amplio,5
+1799,Podemos,0
+1799,Se Acabó la Fiesta,0
+1800,PSOE,0
+1800,PP,10
+1800,Vox,10
+1800,Frente Amplio,0
+1800,Podemos,0
+1800,Se Acabó la Fiesta,0
+1801,PSOE,0
+1801,PP,10
+1801,Vox,10
+1801,Frente Amplio,3
+1801,Podemos,0
+1801,Se Acabó la Fiesta,8
+1802,PSOE,5
+1802,PP,6
+1802,Vox,0
+1802,Se Acabó la Fiesta,0
+1802,Unidad del Pueblo Canario,5
+1803,PSOE,10
+1803,PP,0
+1803,Vox,0
+1803,Frente Amplio,0
+1803,Podemos,0
+1803,Se Acabó la Fiesta,0
+1804,PSOE,3
+1804,PP,5
+1804,Vox,10
+1804,Frente Amplio,6
+1804,Se Acabó la Fiesta,8
+1805,PSOE,4
+1805,PP,4
+1805,Vox,2
+1805,Frente Amplio,2
+1805,Podemos,1
+1806,PSOE,0
+1806,PP,10
+1806,Vox,9
+1806,Frente Amplio,0
+1806,Podemos,0
+1806,Se Acabó la Fiesta,0
+1807,PSOE,0
+1807,PP,4
+1807,Vox,4
+1807,Frente Amplio,0
+1807,Podemos,2
+1807,Se Acabó la Fiesta,7
+1808,PSOE,0
+1808,PP,9
+1808,Vox,9
+1808,Frente Amplio,0
+1808,Podemos,0
+1808,Se Acabó la Fiesta,8
+1809,PSOE,0
+1809,PP,8
+1809,Vox,10
+1809,Se Acabó la Fiesta,7
+1809,Unidad del Pueblo Canario,0
+1810,PSOE,1
+1810,PP,1
+1810,Vox,2
+1810,Frente Amplio,3
+1810,Podemos,0
+1810,Se Acabó la Fiesta,2
+1811,PSOE,1
+1811,PP,1
+1811,Vox,0
+1811,Frente Amplio,0
+1811,Podemos,0
+1811,Se Acabó la Fiesta,0
+1812,PSOE,10
+1812,PP,99
+1812,Vox,0
+1812,Frente Amplio,0
+1812,Podemos,5
+1813,PSOE,99
+1813,PP,5
+1813,Vox,99
+1813,Frente Amplio,0
+1813,Podemos,99
+1813,Se Acabó la Fiesta,5
+1814,PSOE,7
+1814,PP,0
+1814,Vox,0
+1814,Se Acabó la Fiesta,0
+1814,Unidad del Pueblo Canario,0
+1815,PSOE,0
+1815,PP,0
+1815,Vox,0
+1815,Frente Amplio,0
+1815,Podemos,0
+1815,Se Acabó la Fiesta,0
+1816,PSOE,10
+1816,PP,0
+1816,Vox,0
+1816,Frente Amplio,0
+1816,Podemos,0
+1816,Se Acabó la Fiesta,0
+1817,PSOE,10
+1817,PP,0
+1817,Vox,0
+1817,Frente Amplio,0
+1817,Podemos,7
+1817,Se Acabó la Fiesta,0
+1818,PSOE,4
+1818,PP,0
+1818,Vox,0
+1818,Se Acabó la Fiesta,0
+1818,Compromís: Front Valencià,0
+1819,PSOE,0
+1819,PP,5
+1819,Vox,10
+1819,Frente Amplio,0
+1819,Podemos,0
+1819,Se Acabó la Fiesta,7
+1820,PSOE,0
+1820,PP,9
+1820,Vox,10
+1820,Frente Amplio,0
+1820,Podemos,0
+1820,Se Acabó la Fiesta,8
+1821,PSOE,5
+1821,PP,4
+1821,Vox,0
+1821,Se Acabó la Fiesta,0
+1821,Unidad del Pueblo Canario,10
+1822,PSOE,9
+1822,PP,3
+1822,Vox,0
+1822,Frente Amplio,8
+1822,Podemos,9
+1822,Se Acabó la Fiesta,3
+1823,PSOE,10
+1823,PP,4
+1823,Vox,0
+1823,Frente Amplio,0
+1823,Podemos,3
+1823,Se Acabó la Fiesta,0
+1824,PSOE,0
+1824,PP,10
+1824,Vox,5
+1824,Frente Amplio,0
+1824,Podemos,0
+1825,PSOE,0
+1825,PP,8
+1825,Vox,10
+1825,Se Acabó la Fiesta,9
+1825,Ara Més – Front Ampli,0
+1826,PSOE,0
+1826,PP,6
+1826,Vox,10
+1826,Frente Amplio,0
+1826,Se Acabó la Fiesta,0
+1827,PSOE,0
+1827,PP,8
+1827,Vox,10
+1827,Frente Amplio,0
+1827,Podemos,0
+1827,Se Acabó la Fiesta,0
+1828,PSOE,10
+1828,PP,0
+1828,Vox,0
+1828,Frente Amplio,0
+1828,Podemos,0
+1828,Se Acabó la Fiesta,0
+1829,PSOE,0
+1829,PP,10
+1829,Vox,9
+1829,Se Acabó la Fiesta,0
+1829,Ara Més – Front Ampli,0
+1830,PSOE,8
+1830,PP,2
+1830,Vox,0
+1830,Se Acabó la Fiesta,99
+1830,Compromís: Front Valencià,8
+1831,PSOE,10
+1831,PP,5
+1831,Vox,1
+1831,Frente Amplio,2
+1831,Podemos,4
+1831,Se Acabó la Fiesta,3
+1832,PSOE,10
+1832,PP,4
+1832,Vox,0
+1832,Se Acabó la Fiesta,0
+1832,Unidad del Pueblo Canario,7
+1833,PSOE,5
+1833,PP,9
+1833,Vox,9
+1833,Frente Amplio,6
+1833,Podemos,6
+1833,Se Acabó la Fiesta,7
+1834,PSOE,5
+1834,PP,3
+1834,Vox,0
+1834,Se Acabó la Fiesta,5
+1834,Unidad del Pueblo Canario,4
+1835,PSOE,1
+1835,PP,5
+1835,Vox,2
+1835,Se Acabó la Fiesta,2
+1835,Unidad del Pueblo Canario,3
+1836,PSOE,7
+1836,PP,0
+1836,Vox,0
+1836,Frente Amplio,3
+1836,Podemos,6
+1836,Se Acabó la Fiesta,5
+1837,PSOE,6
+1837,PP,8
+1837,Vox,0
+1837,Frente Amplio,5
+1837,Podemos,9
+1838,PSOE,0
+1838,PP,0
+1838,Vox,0
+1838,Se Acabó la Fiesta,2
+1838,Ara Més – Front Ampli,0
+1839,PSOE,0
+1839,PP,9
+1839,Vox,10
+1839,Frente Amplio,0
+1839,Podemos,0
+1839,Se Acabó la Fiesta,0
+1840,PSOE,0
+1840,PP,5
+1840,Vox,8
+1840,Se Acabó la Fiesta,7
+1840,Ara Més – Front Ampli,4
+1841,PSOE,5
+1841,PP,99
+1841,Vox,8
+1841,Frente Amplio,6
+1841,Podemos,0
+1841,Se Acabó la Fiesta,5
+1842,PSOE,0
+1842,PP,10
+1842,Vox,6
+1842,Frente Amplio,0
+1842,Podemos,0
+1842,Se Acabó la Fiesta,0
+1843,PSOE,0
+1843,Vox,10
+1843,Frente Amplio,0
+1843,Podemos,0
+1843,Se Acabó la Fiesta,0
+1843,UPN-PP,0
+1844,PSOE,10
+1844,PP,0
+1844,Vox,0
+1844,Frente Amplio,4
+1844,Se Acabó la Fiesta,0
+1845,PSOE,0
+1845,PP,10
+1845,Vox,0
+1845,Se Acabó la Fiesta,0
+1845,Compromís: Front Valencià,0
+1846,PSOE,0
+1846,PP,10
+1846,Vox,9
+1846,Frente Amplio,0
+1846,Podemos,0
+1846,Se Acabó la Fiesta,0
+1847,PSOE,4
+1847,PP,3
+1847,Vox,0
+1847,Se Acabó la Fiesta,2
+1847,Compromís: Front Valencià,3
+1848,PSOE,10
+1848,PP,4
+1848,Vox,1
+1848,Frente Amplio,3
+1848,Podemos,0
+1848,Se Acabó la Fiesta,0
+1849,PSOE,0
+1849,PP,2
+1849,Vox,8
+1849,Frente Amplio,0
+1849,Podemos,0
+1849,Se Acabó la Fiesta,5
+1850,PSOE,0
+1850,PP,1
+1850,Vox,1
+1850,Se Acabó la Fiesta,10
+1850,Ara Més – Front Ampli,0
+1851,PSOE,10
+1851,PP,2
+1851,Vox,0
+1851,Se Acabó la Fiesta,4
+1851,Compromís: Front Valencià,4
+1852,PSOE,5
+1852,PP,3
+1852,Vox,5
+1852,Frente Amplio,4
+1852,Podemos,4
+1852,Se Acabó la Fiesta,3
+1853,PSOE,5
+1853,PP,4
+1853,Vox,1
+1853,Frente Amplio,5
+1853,Podemos,4
+1853,Se Acabó la Fiesta,5
+1854,PSOE,3
+1854,PP,10
+1854,Vox,5
+1854,Se Acabó la Fiesta,0
+1854,Unidad del Pueblo Canario,0
+1855,PSOE,7
+1855,PP,0
+1855,Vox,0
+1855,Se Acabó la Fiesta,0
+1855,Compromís: Front Valencià,10
+1856,PSOE,5
+1856,PP,0
+1856,Vox,0
+1856,Frente Amplio,5
+1856,Se Acabó la Fiesta,0
+1857,PSOE,0
+1857,PP,10
+1857,Vox,5
+1857,Frente Amplio,1
+1857,Podemos,2
+1857,Se Acabó la Fiesta,3
+1858,PSOE,10
+1858,PP,0
+1858,Vox,0
+1858,Frente Amplio,7
+1858,Podemos,7
+1858,Se Acabó la Fiesta,0
+1859,PSOE,5
+1859,Vox,0
+1859,Frente Amplio,9
+1859,Podemos,7
+1859,Se Acabó la Fiesta,0
+1859,UPN-PP,0
+1860,PSOE,0
+1860,PP,10
+1860,Vox,7
+1860,Se Acabó la Fiesta,4
+1860,Unidad del Pueblo Canario,0
+1861,PSOE,10
+1861,PP,1
+1861,Vox,0
+1861,Frente Amplio,5
+1861,Podemos,7
+1861,Se Acabó la Fiesta,1
+1862,PSOE,0
+1862,PP,10
+1862,Vox,8
+1862,Frente Amplio,0
+1862,Podemos,0
+1863,PSOE,0
+1863,PP,0
+1863,Vox,8
+1863,Frente Amplio,0
+1863,Se Acabó la Fiesta,0
+1864,PSOE,9
+1864,PP,0
+1864,Vox,0
+1864,Frente Amplio,99
+1864,Podemos,7
+1864,Se Acabó la Fiesta,0
+1865,PSOE,0
+1865,PP,10
+1865,Vox,10
+1865,Frente Amplio,0
+1865,Podemos,0
+1865,Se Acabó la Fiesta,0
+1866,PSOE,6
+1866,PP,0
+1866,Vox,0
+1866,Frente Amplio,10
+1866,Podemos,8
+1866,Se Acabó la Fiesta,0
+1867,PSOE,0
+1867,PP,0
+1867,Vox,0
+1867,Frente Amplio,9
+1867,Podemos,8
+1867,Se Acabó la Fiesta,0
+1868,PSOE,10
+1868,PP,0
+1868,Vox,0
+1868,Frente Amplio,0
+1868,Podemos,0
+1868,Se Acabó la Fiesta,0
+1869,PSOE,5
+1869,PP,5
+1869,Vox,8
+1869,Frente Amplio,5
+1869,Podemos,5
+1869,Se Acabó la Fiesta,5
+1870,PSOE,10
+1870,PP,0
+1870,Vox,0
+1870,Frente Amplio,0
+1870,Podemos,0
+1870,Se Acabó la Fiesta,0
+1871,PSOE,0
+1871,PP,9
+1871,Vox,8
+1871,Frente Amplio,2
+1871,Podemos,0
+1871,Se Acabó la Fiesta,6
+1872,PSOE,0
+1872,PP,10
+1872,Vox,8
+1872,Frente Amplio,2
+1872,Podemos,1
+1872,Se Acabó la Fiesta,4
+1873,PSOE,0
+1873,PP,6
+1873,Vox,7
+1873,Frente Amplio,0
+1873,Podemos,0
+1873,Se Acabó la Fiesta,7
+1874,PSOE,0
+1874,PP,8
+1874,Vox,10
+1874,Frente Amplio,0
+1874,Podemos,0
+1874,Se Acabó la Fiesta,0
+1875,PSOE,10
+1875,PP,0
+1875,Vox,0
+1875,Frente Amplio,0
+1875,Podemos,0
+1875,Se Acabó la Fiesta,0
+1876,PSOE,0
+1876,PP,10
+1876,Vox,7
+1876,Frente Amplio,0
+1876,Podemos,0
+1876,Se Acabó la Fiesta,0
+1877,PSOE,10
+1877,PP,0
+1877,Vox,0
+1877,Frente Amplio,3
+1877,Podemos,4
+1878,PSOE,6
+1878,PP,6
+1878,Vox,0
+1878,Frente Amplio,8
+1878,Podemos,7
+1878,Se Acabó la Fiesta,6
+1879,PSOE,4
+1879,PP,9
+1879,Vox,8
+1879,Frente Amplio,1
+1879,Podemos,0
+1879,Se Acabó la Fiesta,3
+1880,PSOE,0
+1880,PP,6
+1880,Vox,10
+1880,Frente Amplio,0
+1880,Podemos,0
+1880,Se Acabó la Fiesta,0
+1881,PSOE,10
+1881,PP,0
+1881,Vox,0
+1881,Frente Amplio,7
+1881,Podemos,1
+1881,Se Acabó la Fiesta,0
+1882,PSOE,6
+1882,PP,3
+1882,Vox,3
+1882,Frente Amplio,4
+1883,PSOE,10
+1883,PP,0
+1883,Vox,0
+1883,Frente Amplio,5
+1883,Podemos,2
+1883,Se Acabó la Fiesta,0
+1884,PSOE,0
+1884,PP,5
+1884,Vox,10
+1884,Frente Amplio,0
+1884,Podemos,0
+1884,Se Acabó la Fiesta,7
+1885,PSOE,9
+1885,PP,0
+1885,Vox,0
+1885,Frente Amplio,8
+1885,Podemos,8
+1885,Se Acabó la Fiesta,0
+1886,PSOE,3
+1886,PP,9
+1886,Vox,7
+1886,Frente Amplio,2
+1886,Podemos,1
+1886,Se Acabó la Fiesta,5
+1887,PSOE,0
+1887,PP,9
+1887,Vox,4
+1887,Frente Amplio,0
+1887,Podemos,0
+1887,Se Acabó la Fiesta,0
+1888,PSOE,5
+1888,PP,0
+1888,Vox,0
+1888,Frente Amplio,9
+1888,Podemos,4
+1888,Se Acabó la Fiesta,0
+1889,PSOE,0
+1889,PP,0
+1889,Vox,10
+1889,Frente Amplio,5
+1889,Se Acabó la Fiesta,4
+1890,PSOE,0
+1890,PP,6
+1890,Vox,8
+1890,Frente Amplio,0
+1890,Podemos,0
+1890,Se Acabó la Fiesta,0
+1891,PSOE,0
+1891,PP,8
+1891,Vox,10
+1891,Frente Amplio,0
+1891,Se Acabó la Fiesta,6
+1892,PSOE,0
+1892,PP,8
+1892,Vox,6
+1892,Frente Amplio,3
+1892,Podemos,0
+1892,Se Acabó la Fiesta,4
+1893,PSOE,4
+1893,PP,0
+1893,Vox,0
+1893,Frente Amplio,0
+1893,Podemos,0
+1893,Se Acabó la Fiesta,99
+1894,PSOE,10
+1894,PP,0
+1894,Vox,0
+1894,Frente Amplio,0
+1894,Podemos,1
+1894,Se Acabó la Fiesta,0
+1895,PSOE,0
+1895,PP,7
+1895,Vox,5
+1895,Se Acabó la Fiesta,0
+1895,Compromís: Front Valencià,0
+1896,PSOE,0
+1896,PP,8
+1896,Vox,0
+1896,Se Acabó la Fiesta,0
+1896,Ara Més – Front Ampli,0
+1897,PSOE,0
+1897,PP,8
+1897,Vox,5
+1897,Frente Amplio,0
+1897,Podemos,0
+1897,Se Acabó la Fiesta,0
+1898,PSOE,0
+1898,PP,9
+1898,Vox,8
+1898,Frente Amplio,0
+1898,Podemos,0
+1898,Se Acabó la Fiesta,0
+1899,PSOE,0
+1899,PP,7
+1899,Vox,10
+1899,Frente Amplio,0
+1899,Podemos,1
+1899,Se Acabó la Fiesta,1
+1900,PSOE,7
+1900,PP,7
+1900,Vox,6
+1900,Frente Amplio,1
+1900,Podemos,2
+1900,Se Acabó la Fiesta,2
+1901,PSOE,0
+1901,PP,0
+1901,Vox,10
+1901,Frente Amplio,0
+1901,Podemos,0
+1901,Se Acabó la Fiesta,0
+1902,PSOE,4
+1902,PP,7
+1902,Vox,3
+1902,Se Acabó la Fiesta,0
+1902,Compromís: Front Valencià,3
+1903,PSOE,2
+1903,PP,10
+1903,Vox,4
+1903,Se Acabó la Fiesta,1
+1903,Compromís: Front Valencià,1
+1904,PSOE,1
+1904,PP,1
+1904,Vox,4
+1904,Frente Amplio,0
+1904,Podemos,0
+1904,Se Acabó la Fiesta,1
+1905,PSOE,8
+1905,PP,3
+1905,Vox,0
+1905,Se Acabó la Fiesta,7
+1905,Ara Més – Front Ampli,6
+1906,PSOE,0
+1906,PP,8
+1906,Vox,7
+1906,Frente Amplio,0
+1906,Se Acabó la Fiesta,0
+1907,PSOE,0
+1907,PP,9
+1907,Vox,1
+1907,Frente Amplio,0
+1907,Podemos,0
+1907,Se Acabó la Fiesta,0
+1908,PSOE,8
+1908,PP,1
+1908,Vox,0
+1908,Frente Amplio,9
+1908,Podemos,5
+1908,Se Acabó la Fiesta,0
+1909,PSOE,0
+1909,PP,9
+1909,Vox,7
+1909,Frente Amplio,0
+1909,Podemos,0
+1909,Se Acabó la Fiesta,0
+1910,PSOE,0
+1910,PP,8
+1910,Vox,9
+1910,Frente Amplio,0
+1910,Podemos,0
+1910,Se Acabó la Fiesta,1
+1911,PSOE,10
+1911,PP,0
+1911,Vox,0
+1911,Frente Amplio,0
+1911,Podemos,0
+1911,Se Acabó la Fiesta,0
+1912,PSOE,0
+1912,PP,5
+1912,Vox,10
+1912,Frente Amplio,0
+1912,Podemos,0
+1912,Se Acabó la Fiesta,6
+1913,PSOE,0
+1913,PP,9
+1913,Vox,9
+1913,Frente Amplio,0
+1913,Se Acabó la Fiesta,0
+1914,PSOE,8
+1914,PP,0
+1914,Vox,0
+1914,Frente Amplio,7
+1914,Se Acabó la Fiesta,0
+1915,PSOE,10
+1915,PP,0
+1915,Vox,0
+1915,Frente Amplio,6
+1915,Podemos,5
+1915,Se Acabó la Fiesta,0
+1916,PSOE,5
+1916,PP,7
+1916,Vox,5
+1916,Frente Amplio,0
+1916,Podemos,0
+1916,Se Acabó la Fiesta,6
+1917,PSOE,4
+1917,PP,0
+1917,Vox,0
+1917,Frente Amplio,6
+1917,Podemos,8
+1917,Se Acabó la Fiesta,0
+1918,PSOE,2
+1918,PP,7
+1918,Vox,5
+1918,Frente Amplio,4
+1918,Se Acabó la Fiesta,3
+1919,PSOE,4
+1919,PP,0
+1919,Vox,0
+1919,Frente Amplio,6
+1919,Se Acabó la Fiesta,0
+1920,PSOE,0
+1920,PP,10
+1920,Vox,0
+1920,Frente Amplio,0
+1920,Podemos,1
+1920,Se Acabó la Fiesta,0
+1921,PSOE,0
+1921,PP,10
+1921,Vox,10
+1921,Frente Amplio,0
+1921,Podemos,0
+1921,Se Acabó la Fiesta,0
+1922,PSOE,0
+1922,PP,2
+1922,Vox,0
+1922,Se Acabó la Fiesta,0
+1922,Compromís: Front Valencià,0
+1923,PSOE,5
+1923,PP,0
+1923,Vox,0
+1923,Frente Amplio,10
+1923,Podemos,7
+1923,Se Acabó la Fiesta,0
+1924,PSOE,0
+1924,PP,8
+1924,Vox,7
+1924,Frente Amplio,0
+1924,Se Acabó la Fiesta,6
+1925,PSOE,2
+1925,PP,8
+1925,Vox,0
+1925,Frente Amplio,0
+1925,Podemos,0
+1926,PSOE,0
+1926,PP,4
+1926,Vox,7
+1926,Frente Amplio,0
+1926,Podemos,0
+1926,Se Acabó la Fiesta,0
+1927,PSOE,0
+1927,PP,10
+1927,Vox,3
+1927,Frente Amplio,0
+1927,Podemos,0
+1927,Se Acabó la Fiesta,0
+1928,PSOE,10
+1928,PP,0
+1928,Vox,0
+1928,Se Acabó la Fiesta,0
+1928,Compromís: Front Valencià,0
+1929,PSOE,3
+1929,PP,0
+1929,Vox,0
+1929,Frente Amplio,5
+1929,Se Acabó la Fiesta,0
+1930,PSOE,0
+1930,PP,10
+1930,Vox,0
+1930,Se Acabó la Fiesta,0
+1930,Compromís: Front Valencià,0
+1931,PSOE,10
+1931,PP,1
+1931,Vox,1
+1931,Frente Amplio,1
+1931,Podemos,1
+1931,Se Acabó la Fiesta,1
+1932,PSOE,3
+1932,Vox,9
+1932,Frente Amplio,1
+1932,Podemos,2
+1932,Se Acabó la Fiesta,1
+1932,UPN-PP,2
+1933,PSOE,2
+1933,PP,2
+1933,Vox,2
+1933,Se Acabó la Fiesta,2
+1933,Compromís: Front Valencià,1
+1934,PSOE,8
+1934,PP,6
+1934,Vox,1
+1934,Frente Amplio,3
+1934,Podemos,2
+1934,Se Acabó la Fiesta,3
+1935,PSOE,6
+1935,PP,0
+1935,Vox,0
+1935,Frente Amplio,8
+1935,Podemos,5
+1935,Se Acabó la Fiesta,6
+1936,PSOE,0
+1936,PP,0
+1936,Vox,7
+1936,Frente Amplio,1
+1936,Se Acabó la Fiesta,1
+1937,PSOE,9
+1937,PP,2
+1937,Vox,0
+1937,Frente Amplio,2
+1937,Se Acabó la Fiesta,2
+1938,PSOE,5
+1938,PP,0
+1938,Vox,0
+1938,Frente Amplio,5
+1938,Se Acabó la Fiesta,0
+1939,PSOE,4
+1939,PP,6
+1939,Vox,5
+1939,Frente Amplio,3
+1939,Podemos,2
+1939,Se Acabó la Fiesta,4
+1940,PSOE,2
+1940,PP,8
+1940,Vox,6
+1940,Frente Amplio,5
+1940,Podemos,2
+1940,Se Acabó la Fiesta,1
+1941,PSOE,0
+1941,PP,2
+1941,Vox,10
+1941,Frente Amplio,0
+1941,Podemos,0
+1941,Se Acabó la Fiesta,0
+1942,PSOE,10
+1942,PP,1
+1942,Vox,0
+1942,Frente Amplio,9
+1942,Podemos,7
+1942,Se Acabó la Fiesta,0
+1943,PSOE,0
+1943,PP,8
+1943,Vox,10
+1943,Se Acabó la Fiesta,5
+1943,Ara Més – Front Ampli,0
+1944,PSOE,5
+1944,PP,0
+1944,Vox,0
+1944,Frente Amplio,4
+1944,Se Acabó la Fiesta,0
+1945,PSOE,3
+1945,PP,3
+1945,Vox,0
+1945,Se Acabó la Fiesta,2
+1945,Compromís: Front Valencià,3
+1946,PSOE,0
+1946,PP,10
+1946,Vox,2
+1946,Se Acabó la Fiesta,5
+1946,Compromís: Front Valencià,0
+1947,PSOE,0
+1947,PP,7
+1947,Vox,0
+1947,Frente Amplio,0
+1947,Podemos,0
+1947,Se Acabó la Fiesta,0
+1948,PSOE,0
+1948,Vox,10
+1948,Frente Amplio,0
+1948,Podemos,0
+1948,Se Acabó la Fiesta,7
+1948,UPN-PP,2
+1949,PSOE,5
+1949,PP,5
+1949,Vox,5
+1949,Frente Amplio,5
+1949,Podemos,5
+1949,Se Acabó la Fiesta,5
+1950,PSOE,5
+1950,PP,0
+1950,Vox,0
+1950,Frente Amplio,0
+1950,Podemos,3
+1951,PSOE,10
+1951,PP,0
+1951,Vox,0
+1951,Frente Amplio,0
+1951,Se Acabó la Fiesta,0
+1952,PSOE,8
+1952,PP,2
+1952,Vox,2
+1952,Frente Amplio,3
+1952,Podemos,8
+1952,Se Acabó la Fiesta,2
+1953,PSOE,10
+1953,PP,0
+1953,Vox,0
+1953,Frente Amplio,9
+1953,Podemos,9
+1953,Se Acabó la Fiesta,0
+1954,PSOE,0
+1954,PP,10
+1954,Vox,6
+1954,Se Acabó la Fiesta,6
+1954,Compromís: Front Valencià,0
+1955,PSOE,5
+1955,PP,0
+1955,Vox,0
+1955,Se Acabó la Fiesta,0
+1955,Compromís: Front Valencià,10
+1956,PSOE,99
+1956,PP,99
+1956,Vox,99
+1956,Se Acabó la Fiesta,99
+1956,Compromís: Front Valencià,99
+1957,PSOE,8
+1957,PP,0
+1957,Vox,0
+1957,Se Acabó la Fiesta,0
+1957,Compromís: Front Valencià,8
+1958,PSOE,5
+1958,PP,5
+1958,Vox,5
+1958,Se Acabó la Fiesta,5
+1958,Compromís: Front Valencià,5
+1959,PSOE,8
+1959,PP,2
+1959,Vox,0
+1959,Frente Amplio,0
+1959,Podemos,1
+1959,Se Acabó la Fiesta,0
+1960,PSOE,0
+1960,PP,3
+1960,Vox,0
+1960,Frente Amplio,0
+1960,Podemos,0
+1960,Se Acabó la Fiesta,0
+1961,PSOE,0
+1961,PP,0
+1961,Vox,0
+1961,Se Acabó la Fiesta,0
+1961,Compromís: Front Valencià,0
+1962,PSOE,10
+1962,PP,0
+1962,Vox,0
+1962,Se Acabó la Fiesta,5
+1962,Compromís: Front Valencià,5
+1963,PSOE,0
+1963,PP,0
+1963,Vox,0
+1963,Frente Amplio,0
+1963,Podemos,0
+1963,Se Acabó la Fiesta,0
+1964,PSOE,0
+1964,PP,10
+1964,Vox,0
+1964,Frente Amplio,0
+1964,Podemos,0
+1964,Se Acabó la Fiesta,0
+1965,PSOE,0
+1965,PP,0
+1965,Vox,10
+1965,Frente Amplio,0
+1965,Podemos,0
+1965,Se Acabó la Fiesta,0
+1966,PSOE,0
+1966,PP,0
+1966,Vox,10
+1966,Frente Amplio,0
+1966,Podemos,0
+1966,Se Acabó la Fiesta,0
+1967,PSOE,10
+1967,PP,0
+1967,Vox,0
+1967,Frente Amplio,8
+1968,PSOE,0
+1968,PP,2
+1968,Vox,5
+1968,Frente Amplio,0
+1968,Podemos,0
+1968,Se Acabó la Fiesta,8
+1969,PSOE,0
+1969,PP,0
+1969,Vox,0
+1969,Frente Amplio,0
+1970,PSOE,0
+1970,PP,9
+1970,Vox,5
+1970,Frente Amplio,0
+1970,Podemos,0
+1970,Se Acabó la Fiesta,0
+1971,PSOE,7
+1971,PP,3
+1971,Vox,0
+1971,Frente Amplio,8
+1971,Podemos,3
+1971,Se Acabó la Fiesta,3
+1972,PSOE,0
+1972,PP,5
+1972,Vox,7
+1972,Frente Amplio,0
+1972,Podemos,0
+1973,PSOE,4
+1973,PP,5
+1973,Vox,2
+1973,Frente Amplio,2
+1973,Podemos,2
+1973,Se Acabó la Fiesta,0
+1974,PSOE,3
+1974,PP,8
+1974,Vox,2
+1974,Frente Amplio,0
+1974,Podemos,0
+1974,Se Acabó la Fiesta,2
+1975,PSOE,5
+1975,PP,2
+1975,Vox,0
+1975,Frente Amplio,4
+1975,Se Acabó la Fiesta,1
+1976,PSOE,8
+1976,PP,2
+1976,Vox,0
+1976,Frente Amplio,5
+1976,Podemos,7
+1976,Se Acabó la Fiesta,4
+1977,PSOE,0
+1977,PP,0
+1977,Vox,0
+1977,Frente Amplio,1
+1977,Podemos,0
+1977,Se Acabó la Fiesta,7
+1978,PSOE,2
+1978,PP,8
+1978,Vox,2
+1978,Frente Amplio,2
+1978,Podemos,3
+1978,Se Acabó la Fiesta,3
+1979,PSOE,4
+1979,PP,1
+1979,Vox,0
+1979,Frente Amplio,8
+1979,Se Acabó la Fiesta,0
+1980,PSOE,3
+1980,PP,3
+1980,Vox,6
+1980,Frente Amplio,4
+1980,Podemos,2
+1980,Se Acabó la Fiesta,4
+1981,PSOE,6
+1981,PP,0
+1981,Vox,0
+1981,Frente Amplio,3
+1981,Podemos,5
+1981,Se Acabó la Fiesta,0
+1982,PSOE,8
+1982,PP,0
+1982,Vox,0
+1982,Frente Amplio,4
+1982,Se Acabó la Fiesta,99
+1983,PSOE,6
+1983,PP,6
+1983,Vox,4
+1983,Frente Amplio,7
+1983,Podemos,5
+1983,Se Acabó la Fiesta,4
+1984,PSOE,0
+1984,PP,0
+1984,Vox,0
+1984,Frente Amplio,1
+1984,Podemos,3
+1984,Se Acabó la Fiesta,0
+1985,PSOE,8
+1985,PP,6
+1985,Vox,6
+1985,Se Acabó la Fiesta,0
+1985,Unidad del Pueblo Canario,6
+1986,PSOE,1
+1986,PP,8
+1986,Vox,0
+1986,Frente Amplio,0
+1986,Podemos,0
+1986,Se Acabó la Fiesta,0
+1987,PSOE,99
+1987,PP,99
+1987,Vox,99
+1987,Frente Amplio,99
+1987,Se Acabó la Fiesta,99
+1988,PSOE,4
+1988,PP,7
+1988,Vox,4
+1988,Frente Amplio,0
+1988,Podemos,0
+1988,Se Acabó la Fiesta,4
+1989,PSOE,0
+1989,PP,10
+1989,Vox,0
+1989,Frente Amplio,0
+1989,Podemos,0
+1989,Se Acabó la Fiesta,0
+1990,PSOE,0
+1990,PP,10
+1990,Vox,10
+1990,Se Acabó la Fiesta,1
+1990,Ara Més – Front Ampli,0
+1991,PSOE,4
+1991,PP,1
+1991,Vox,0
+1991,Se Acabó la Fiesta,1
+1991,Ara Més – Front Ampli,4
+1992,PSOE,10
+1992,PP,0
+1992,Vox,0
+1992,Frente Amplio,10
+1992,Podemos,10
+1992,Se Acabó la Fiesta,0
+1993,PSOE,7
+1993,PP,0
+1993,Vox,0
+1993,Frente Amplio,10
+1993,Podemos,10
+1994,PSOE,6
+1994,PP,1
+1994,Vox,0
+1994,Frente Amplio,3
+1994,Se Acabó la Fiesta,2
+1995,PSOE,10
+1995,PP,1
+1995,Vox,0
+1995,Se Acabó la Fiesta,1
+1995,Compromís: Front Valencià,1
+1996,PSOE,99
+1996,PP,99
+1996,Vox,99
+1996,Frente Amplio,99
+1996,Podemos,99
+1996,Se Acabó la Fiesta,99
+1997,PSOE,10
+1997,PP,0
+1997,Vox,0
+1997,Frente Amplio,2
+1997,Podemos,3
+1997,Se Acabó la Fiesta,0
+1998,PSOE,3
+1998,PP,6
+1998,Vox,9
+1998,Frente Amplio,4
+1998,Se Acabó la Fiesta,5
+1999,PSOE,0
+1999,PP,0
+1999,Vox,0
+1999,Frente Amplio,0
+1999,Podemos,0
+1999,Se Acabó la Fiesta,0
+2000,PSOE,7
+2000,PP,4
+2000,Vox,5
+2000,Frente Amplio,2
+2000,Se Acabó la Fiesta,3
